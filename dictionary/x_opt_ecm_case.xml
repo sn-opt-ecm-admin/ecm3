@@ -257,6 +257,7 @@
             </choice>
         </element>
         <element label="Provider" max_length="32" name="provider" reference="x_opt_im_provider" type="reference"/>
+        <element label="Quality Review Comments" max_length="4000" name="quality_review_comments" type="journal_input"/>
         <element label="Referred by" max_length="32" name="referred_by" reference="sys_user" type="reference"/>
         <element label="Date Resolved" max_length="40" name="resolution_date_resolved" type="glide_date_time"/>
         <element attributes="max_ref_dropdown=50" choice="1" label="Dept/Site of Error" max_length="40" name="resolution_dept_site_of_error" reference="x_opt_ecm_site_of_error" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">

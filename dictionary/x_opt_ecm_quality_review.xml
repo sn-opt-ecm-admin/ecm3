@@ -62,7 +62,7 @@
         <element label="QR Comments" max_length="4000" name="qr_comments" type="journal_input"/>
         <element label="Review Completed By" max_length="32" name="review_completed_by" read_only="true" reference="sys_user" type="reference"/>
         <element label="Review Completed Date" max_length="40" name="review_completed_date" read_only="true" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="New" label="Review State" max_length="40" name="review_state" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Review State" max_length="40" name="review_state" type="string">
             <choice>
                 <element label="New" sequence="0" value="1"/>
                 <element label="Under Review" sequence="1" value="2"/>
