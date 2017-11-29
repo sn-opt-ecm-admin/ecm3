@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Claims" max_length="40" name="x_opt_ecm_claims" type="collection">
+        <element label="Account ID" max_length="40" name="account_id" type="string"/>
+        <element label="Carrier ID" max_length="40" name="carrier_id" type="string"/>
+        <element label="Claim Number" max_length="40" name="claim_number" type="string"/>
+        <element label="Claim Status" max_length="40" name="claim_status" type="string"/>
+        <element label="Fill Date" max_length="40" name="fill_date" type="string"/>
+        <element label="Generic Product ID (GPI)" max_length="40" name="generic_product_id" type="string"/>
+        <element label="Group ID" max_length="40" name="group_id" type="string"/>
+        <element label="Member ID" max_length="40" name="member_id" type="string"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_opt_ecm_case" type="reference"/>
+        <element label="Patient Pay Amount" max_length="40" name="patient_pay_amount" type="string"/>
+        <element label="Plan Pay Amount" max_length="40" name="plan_pay_amount" type="string"/>
+        <element label="Product ID (NDC)" max_length="40" name="product_id" type="string"/>
+        <element label="Product Name" max_length="40" name="product_name" type="string"/>
+        <element label="Reject Code" max_length="40" name="reject_code" type="string"/>
+        <element label="Reject Message" max_length="120" name="reject_message" type="string"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Navigator Extract" max_length="40" name="x_opt_ecm_navigator_extract" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Account ID" max_length="100" name="account_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Carrier ID" max_length="100" name="carrier_id" type="string"/>
+        <element label="Drug Name" max_length="100" name="drug_name" type="string"/>
+        <element label="Due date" max_length="100" name="due_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Group ID" max_length="100" name="group_id" type="string"/>
+        <element label="Intake Comments" max_length="10000" name="intake_comments" type="string"/>
+        <element label="Member First Name" max_length="100" name="member_first_name" type="string"/>
+        <element label="Member ID" max_length="100" name="member_id" type="string"/>
+        <element label="Member Last Name" max_length="100" name="member_last_name" type="string"/>
+        <element label="Member MI" max_length="100" name="member_mi" type="string"/>
+        <element display="true" label="Number" max_length="100" name="number" type="string"/>
+        <element label="OCA/OCR Received Date" max_length="100" name="oca_ocr_received_date" type="string"/>
+        <element label="Resolved at" max_length="100" name="resolved_at" type="string"/>
+        <element label="Responsible Department" max_length="100" name="responsible_department" type="string"/>
+        <element label="State" max_length="100" name="state" type="string"/>
+        <element label="Submission Source" max_length="100" name="submission_source" type="string"/>
+    </element>
+</database>

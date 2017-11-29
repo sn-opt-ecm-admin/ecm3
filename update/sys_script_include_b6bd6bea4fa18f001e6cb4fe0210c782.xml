@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.CaseDocumentValidator</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CaseDocumentValidator</name>
+        <script><![CDATA[var CaseDocumentValidator = Class.create();
+CaseDocumentValidator.prototype = {
+	
+    initialize: function() { },
+
+	checkReadyForSubmit: function(caseGR) {
+		
+		if (!caseGR) {
+			gs.warn('AuditFileValidator :: no case provided.');
+			return false;
+		}
+		
+		var documentGR = new GlideRecord('dms_document');
+		var foundDocument = documentGR.get(caseGR.getValue('audit_file'));
+		if (!foundDocument) {
+			gs.warn('AuditFileValidator :: Could not locate Audit File document for {0}', caseGR.getDisplayValue());
+			return false;
+		}
+
+		var documentRevisionGR = new GlideRecord('dms_document_revision');
+		documentRevisionGR.addQuery('document', documentGR.getUniqueValue());
+		documentRevisionGR.query();
+
+		var revisionCount = documentRevisionGR.getRowCount();
+		if (revisionCount < 2) {
+			gs.warn('AuditFileValidator :: Only one version of document found. Must have updated Audit file template.');
+			return false;
+		}
+		else {
+			while (documentRevisionGR.next()) {
+				if (documentRevisionGR.checked_out_by != '') {
+					gs.warn('AuditFileValidator :: Found checked out version of document.');
+					return false;
+				}
+			}
+		}
+		
+		return true;
+	},
+
+    type: 'CaseDocumentValidator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-05 03:33:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b6bd6bea4fa18f001e6cb4fe0210c782</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CaseDocumentValidator</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_b6bd6bea4fa18f001e6cb4fe0210c782</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-10 16:53:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Escalated Complaint Management">dfcf0b884f680b001e6cb4fe0210c7a5</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_opt_ecm_case">assignment_groupDYNAMICd6435e965f510100a9ad2572f2b47744^assigned_toISEMPTY^active=true^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="DYNAMIC" or="false" value="d6435e965f510100a9ad2572f2b47744"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>My Groups Unassigned ECM Cases</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_opt_ecm_case</name>
+        <order>35</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>^ORDERBYDESCissue_priority^ORDERBYsys_created_on</query>
+        <report/>
+        <roles>x_opt_ecm.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-08-09 14:25:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b880a0e84fe04b001e6cb4fe0210c764</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Groups Unassigned Cases</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_app_module_b880a0e84fe04b001e6cb4fe0210c764</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-08-10 14:30:33</sys_updated_on>
+        <timeline_page/>
+        <title>My Groups Unassigned Cases</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

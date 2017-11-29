@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="contract_sla" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="contract_sla" element="NULL" name="contract_sla" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a1f8f77b0a00064104cf8e4711f4bbf7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-04-29 15:55:38</sys_created_on>
+            <sys_id>a1f8f77b0a0006415feae020629456f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-04-29 15:55:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="contract_sla" element="NULL" name="contract_sla" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a1f8f77b0a00064104cf8e4711f4bbf7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-04-29 15:55:38</sys_created_on>
+            <sys_id>a1f8f77c0a0006411c07468b8f8eab4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-04-29 15:55:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>duration</element>
+            <list_id display_value="contract_sla" element="NULL" name="contract_sla" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a1f8f77b0a00064104cf8e4711f4bbf7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-04-29 15:55:38</sys_created_on>
+            <sys_id>a1f8f77d0a000641481adcfbf48d91ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-04-29 15:55:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>collection</element>
+            <list_id display_value="contract_sla" element="NULL" name="contract_sla" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a1f8f77b0a00064104cf8e4711f4bbf7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-04-29 15:55:38</sys_created_on>
+            <sys_id>a1f8f77d0a00064179269245cbc3f64d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-04-29 15:55:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="contract_sla" element="NULL" name="contract_sla" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a1f8f77b0a00064104cf8e4711f4bbf7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2011-04-29 15:55:38</sys_created_on>
+            <sys_id>a1f8f77e0a00064166d61eef7099fcec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2011-04-29 15:55:38</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>contract_sla</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-12 12:49:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74e097d34f018b001e6cb4fe0210c730</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-12 12:49:32</sys_updated_on>
+            <sys_user display_value="John Daniel">f877fa894f284b00699aacb14210c744</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

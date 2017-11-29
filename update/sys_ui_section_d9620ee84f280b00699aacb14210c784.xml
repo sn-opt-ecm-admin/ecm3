@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="d9620ee84f280b00699aacb14210c784" sys_domain="global" table="x_opt_ecm_complaint_type" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_id>dd620ee84f280b00699aacb14210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_id>51620ee84f280b00699aacb14210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_id>d1620ee84f280b00699aacb14210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value</element>
+            <position>3</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_id>55620ee84f280b00699aacb14210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_id>d5620ee84f280b00699aacb14210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:32:46</sys_created_on>
+            <sys_id>7d920ee84f280b00699aacb14210c7a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_complaint_type" sys_domain="global" view="Default view">d9620ee84f280b00699aacb14210c784</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:32:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_opt_ecm_complaint_type</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-09 21:31:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9620ee84f280b00699aacb14210c784</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_opt_ecm_complaint_type</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_section_d9620ee84f280b00699aacb14210c784</sys_update_name>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-08-09 21:31:55</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

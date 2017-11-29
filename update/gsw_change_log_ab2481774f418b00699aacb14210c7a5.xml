@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2017-09-13 15:51:45</change_date>
+        <changed_by display_value="Todd Fudala">d70716f24f33fa40699aacb14210c760</changed_by>
+        <content display_value="Contextual Security *">84fc43e711232200964f016bcc1bdd79</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-09-13 15:51:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ab2481774f418b00699aacb14210c7a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2017-09-13 15:51:45</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>gsw_change_log_ab2481774f418b00699aacb14210c7a5</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-09-13 15:51:45</sys_updated_on>
+        <type>2</type>
+    </gsw_change_log>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Escalated Complaint Management">dfcf0b884f680b001e6cb4fe0210c7a5</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Create New ECM Case</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>10</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>x_opt_ecm_case.do?sys_id=-1&amp;sysparm_query=active=true&amp;sysparm_stack=x_opt_ecm_case_list.do?sysparm_query=active=true</query>
+        <report/>
+        <roles>x_opt_ecm.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-08-09 14:13:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96add8684fe04b001e6cb4fe0210c79f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create New Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_app_module_96add8684fe04b001e6cb4fe0210c79f</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-08-10 14:29:58</sys_updated_on>
+        <timeline_page/>
+        <title>Create New Case</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

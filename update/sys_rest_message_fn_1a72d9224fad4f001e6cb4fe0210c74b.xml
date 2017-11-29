@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+    "searchInputMetaData": {&#13;
+        "consumerAppId": "${consumerAppId}",&#13;
+        "consumerAppType": "${consumerAppType}",&#13;
+        "consumerInstanceId": "${consumerInstanceId}",&#13;
+        "rXClaimInstanceId": "${rXClaimInstanceId}",&#13;
+        "externalCorrelationId": "${externalCorrelationId}",&#13;
+        "internalCorrelationId": "${internalCorrelationId}",&#13;
+        "consumerType": "${consumerType}",&#13;
+        "rXSystemValuePair": {&#13;
+            "PBMUserId": "${PBMUserId}",&#13;
+            "PBMUserId1": "${PBMUserId1}"&#13;
+        }&#13;
+    },&#13;
+    "memberId": "${memberId}",&#13;
+    "carrierId": "${carrierId}",&#13;
+    "accountId": "${accountId}",&#13;
+    "groupId": "${groupId}",&#13;
+    "memberKey": "${memberKey}",&#13;
+&#13;
+    "fillDateFrom": "${fillDateFrom}",&#13;
+    "fillDateThru": "${fillDateThru}"&#13;
+&#13;
+}&#13;
+</content>
+        <function_name>ClaimSearch</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>OptumRxClaimSearch [ ClaimSearch ]</qualified_name>
+        <rest_endpoint>https://api5-stg-ctc.optum.com:8443/api/optumrx/claims/v1/qa</rest_endpoint>
+        <rest_message display_value="OptumRxClaimSearch">6f4259624fad4f001e6cb4fe0210c787</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-04 16:13:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1a72d9224fad4f001e6cb4fe0210c74b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>ClaimSearch</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_rest_message_fn_1a72d9224fad4f001e6cb4fe0210c74b</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-11-07 18:59:31</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

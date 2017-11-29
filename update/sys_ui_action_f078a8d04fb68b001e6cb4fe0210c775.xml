@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>request_advocate_action</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>(current.review_state==2 &amp;&amp;  (current.review_state != 4 || current.review_state != 6) )</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Request Advocate Action</name>
+        <onclick>reqAction()</onclick>
+        <order>100</order>
+        <script><![CDATA[function reqAction(){
+	//Set the QR 'State' value to 'Pending Advocate action', and display mandatory fields
+	alert('request advocate action ran');
+	var qrn1 = g_form.getValue('qr_comments');
+	var cNum = g_form.getValue('case_number');
+	alert("QR Notes: " + qrn1 + "Case Number: " + cNum);
+	
+	if ((qrn1 == '')){
+		//Remove any existing field message, set comments mandatory, and show a new field message
+			try {g_form.hideFieldMsg('qr_comments');} catch(e) {}
+			g_form.setMandatory('qr_comments', true);
+			g_form.showFieldMsg('qr_comments','QR Comments are required when requesting action of Advocate','error');
+			g_form.setValue('review_state', 4,"Pending Advocate Action");
+			return;  //Abort submission
+	}
+		//Call the UI Action and skip the 'onclick' function
+		gsftSubmit(null, g_form.getFormElement(), 'request_advocate_action'); //MUST call the 'Action name' set in this UI Action
+	}
+	
+	//Code that runs without 'onclick'
+	//Ensure call to server-side function with no browser errors
+	if (typeof window == 'undefined')
+		
+	serverRequestAdvocateAction();
+	
+	
+	function serverRequestAdvocateAction(){
+		var qrn1 = current.qr_comments;
+		var cNum = current.case_number;
+		gs.addInfoMessage("QR Notes: " + qrn1 + "Case Number: " + cNum);
+		var cse = new GlideRecord("x_opt_ecm_case");
+		gs.addInfoMessage("QR Notes: " + qrn1 + "Case Number: " + cNum);
+		cse.addQuery('sys_id', '=', cNum);
+		cse.query();
+		while (cse.next()){
+			gs.addInfoMessage ('found case');
+			gs.addInfoMessage(qrn1);
+			cse.comments = qrn1;
+			cse.state = 19;
+			cse.update();
+		}
+		current.review_state = 4;
+		current.update();
+		action.setRedirectURL(current);
+		
+	}
+	]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-11-28 16:50:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f078a8d04fb68b001e6cb4fe0210c775</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Request Advocate Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_action_f078a8d04fb68b001e6cb4fe0210c775</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-11-28 18:23:11</sys_updated_on>
+        <table>x_opt_ecm_quality_review</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

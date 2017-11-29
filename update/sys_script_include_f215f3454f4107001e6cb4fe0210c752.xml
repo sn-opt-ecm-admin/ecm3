@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.EcmSlaDateCalculator</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>EcmSlaDateCalculator</name>
+        <script><![CDATA[var EcmSlaDateCalculator = Class.create();
+EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getDueDate: function() {
+		
+		var businessUnit = this.getParameter('sysparm_business_unit');
+		var submissionSource = this.getParameter('sysparm_submission_source');
+		var receivedDate = this.getParameter('sysparm_received_date_time');
+		
+		var dueDate = '';
+					
+		if (receivedDate === '') {
+			gs.warn('EcmSlaDateCalculator :: Received date was not provided.  Cannot calculate Due Date');
+			return '';
+		}
+		
+		// consumer affairs options
+		if (submissionSource === 'attorney' ||
+			submissionSource === 'bbb' ||
+			submissionSource === 'ethics_and_integrity' ||
+			(submissionSource === 'other' && businessUnit === 'consumer_affairs')) {
+
+			dueDate = this._getCorporateDueDate(receivedDate);
+		}
+		
+
+		// regulatory affairs options
+		else if (submissionSource === 'attorney_general' || 
+				 submissionSource === 'doh' || 
+				 submissionSource === 'dol' || 
+				 submissionSource === 'external_review' ||
+				 submissionSource === 'medical_society' || 
+				 submissionSource ===  'misc_state_agency' ||
+				 submissionSource ===  'ocr_regulatory_office' ||
+				 submissionSource ===  'ombudsman' ||
+				 submissionSource ===  'state_exchange' ||
+				 (submissionSource ===  'other' && businessUnit == 'regulatory_affairs')) {
+
+			var tenCalendarDaysOut = new GlideDateTime();
+			tenCalendarDaysOut.setDisplayValue(receivedDate);
+			tenCalendarDaysOut.addDaysUTC(10);
+			dueDate = tenCalendarDaysOut.getDisplayValue();
+		}
+		
+		return dueDate;
+	},
+	
+	
+	_getCorporateDueDate: function(receivedDate) {
+
+		var slaNumberOfBusinessDays = parseInt(gs.getProperty('x_opt_ecm.manual_entry_sla_business_days_default')) || 10;		
+		var schedule = this._getSchedule();
+		
+		// pick a random day from the schedule and get the hourly duration
+		var oneDay = schedule.duration(new GlideDateTime('2017-09-01 00:00:00'), new GlideDateTime('2017-09-01 23:59:59'));
+		
+		var allDays = new GlideDuration(oneDay.getDurationValue());
+		for (var i = 1; i < slaNumberOfBusinessDays; i++) {
+			allDays = allDays.add(new GlideDuration(oneDay.getDurationValue()));
+		}
+		
+		var baseTime = new GlideDateTime();
+		baseTime.setDisplayValue(receivedDate);
+		
+		var dueDate = schedule.add(baseTime, allDays);
+		return dueDate.getDisplayValue();
+	},
+	
+	_getSchedule: function() {
+		return new EcmSlaDateUtils().getSchedule();
+	},
+	
+    type: 'EcmSlaDateCalculator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-09-05 16:17:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f215f3454f4107001e6cb4fe0210c752</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>EcmSlaDateCalculator</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_f215f3454f4107001e6cb4fe0210c752</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-18 15:14:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

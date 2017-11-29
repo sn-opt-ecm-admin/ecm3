@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message_parameters">
+    <sys_soap_message_parameters action="INSERT_OR_UPDATE">
+        <name>issue.reasonCategory</name>
+        <soap_function display_value="invokeService">8d6190764fd547001e6cb4fe0210c7a4</soap_function>
+        <sys_class_name>sys_soap_message_parameters</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-02 16:36:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10a447fd4fe10f001e6cb4fe0210c7ba</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>issue.reasonCategory</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_soap_message_parameters_10a447fd4fe10f001e6cb4fe0210c7ba</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-10-17 14:40:55</sys_updated_on>
+        <type>string</type>
+        <value>GENERAL</value>
+    </sys_soap_message_parameters>
+</record_update>

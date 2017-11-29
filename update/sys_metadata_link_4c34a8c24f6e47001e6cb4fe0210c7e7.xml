@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>71cd53194f750b401e6cb4fe0210c7fa</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_group_has_role">
+    <sys_group_has_role action="INSERT_OR_UPDATE">
+        <granted_by/>
+        <group display_value="ECM Quality Review" name="ECM Quality Review">e8addf954f750b401e6cb4fe0210c7ba</group>
+        <inherits>true</inherits>
+        <role display_value="x_opt_ecm.quality_review" name="x_opt_ecm.quality_review">32da5f554f750b401e6cb4fe0210c7dd</role>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-13 15:25:06</sys_created_on>
+        <sys_id>71cd53194f750b401e6cb4fe0210c7fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-10-13 15:25:06</sys_updated_on>
+    </sys_group_has_role>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-11-21 16:36:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4c34a8c24f6e47001e6cb4fe0210c7e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 10-13-2017 11:25:06</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_metadata_link_4c34a8c24f6e47001e6cb4fe0210c7e7</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-21 16:36:46</sys_updated_on>
+        <tablename>sys_group_has_role</tablename>
+    </sys_metadata_link>
+</record_update>

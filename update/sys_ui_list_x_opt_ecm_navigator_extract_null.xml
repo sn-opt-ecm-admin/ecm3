@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_opt_ecm_navigator_extract" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>525b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>drug_name</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>d25b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>due_date</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>565b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>intake_comments</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>d65b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member_first_name</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>5a5b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member_id</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>da5b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member_last_name</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>5e5b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>oca_ocr_received_date</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>de5b2bd24fd203001e6cb4fe0210c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>responsible_department</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>525b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>d25b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>submission_source</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>565b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member_mi</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>d65b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>5a5b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>account_id</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>da5b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>carrier_id</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>5e5b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>group_id</element>
+            <list_id display_value="x_opt_ecm_navigator_extract" element="NULL" name="x_opt_ecm_navigator_extract" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">da5b2bd24fd203001e6cb4fe0210c7c6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:29:42</sys_created_on>
+            <sys_id>de5b2bd24fd203001e6cb4fe0210c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:29:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_opt_ecm_navigator_extract</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>mark.didrikson</sys_created_by>
+            <sys_created_on>2017-11-10 15:26:56</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5ba23d24fd203001e6cb4fe0210c76c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_opt_ecm_navigator_extract</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_list_x_opt_ecm_navigator_extract_null</sys_update_name>
+            <sys_updated_by>mark.didrikson</sys_updated_by>
+            <sys_updated_on>2017-11-10 15:26:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

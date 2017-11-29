@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Populate Navigator Extract Data</name>
+        <run_as display_value="Mark Didrikson">a08854d84ffdba001e6cb4fe0210c77f</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2017-11-09 18:00:00</run_start>
+        <run_time>1970-01-01 06:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[// Delete out the export table first
+var nv = new GlideRecord('x_opt_ecm_navigator_extract');
+nv.query();
+while (nv.next()){
+	nv.deleteRecord();
+}
+
+// Create the data to extract
+var gr = new GlideRecord('x_opt_ecm_case');
+//gr.addEncodedQuery("stateIN2,6");
+gr.addEncodedQuery("stateIN2,6^contact_account_idISNOTEMPTY^contact_carrier_idISNOTEMPTY^contact_group_numberISNOTEMPTY^contact_numberISNOTEMPTY^NQmember_carrier_idISNOTEMPTY^member_account_idISNOTEMPTY^member_group_numberISNOTEMPTY^member_numberISNOTEMPTY");
+gr.query();
+
+while (gr.next()){
+	
+	var rec = new GlideRecord('x_opt_ecm_navigator_extract');
+	rec.initialize();
+	rec.number = gr.number;
+	rec.due_date  = gr.due_date.getDisplayValue();
+	if (gr.contact_is_member){
+		rec.member_first_name = gr.contact_first_name.getDisplayValue();
+		rec.member_last_name = gr.contact_last_name.getDisplayValue();
+		rec.member_mi = gr.contact_middle_initial.getDisplayValue();
+		rec.carrier_id = gr.contact_carrier_id.getDisplayValue();
+		rec.account_id = gr.contact_account_id.getDisplayValue();
+		rec.group_id = gr.contact_group_number.getDisplayValue();
+		rec.member_id = gr.contact_number.getDisplayValue();
+} else {
+		rec.member_first_name = gr.member_first_name.getDisplayValue();
+		rec.member_last_name = gr.member_last_name.getDisplayValue();
+		rec.member_mi = gr.member_mi.getDisplayValue();
+		rec.carrier_id = gr.member_carrier_id.getDisplayValue();
+		rec.account_id = gr.member_account_id.getDisplayValue();
+		rec.group_id = gr.member_group_number.getDisplayValue();
+		rec.member_id = gr.member_number.getDisplayValue();
+	} 
+	rec.oca_ocr_received_date = gr.oca_ocr_received_date_time.getDisplayValue();
+	rec.resolved_at = gr.resolution_date_resolved.getDisplayValue();
+	rec.responsible_department = gr.responsible_department.getDisplayValue();
+	rec.state = gr.state.getDisplayValue();
+	rec.submission_source = gr.submission_source.getDisplayValue();
+	rec.drug_name = gr.resolution_drug_name.getDisplayValue();
+	
+	// Strip out HTML and other characters from Inkake Comments -- 11/13/2017
+		var intake_comments_no_html = gr.intake_comments.getJournalEntry(-1);
+		intake_comments_no_html = intake_comments_no_html.replace(/<(?:.|\n)*?>/gm, '');
+		intake_comments_no_html = intake_comments_no_html.replace(/\n/g,'~');
+		intake_comments_no_html = intake_comments_no_html.replace(/\r/g,'~');
+		intake_comments_no_html = intake_comments_no_html.replace(new RegExp('&nbsp;', 'g'), ' ');
+		intake_comments_no_html = intake_comments_no_html.replace(new RegExp(/\[code\]/g), '');
+		intake_comments_no_html = intake_comments_no_html.replace(new RegExp(/\[\/code\]/g), '');
+		rec.intake_comments = intake_comments_no_html.substr(0, 3999);
+	
+	//rec.intake_comments = str.substr(0, 3999);
+	
+	rec.insert();
+	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>mark.didrikson</sys_created_by>
+        <sys_created_on>2017-11-03 00:06:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e7110c44f9acf801e6cb4fe0210c747</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Populate Navigator Extract Data</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sysauto_script_0e7110c44f9acf801e6cb4fe0210c747</sys_update_name>
+        <sys_updated_by>mark.didrikson</sys_updated_by>
+        <sys_updated_on>2017-11-13 16:43:31</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+&#13;
+    "lastName": "${lastName}",&#13;
+    "firstName": "${firstName}",&#13;
+    "dateOfBirth": "${dateOfBirth}",&#13;
+    "effectiveDate": "${effectiveDate}",&#13;
+    "city": "${city}",&#13;
+    "state": "${state}",&#13;
+    "memberId": "${memberId}",&#13;
+    "searchInputMetaData": {&#13;
+        "consumerAppId": "${consumerAppId}",&#13;
+        "consumerAppType": "${consumerAppType}",&#13;
+        "consumerType": "${consumerType}",&#13;
+        "externalCorrelationId": "${externalCorrelationId}",&#13;
+        "rxClaimSystemParms": {&#13;
+            "PBMUserID": "${PBMUserID}"&#13;
+        },&#13;
+        "pagination": {&#13;
+            "maxResults": "50",&#13;
+            "maxResultsIndicator": true&#13;
+        }&#13;
+    }&#13;
+}&#13;
+</content>
+        <function_name>MemberSearch</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>OptumRxMemberSearch [ MemberSearch ]</qualified_name>
+        <rest_endpoint>https://api5-stg-ctc.optum.com:8443/api/optumrx/members/v1/qa</rest_endpoint>
+        <rest_message display_value="OptumRxMemberSearch">925e8dee4f6d4f001e6cb4fe0210c72e</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-04 16:01:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c3bf0dee4f6d4f001e6cb4fe0210c7e7</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>MemberSearch</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_rest_message_fn_c3bf0dee4f6d4f001e6cb4fe0210c7e7</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-11-03 18:53:47</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

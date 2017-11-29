@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Integration Log" max_length="40" name="x_opt_ecm_integration_log" sizeclass="5640" type="collection">
+        <element label="Error Code" max_length="40" name="error_code" type="string"/>
+        <element label="Error Message" max_length="200" name="error_message" type="string"/>
+        <element label="Method" max_length="60" name="method" type="string"/>
+        <element label="Request" max_length="4000" name="request" type="string"/>
+        <element label="Response" max_length="4000" name="response" type="string"/>
+        <element label="Service Status" max_length="40" name="service_status" type="string"/>
+        <element label="HTTP Status" max_length="40" name="status" type="string"/>
+        <element label="Task" max_length="32" name="task" reference="task" type="reference"/>
+        <element label="URL" max_length="1024" name="url" type="url"/>
+        <index name="index">
+            <element name="task"/>
+        </index>
+    </element>
+</database>

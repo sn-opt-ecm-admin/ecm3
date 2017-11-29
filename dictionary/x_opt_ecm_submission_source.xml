@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Submission Source" max_length="40" name="x_opt_ecm_submission_source" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Value" max_length="40" name="value" type="string"/>
+    </element>
+</database>

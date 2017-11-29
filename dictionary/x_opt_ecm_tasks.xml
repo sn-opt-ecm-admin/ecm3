@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true" audit="true" extends="sn_customerservice_task" label="ECM Tasks" max_length="40" name="x_opt_ecm_tasks" sizeclass="98" type="collection">
+        <element label="Awaiting Info From" max_length="32" name="awaiting_info_from" reference="sys_user" type="reference"/>
+        <element hint="Person is not found in Awaiting Info From search.  Check this box and use email client with Task Request Information template to send to people request to people outside ServiceNow." label="Awaiting Info From Outside" max_length="40" name="awaiting_info_from_outside" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Task Reason" max_length="40" name="task_reason" type="string">
+            <choice>
+                <element label="OBC" sequence="0" value="OBC"/>
+                <element label="Research" sequence="1" value="Research"/>
+                <element label="Awaiting Project Completion" sequence="2" value="Awaiting Project Completion"/>
+                <element label="Awaiting Quality Review" sequence="3" value="Awaiting Quality Review"/>
+            </choice>
+        </element>
+    </element>
+</database>

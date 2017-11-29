@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>dbc8d0af4f2cc300699aacb14210c774</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_group">
+    <sys_user_group action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <average_daily_fte/>
+        <cost_center/>
+        <default_assignee/>
+        <description>Group for OCA Advocates</description>
+        <email/>
+        <exclude_manager>false</exclude_manager>
+        <hourly_rate>0</hourly_rate>
+        <include_members>false</include_members>
+        <manager/>
+        <name>OCA Advocates</name>
+        <parent display_value="OCA" name="OCA">aa4ff5764fe58f001e6cb4fe0210c7a5</parent>
+        <points>0</points>
+        <roles/>
+        <source/>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-08-18 21:32:20</sys_created_on>
+        <sys_id>dbc8d0af4f2cc300699aacb14210c774</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-05 14:09:23</sys_updated_on>
+        <type/>
+        <u_allow_group_member_assignment>false</u_allow_group_member_assignment>
+        <u_allow_submitter_escalation>false</u_allow_submitter_escalation>
+    </sys_user_group>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-05 14:10:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9b00c23a4fe58f001e6cb4fe0210c79a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OCA Advocates</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_metadata_link_9b00c23a4fe58f001e6cb4fe0210c79a</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-05 14:10:47</sys_updated_on>
+        <tablename>sys_user_group</tablename>
+    </sys_metadata_link>
+</record_update>

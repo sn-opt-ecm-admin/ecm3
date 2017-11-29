@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Quality Review" max_length="40" name="x_opt_ecm_quality_review" type="collection">
+        <element label="Advocate Comments" max_length="4000" name="advocate_comments" type="journal_input"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element attributes="tree_picker=true" label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="typeISEMPTY^NQtypeLIKE1cb8ab9bff500200158bffffffffff62^EQ" reference_qual_condition="typeISEMPTY^NQtypeLIKE1cb8ab9bff500200158bffffffffff62^EQ" type="reference"/>
+        <element label="Case Number" max_length="32" name="case_number" reference="x_opt_ecm_case" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compliance Met" max_length="40" name="compliance_met" read_only="true" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Correspondence" max_length="40" name="correspondence" type="string">
+            <choice>
+                <element label="Proficient" sequence="0" value="Proficient"/>
+                <element label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element label="Needs Improvement (external)" sequence="2" value="Needs Improvement (external)"/>
+                <element label="Needs Improvement (internal)" sequence="3" value="Needs Improvement (internal)"/>
+                <element label="Waived by Manager" sequence="4" value="Waived by Manager"/>
+                <element label="NA" sequence="5" value="NA"/>
+            </choice>
+        </element>
+        <element label="Correspondence Comments" max_length="4000" name="correspondence_comments" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Correspondence Root Cause" max_length="1024" name="correspondence_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Correspondence^EQ" reference_qual_condition="category_name=Correspondence^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Database" max_length="40" name="database" type="string">
+            <choice>
+                <element label="Proficient" sequence="0" value="Proficient"/>
+                <element label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
+                <element label="Waived by Manager" sequence="3" value="Waived by Manager"/>
+                <element label="NA" sequence="4" value="NA"/>
+            </choice>
+        </element>
+        <element label="Database Comments" max_length="4000" name="database_comments" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Database Root Cause" max_length="1024" name="database_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Database^EQ" reference_qual_condition="category_name=Database^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Determination" max_length="40" name="determination" type="string">
+            <choice>
+                <element label="Proficient" sequence="0" value="Proficient"/>
+                <element label="Needs Improvement (external)" sequence="1" value="Needs Improvement (external)"/>
+                <element label="Needs Improvement (internal" sequence="2" value="Needs Improvement (internal"/>
+                <element label="Waived by manager" sequence="3" value="Waived by manager"/>
+                <element label="NA" sequence="4" value="NA"/>
+            </choice>
+        </element>
+        <element label="Determination Comments" max_length="4000" name="determination_comments" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Determination Root Cause" max_length="1024" name="determination_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Determination^EQ" reference_qual_condition="category_name=Determination^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Documentation" max_length="40" name="documentation" type="string">
+            <choice>
+                <element label="Proficient" sequence="0" value="Proficient"/>
+                <element label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
+                <element label="Waived by Manager" sequence="3" value="Waived by Manager"/>
+                <element label="NA" sequence="4" value="NA"/>
+            </choice>
+        </element>
+        <element label="Documentation Comments" max_length="4000" name="documentation_comments" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Documentation Root Cause" max_length="1024" name="documentation_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Documentation^EQ" reference_qual_condition="category_name=Documentation^EQ" type="glide_list"/>
+        <element label="Initial QR Due Date" max_length="40" name="initial_qp_due_date" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Opened" max_length="40" name="opened_at" read_only="true" type="glide_date_time"/>
+        <element label="QR Comments" max_length="4000" name="qr_comments" type="journal_input"/>
+        <element label="Review Completed By" max_length="32" name="review_completed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Review Completed Date" max_length="40" name="review_completed_date" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="New" label="Review State" max_length="40" name="review_state" type="string">
+            <choice>
+                <element label="New" sequence="0" value="1"/>
+                <element label="Under Review" sequence="1" value="2"/>
+                <element label="Awaiting Info" sequence="2" value="3"/>
+                <element label="Pending Advocate Action" sequence="2" value="4"/>
+                <element label="Reply Received" sequence="3" value="5"/>
+                <element label="Complete" sequence="4" value="6"/>
+            </choice>
+        </element>
+        <element label="Revised QR Due Date" max_length="40" name="revised_qa_due_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="100" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Timely Submission" max_length="40" name="timely_submission" type="string">
+            <choice>
+                <element label="Proficient" sequence="0" value="Proficient"/>
+                <element label="Needs Improvement (internal)" sequence="1" value="Needs Improvement (internal)"/>
+                <element label="Waived by Manager" sequence="2" value="Waived by Manager"/>
+                <element label="NA" sequence="3" value="NA"/>
+            </choice>
+        </element>
+        <element label="Timely Submission Comments" max_length="4000" name="timely_submission_comments" type="journal_input"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Timely Submission Root Causes" max_length="1024" name="timely_submission_root_causes" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Timely Submission^EQ" reference_qual_condition="category_name=Timely Submission^EQ" type="glide_list"/>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index2">
+            <element name="case_number"/>
+        </index>
+        <index name="index3">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index4">
+            <element name="review_completed_by"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>cc7c77264fe18f001e6cb4fe0210c78e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="dms_document">
+    <dms_document action="INSERT_OR_UPDATE">
+        <audience display_value="Internal">15d3f1cd0a0a2c3e1884dde9df1cd206</audience>
+        <auto_increment_revision>true</auto_increment_revision>
+        <checked_out_by/>
+        <classification display_value="Public">15d694fa0a0a2c3e308e7e8941988625</classification>
+        <department/>
+        <description/>
+        <group_reviewer/>
+        <name>Consumer Audit File Template</name>
+        <name_format display_value="Default">9a000c500a0a2c3e45ca05b3d762809b</name_format>
+        <number>DOC0010040</number>
+        <owner display_value="OCA Advocate1">d04998af4f2cc300699aacb14210c7bb</owner>
+        <owning_group display_value="OCA" name="OCA">aa4ff5764fe58f001e6cb4fe0210c7a5</owning_group>
+        <requested_by display_value="OCA Advocate1">d04998af4f2cc300699aacb14210c7bb</requested_by>
+        <reviewers/>
+        <revision_format>0.1</revision_format>
+        <state>draft</state>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-05 04:36:12</sys_created_on>
+        <sys_id>cc7c77264fe18f001e6cb4fe0210c78e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-05 14:17:43</sys_updated_on>
+        <type display_value="Audit">bfedaf7f4f110b001e6cb4fe0210c758</type>
+        <workflow display_value="Document Management Default">7771652c0a0a2c354dbb227f9d468519</workflow>
+    </dms_document>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-09 20:51:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0b12c41c4ff543401e6cb4fe0210c7cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Audit File Template</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_metadata_link_0b12c41c4ff543401e6cb4fe0210c7cb</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-09 20:51:25</sys_updated_on>
+        <tablename>dms_document</tablename>
+    </sys_metadata_link>
+</record_update>

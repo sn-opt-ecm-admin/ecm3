@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[/** V E R A C I T Y ~ www.meetveracity.com ~ **
+ * Author: Todd Fudala ~ tfudala@meetveracity.com
+ * Description: Functions to manage OptumRx integrations for the ECM application
+ */
+
+
+setFormDefaults();
+validateRequiredFields();
+
+function validateRequiredFields() {
+    // Using the OOB classes "is-required", "is-prefilled" & "required-marker" to indicate required fields
+    // "is-required" = red asterisk, "is-prefilled" = gray asterisk, "required-marker" places asterisk next to label
+    // The HTML template indicates a required field with the "is-required" class on the div wrapper
+    // and the Label must contain the "required-marker" class
+    var have_min_fields = false;
+    var req_fields = $j('#firstName, #lastName, #dateOfBirth, #memberId, #effectiveDate');
+    var min_labels = $j('#status\\.firstName, #status\\.lastName, #status\\.dateOfBirth');
+    var member_id_label = $j('#status\\.memberId');
+    var min_fields = $j('#firstName, #lastName, #dateOfBirth');
+
+    // Make sure to use our form id selector so we do not interfere with the base form
+    $j("#orx_search_form .form-control").on("keyup", function() {
+        if ($j(this).val().trim() != '') {
+            // Check the value in the control, show red or gray asterisk (no value / value)
+            // add/remove the indicator class on the closest div with the class
+            $j(this)
+                .closest('.is-required, .is-prefilled')
+                .removeClass('is-required')
+                .addClass('is-prefilled'); // We have a value
+            console.log('Value for: ' + $j(this).attr('id'));
+
+
+        } else {
+            $j(this)
+                .closest('.is-required, .is-prefilled')
+                .removeClass('is-prefilled')
+                .addClass('is-required'); // We need a value
+            console.log('No value for: ' + $j(this).attr('id'));
+            $j('#search').addClass('disabled');
+        }
+
+        if ($j('#memberId').val().trim() != '' &&
+            $j('#effectiveDate').val().trim() != '') {
+            // we do not need fname, lname, dob
+            min_labels.each(function() {
+                $j(this).removeClass('required-marker');
+            });
+
+            $j('#search').removeClass('disabled');
+
+        } else {
+            // we need fname, lname, dob
+            min_labels.each(function() {
+                $j(this).addClass('required-marker')
+            });
+        }
+
+        if ($j('#firstName').val().trim() != '' &&
+            $j('#lastName').val().trim() != '' &&
+            $j('#dateOfBirth').val().trim() != '' &&
+            $j('#effectiveDate').val().trim() != '') {
+            // if we have all these we do not need member id
+            // remove the marker from member id
+            member_id_label.removeClass('required-marker');
+            $j('#search').removeClass('disabled');
+        } else {
+            // Add the marker to member id
+            member_id_label.addClass('required-marker');
+        }
+
+
+
+
+
+
+
+    });
+
+
+}
+
+function setFormDefaults() {
+    // Default effective date to today in the OptumRx ISO format
+    var d = moment().format("YYYYMMDD");
+    $j("#effectiveDate").val(d);
+    // Init the Member Search Table
+    var dt = initMemberTable();
+    // Set the default message
+    displayMessage('Please enter search values...');
+}
+
+function displayMessage(message) {
+    $j("#display_message").text(message);
+    console.log(message);
+}
+
+function loading(is_loading) {
+    var loader = document.getElementById("loading");
+    var loading_state = (is_loading) ? "text-center" : "text-center hidden";
+    loader.className = loading_state;
+}
+
+function enableCopy(boolean_value) {
+    if (boolean_value) {
+        $j('#copy').removeClass('disabled');
+    } else {
+        $j('#copy').addClass('disabled');
+    }
+}
+
+function onClear() {
+    clearActiveTable();
+    clearFormFields();
+    setFormDefaults();
+
+}
+
+function onCancel() {
+    loading(false);
+}
+
+function clearFormFields() {
+    var form_fields = $j('#orx_search_form input.form-control');
+    console.log(form_fields.length + " fields found on orx_search_form.");
+    form_fields.each(function() {
+        $j(this).val('');
+
+    });
+
+}
+
+function clearActiveTable() {
+    try {
+        var table = $j('.table-list:visible table');
+        console.log(table.attr('id'));
+        var dt = $j('#' + table.attr('id')).DataTable();
+
+        if (dt !== null) {
+            if (dt.data().length > 0) {
+                dt.clear().draw();
+                console.log('Clearing the table');
+            } else {
+                console.log('There are no rows to clear');
+            }
+        }
+
+
+    } catch (e) {
+        console.log(e);
+    }
+
+}
+
+function onCopy() {
+    var table = $j('#claim_results').DataTable();
+    var rows = table.rows('.selected');
+    //var row = rows.data()[0];
+    var row_data = rows.data();
+    //console.log(row);
+    displayMessage(rows.count() + " record(s) selected to copy.");
+    loading(true);
+    postClaimsFromDataTableRows(row_data, g_form.getValue('number'), g_form.getUniqueValue());
+
+}
+
+function onMemberSearch() {
+    $j('#claim_results_container').hide(); // Hide the claims results container
+    $j('#search_results_container').show(); // Show the member results container
+
+
+    displayMessage("Searching for member...");
+    // Member Search Inputs based on REST Message
+    var inputs = {
+        "firstName": "",
+        "lastName": "",
+        "dateOfBirth": "",
+        "memberId": "",
+        "effectiveDate": "",
+        "city": "",
+        "state": ""
+    };
+
+
+    for (var i in inputs) {
+        inputs[i] = document.getElementById(i).value;
+        console.log(inputs[i]);
+
+    }
+
+    loading(true);
+    memberSearch(inputs, g_form.getValue('number'), g_form.getUniqueValue());
+
+
+}
+
+function onClaimSearch(member_data) {
+
+    $j('#search_results_container').hide(); // Hide the member results container
+    $j('#claim_results_container').show(); // Show the claims results container
+    displayMessage("Claims for " + member_data.firstName + ' ' + member_data.lastName + '...');
+    // Claim Search Inputs based on REST Message
+    var inputs = {
+        "carrierId": member_data.carrierId,
+        "accountId": member_data.accountId,
+        "groupId": member_data.groupId,
+        "memberId": member_data.memberId,
+        "memberKey": member_data.memberKey,
+        "rXClaimInstanceId": member_data.instanceId, /// "SXCD1-QA"
+        "fillDateFrom": moment().subtract(180, "days").format("YYYYMMDD"), // 180 days back
+        "fillDateThru": moment().format("YYYYMMDD") // Today
+    }
+
+    loading(true);
+    claimSearch(inputs, g_form.getValue('number'), g_form.getUniqueValue());
+
+}
+
+function memberSearch(input_values, case_number, sys_id) {
+
+    var ga = new GlideAjax('OptumRxAjax');
+    ga.addParam('sysparm_name', 'memberSearch');
+    ga.addParam('sysparm_first_name', input_values.firstName);
+    ga.addParam('sysparm_last_name', input_values.lastName);
+    ga.addParam('sysparm_dob', input_values.dateOfBirth);
+    ga.addParam('sysparm_member_id', input_values.memberId);
+    ga.addParam('sysparm_city', input_values.city);
+    ga.addParam('sysparm_state', input_values.state);
+    ga.addParam('sysparm_eff_date', input_values.effectiveDate);
+    ga.addParam('sysparm_case_number', case_number);
+    ga.addParam('sysparm_sys_id', sys_id);
+    ga.getXML(parseMemberSearch);
+
+
+}
+
+function claimSearch(input_values, case_number, sys_id) {
+
+    var ga = new GlideAjax('OptumRxAjax');
+    ga.addParam('sysparm_name', 'claimSearch');
+    ga.addParam('sysparm_carrier_id', input_values.carrierId);
+    ga.addParam('sysparm_account_id', input_values.accountId);
+    ga.addParam('sysparm_group_id', input_values.groupId);
+    ga.addParam('sysparm_member_id', input_values.memberId);
+    ga.addParam('sysparm_member_key', input_values.memberKey);
+    ga.addParam('sysparm_claim_instance_id', input_values.rXClaimInstanceId);
+    ga.addParam('sysparm_fill_date_from', input_values.fillDateFrom);
+    ga.addParam('sysparm_fill_date_to', input_values.fillDateThru);
+    ga.addParam('sysparm_case_number', case_number);
+    ga.addParam('sysparm_sys_id', sys_id);
+    ga.getXML(parseClaimSearch);
+
+
+}
+
+function parseMemberSearch(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+    //alert(answer);
+    if (answer !== null && answer !== undefined) {
+        var data_obj = JSON.parse(answer);
+        var resp_code = data_obj.searchOutputMetaData.respCode;
+        var resp_message = data_obj.searchOutputMetaData.respMessage[0];
+
+        if (resp_code === "200") {
+            bindMemberTable(data_obj);
+        } else {
+            var dt = initMemberTable();
+            displayMessage(resp_message);
+            // Allow form to be cleared when no results
+            $j('#clear').removeClass('disabled');
+
+        }
+
+
+
+
+    } else {
+        displayMessage("The Ajax call failed, check the Integration Log for details.");
+
+    }
+
+    loading(false);
+
+}
+
+function parseClaimSearch(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+    //alert(answer);
+    if (answer !== null && answer !== undefined) {
+        var data_obj = JSON.parse(answer);
+        var resp_code = data_obj.searchOutputMetaData.respCode;
+        var resp_message = data_obj.searchOutputMetaData.respMessage[0];
+
+        if (resp_code === "200") {
+            bindClaimTable(data_obj);
+        } else {
+            var dt = initClaimTable();
+            displayMessage(resp_message);
+        }
+
+
+    } else {
+        displayMessage("The Ajax call failed, check the Integration Log for details.");
+
+    }
+
+    loading(false);
+
+}
+
+function parseInsertClaims(response) {
+
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+    console.log(answer);
+    loading(false);
+    enableCopy(false);
+
+}
+
+function initMemberTable() {
+    var table = $j("#search_results").DataTable({
+        "select": true,
+        "select": {
+            'style': 'single'
+        },
+        "retrieve": true,
+        "searching": false,
+        "paging": true,
+        "pageLength": 5,
+        "lengthMenu": [5, 10, 25, 50],
+        "pagingType": "first_last_numbers",
+        "dom": '<"top"i>rt<"bottom"flp><"clear">',
+        "columns": [{
+
+                title: "First Name",
+                data: "firstName"
+            },
+            {
+                title: "Last Name",
+                data: "lastName"
+            },
+            {
+                title: "DOB",
+                data: "dateOfBirth"
+            },
+            {
+                title: "Carrier ID",
+                data: "carrierId"
+            },
+            {
+                title: "Account ID",
+                data: "accountId"
+            },
+            {
+                title: "Group ID",
+                data: "groupId"
+            },
+            {
+                title: "Member ID",
+                data: "memberId"
+            },
+            {
+                title: "Phone",
+                data: "phone"
+            },
+            {
+                title: "Instance",
+                data: "instanceId"
+            }
+        ]
+
+    });
+
+    table.draw();
+    return table;
+}
+
+function bindMemberTable(data_object) {
+    var bind_data = data_object.response.memberSearchItems;
+    var table = initMemberTable();
+
+    table.on('select', function(e, dt, type, index) {
+        if (type === 'row') {
+            var member = table.row(index).data();
+            onClaimSearch(member);
+
+        }
+    });
+
+    table.clear().draw().rows.add(bind_data).draw();
+
+    // Allow table to be cleared
+    $j('#clear').removeClass('disabled');
+
+    displayMessage("Member results:");
+
+
+}
+
+function initClaimTable() {
+
+    var table = $j("#claim_results").DataTable({
+        "select": true,
+        "select": {
+            'style': 'multi'
+        },
+        "retrieve": true,
+        "searching": false,
+        "paging": true,
+        "pageLength": 5,
+        "lengthMenu": [5, 10, 25, 50],
+        "pagingType": "first_last_numbers",
+        "dom": '<"top"i>rt<"bottom"flp><"clear">',
+        "columns": [
+
+            {
+                title: "Member ID",
+                data: "memberId"
+            },
+            {
+                title: "Fill Date",
+                data: "fillDate"
+            },
+            {
+                title: "Product ID",
+                data: "productId"
+            },
+            {
+                title: "GPI",
+                data: "gpi"
+            },
+            {
+                title: "RX Number",
+                data: "rxNumber"
+            },
+            {
+                title: "Product",
+                data: "productNameAbbreviation"
+            },
+            {
+                title: "Supply",
+                data: "daysSupply"
+            },
+            {
+                title: "Status",
+                data: "claimStatus"
+            },
+            {
+                title: "Patient Amt.",
+                data: "patientPayAmount"
+            }
+        ]
+
+    });
+
+    table.draw();
+    return table;
+
+}
+
+function bindClaimTable(data_object) {
+    var bind_data = data_object.claimSearchResponse.claimSearchV2ServiceItem;
+
+    var table = initClaimTable();
+
+    table.on('select', function(e, dt, type, index) {
+        if (type === 'row') {
+            //var claim = table.row(index).data();
+            //displayMessage(claim.claimNumber + ' ' + claim.fillDate);
+            enableCopy(true);
+        }
+
+    });
+
+    table.clear().draw().rows.add(bind_data).draw();
+
+}
+
+function postClaimsFromDataTableRows(dt_rows, case_number, sys_id) {
+
+    // Convert datatables object to plain array
+    var claims_array = [];
+    for (var i = 0; i < dt_rows.length; i++) {
+        claims_array.push(dt_rows[i]);
+    }
+
+    var claims = JSON.stringify(claims_array);
+    console.log("postClaimsFromDataTableRows: " + claims);
+
+    var ga = new GlideAjax('OptumRxAjax');
+    ga.addParam('sysparm_name', 'insertClaims');
+    ga.addParam('sysparm_claims', claims);
+    ga.addParam('sysparm_case_number', case_number);
+    ga.addParam('sysparm_sys_id', sys_id);
+    ga.getXML(parseInsertClaims);
+
+    displayMessage(claims_array.length + " claim(s) copied for case # " + case_number);
+
+
+}
+]]></client_script>
+        <description>OptumRx Search</description>
+        <direct>false</direct>
+        <endpoint>x_opt_ecm_orx_search.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+    <script src="x_opt_ecm.DataTables.1.10.16.jsdbx"></script>
+    <script src="x_opt_ecm.moment.js.jsdbx"></script>
+    <link rel="stylesheet" href="styles/heisenberg/heisenberg_all.css"></link>
+    <link rel="stylesheet" href="styles/heisenberg/source_sans_pro.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles/dev-studio.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles/cn-icons/cn-icons.css"></link>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/sl-1.2.3/datatables.min.css"></link>
+
+    <div class="container" id="orx_search_form">
+        <div class="row">
+            <form name="search" class="form-horizontal">
+                <fieldset>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group is-required">
+                                    <span id="status.firstName" class="col-md-5 control-label required-marker">First Name</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="firstName"></input>
+                                    </div>
+                                </div>
+
+                                <div class="form-group is-required">
+                                    <span id="status.lastName" class="col-md-5 control-label required-marker">Last Name</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="lastName"></input>
+                                    </div>
+                                </div>
+
+                                <div class="form-group is-required">
+                                    <span id="status.dateOfBirth" class="col-md-5 control-label required-marker">Member DOB</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="dateOfBirth" placeholder="YYYYMMDD"></input>
+                                    </div>
+                                </div>
+
+                                <div class="form-group is-prefilled">
+                                    <span id="status.effectiveDate" class="col-md-5 control-label required-marker">Effective Date</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="effectiveDate" placeholder="YYYYMMDD"></input>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+
+
+                                <div class="form-group is-required">
+                                    <span id="status.memberId" class="col-md-5 control-label required-marker">Member ID</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="memberId" placeholder="9 or 12 characters"></input>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <span id="status.city" class="col-md-5 control-label">City</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="city" placeholder=""></input>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <span id="status.state" class="col-md-5 control-label">State</span>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="state" placeholder="2 characters"></input>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <footer class="modal-footer">
+        <a class="btn btn-default" onclick="onCancel()">Cancel</a>
+        <button id="search" type="submit" class="btn btn-primary disabled" onclick="onMemberSearch()">Search</button>
+        <button id="clear" type="submit" class="btn btn-primary disabled" onclick="onClear()">Clear</button>
+        <button id="copy" type="submit" class="btn btn-success disabled" onclick="onCopy()">Copy</button>
+    </footer>
+
+    <hr></hr>
+    <div>
+        <h4 id="display_message"></h4>
+    </div>
+
+    <div id="loading" class="text-center hidden">
+        <h4>Loading...</h4>
+        <div class="loading-indicator icon-loading"></div>
+    </div>
+
+    <div id="search_results_container" class="table-list">
+        <div class="table-container">
+            <table id="search_results" class="table hover" style="cursor:pointer">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="claim_results_container" class="table-list">
+        <div class="table-container">
+            <table id="claim_results" class="table hover" style="cursor:pointer">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+</j:jelly>
+]]></html>
+        <name>orx_search</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-04 17:39:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5aa4adaa4fad4f001e6cb4fe0210c7bc</sys_id>
+        <sys_mod_count>857</sys_mod_count>
+        <sys_name>orx_search</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_page_5aa4adaa4fad4f001e6cb4fe0210c7bc</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-11-28 18:14:44</sys_updated_on>
+    </sys_ui_page>
+</record_update>

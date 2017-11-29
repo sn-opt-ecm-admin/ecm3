@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_certificate" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead49c0a8006e460091242836740a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>format</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead5ec0a8006e1a00dd565db7f621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead5fc0a8006e2b915c408cbea3d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead61c0a8006e2addbc17d098008c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>valid_from</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead62c0a8006e0528b37634af8ce7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>expires</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead63c0a8006e455354c6ee16cbb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_certificate" element="NULL" name="sys_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f01ead40c0a8006e5668c2c69a02544b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-09-08 06:53:16</sys_created_on>
+            <sys_id>f01ead65c0a8006e4e83de2b20e44f75</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-09-08 06:53:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_certificate</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-09-14 17:36:35</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5dc56a044f9d8b00699aacb14210c7e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-09-14 17:36:35</sys_updated_on>
+            <sys_user display_value="Todd Fudala">d70716f24f33fa40699aacb14210c760</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

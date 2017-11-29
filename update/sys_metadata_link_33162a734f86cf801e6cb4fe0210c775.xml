@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4a9362ff4f46cf801e6cb4fe0210c789</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_group_has_role">
+    <sys_group_has_role action="INSERT_OR_UPDATE">
+        <granted_by/>
+        <group display_value="UHG EE" name="UHG EE">07ab96bb4f46cf801e6cb4fe0210c77c</group>
+        <inherits>true</inherits>
+        <role display_value="x_opt_ecm.advocate" name="x_opt_ecm.advocate">7d82642c4fe04b001e6cb4fe0210c784</role>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-11-02 15:51:23</sys_created_on>
+        <sys_id>4a9362ff4f46cf801e6cb4fe0210c789</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-02 15:51:23</sys_updated_on>
+    </sys_group_has_role>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-11-02 16:02:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>33162a734f86cf801e6cb4fe0210c775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 11-02-2017 11:51:23</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_metadata_link_33162a734f86cf801e6cb4fe0210c775</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-02 16:02:25</sys_updated_on>
+        <tablename>sys_group_has_role</tablename>
+    </sys_metadata_link>
+</record_update>

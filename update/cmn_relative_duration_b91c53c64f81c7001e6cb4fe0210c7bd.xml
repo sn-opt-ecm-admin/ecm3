@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="cmn_relative_duration">
+    <cmn_relative_duration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>ECM Critical Priority Due Date</name>
+        <script><![CDATA[// NOTE : This script is tied pretty closely to the ECM Business Schedule being M-F 7:30am - 5pm without holidays
+
+var dateTimeParts = calculator.startDateTime.getDisplayValue().split(' ');
+var businessDayStart = '07:30:00';
+
+if (!calculator.schedule) {
+	calculator.calcRelativeDueDate(calculator.startDateTime, 1, "17:00:00");
+}
+
+
+// if start time is in schedule
+if (calculator.schedule.isInSchedule(calculator.startDateTime)) {
+	
+	var tomorrowAtSameTime = new GlideDateTime(calculator.startDateTime);
+	tomorrowAtSameTime.addDaysUTC(1);
+	
+	// if expected due date is in schedule.
+	if (calculator.schedule.isInSchedule(tomorrowAtSameTime)) {
+		calculator.endDateTime = tomorrowAtSameTime;
+		calculator.calcScheduleDuration();
+	
+	// otherwise, skip to next business day and use same time
+	} else {
+		calculator.calcRelativeDueDate(calculator.startDateTime, 1, dateTimeParts[1]);
+	}	
+}
+
+// ticket came in off hours or on weekend/holiday
+else {
+
+	var timeParts = dateTimeParts[1].split(':');
+	var hour = parseInt(timeParts[0]);
+	var minutes = parseInt(timeParts[1]);
+	
+	// get a mid-day to see if today is a business day
+	var tempDate = new GlideDateTime(calculator.startDateTime);
+	tempDate.setValue(dateTimeParts[0] + ' 15:00:00');
+	
+	// if not in a business day set to beginning of business day after next.
+	if (!calculator.schedule.isInSchedule(tempDate)) {
+		calculator.calcRelativeDueDate(calculator.startDateTime, 1, businessDayStart);
+	}
+	
+	// if we're in a business day, but before hours, also set to beginning of business day after next.
+	else if (hour < 7 || (hour == 7 && minutes < 30)) {
+		calculator.calcRelativeDueDate(calculator.startDateTime, 1, businessDayStart);
+	}
+	
+	// if we're in a business day, but after hours, set to beginning of two business days out
+	else if (hour > 17 || (hour == 17 && minutes > 30)) {
+		calculator.calcRelativeDueDate(calculator.startDateTime, 2, businessDayStart);
+	}
+}]]></script>
+        <sys_class_name>cmn_relative_duration</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-09-08 16:26:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b91c53c64f81c7001e6cb4fe0210c7bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ECM Critical Priority Due Date</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>cmn_relative_duration_b91c53c64f81c7001e6cb4fe0210c7bd</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-09-12 16:39:37</sys_updated_on>
+    </cmn_relative_duration>
+</record_update>

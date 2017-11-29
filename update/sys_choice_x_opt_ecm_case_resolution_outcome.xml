@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="resolution_outcome" table="x_opt_ecm_case" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Upheld</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>0</sequence>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b82d315a4f1907001e6cb4fe0210c75c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-21 14:25:24</sys_updated_on>
+            <value>Upheld</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overturned - New Information</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>1</sequence>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b02d315a4f1907001e6cb4fe0210c75f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-21 14:25:24</sys_updated_on>
+            <value>Overturned - New Information</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overturned - Error</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>2</sequence>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b82db55a4f1907001e6cb4fe0210c767</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-21 14:25:24</sys_updated_on>
+            <value>Overturned - Error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_outcome</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Overturned - Partially</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>3</sequence>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc2db55a4f1907001e6cb4fe0210c769</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-17 15:54:16</sys_updated_on>
+            <value>Overturned - Partially</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_outcome</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overturned - Exception</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>4</sequence>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b02db55a4f1907001e6cb4fe0210c76c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-21 14:25:24</sys_updated_on>
+            <value>Overturned - Exception</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>resolution_outcome</element>
+            <name>x_opt_ecm_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>john.daniel</sys_created_by>
+            <sys_created_on>2017-09-21 14:25:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7c2d315a4f1907001e6cb4fe0210c75e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>resolution_outcome</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_opt_ecm_case_resolution_outcome</sys_update_name>
+            <sys_updated_by>john.daniel</sys_updated_by>
+            <sys_updated_on>2017-09-21 14:25:24</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

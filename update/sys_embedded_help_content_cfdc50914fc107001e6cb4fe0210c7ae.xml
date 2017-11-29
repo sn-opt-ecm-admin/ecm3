@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>service-catalog</category>
+        <content><![CDATA[ <h1 class="title topictitle1">Service catalog renderers</h1>  <div class="body conbody">  <p class="p"><span class="ph">Renderers define a specific look and feel for a catalog                    or category.</span></p>  <div class="p">Use renderers to specify the                    following formats:<ul class="ul" id="sc_renderer_list-normal__d25157e43"><li class="li">How catalogs appear on the                            multi-catalog                            homepage.</li><li class="li">How categories appear on a                            catalog                            homepage.</li></ul></div> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Service-Cat-Renderer&amp;version&#61;jakarta" target="_blank" rel="nofollow">Service catalog renderers</a></div></div></div></div>]]></content>
+        <last_sync>2017-11-19 18:38:07</last_sync>
+        <modifier>normal</modifier>
+        <name>sc_renderer_list-normal</name>
+        <page>sc_renderer_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2017-09-05 18:35:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cfdc50914fc107001e6cb4fe0210c7ae</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>sc_renderer_list-normal</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_embedded_help_content_cfdc50914fc107001e6cb4fe0210c7ae</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-19 18:38:07</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfdc50914fc107001e6cb4fe0210c7ae"/>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_soap_message_function" relationship="" sys_domain="global" table="sys_soap_message_test" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sys_soap_message_test" element="NULL" name="sys_soap_message_test" parent="sys_soap_message_function" relationship="NULL" sys_domain="global" view="Default view">b62a6f4b0a0a0bd00a091abd0834f8b5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-03-31 21:39:46</sys_created_on>
+            <sys_id>b62a6f560a0a0bd02a75bcde69eca1c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-03-31 21:39:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>request</element>
+            <list_id display_value="sys_soap_message_test" element="NULL" name="sys_soap_message_test" parent="sys_soap_message_function" relationship="NULL" sys_domain="global" view="Default view">b62a6f4b0a0a0bd00a091abd0834f8b5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-03-31 21:39:46</sys_created_on>
+            <sys_id>b62a6f600a0a0bd07fa89f68cd36a4b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-03-31 21:39:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>response</element>
+            <list_id display_value="sys_soap_message_test" element="NULL" name="sys_soap_message_test" parent="sys_soap_message_function" relationship="NULL" sys_domain="global" view="Default view">b62a6f4b0a0a0bd00a091abd0834f8b5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>dloo</sys_created_by>
+            <sys_created_on>2010-03-31 21:39:46</sys_created_on>
+            <sys_id>b62a6f620a0a0bd0447f7511886e6054</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dloo</sys_updated_by>
+            <sys_updated_on>2010-03-31 21:39:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_soap_message_test</name>
+            <parent>sys_soap_message_function</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-10 20:57:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>811dc5644fb107401e6cb4fe0210c798</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-10 20:57:26</sys_updated_on>
+            <sys_user display_value="Todd Fudala">d70716f24f33fa40699aacb14210c760</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

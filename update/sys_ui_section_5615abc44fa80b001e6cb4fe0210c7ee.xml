@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Notes" section_id="5615abc44fa80b001e6cb4fe0210c7ee" sys_domain="global" table="x_opt_ecm_case" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>watch_list</element>
+            <position>0</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>557165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>d57165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes_list</element>
+            <position>2</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>597165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>d97165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>4</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>5d7165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>5</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>dd7165fe4f71c700699aacb14210c72e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>intake_comments</element>
+            <position>6</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>517165fe4f71c700699aacb14210c72f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>advocate_comments</element>
+            <position>7</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>d17165fe4f71c700699aacb14210c72f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>8</position>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-10-17 22:12:49</sys_created_on>
+            <sys_id>557165fe4f71c700699aacb14210c72f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_opt_ecm_case" sys_domain="global" view="Default view">5615abc44fa80b001e6cb4fe0210c7ee</sys_ui_section>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-10-17 22:12:49</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Notes</caption>
+            <header>false</header>
+            <name>x_opt_ecm_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-08-08 15:26:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5615abc44fa80b001e6cb4fe0210c7ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Notes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_section_5615abc44fa80b001e6cb4fe0210c7ee</sys_update_name>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-08-16 13:56:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

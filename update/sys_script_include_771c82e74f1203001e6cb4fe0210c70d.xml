@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.RelatedCaseSearcher</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>RelatedCaseSearcher</name>
+        <script><![CDATA[var RelatedCaseSearcher = Class.create();
+RelatedCaseSearcher.prototype = {
+
+	/*
+	if (parent.contact_is_member && parent.contact_is_patient)
+		// member query = contact fields && patient query = no-op ( would be contact fields )
+
+	if (parent.contact_is_member && !parent.contact_is_patient)
+		// member query = contact fields && patient query = patient fields
+
+	if (!parent.contact_is_member && parent.contact_is_patient)
+		// member query = member fields && patient query = contact fields
+
+	if (!parent.contact_is_member && !parent.contact_is_patient && parent.member_is_patient)
+		// member query = member fields && patient query = no-op ( would be member fields )
+
+	if (!parent.contact_is_member && !parent.contact_is_patient && !parent.member_is_patient)
+		// member query = member fields && patient query = patient fields
+	*/
+	
+	updateQuery: function(current, parent, type) {
+		
+		// regardless of circumstance, don't return the this record
+		current.addQuery('sys_id', '!=', parent.sys_id);
+
+		var ssnValue = parent.getValue(this._getFieldPrefix(parent, type) + 'ssn');
+		
+		var foundSsnMatches = false;
+		if (ssnValue) {
+			foundSsnMatches = this._addSsnQueries(current, parent.sys_id, ssnValue, type);
+		}
+
+		// no matching SSNs.  match on identifying data
+		if (!foundSsnMatches) {
+			
+			current.addEncodedQuery(this._getCommonDataQuery(current, parent, type));
+			//gs.info('RelatedCaseSearcher :: ({0}) after adding data query is {1}', type, current.getEncodedQuery());
+		}
+	},
+	
+	_getFieldPrefix: function(parent, type) {
+
+		if (type == 'member') {
+			return parent.contact_is_member ? 'contact_' : 'member_';
+		}
+		else {
+			if (parent.contact_is_patient) {
+				return 'contact_';
+			}
+			else if (parent.member_is_patient) {
+				return 'member_';
+			}
+		}
+		
+		return 'patient_';
+	},
+	
+	_addSsnQueries: function(current, parentSysId, ssnValue, type) {
+			
+		var ssnField = type + '_ssn';		
+		var commonSsnQuery = this._getCommonSsnsQuery(type, ssnValue, parentSysId);
+		var relatedSsnQuery = 'sys_id!=' + parentSysId + '^' + ssnField + '=' + ssnValue + '^' + commonSsnQuery;
+
+		var commonSSN = new GlideAggregate('x_opt_ecm_case');
+		commonSSN.addAggregate('COUNT');
+		commonSSN.addEncodedQuery(relatedSsnQuery);
+		commonSSN.query();
+
+		// found at least one matching SSN.  Use SSN queries
+		if (commonSSN.next() && commonSSN.getAggregate('COUNT') > 0) {
+
+			/*
+			gs.info('RelatedCaseSearcher :: ({2}) found {0} cases matching SSN {1} using query {3}', 
+					commonSSN.getAggregate('COUNT'), ssnValue, type, commonSSN.getEncodedQuery());
+			*/
+			
+			current.addEncodedQuery(commonSsnQuery);
+			return true;
+		}
+		
+		return false;
+	},
+	
+	_getCommonSsnsQuery: function(type, ssn, parentSysId) {
+	
+		if (type == 'member') {
+			return 'member_ssn=' + ssn +
+				'^NQcontact_is_member=true^contact_ssn=' + ssn + '^contact_ssnISNOTEMPTY^sys_id!=' + parentSysId;
+		}
+	
+		else if (type == 'patient') {
+			return 'patient_ssn=' + ssn + 
+				'^NQcontact_is_patient=true^contact_ssn=' + ssn + '^contact_ssnISNOTEMPTY^sys_id!=' + parentSysId +
+				'^NQmember_is_patient=true^member_ssn=' + ssn + '^member_ssnISNOTEMPTY^sys_id!=' + parentSysId;
+		}
+	},
+	
+	_getCommonDataQuery: function(current, parent, type) {
+	
+		var prefix = this._getFieldPrefix(parent, type);
+		var parentSysId = parent.sys_id;
+
+		var firstName = parent.getValue(prefix + 'first_name');
+		var lastName = parent.getValue(prefix + (type == 'patient' ? 'lastname' : 'last_name'));
+		var dob = parent.getValue(prefix + 'dob');
+		var state = parent.getValue(prefix + 'state');
+		
+		if (type == 'member') {
+			return this._createIndividualDataQuery('member', firstName, lastName, dob, state) +
+				'^NQcontact_is_member=true^' + this._createIndividualDataQuery('contact', firstName, lastName, dob, state) + '^sys_id!=' + parentSysId;
+		}
+	
+		else if (type == 'patient') {
+			return this._createIndividualDataQuery('patient', firstName, lastName, dob, state) +
+				'^NQcontact_is_patient=true^' + this._createIndividualDataQuery('contact', firstName, lastName, dob, state) + '^sys_id!=' + parentSysId +
+				'^NQmember_is_patient=true^' + this._createIndividualDataQuery('member', firstName, lastName, dob, state) + '^sys_id!=' + parentSysId;
+		}
+	},
+	
+	_createIndividualDataQuery: function(searchType, firstName, lastName, dob, state) {
+	
+		var firstNameField = searchType + '_first_name';
+		var lastNameField = searchType + '_' + (searchType == 'patient' ? 'lastname' : 'last_name');
+		var dobField = searchType + '_dob';
+		var stateField = searchType + '_state';
+		
+		return firstNameField + '=' + firstName + '^' + firstNameField + 'ISNOTEMPTY' +
+			'^' + lastNameField + '=' + lastName + '^' + lastNameField + 'ISNOTEMPTY' + 
+			'^' + dobField + '=' + dob + '^' + dobField + 'ISNOTEMPTY' + 
+			'^' + stateField + '=' + state + '^' + stateField + 'ISNOTEMPTY';
+	},
+	
+	initialize: function() { },
+		
+	type: 'RelatedCaseSearcher'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-11-14 05:58:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>771c82e74f1203001e6cb4fe0210c70d</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>RelatedCaseSearcher</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_771c82e74f1203001e6cb4fe0210c70d</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-27 19:34:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

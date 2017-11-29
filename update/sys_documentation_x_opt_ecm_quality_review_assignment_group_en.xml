@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="assignment_group" label="Assignment group" language="en" table="x_opt_ecm_quality_review">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <help/>
+            <hint/>
+            <label>Assignment group</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review</name>
+            <plural>Assignment groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-27 16:53:25</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0048b3f14f8a8b801e6cb4fe0210c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Assignment group</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_documentation_x_opt_ecm_quality_review_assignment_group_en</sys_update_name>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-27 16:53:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

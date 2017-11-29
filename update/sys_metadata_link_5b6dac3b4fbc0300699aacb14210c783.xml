@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9df3324e4f604300699aacb14210c7ba</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_opt_ecm_complaint_type">
+    <x_opt_ecm_complaint_type action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>AOR</name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-08-14 16:59:21</sys_created_on>
+        <sys_id>9df3324e4f604300699aacb14210c7ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-08-14 16:59:21</sys_updated_on>
+        <value/>
+    </x_opt_ecm_complaint_type>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-09-01 03:56:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5b6dac3b4fbc0300699aacb14210c783</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AOR</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_metadata_link_5b6dac3b4fbc0300699aacb14210c783</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-09-01 03:56:38</sys_updated_on>
+        <tablename>x_opt_ecm_complaint_type</tablename>
+    </sys_metadata_link>
+</record_update>

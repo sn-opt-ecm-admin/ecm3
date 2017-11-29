@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<div>Subject: Exec Complaint:  <strong>DUE DATE</strong> ${due_date}.</div>
+<div> </div>
+<div>Hello,</div>
+<div> </div>
+<div>I work in Optum Consumer Affairs and received a call/complaint from <strong><span style="color: #ff0000;">${contact_first_name} ${contact_last_name}</span></strong> that was seeking assistance from the Executive Offices. We appreciate the many competing demands on your time. However, the expectation of the executive offices is that we resolve these cases on an urgent basis. I would like to get this resolved as quickly as possible, on or before <span style="color: #ff0000;"><strong>${due_date}</strong></span>.</div>
+<div> </div>
+<div>Brief Complaint:</div>
+<div> </div>
+<div> </div>
+<div><strong>Member Name:</strong> ${member_first_name} ${member_last_name}</div>
+<div><strong>Member ID:</strong>  ${member_number}</div>
+<div><strong>DOB:</strong> ${member_dob}</div>
+<div><strong>Policy #:</strong> ${member_policy_number}</div>
+<div><strong>Provider Name</strong>  ${contact_first_name} ${contact_last_name}</div>
+<div><strong>Date of Service</strong>  ${resolution_service_start_date}</div>
+<div><strong>TIN </strong></div>
+<div> </div>
+<div>Please confirm receipt and let me know who will be handling the issue.</div>
+<div> </div>
+<div> **For BBB complaints, our office will respond to the BBB, however, we need a copy of the member/provider response from you in order to close our file.</div>
+<div> </div>
+<div>Thank you in advance for your assistance.</div>
+<div> </div>
+<div>Sincerely, </div>
+<p> </p>]]></body>
+        <group display_value="OCA" name="OCA">aa4ff5764fe58f001e6cb4fe0210c7a5</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-11-15 20:34:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a3aeda4c4f664300699aacb14210c71f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Optum360</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_email_canned_message_a3aeda4c4f664300699aacb14210c71f</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-11-15 20:36:51</sys_updated_on>
+        <title>Optum360</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

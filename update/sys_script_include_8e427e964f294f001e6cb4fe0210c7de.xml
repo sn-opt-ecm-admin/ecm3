@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.AuditFileCreator</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AuditFileCreator</name>
+        <script><![CDATA[var AuditFileCreator = Class.create();
+AuditFileCreator.prototype = {
+	
+	documentTable : 'dms_document',
+	documentRevisionTable : 'dms_document_revision',
+	initialRevisionNumber : gs.getProperty('x_opt_ecm.audit_file_initial_revision') || '0.1',
+	
+	initialize: function(caseGR) {
+		
+		this.caseGR = caseGR;
+		this.documentName = caseGR.number + ' Audit';
+		this.revisionDocumentName = this.documentName + '_' + this.initialRevisionNumber;
+		this.templateDocumentSysId = this._getTemplateSysId(caseGR);
+		this.attachmentBaseName = caseGR.number + ' Audit File';	
+		this.documentDescription = gs.getProperty('x_opt_ecm.audit_file_description') || caseGR.number + ' ECM Audit';
+	},
+
+	copyAuditFile: function() {
+	
+		var templateDocumentGR = new GlideRecord(this.documentTable);
+		var foundTemplate = templateDocumentGR.get(this.templateDocumentSysId);
+
+		var newDocumentId = null;
+		
+		if (!foundTemplate) {
+
+			gs.error('** ERROR *** Failed looking up template for Audit File generation.');
+			gs.addErrorMessage('Failed to find template for Audit File.  Please attach.');
+		}
+		else {
+
+			var templateCopyGR = this._copyDocument(templateDocumentGR);
+			newDocumentId = templateCopyGR.sys_id;
+			if (newDocumentId == null) {
+
+				gs.error('** ERROR *** Failed to copy template for Audit File generation.');
+				gs.addErrorMessage('Failed to copy template for Audit File.  Please attach.');
+			}
+			else {
+
+				var templateDocLatestRevisionGR = this._getLatestRevisionByDocument(this.templateDocumentSysId);
+				if (templateDocLatestRevisionGR == null) {
+
+					gs.error('** ERROR *** Failed to find template revision for Audit File generation.');
+					gs.addErrorMessage('Failed to find template revision for Audit File.  Please attach.');
+				}
+				else {
+					var newDocumentRevisionGR = this._copyDocumentRevision(newDocumentId);
+					var docRevisionSysId = newDocumentRevisionGR.sys_id;
+
+					this._copyAttachment(newDocumentRevisionGR, templateDocLatestRevisionGR);
+				}
+			}
+		}
+		
+		return newDocumentId;
+	},
+	
+	_getTemplateSysId: function(caseGR) {
+		
+		var sysId = '';
+		
+		if (caseGR) {
+			var businessUnit = caseGR.getValue('business_unit');
+			if (businessUnit == 'consumer_affairs') {
+				sysId = gs.getProperty('x_opt_ecm.consumer_audit_file_template');
+			}
+			else if (businessUnit == 'regulatory_affairs') {
+				sysId = gs.getProperty('x_opt_ecm.regulatory_audit_file_template');	
+			}
+		}
+		
+		return sysId;
+	},
+	
+	_copyDocument: function(templateDocumentGR) {
+		
+		var templateCopyGR = new GlideRecord(this.documentTable);
+		templateCopyGR.initialize();
+		templateCopyGR.name = this.documentName;
+		templateCopyGR.description = this.documentDescription;
+		templateCopyGR.requested_by = this.caseGR.getValue('assigned_to');
+		templateCopyGR.owner = this.caseGR.getValue('assigned_to');
+		templateCopyGR.type = templateDocumentGR.type;
+		templateCopyGR.owning_group = templateDocumentGR.owning_group;
+		templateCopyGR.classification = templateDocumentGR.classification;
+		templateCopyGR.audience = templateDocumentGR.audience;
+		templateCopyGR.name_format = templateDocumentGR.name_format;
+		templateCopyGR.auto_increment_revision = templateDocumentGR.auto_increment_revision;
+		templateCopyGR.insert();
+		
+		return templateCopyGR;
+	},
+
+	_getLatestRevisionByDocument: function(documentId) {
+		
+		var revisionGR = new GlideRecord(this.documentRevisionTable);
+		revisionGR.addQuery("document", documentId);
+		revisionGR.orderByDesc("sys_created_on");
+		revisionGR.query();
+		return (revisionGR.next() ? revisionGR : null);
+	},
+	
+	_copyDocumentRevision: function(newDocumentId) {
+		
+		var newDocumentRevisionGR = new GlideRecord(this.documentRevisionTable);
+		newDocumentRevisionGR.name= this.revisionDocumentName;
+		newDocumentRevisionGR.revision_number = this.initialRevisionNumber;
+		newDocumentRevisionGR.document = newDocumentId;
+		newDocumentRevisionGR.author = this.caseGR.getValue('assigned_to');
+		newDocumentRevisionGR.owner = this.caseGR.getValue('assigned_to');
+		newDocumentRevisionGR.insert();
+		
+		return newDocumentRevisionGR;
+	},
+	
+	_copyAttachment: function(newDocumentRevisionGR, templateDocLatestRevisionGR) {
+		
+		var origAttachment = new GlideRecord('sys_attachment');
+		origAttachment.addQuery("table_sys_id", templateDocLatestRevisionGR.sys_id);
+		origAttachment.addQuery("table_name", this.documentRevisionTable);
+		origAttachment.query();
+
+		if (!origAttachment.next()) {
+			gs.error('**** NO ORIGINAL ATTACHMENT FOUND ****');
+
+		} else {
+
+			var gsa = new GlideSysAttachment();
+			var attachmentIS = gsa.getContentStream(origAttachment.sys_id);
+			var newAttachmentSysId = gsa.writeContentStream(newDocumentRevisionGR, 
+															this._getAttachmentName(origAttachment.file_name), 
+															origAttachment.content_type, 
+															attachmentIS);
+
+			newDocumentRevisionGR.attachment = newAttachmentSysId;
+			newDocumentRevisionGR.update();
+		}
+	},
+	
+	_getAttachmentName: function(originalAttachmentName) {
+	
+		var extension = originalAttachmentName.split('.').pop();
+		return this.attachmentBaseName + (extension == null ? '' : '.' + extension);
+	},
+	
+	type: 'AuditFileCreator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-04 04:41:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e427e964f294f001e6cb4fe0210c7de</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>AuditFileCreator</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_8e427e964f294f001e6cb4fe0210c7de</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-05 13:27:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_opt_ecm_doi_sla_configurations</description>
+        <name>x_opt_ecm_doi_sla_configurations</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-18 14:27:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d9908dcf4f798f401e6cb4fe0210c738</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_opt_ecm_doi_sla_configurations</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_security_acl_d9908dcf4f798f401e6cb4fe0210c738</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-10-18 14:27:40</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

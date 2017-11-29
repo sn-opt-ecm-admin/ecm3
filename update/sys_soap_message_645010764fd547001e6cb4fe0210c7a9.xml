@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_soap_message">
+    <sys_soap_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>ORS Issue API via AE DataPower ESB</description>
+        <download_wsdl>false</download_wsdl>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <name>CreateOrUpdateIssueV13</name>
+        <protocol_profile/>
+        <sys_class_name>sys_soap_message</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-09-22 19:47:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>645010764fd547001e6cb4fe0210c7a9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CreateOrUpdateIssueV13</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_soap_message_645010764fd547001e6cb4fe0210c7a9</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-09-25 16:54:20</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <wsdl>https://aeprodproxy.uhc.com/upm3/orsissue/CreateOrUpdateIssueV13?wsdl</wsdl>
+        <wsdl_xml><![CDATA[<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="CreateOrUpdateIssueServiceV13Service" targetNamespace="http://upm3.uhc.com/orsissue/createorupdateissue/v13" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://upm3.uhc.com/orsissue/createorupdateissue/v13" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://upm3.uhc.com/orsissue/createorupdateissue/v13" xmlns:ns1="http://upm3.uhc.com" xmlns:tns="http://upm3.uhc.com/orsissue/createorupdateissue/v13" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import namespace="http://upm3.uhc.com"/>
+<xs:element name="internalUse" type="ns1:internalUse"/>
+<xs:element name="keyValuePair" type="ns1:keyValuePair"/>
+<xs:element name="logLevel" type="ns1:logLevel"/>
+<xs:element name="pingHop" type="ns1:pingHop"/>
+<xs:element name="pingRequest" type="ns1:pingRequest"/>
+<xs:element name="pingResponse" type="ns1:pingResponse"/>
+<xs:element name="requestBase" type="ns1:requestBase"/>
+<xs:element name="requestHeader" type="ns1:requestHeader"/>
+<xs:element name="responseBase" type="ns1:responseBase"/>
+<xs:element name="responseHeader" type="ns1:responseHeader"/>
+<xs:element name="serviceCallStatus" type="ns1:serviceCallStatus"/>
+<xs:element name="serviceHop" type="ns1:serviceHop"/>
+<xs:element name="statusMessage" type="ns1:statusMessage"/>
+<xs:element name="statusMessageLevel" type="ns1:statusMessageLevel"/>
+<xs:element name="vr1StatusContainer" type="ns1:vr1StatusContainer"/>
+<xs:element name="vrcStatusGroup" type="ns1:vrcStatusGroup"/>
+<xs:complexType name="createOrUpdateIssueRequest">
+<xs:complexContent>
+<xs:extension base="ns1:requestBase">
+<xs:sequence>
+<xs:element minOccurs="0" name="orsSystemParameter" type="tns:orsSystemParameter"/>
+<xs:element minOccurs="0" name="issue" type="tns:orsIssueBean"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="orsSystemParameter">
+<xs:sequence>
+<xs:element minOccurs="0" name="logonId" type="xs:string"/>
+<xs:element minOccurs="0" name="logonOffice" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsIssueBean">
+<xs:sequence>
+<xs:element minOccurs="0" name="assignedPssId" type="xs:string"/>
+<xs:element minOccurs="0" name="businessSegmentName" type="xs:string"/>
+<xs:element minOccurs="0" name="callAttemptDetailText" type="xs:string"/>
+<xs:element minOccurs="0" name="callExceedsExpectationIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="callHistoryFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="callMeetsExpectationIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="callProgramName" type="xs:string"/>
+<xs:element minOccurs="0" name="callbackPromisedDate" type="xs:string"/>
+<xs:element minOccurs="0" name="campaignCode" type="xs:string"/>
+<xs:element minOccurs="0" name="campaignReportText" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="carbonCopies" nillable="true" type="tns:carbonCopyUser"/>
+<xs:element minOccurs="0" name="caseNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="checkNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="claim" type="tns:orsClaimInfo"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="comments" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="complaintCategoryText" type="xs:string"/>
+<xs:element minOccurs="0" name="contactElapseTime" type="xs:string"/>
+<xs:element minOccurs="0" name="contactId" type="xs:string"/>
+<xs:element minOccurs="0" name="contactMethodCode" type="xs:string"/>
+<xs:element minOccurs="0" name="createdByApplicationIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="deleteRequestIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="directionCode" type="xs:string"/>
+<xs:element minOccurs="0" name="disposition" type="xs:string"/>
+<xs:element minOccurs="0" name="dispositionNotificationDate" type="xs:string"/>
+<xs:element minOccurs="0" name="employerInfo" type="tns:employerInfo"/>
+<xs:element minOccurs="0" name="followUp" type="tns:followUp"/>
+<xs:element minOccurs="0" name="followupDate" type="xs:string"/>
+<xs:element minOccurs="0" name="grievanceCategoryText" type="xs:string"/>
+<xs:element minOccurs="0" name="grievanceDispositionText" type="xs:string"/>
+<xs:element minOccurs="0" name="grievanceReasonCode" type="xs:string"/>
+<xs:element minOccurs="0" name="grievanceReasonText" type="xs:string"/>
+<xs:element minOccurs="0" name="grievanceReceiptDate" type="xs:string"/>
+<xs:element minOccurs="0" name="hipaaIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="issueElapseTime" type="xs:string"/>
+<xs:element minOccurs="0" name="issueId" type="xs:string"/>
+<xs:element minOccurs="0" name="launchCategoryText" type="xs:string"/>
+<xs:element minOccurs="0" name="launchReasonText" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="logoLookups" nillable="true" type="tns:logoLookup"/>
+<xs:element minOccurs="0" name="manualRouteIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="member" type="tns:orsMemberInfo"/>
+<xs:element minOccurs="0" name="modifiedByApplicationIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="originalApplicationFileDate" type="xs:string"/>
+<xs:element minOccurs="0" name="originator" type="tns:originatorInfo"/>
+<xs:element minOccurs="0" name="originatorTypeCode" type="xs:string"/>
+<xs:element minOccurs="0" name="other" type="tns:orsOtherInfo"/>
+<xs:element minOccurs="0" name="overrideIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="payer" type="xs:string"/>
+<xs:element minOccurs="0" name="pharmacyClaimNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="pharmacyClassText" type="xs:string"/>
+<xs:element minOccurs="0" name="pharmacyId" type="xs:string"/>
+<xs:element minOccurs="0" name="pharmacyName" type="xs:string"/>
+<xs:element minOccurs="0" name="priority" type="xs:string"/>
+<xs:element minOccurs="0" name="provider" type="tns:orsProviderInfo"/>
+<xs:element minOccurs="0" name="pssActionTaken" type="xs:string"/>
+<xs:element minOccurs="0" name="raplNoblxIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="reasonCategory" type="xs:string"/>
+<xs:element minOccurs="0" name="reasonCode" type="xs:string"/>
+<xs:element minOccurs="0" name="reasonHcnasType" type="xs:string"/>
+<xs:element minOccurs="0" name="reasonType" type="xs:string"/>
+<xs:element minOccurs="0" name="repeatIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="resolvedBy" type="tns:orsMailbox"/>
+<xs:element minOccurs="0" name="routeConditionCode" type="xs:string"/>
+<xs:element minOccurs="0" name="routedTo" type="tns:orsMailbox"/>
+<xs:element minOccurs="0" name="seriesDesignator" type="xs:string"/>
+<xs:element minOccurs="0" name="serviceRequest" type="tns:serviceRequestInfo"/>
+<xs:element minOccurs="0" name="status" type="xs:string"/>
+<xs:element minOccurs="0" name="subReasonText" type="xs:string"/>
+<xs:element minOccurs="0" name="surveyCode" type="xs:string"/>
+<xs:element minOccurs="0" name="updateDate" type="xs:string"/>
+<xs:element minOccurs="0" name="updateTime" type="xs:string"/>
+<xs:element minOccurs="0" name="updateType" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="carbonCopyUser">
+<xs:sequence>
+<xs:element minOccurs="0" name="associateId" type="xs:string"/>
+<xs:element minOccurs="0" name="officeId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsClaimInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="atg" type="tns:atg"/>
+<xs:element minOccurs="0" name="atgIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="authorization" type="xs:string"/>
+<xs:element minOccurs="0" name="claimApp" type="xs:string"/>
+<xs:element minOccurs="0" name="claimAppSsn" type="xs:string"/>
+<xs:element minOccurs="0" name="claimNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="claimOffice" type="xs:string"/>
+<xs:element minOccurs="0" name="claimOfficeName" type="xs:string"/>
+<xs:element minOccurs="0" name="engineCode" type="xs:string"/>
+<xs:element minOccurs="0" name="filmNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="filmOffice" type="xs:string"/>
+<xs:element minOccurs="0" name="filmSystem" type="xs:string"/>
+<xs:element minOccurs="0" name="fundingArrangement" type="xs:string"/>
+<xs:element minOccurs="0" name="invoiceNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="payLocationNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="serviceDate" type="xs:string"/>
+<xs:element minOccurs="0" name="substituteIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="totalAmount" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="atg">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="drafts" nillable="true" type="tns:draft"/>
+<xs:element minOccurs="0" name="sourceId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="draft">
+<xs:sequence>
+<xs:element minOccurs="0" name="draftNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="inventoryControlNumber" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="employerInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="employerName" type="xs:string"/>
+<xs:element minOccurs="0" name="employerNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="employerState" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="followUp">
+<xs:sequence>
+<xs:element minOccurs="0" name="cellPhone" type="tns:orsAreaPhone"/>
+<xs:element minOccurs="0" name="contactDate" type="xs:string"/>
+<xs:element minOccurs="0" name="creator" type="tns:orsMailbox"/>
+<xs:element minOccurs="0" name="email" type="xs:string"/>
+<xs:element minOccurs="0" name="estimatedCompletionDate" type="xs:string"/>
+<xs:element minOccurs="0" name="fax" type="tns:orsAreaPhone"/>
+<xs:element minOccurs="0" name="homePhone" type="tns:orsAreaPhone"/>
+<xs:element minOccurs="0" name="nextAction" type="xs:string"/>
+<xs:element minOccurs="0" name="nextActionDueDate" type="xs:string"/>
+<xs:element minOccurs="0" name="otherPhone" type="tns:orsAreaPhone"/>
+<xs:element minOccurs="0" name="preferredContactTime" type="xs:string"/>
+<xs:element minOccurs="0" name="primaryContact" type="xs:string"/>
+<xs:element minOccurs="0" name="purposeCode" type="xs:string"/>
+<xs:element minOccurs="0" name="resolvedDate" type="xs:string"/>
+<xs:element minOccurs="0" name="status" type="xs:string"/>
+<xs:element minOccurs="0" name="voiceMailIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="workPhone" type="tns:orsAreaPhoneExtension"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsAreaPhone">
+<xs:sequence>
+<xs:element minOccurs="0" name="areaCode" type="xs:string"/>
+<xs:element minOccurs="0" name="number" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsMailbox">
+<xs:sequence>
+<xs:element minOccurs="0" name="associateId" type="xs:string"/>
+<xs:element minOccurs="0" name="departmentCode" type="xs:string"/>
+<xs:element minOccurs="0" name="officeId" type="xs:string"/>
+<xs:element minOccurs="0" name="teamCode" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsAreaPhoneExtension">
+<xs:complexContent>
+<xs:extension base="tns:orsAreaPhone">
+<xs:sequence>
+<xs:element minOccurs="0" name="extension" type="xs:string"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="logoLookup">
+<xs:sequence>
+<xs:element minOccurs="0" name="bodyFontName" type="xs:string"/>
+<xs:element minOccurs="0" name="bodyFontNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="bodyFontSizeNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="constituentText" type="xs:string"/>
+<xs:element minOccurs="0" name="duncanImageNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="rtnFontName" type="xs:string"/>
+<xs:element minOccurs="0" name="rtnFontNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="rtnFontSizeNumber" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsMemberInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="age" type="xs:string"/>
+<xs:element minOccurs="0" name="alternateId" type="xs:string"/>
+<xs:element minOccurs="0" name="alternativeAndHolisticMedicineServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="ambulanceIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="assignedCsrName" type="xs:string"/>
+<xs:element minOccurs="0" name="benefitPackageCode" type="xs:string"/>
+<xs:element minOccurs="0" name="bloodServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="brandDrugsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="careManagementProgramServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="cataractSurgeryBenefitsQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="chiropracticServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="city" type="xs:string"/>
+<xs:element minOccurs="0" name="clientCode" type="xs:string"/>
+<xs:element minOccurs="0" name="copayEffectiveDate" type="xs:string"/>
+<xs:element minOccurs="0" name="cosmeticServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="countryCode" type="xs:string"/>
+<xs:element minOccurs="0" name="coverageIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="csrProgramServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="custodialCareServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="customerNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="dateOfBirth" type="xs:string"/>
+<xs:element minOccurs="0" name="dateOfDeath" type="xs:string"/>
+<xs:element minOccurs="0" name="deductibleServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="dentalServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="dependentName" type="tns:orsName"/>
+<xs:element minOccurs="0" name="dependentNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="diabeticEducationServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="diabeticMonitorAndSuppliesServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="diagnosticAndRadiologyServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="diagnosticLaboratoryServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="division" type="xs:string"/>
+<xs:element minOccurs="0" name="dlEligIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="durableMedicalEquipmentServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="eligibilitySourceSystem" type="xs:string"/>
+<xs:element minOccurs="0" name="eligibilityValidatedFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="email" type="xs:string"/>
+<xs:element minOccurs="0" name="emailIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="emergencyAndUrgentCareServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="enrollmentSourceCode" type="xs:string"/>
+<xs:element minOccurs="0" name="facetPlanCode" type="xs:string"/>
+<xs:element minOccurs="0" name="familyPlanningServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="faxNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="fontIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="genderCode" type="xs:string"/>
+<xs:element minOccurs="0" name="genericDrugsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="groupName" type="xs:string"/>
+<xs:element minOccurs="0" name="groupNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="gymMembershipServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="healthyLivingProgramsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="hearingExamServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="hearingServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="hippaEligibleFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="homeHealthServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="immunizationsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="inpatientHospitalAndMedicalServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="inpatientMentalHealthServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="ipaCode" type="xs:string"/>
+<xs:element minOccurs="0" name="languageTranslationId" type="xs:string"/>
+<xs:element minOccurs="0" name="leadPlanCode" type="xs:string"/>
+<xs:element minOccurs="0" name="legalEntity" type="xs:string"/>
+<xs:element minOccurs="0" name="lisPctCode" type="xs:string"/>
+<xs:element minOccurs="0" name="logoIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="logonId" type="xs:string"/>
+<xs:element minOccurs="0" name="mailOrderServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="market" type="xs:string"/>
+<xs:element minOccurs="0" name="masterGroupNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="maxLimitationsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="maxOutOfPocketQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="medicaidId" type="xs:string"/>
+<xs:element minOccurs="0" name="medicareCoveredDentalServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="medicareId" type="xs:string"/>
+<xs:element minOccurs="0" name="medicareStatusCode" type="xs:string"/>
+<xs:element minOccurs="0" name="meetingDate" type="xs:string"/>
+<xs:element minOccurs="0" name="meetingTypeName" type="xs:string"/>
+<xs:element minOccurs="0" name="memberMeetingsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="memberName" type="tns:orsName"/>
+<xs:element minOccurs="0" name="memberNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="memberVerifiedIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="middleInitial" type="xs:string"/>
+<xs:element minOccurs="0" name="militaryTreatmentFacilityLocation" type="xs:string"/>
+<xs:element minOccurs="0" name="neonIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="networkPrefixCode" type="xs:string"/>
+<xs:element minOccurs="0" name="nonRadiologyAndTherapeuticServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="obligorId" type="xs:string"/>
+<xs:element minOccurs="0" name="oonBenefitServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="optOutIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="originalEffectiveDate" type="xs:string"/>
+<xs:element minOccurs="0" name="orthoticsAndProstheticsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="otcSuppliesServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="otherGroupNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="otherProduct" type="xs:string"/>
+<xs:element minOccurs="0" name="otherSubscriberId" type="xs:string"/>
+<xs:element minOccurs="0" name="outpatientMentalHealthServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="outpatientRehabilitationServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="outpatientSurgeryAndObservationServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="panelCode" type="xs:string"/>
+<xs:element minOccurs="0" name="parentGroupName" type="xs:string"/>
+<xs:element minOccurs="0" name="partBDrugsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="passportIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="pcpOfficeVisitServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="pcpOverrideIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="personalIdentificationNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="pharmacyLocatorServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="phoneAreaCode" type="xs:string"/>
+<xs:element minOccurs="0" name="phoneNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="planCode" type="xs:string"/>
+<xs:element minOccurs="0" name="planEffectiveDate" type="xs:string"/>
+<xs:element minOccurs="0" name="planEndDate" type="xs:string"/>
+<xs:element minOccurs="0" name="planVariationCode" type="xs:string"/>
+<xs:element minOccurs="0" name="podiatryBenefitsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="policy" type="xs:string"/>
+<xs:element minOccurs="0" name="preferredFormularyServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="premiumWithholdCode" type="xs:string"/>
+<xs:element minOccurs="0" name="preventiveScreeningServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="primaryPolicyNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="primeIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="product" type="xs:string"/>
+<xs:element minOccurs="0" name="raceEthnicityCode" type="xs:string"/>
+<xs:element minOccurs="0" name="rank" type="xs:string"/>
+<xs:element minOccurs="0" name="regionCode" type="xs:string"/>
+<xs:element minOccurs="0" name="relationshipCode" type="xs:string"/>
+<xs:element minOccurs="0" name="relationshipSequenceNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="renalDialysisServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="reportingCode" type="xs:string"/>
+<xs:element minOccurs="0" name="riderBenefitsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="riderCodeIndicator" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="riderCodes" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="secondaryDrugInsuranceIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="sharedArrangementId" type="xs:string"/>
+<xs:element minOccurs="0" name="site" type="xs:string"/>
+<xs:element minOccurs="0" name="skilledNursingServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="specialistOfficeVisitServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="ssaPaymentCode" type="xs:string"/>
+<xs:element minOccurs="0" name="stateCode" type="xs:string"/>
+<xs:element minOccurs="0" name="statusCode" type="xs:string"/>
+<xs:element minOccurs="0" name="street1" type="xs:string"/>
+<xs:element minOccurs="0" name="street2" type="xs:string"/>
+<xs:element minOccurs="0" name="subsidyOverrideIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="totalNonCoverageCount" type="xs:string"/>
+<xs:element minOccurs="0" name="transplantServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="transportationServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="trueOopServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="unfundedProgramsServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="valueAddedServiceServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="verbalLanguageName" type="xs:string"/>
+<xs:element minOccurs="0" name="visionBenefitServiceQuoted" type="xs:string"/>
+<xs:element minOccurs="0" name="walkinTime" type="xs:string"/>
+<xs:element minOccurs="0" name="writtenLanguageName" type="xs:string"/>
+<xs:element minOccurs="0" name="zipCode" type="xs:string"/>
+<xs:element minOccurs="0" name="iPlanIndicator" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsName">
+<xs:sequence>
+<xs:element minOccurs="0" name="firstName" type="xs:string"/>
+<xs:element minOccurs="0" name="lastName" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="originatorInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="autoId" type="xs:string"/>
+<xs:element minOccurs="0" name="callerAddress" type="tns:fomaAddressBean"/>
+<xs:element minOccurs="0" name="callerName" type="tns:orsName"/>
+<xs:element minOccurs="0" name="dayPhone" type="tns:orsAreaPhoneExtension"/>
+<xs:element minOccurs="0" name="dayPhoneExtension2" type="xs:string"/>
+<xs:element minOccurs="0" name="dialedId" type="xs:string"/>
+<xs:element minOccurs="0" name="eveningPhone" type="tns:orsAreaPhoneExtension"/>
+<xs:element minOccurs="0" name="icrCallLocationDay" type="xs:string"/>
+<xs:element minOccurs="0" name="icrCallLocationId" type="xs:string"/>
+<xs:element minOccurs="0" name="originatorMpin" type="xs:string"/>
+<xs:element minOccurs="0" name="originatorTin" type="xs:string"/>
+<xs:element minOccurs="0" name="originatorTinSuffix" type="xs:string"/>
+<xs:element minOccurs="0" name="providerId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="fomaAddressBean">
+<xs:complexContent>
+<xs:extension base="tns:addressBean">
+<xs:sequence>
+<xs:element minOccurs="0" name="country" type="xs:string"/>
+<xs:element minOccurs="0" name="county" type="xs:string"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="addressBean">
+<xs:sequence>
+<xs:element minOccurs="0" name="city" type="xs:string"/>
+<xs:element minOccurs="0" name="countryCode" type="xs:string"/>
+<xs:element minOccurs="0" name="description" type="xs:string"/>
+<xs:element minOccurs="0" name="state" type="xs:string"/>
+<xs:element minOccurs="0" name="street1" type="xs:string"/>
+<xs:element minOccurs="0" name="street2" type="xs:string"/>
+<xs:element minOccurs="0" name="street3" type="xs:string"/>
+<xs:element minOccurs="0" name="zip" type="xs:string"/>
+<xs:element minOccurs="0" name="zip4" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsOtherInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="agencyName" type="xs:string"/>
+<xs:element minOccurs="0" name="agencyTaxId" type="xs:string"/>
+<xs:element minOccurs="0" name="agencyUniqueId" type="xs:string"/>
+<xs:element minOccurs="0" name="company" type="xs:string"/>
+<xs:element minOccurs="0" name="complState" type="xs:string"/>
+<xs:element minOccurs="0" name="incompleteFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="insuranceCompany" type="xs:string"/>
+<xs:element minOccurs="0" name="lineType" type="xs:string"/>
+<xs:element minOccurs="0" name="qaCategory" type="xs:string"/>
+<xs:element minOccurs="0" name="qaCodeType" type="xs:string"/>
+<xs:element minOccurs="0" name="qaSource" type="xs:string"/>
+<xs:element minOccurs="0" name="qitType" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsProviderInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="commonProviderID" type="xs:string"/>
+<xs:element minOccurs="0" name="contractNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="countyName" type="xs:string"/>
+<xs:element minOccurs="0" name="degreeName" type="xs:string"/>
+<xs:element minOccurs="0" name="emailIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="ipa" type="xs:string"/>
+<xs:element minOccurs="0" name="languageCode" type="xs:string"/>
+<xs:element minOccurs="0" name="marketSegmentName" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="npis" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="originalEffectiveDate" type="xs:string"/>
+<xs:element minOccurs="0" name="otherIpa" type="xs:string"/>
+<xs:element minOccurs="0" name="panelNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="pcp" type="tns:orsProvider"/>
+<xs:element minOccurs="0" name="pcpValidatedFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="phoneAreaCode" type="xs:string"/>
+<xs:element minOccurs="0" name="phoneNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="productCode" type="xs:string"/>
+<xs:element minOccurs="0" name="programSearchCode" type="xs:string"/>
+<xs:element minOccurs="0" name="provider" type="tns:orsProvider"/>
+<xs:element minOccurs="0" name="providerSourceSystem" type="xs:string"/>
+<xs:element minOccurs="0" name="providerValidatedFlag" type="xs:string"/>
+<xs:element minOccurs="0" name="serviceMarket" type="xs:string"/>
+<xs:element minOccurs="0" name="serviceZip" type="xs:string"/>
+<xs:element minOccurs="0" name="specialtyText" type="xs:string"/>
+<xs:element minOccurs="0" name="stateIssuedID" type="xs:string"/>
+<xs:element minOccurs="0" name="statusCode" type="xs:string"/>
+<xs:element minOccurs="0" name="tpsmIndicator" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="orsProvider">
+<xs:sequence>
+<xs:element minOccurs="0" name="city" type="xs:string"/>
+<xs:element minOccurs="0" name="firstInitial" type="xs:string"/>
+<xs:element minOccurs="0" name="firstName" type="xs:string"/>
+<xs:element minOccurs="0" name="lastName" type="xs:string"/>
+<xs:element minOccurs="0" name="mpin" type="xs:string"/>
+<xs:element minOccurs="0" name="mpinSequenceNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="providerID" type="xs:string"/>
+<xs:element minOccurs="0" name="state" type="xs:string"/>
+<xs:element minOccurs="0" name="street1" type="xs:string"/>
+<xs:element minOccurs="0" name="street2" type="xs:string"/>
+<xs:element minOccurs="0" name="taxId" type="xs:string"/>
+<xs:element minOccurs="0" name="taxPrefix" type="xs:string"/>
+<xs:element minOccurs="0" name="taxSuffix" type="xs:string"/>
+<xs:element minOccurs="0" name="zip" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="serviceRequestInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="addressUpdateRequiredIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="bulkCheckIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="checkPayeeName" type="xs:string"/>
+<xs:element minOccurs="0" name="checkStockNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="claimAdjustmentRequiredIndicator" type="xs:string"/>
+<xs:element minOccurs="0" name="clientId" type="xs:string"/>
+<xs:element minOccurs="0" name="countyCode" type="xs:string"/>
+<xs:element minOccurs="0" name="countyName" type="xs:string"/>
+<xs:element minOccurs="0" name="diamondProviderLocationId" type="xs:string"/>
+<xs:element minOccurs="0" name="diamondProviderLocationName" type="xs:string"/>
+<xs:element minOccurs="0" name="documentControlNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="originatorLocationId" type="xs:string"/>
+<xs:element minOccurs="0" name="policyNumber" type="xs:string"/>
+<xs:element minOccurs="0" name="productId" type="xs:string"/>
+<xs:element minOccurs="0" name="resolutionCode" type="xs:string"/>
+<xs:element minOccurs="0" name="srProductType" type="xs:string"/>
+<xs:element minOccurs="0" name="srSubType" type="xs:string"/>
+<xs:element minOccurs="0" name="srType" type="xs:string"/>
+<xs:element minOccurs="0" name="subCodeId" type="xs:string"/>
+<xs:element minOccurs="0" name="wbxUpdateRequiredIndicator" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="createOrUpdateIssueResponse">
+<xs:complexContent>
+<xs:extension base="ns1:responseBase">
+<xs:sequence>
+<xs:element minOccurs="0" name="contactId" type="xs:string"/>
+<xs:element minOccurs="0" name="issueId" type="xs:string"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="ServiceException" type="tns:ServiceException"/>
+<xs:complexType name="ServiceException">
+<xs:sequence/>
+</xs:complexType>
+<xs:element name="invokeService" type="tns:invokeService"/>
+<xs:complexType name="invokeService">
+<xs:sequence>
+<xs:element minOccurs="0" name="arg0" type="tns:createOrUpdateIssueRequest"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="invokeServiceResponse" type="tns:invokeServiceResponse"/>
+<xs:complexType name="invokeServiceResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="return" type="tns:createOrUpdateIssueResponse"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="invokePing" type="tns:invokePing"/>
+<xs:complexType name="invokePing">
+<xs:sequence>
+<xs:element minOccurs="0" name="arg0" type="ns1:pingRequest"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="invokePingResponse" type="tns:invokePingResponse"/>
+<xs:complexType name="invokePingResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="return" type="ns1:pingResponse"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+<xs:schema targetNamespace="http://upm3.uhc.com" version="1.0" xmlns:ns1="http://upm3.uhc.com/orsissue/createorupdateissue/v13" xmlns:tns="http://upm3.uhc.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import namespace="http://upm3.uhc.com/orsissue/createorupdateissue/v13"/>
+<xs:complexType abstract="true" name="requestBase">
+<xs:sequence>
+<xs:element name="requestHeader" type="tns:requestHeader"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="requestHeader">
+<xs:sequence>
+<xs:element name="applicationName" type="xs:string"/>
+<xs:element name="applicationInstanceName" nillable="true" type="xs:string"/>
+<xs:element name="logLevel" type="tns:logLevel"/>
+<xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="serviceOption" nillable="true" type="tns:keyValuePair"/>
+<xs:element minOccurs="0" name="internalUse" nillable="true" type="tns:internalUse"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="keyValuePair">
+<xs:sequence>
+<xs:element name="key" type="xs:string"/>
+<xs:element name="value" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="internalUse">
+<xs:sequence>
+<xs:element name="uid" nillable="true" type="xs:string"/>
+<xs:element name="serviceName" nillable="true" type="xs:string"/>
+<xs:element name="serviceVersion" nillable="true" type="xs:string"/>
+<xs:element name="originalConsumer" nillable="true" type="xs:string"/>
+<xs:element name="originalServiceName" nillable="true" type="xs:string"/>
+<xs:element name="originalServiceVersion" nillable="true" type="xs:string"/>
+<xs:element name="logSequence" nillable="true" type="xs:int"/>
+<xs:element name="uidGeneratedBy" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType abstract="true" name="responseBase">
+<xs:sequence>
+<xs:element name="responseHeader" type="tns:responseHeader"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="responseHeader">
+<xs:sequence>
+<xs:element name="serviceCallStatus" type="tns:serviceCallStatus"/>
+<xs:element name="externalId" nillable="true" type="xs:string"/>
+<xs:element name="serviceName" type="xs:string"/>
+<xs:element name="serviceVersion" type="xs:string"/>
+<xs:element name="logLevel" type="tns:logLevel"/>
+<xs:element name="upmEnvironment" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="serviceHops" nillable="true" type="tns:serviceHop"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="statusMessages" nillable="true" type="tns:statusMessage"/>
+<xs:element name="internalUse" type="tns:internalUse"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="serviceHop">
+<xs:sequence>
+<xs:element minOccurs="0" name="bundleName" type="xs:string"/>
+<xs:element minOccurs="0" name="bundleVersion" type="xs:string"/>
+<xs:element minOccurs="0" name="bundleId" type="xs:string"/>
+<xs:element minOccurs="0" name="startTimestamp" type="xs:string"/>
+<xs:element minOccurs="0" name="endTimestamp" type="xs:string"/>
+<xs:element minOccurs="0" name="totalTimeInMilliseconds" type="xs:string"/>
+<xs:element minOccurs="0" name="location" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="statusMessage">
+<xs:sequence>
+<xs:element name="statusMessageLevel" type="tns:statusMessageLevel"/>
+<xs:element name="messageType" type="xs:string"/>
+<xs:element name="statusMessage" type="xs:string"/>
+<xs:element minOccurs="0" name="hopLocation" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="stackTrace" nillable="true" type="xs:string"/>
+<xs:element name="statusOrigin" type="xs:string"/>
+<xs:element minOccurs="0" name="vrcStatusGroup" nillable="true" type="tns:vrcStatusGroup"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="vrcStatusGroup">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="statusContainerBeans" nillable="true" type="tns:vr1StatusContainer"/>
+<xs:element minOccurs="0" name="vr1_status_container_num_occ" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_generated_by" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_orig_channel" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_owned_by" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_service_name" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_service_version" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_system" type="xs:string"/>
+<xs:element minOccurs="0" name="vrc_status_transid" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="vr1StatusContainer">
+<xs:sequence>
+<xs:element minOccurs="0" name="vr1_status_additional_info" type="xs:string"/>
+<xs:element minOccurs="0" name="vr1_status_code" type="xs:string"/>
+<xs:element minOccurs="0" name="vr1_status_code_desc" type="xs:string"/>
+<xs:element minOccurs="0" name="vr1_status_code_type_desc" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="pingRequest">
+<xs:complexContent>
+<xs:extension base="tns:requestBase">
+<xs:sequence/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="pingResponse">
+<xs:complexContent>
+<xs:extension base="tns:responseBase">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="pingHops" type="tns:pingHop"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="pingHop">
+<xs:sequence>
+<xs:element minOccurs="0" name="className" type="xs:string"/>
+<xs:element minOccurs="0" name="bundleName" type="xs:string"/>
+<xs:element minOccurs="0" name="bundleVersion" type="xs:string"/>
+<xs:element minOccurs="0" name="bundleId" type="xs:string"/>
+<xs:element minOccurs="0" name="timestamp" type="xs:string"/>
+<xs:element minOccurs="0" name="applicationAuthorized" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="configurationInformation" nillable="true" type="tns:keyValuePair"/>
+</xs:sequence>
+</xs:complexType>
+<xs:simpleType name="logLevel">
+<xs:restriction base="xs:string">
+<xs:enumeration value="DEFAULT"/>
+<xs:enumeration value="TRACE"/>
+<xs:enumeration value="DEBUG"/>
+<xs:enumeration value="INFO"/>
+<xs:enumeration value="WARN"/>
+<xs:enumeration value="ERROR"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="serviceCallStatus">
+<xs:restriction base="xs:string">
+<xs:enumeration value="SUCCESS"/>
+<xs:enumeration value="INFO"/>
+<xs:enumeration value="ERROR"/>
+<xs:enumeration value="EXCEPTION"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="statusMessageLevel">
+<xs:restriction base="xs:string">
+<xs:enumeration value="INFORMATIONAL"/>
+<xs:enumeration value="FAULT"/>
+<xs:enumeration value="EXCEPTION"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="invokePingResponse">
+    <wsdl:part element="tns:invokePingResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="invokePing">
+    <wsdl:part element="tns:invokePing" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="invokeServiceResponse">
+    <wsdl:part element="tns:invokeServiceResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="invokeService">
+    <wsdl:part element="tns:invokeService" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ServiceException">
+    <wsdl:part element="tns:ServiceException" name="ServiceException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CreateOrUpdateIssue">
+    <wsdl:operation name="invokeService">
+      <wsdl:input message="tns:invokeService" name="invokeService">
+    </wsdl:input>
+      <wsdl:output message="tns:invokeServiceResponse" name="invokeServiceResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ServiceException" name="ServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="invokePing">
+      <wsdl:input message="tns:invokePing" name="invokePing">
+    </wsdl:input>
+      <wsdl:output message="tns:invokePingResponse" name="invokePingResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ServiceException" name="ServiceException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CreateOrUpdateIssueServiceV13ServiceSoapBinding" type="tns:CreateOrUpdateIssue">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="invokeService">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="invokeService">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="invokeServiceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="invokePing">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="invokePing">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="invokePingResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CreateOrUpdateIssueServiceV13Service">
+    <wsdl:port binding="tns:CreateOrUpdateIssueServiceV13ServiceSoapBinding" name="CreateOrUpdateIssuePort">
+      <soap:address location="http://u3c.uhc.com/upm3_gateway/upm3/orsissue/CreateOrUpdateIssueV13"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></wsdl_xml>
+    </sys_soap_message>
+</record_update>

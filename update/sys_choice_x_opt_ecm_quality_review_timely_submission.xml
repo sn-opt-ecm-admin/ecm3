@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="timely_submission" table="x_opt_ecm_quality_review" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timely_submission</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Proficient</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review</name>
+            <sequence>0</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-25 23:20:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90ad36954f024b801e6cb4fe0210c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-25 23:20:19</sys_updated_on>
+            <value>Proficient</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timely_submission</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Needs Improvement (internal)</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review</name>
+            <sequence>1</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-25 23:20:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0ad36954f024b801e6cb4fe0210c701</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-25 23:20:19</sys_updated_on>
+            <value>Needs Improvement (internal)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timely_submission</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Waived by Manager</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review</name>
+            <sequence>2</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-25 23:20:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50ad36954f024b801e6cb4fe0210c702</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-25 23:20:19</sys_updated_on>
+            <value>Waived by Manager</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timely_submission</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NA</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review</name>
+            <sequence>3</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-25 23:20:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dcad36954f024b801e6cb4fe0210c702</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-25 23:20:19</sys_updated_on>
+            <value>NA</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>timely_submission</element>
+            <name>x_opt_ecm_quality_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-10-25 23:20:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9cad36954f024b801e6cb4fe0210c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>timely_submission</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_opt_ecm_quality_review_timely_submission</sys_update_name>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-10-25 23:20:19</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

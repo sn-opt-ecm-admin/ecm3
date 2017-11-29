@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_canned_message">
+    <sys_email_canned_message action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <body><![CDATA[<div>Subject: Exec Complaint:  <strong>DUE DATE </strong>${due_date}</div>
+<div> </div>
+<div>Hello,</div>
+<div> </div>
+<div>We received a complaint regarding unwanted calls from/for <span style="color: #ff0000;">(UnitedHealth Group / UnitedHealthcare / Optum)</span>.</div>
+<div> </div>
+<div><strong>Complainant’s name:</strong> ${contact_first_name} ${contact_last_name}</div>
+<div><strong>Complainant’s contact phone number:</strong> ${contact_phone}</div>
+<div><strong>Is this a home or cell phone number?</strong></div>
+<div><strong>Phone number incorrectly being called:</strong></div>
+<div><strong>Phone number where the call originated (caller ID info):</strong></div>
+<div><strong>What phone number are they asked to call back:</strong></div>
+<div><strong>Are they a member?</strong> Yes or No:</div>
+<div><strong>Member ID (if a member):</strong></div>
+<div><strong>Plan type (if a member):</strong></div>
+<div><strong>Did the caller or message indicate nature of the call? </strong></div>
+<div><strong>Any other details provided by caller:</strong></div>
+<div> </div>
+<div>Thank you for your assistance.</div>
+<div> </div>]]></body>
+        <group display_value="ECM Intake" name="ECM Intake">627fa5cf4f6087001e6cb4fe0210c700</group>
+        <sys_class_name>sys_email_canned_message</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-11-16 15:15:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>74b1ae904f228300699aacb14210c77d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Call Programs</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_email_canned_message_74b1ae904f228300699aacb14210c77d</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-11-16 15:15:46</sys_updated_on>
+        <title>Call Programs</title>
+        <user/>
+    </sys_email_canned_message>
+</record_update>

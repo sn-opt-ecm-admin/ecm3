@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>l7xx0a00273dca384233abaf337d3da922e9</client_id>
+        <client_secret>XoAieVMPTdX+/XYg9eEWwpwRmHrSnTbF8VQTGHImUSN7MaSa+EyjGA==</client_secret>
+        <client_uuid>a431d0d04f3943401e6cb4fe0210c745</client_uuid>
+        <comments>OptumRx REST resources </comments>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>OptumRx</name>
+        <oauth_api_script/>
+        <redirect_url>https://optumbusopsdev.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>3600</refresh_token_lifespan>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-09 21:58:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2831d0d04f3943401e6cb4fe0210c745</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>OptumRx</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>oauth_entity_2831d0d04f3943401e6cb4fe0210c745</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-11-03 18:52:58</sys_updated_on>
+        <token_url>https://api5-stg-ctc.optum.com:8443/auth/oauth/v2/token</token_url>
+        <type>oauth_provider</type>
+        <user/>
+    </oauth_entity>
+</record_update>

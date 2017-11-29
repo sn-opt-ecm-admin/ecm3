@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Root Cause Analysis" max_length="40" name="x_opt_ecm_rca" type="collection">
+        <element choice="1" label="Level 1" mandatory="true" max_length="4000" name="level_1" type="choice">
+            <choice>
+                <element label="ACA Section 1557" value="aca_section_1557"/>
+                <element label="Eligibility" value="eligibility"/>
+                <element label="Network" value="network"/>
+                <element label="Pharmacy" value="pharmacy"/>
+                <element label="Quality of Care" value="quality_of_care"/>
+                <element label="Quality of Service" value="quality_of_service"/>
+                <element label="Administrative Billing" sequence="0" value="administrative_billing"/>
+                <element label="Appeal Processing" sequence="1" value="appeal_processing"/>
+                <element label="Benefit Administration" sequence="2" value="benefit_administration"/>
+                <element label="Four Level Sample" sequence="3" value="sample"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="level_1" dependent_on_field="level_1" label="Level 2" max_length="4000" name="level_2" type="choice" use_dependent_field="true">
+            <choice>
+                <element label="Access to care issues" value="access_to_care_issues"/>
+                <element label="Accounting" value="accounting"/>
+                <element label="Alternate Format" value="alternate_format"/>
+                <element label="Benefit" value="medication_benefit"/>
+                <element label="Clinician/Clinician Staff" value="clinician_clinician_staff"/>
+                <element label="Continuation Coverage" value="continuation_coverage"/>
+                <element label="Contracting/Credentialing" value="contracting_credentialing"/>
+                <element label="Discrimination" value="discrimination"/>
+                <element label="Group/Employer" value="eligibility_group_employer"/>
+                <element label="Help Desk" value="help_desk"/>
+                <element label="Home Delivery Pharmacy" value="home_delivery_pharmacy"/>
+                <element label="Individual" value="eligibility_individual"/>
+                <element label="Manual Claims" value="manual_claims"/>
+                <element label="Negotiated Rate" value="negotiated_rate"/>
+                <element label="Network" value="network"/>
+                <element label="Network Operations" value="network_operations"/>
+                <element label="Notice" value="notice"/>
+                <element label="OID" value="oid"/>
+                <element label="Opioid" value="opioid"/>
+                <element label="Order Entry" value="order_entry"/>
+                <element label="Price Check" value="price_check"/>
+                <element label="Retail" value="retail"/>
+                <element label="Service issues" value="service_issues"/>
+                <element label="Specialty Pharmacy" value="specialty_pharmacy"/>
+                <element label="Translation" value="translation"/>
+                <element label="Web Portal" value="web_portal"/>
+                <element dependent_value="appeal_processing" label="Appeal Timely Filing Expired" sequence="0" value="appeal_processing_appeal_timely_filing_expired"/>
+                <element dependent_value="benefit_administration" label="Benefit Exclusions" sequence="0" value="benefit_administration_benefit_exclusions"/>
+                <element dependent_value="sample" label="Four Level Sample, Level 2" sequence="0" value="sample_level2"/>
+                <element dependent_value="administrative_billing" label="Group/Employer" sequence="0" value="administrative_billing_group_employer"/>
+                <element dependent_value="appeal_processing" label="Appeal timely Filing Proof" sequence="1" value="appeal_processing_appeal_timely_filing_proof"/>
+                <element dependent_value="benefit_administration" label="Communication" sequence="1" value="benefit_administration_communication"/>
+                <element dependent_value="administrative_billing" label="Individual" sequence="1" value="administrative_billing_individual"/>
+                <element dependent_value="appeal_processing" label="Communication" sequence="2" value="appeal_processing_communication"/>
+                <element dependent_value="benefit_administration" label="Delay" sequence="2" value="benefit_administration_delay"/>
+                <element dependent_value="appeal_processing" label="Delay" sequence="3" value="appeal_processing_delay"/>
+                <element dependent_value="appeal_processing" label="Misroute" sequence="4" value="appeal_processing_misroute"/>
+                <element dependent_value="appeal_processing" label="Other" sequence="5" value="appeal_processing_other"/>
+                <element dependent_value="benefit_administration" label="Other" sequence="11" value="benefit_administration_other"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="level_2" dependent_on_field="level_2" label="Level 3" max_length="4000" name="level_3" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="administrative_billing_individual" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
+                <element dependent_value="administrative_billing_group_employer" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
+                <element dependent_value="sample_level2" label="Four Level Sample, Level 3" sequence="0" value="sample_level2_level3"/>
+                <element dependent_value="benefit_administration_health_care_reform" label="Grandfathering issues" sequence="0" value="benefit_administration_health_care_reform_grandfathering_issues"/>
+                <element dependent_value="benefit_administration_delay" label="Insufficient billing, eligibility information" sequence="0" value="benefit_administration_delay_insufficient_billing_eligibility_information"/>
+                <element dependent_value="appeal_processing_communication" label="Language Barrier" sequence="0" value="appeal_processing_communication_language_barrier"/>
+                <element dependent_value="benefit_administration_communication" label="Language barrier" sequence="0" value="benefit_administration_communication_language_barrier"/>
+                <element dependent_value="appeal_processing_misroute" label="Misroute" sequence="0" value="appeal_processing_misroute_misroute"/>
+                <element dependent_value="benefit_administration_delay" label="Other" sequence="1" value="benefit_administration_delay_other"/>
+                <element dependent_value="appeal_processing_communication" label="Other" sequence="1" value="appeal_processing_communication_other"/>
+                <element dependent_value="benefit_administration_health_care_reform" label="Other" sequence="1" value="benefit_administration_health_care_reform_other"/>
+                <element dependent_value="appeal_processing_misroute" label="Other" sequence="1" value="appeal_processing_misroute_other"/>
+                <element dependent_value="administrative_billing_individual" label="Premium Dispute" sequence="1" value="administrative_billing_individual_premium_dispute"/>
+                <element dependent_value="administrative_billing_group_employer" label="Premium Dispute" sequence="1" value="administrative_billing_group_employer_premium_dispute"/>
+                <element dependent_value="benefit_administration_communication" label="Unclear to Recipient" sequence="1" value="benefit_administration_communication_unclear_to_recipient"/>
+                <element dependent_value="benefit_administration_communication" label="Other" sequence="2" value="benefit_administration_communication_other"/>
+                <element dependent_value="administrative_billing_individual" label="Termination Non-Payment" sequence="2" value="administrative_billing_individual_termination_non-payment"/>
+                <element dependent_value="administrative_billing_group_employer" label="Termination Non-Payment" sequence="2" value="administrative_billing_group_employer_termination_non-payment"/>
+                <element dependent_value="benefit_administration_delay" label="Third Party Payor" sequence="2" value="benefit_administration_delay_third_party_payor"/>
+                <element dependent_value="administrative_billing_individual" label="Other" sequence="3" value="administrative_billing_individual_other"/>
+                <element dependent_value="administrative_billing_group_employer" label="Other" sequence="3" value="administrative_billing_group_employer_other"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="level_3" dependent_on_field="level_3" label="Level 4" max_length="4000" name="level_4" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="sample_level2_level3" label="Four Level Sample, Level 4" sequence="0" value="sample_level2_level3_level4"/>
+                <element dependent_value="sample_level2_level3" label="Four Level Sample, Level 4 Other" sequence="1" value="sample_level2_level3_other"/>
+                <element dependent_value="3 of 4, A1" label="4 of 4, A1a" sequence="4" value="4 of 4, A1a"/>
+            </choice>
+        </element>
+        <element label="Other Reason" max_length="80" name="other_reason" type="string"/>
+        <element attributes="readonly_clickthrough=true" label="Case" mandatory="true" max_length="32" name="parent_case" read_only="true" reference="x_opt_ecm_case" type="reference"/>
+        <index name="index">
+            <element name="parent_case"/>
+        </index>
+    </element>
+</database>

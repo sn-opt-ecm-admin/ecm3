@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Sets the behavior for masking SSN fields</description>
+        <field>account</field>
+        <global>true</global>
+        <messages/>
+        <name>Mask SSNs</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+
+	var fields = ['contact_ssn', 'member_ssn', 'patient_ssn'];
+	var dataAttribute = 'actualValue';
+	
+	for (var i = 0; i < fields.length; i++) {	
+		var ssnField = $j('#x_opt_ecm_case\\.' + fields[i]);
+		ssnField.on('focus', onFocus ).on('blur', onBlur ).blur();
+	}
+
+	function onFocus() {
+		
+		var $this = $j(this);
+		var val = $this.data(dataAttribute);
+		
+		if (val) {
+			$this.val(val);
+		}
+	}
+	
+	function onBlur() {
+		
+		var $this = $j(this);
+        $this.data(dataAttribute, $this.val());
+        $this.val($this.val().replace(/^\d{5}/, '*****'));
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-11-14 15:31:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d6619cf74f5603001e6cb4fe0210c76d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Mask SSNs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_client_d6619cf74f5603001e6cb4fe0210c76d</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-14 17:14:47</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.QualityReviewUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>QualityReviewUtils</name>
+        <script><![CDATA[var QualityReviewUtils = Class.create();
+QualityReviewUtils.prototype = {
+	
+	initialize: function() { },
+	
+	getAdvocateRefQual : function() {
+		
+		var advocateRole = new GlideRecord('sys_user_role');
+		var foundRole = advocateRole.get('name', 'x_opt_ecm.advocate');
+		if (!foundRole) {
+			return '';
+		}
+		
+		var advocates = new GlideRecord('sys_user_has_role');
+		advocates.addQuery('role', advocateRole.getUniqueValue());
+		advocates.query();
+		
+		var advocateSysIds = [];
+		while (advocates.next()) {
+			advocateSysIds.push(advocates.getValue('user'));
+		}
+		
+		return 'sys_idIN' + advocateSysIds.join(',');
+	},
+	
+	determineQualityReview: function(current) {
+	
+		if (!current.assigned_to) {
+			gs.warn('Resolved case is not assigned.  Skipping quality review calculation.');
+			return;
+		}
+
+		var percentage = 0;
+
+		var percentageLookup = new GlideRecord('x_opt_ecm_quality_review_advocate_percentage');
+		percentageLookup.addQuery('advocate', current.assigned_to);
+		percentageLookup.query();
+
+		if (percentageLookup.next()) {
+			percentage = parseInt(percentageLookup.percentage);
+		}
+
+		if (isNaN(percentage)) {
+			gs.warn('Could not determine quality review percentage for advocate "{0}".', current.assigned_to.getDisplayValue());
+			return;
+		}
+
+		if (percentage == 0) {
+			gs.info('Advocate {0} does not require quality review.', current.assigned_to.getDisplayValue());
+			return;
+		}
+
+
+		// validation is done, find out if we need a QR in this instance.
+
+
+		var cases = this._getNumberOfCasesForAdvocate(current.assigned_to);
+		var qualityReviews = this._getNumberOfReviewsForAdvocate(current.assigned_to);
+
+		var reviewedCasePercentage = qualityReviews / cases * 100;
+		var needsQualityReview = reviewedCasePercentage < percentage;
+
+		if (needsQualityReview) {
+			
+			current.state = 20;
+
+			var newQualityReview = new GlideRecord('x_opt_ecm_quality_review');
+			newQualityReview.initialize();
+			newQualityReview.case_number = current.sys_id;
+			newQualityReview.insert();
+		}
+
+		gs.info('{0} has {1} previous quality reviews on {2} cases --> {3}%.  Requires {4}% review. {5} this case for review.',
+				[current.assigned_to.getDisplayValue(), 
+				qualityReviews, 
+				cases, 
+				reviewedCasePercentage,
+				percentage,
+				(needsQualityReview ? 'Scheduling' : 'Not scheduling')]);
+	},
+	
+	_getNumberOfReviewsForAdvocate: function(advocate) {
+	
+		var advocateReviews = new GlideAggregate('x_opt_ecm_quality_review');
+		advocateReviews.addQuery('case_number.assigned_to', advocate);
+		advocateReviews.addAggregate('COUNT');
+		advocateReviews.query();
+		if (advocateReviews.next() && advocateReviews.getAggregate('COUNT') > 0) {
+			return parseInt(advocateReviews.getAggregate('COUNT'));
+		}
+		
+		return 0;
+	},
+	
+	_getNumberOfCasesForAdvocate: function(advocate) {
+
+		var advocateCases = new GlideAggregate('x_opt_ecm_case');
+		advocateCases.addQuery('assigned_to', advocate);
+		advocateCases.addAggregate('COUNT');
+		advocateCases.query();
+		if (advocateCases.next() && advocateCases.getAggregate('COUNT') > 0) {
+			return parseInt(advocateCases.getAggregate('COUNT'));
+		}
+		
+		return 0;
+	},
+	
+	
+	type: 'QualityReviewUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-10-27 14:33:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>54f45f794f0a8b801e6cb4fe0210c728</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>QualityReviewUtils</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_54f45f794f0a8b801e6cb4fe0210c728</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-11-27 19:06:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

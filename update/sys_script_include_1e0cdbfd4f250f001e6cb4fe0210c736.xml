@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.ORSIntegration</api_name>
+        <client_callable>false</client_callable>
+        <description>Class to manage integrations for the ECM application</description>
+        <name>ORSIntegration</name>
+        <script>/** V E R A C I T Y ~ www.meetveracity.com ~ **
+ * Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ * Description: Class to manage ORS integrations for the ECM application
+
+ */
+
+gs.include("IntegrationLogUtil");
+
+var ORSIntegration = Class.create();
+ORSIntegration.prototype = {
+
+    // CONSTANTS
+
+    HTTPSTATUS_SUCCESS: "200", // Indicates a successful HTTP post of a SOAP Message
+    // ORS Codes
+    INSERT: "N", // (N)ew
+    UPDATE: "O", // (O)wner
+    OPEN: "O", // (O)pen
+    CLOSED: "C", // (C)losed
+    PHONE: "P", // (P)hone
+    MAIL: "M", // (M)ail
+    LOGSOURCE: "ORSIntegration.", // Log Source
+    LOGHEADER: "{0}{1} &gt;[{2}]:\r\n{3}", // Standard prefix
+    LOG_INFO: "INFO",
+    LOG_ERROR: "ERROR",
+    LOG_DEBUG: "DEBUG",
+    //EXAMPLE: "gs.error(this.LOGHEADER , this.LOGSOURCE , functName, this.LOG_ERROR, message);"
+
+    initialize: function() {
+        this.logger = new IntegrationLogUtil();
+    },
+
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Outbound SOAP API call to ORS
+
+ 		* Parameters:
+ 		* glide_record: the current record
+ 		* insert_or_update_constant: this.INSERT or this.UPDATE, this controls whether we are opening an issue or closing it
+
+ 		*/
+    callORS: function(glide_record, insert_or_update_constant) {
+        var functName = "callORS()";
+        var gr = new GlideRecord();
+        var soap_message = "x_opt_ecm.CreateOrUpdateIssueV13";
+        var soap_method = "invokeService";
+        gr = glide_record;
+
+        // Ternaries
+        // If this is an INSERT set the correct code
+        var insert_or_update = (insert_or_update_constant == this.INSERT) ? this.INSERT : this.UPDATE;
+
+        // If this is an INSERT then we are opening the issue in ORS (Case==WIP) otherwise we are closing it (Case==Resolved)
+        var open_or_closed = (insert_or_update_constant == this.INSERT) ? this.OPEN : this.CLOSED;
+
+        // Handle Contact is Member mappings
+        var m_member_number = "";
+        var m_group_number = "";
+        var m_policy_number = "";
+        var m_first_name = "";
+        var m_last_name = "";
+        if (gr.contact_is_member) {
+            m_member_number = gr.contact_number;
+            m_group_number = gr.contact_group_number;
+            m_first_name = gr.contact_first_name;
+            m_last_name = gr.contact_last_name;
+            m_policy_number = gr.contact_policy_number;
+        } else {
+            m_member_number = gr.member_number;
+            m_group_number = gr.member_group_number;
+            m_first_name = gr.member_first_name;
+            m_last_name = gr.member_last_name;
+            m_policy_number = gr.member_policy_number;
+        }
+
+        // Handle Contact is Patient
+        var p_first_name = "";
+        var p_last_name = "";
+        if (gr.contact_is_member) {
+            p_first_name = gr.contact_first_name;
+            p_last_name = gr.contact_last_name;
+        } else {
+            p_first_name = gr.member_first_name;
+            p_last_name = gr.member_last_name;
+        }
+
+        // If the transaction source is Verbal then (P)hone, if Written then (M)ail
+        var transaction_source;
+        if (gr.transaction_source == 'verbal') {
+            transaction_source = this.PHONE;
+
+        } else if (gr.transaction_source == 'written') {
+            transaction_source = this.MAIL;
+
+        }
+        //this.echo("The transaction source is: " + transaction_source);
+
+        // Set the proper codes based on a create or a modify operation in ORS
+        var created_by = (insert_or_update_constant == this.INSERT) ? "Q" : "";
+        var modified_by = (insert_or_update_constant == this.UPDATE) ? "Q" : "";
+
+     // member.eligibilitySourceSystem
+
+        try {
+            var s = new sn_ws.SOAPMessageV2(soap_message, soap_method);
+            s.setEndpoint(gs.getProperty("x_opt_ecm.integration_ors_create_update_endpoint"));
+            var method = soap_message + "." + soap_method;
+            // header values
+            s.setStringParameterNoEscape('requestHeader.applicationInstanceName', 'ECM'); // required
+            s.setStringParameterNoEscape('requestHeader.applicationName', 'ECM'); // required
+            s.setStringParameterNoEscape('requestHeader.logLevel', 'DEBUG');
+            s.setStringParameterNoEscape('orsSystemParameter.logonOffice', '888'); // required
+            s.setStringParameterNoEscape('orsSystemParameter.logonId', 'ECM'); // required
+            // Check the member number to see if it is a number or longer than 9
+            // if not force it to Diamond EE ID field by setting eligibilitySourceSystem
+            // Diamond EE ID is (12) alpha-numeric, UPM maps the field when set
+            if(isNaN(m_member_number) || m_member_number.length &gt; 9){
+              this.echo("Member number is alpha-numeric, set eligibilitySourceSystem = D");
+              s.setStringParameterNoEscape('member.eligibilitySourceSystem', 'D');
+            }
+            // If the group number is not a number force it to policy number
+            if(isNaN(m_group_number)){
+              this.echo("Mapping group number to policy number: " + m_group_number);
+              m_policy_number = m_group_number;
+              m_group_number = '';
+            }
+            s.setStringParameterNoEscape('member.memberNumber', m_member_number); // PIC 9 (09)
+            s.setStringParameterNoEscape('member.groupNumber', m_group_number); // PIC 9 (07)
+            s.setStringParameterNoEscape('member.policy', m_policy_number); // PIC X (07)
+            if (gr.contact_relationship == "spouse_relative") {
+                s.setStringParameterNoEscape('member.RelationshipCode', '01'); // Spouse
+                s.setStringParameterNoEscape('member.RelationshipSequenceNumber', '0');
+            }
+            s.setStringParameterNoEscape('memberName.firstName', m_first_name); // PIC X (01)
+            s.setStringParameterNoEscape('memberName.lastName', m_last_name); // PIC X(16)
+            s.setStringParameterNoEscape('dependentName.firstName', p_first_name); // PIC X(12)
+            s.setStringParameterNoEscape('dependentName.lastName', p_last_name); // PIC X(16)
+            s.setStringParameterNoEscape('callerName.firstName', gr.contact_first_name); // required PIC X(14)
+            s.setStringParameterNoEscape('callerName.lastName', gr.contact_last_name); // required PIC X(16)
+            // values for the reported case
+            s.setStringParameterNoEscape('issue.status', open_or_closed);
+            s.setStringParameterNoEscape('issue.issueId', gr.ors_issue_id);
+            s.setStringParameterNoEscape('issue.reasonCategory', 'GENERAL');
+            s.setStringParameterNoEscape('issue.reasonCode', 'ECOO');
+            s.setStringParameterNoEscape('issue.reasonType', ''); // Leave blank per Manish Arora
+            s.setStringParameterNoEscape('issue.callHistoryFlag', 'N'); // Default to N per Manish Arora
+            s.setStringParameterNoEscape('issue.caseNumber', gr.number); // The case number
+            s.setStringParameterNoEscape('issue.createdByApplicationIndicator', created_by); //required
+            s.setStringParameterNoEscape('issue.modifiedByApplicationIndicator', modified_by); //required
+            s.setStringParameterNoEscape('issue.directionCode', 'I'); // (I)ncoming // required
+            s.setStringParameterNoEscape('issue.updateType', insert_or_update); // required
+            s.setStringParameterNoEscape('issue.contactMethodCode', transaction_source); // required
+            s.setStringParameterNoEscape('issue.priority', 'N'); // (N)ormal
+            s.setStringParameterNoEscape('issue.originatorTypeCode', this.mapContactRelationship(gr.contact_relationship)); // required
+            s.setStringParameterNoEscape('issue.hipaaIndicator', 'N'); // required
+
+            // Add the fields that do not map to an ORS tag to a new Intake comment.
+            var newNote = this.getAdHocComment(glide_record);
+            this.addIntakeNoteToECM(newNote, glide_record);
+
+            // 71 byte limit per &lt;comments/&gt; tag - oh mainframes.
+            var max_note = 71;
+            var notes = [];
+            var _this = this;
+            var _note_count = 0;
+            notes = this.getNotes("x_opt_ecm_case", gr.sys_id, "intake_comments", gr.last_ors_update);
+            this.echo("Notes found: " + notes.length);
+            notes.forEach(function(elem) {
+
+                if (elem.length &lt;= max_note) {
+                    s.setStringParameterNoEscape('issue.comments' + _note_count, '&lt;![CDATA[' + elem + ']]&gt;');
+                    ++_note_count;
+                } else {
+                    var split = [];
+                    split = _this.chunkStringToArray(elem, max_note);
+                    split.forEach(function(part) {
+                        s.setStringParameterNoEscape('issue.comments' + _note_count, '&lt;![CDATA[' + part + ']]&gt;');
+                        ++_note_count;
+                    });
+                }
+
+            });
+
+
+
+            // ### CALL THE SERVICE ### //
+            var response = s.execute();
+
+            // ### Validate the SOAP call was successful and log results ### //
+            this.validateORS(s, response, gr, method);
+
+        } catch (e) {
+            //var message = ex.getMessage();
+            gs.error(this.LOGHEADER, this.LOGSOURCE, functName, this.LOG_ERROR, e.message);
+            return false;
+        }
+    },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Validates the ORS SOAP response and logs success and failure
+
+ 		* Parameters:
+ 		* soap: the original soap request message
+ 		* soapresponse: the soap response message
+ 		* number: the ECM case number this is regarding
+
+ 		*/
+    validateORS: function(soap, soapresponse, glide_record, method) {
+        var functName = "validateORS()";
+
+        try {
+            var case_info = "Case # :" + glide_record.number;
+            var error_msg = soapresponse.haveError() ? soapresponse.getErrorMessage() : null;
+            var status = soapresponse.getStatusCode();
+            var endpoint = soap.getEndpoint();
+            var responseBody = soapresponse.getBody();
+            var requestBody = soap.getRequestBody();
+            var doc = new XMLDocument2();
+            doc.parseXML(responseBody); // Load XML
+            var valid_doc = doc.isValid(); // Validate
+            var success_msg = "";
+            //this.echo("The document is valid? : " + valid_doc + " The document is not empty? : " + gs.nil(doc));
+
+            // First test for systemic success, then functional success in the ORS response
+            if (status == this.HTTPSTATUS_SUCCESS &amp;&amp; !soapresponse.haveError()) {
+                if (valid_doc &amp;&amp; !gs.nil(doc)) {
+                    // We can read the document if its valid and not null, now check for internal errors in the document
+
+                    // Check for Fault Response
+                    var fault_error = doc.getNodeText("//faultcode"); // Type of fault
+                    var fault_msg = doc.getNodeText("//faultstring"); // Fault description
+
+                    // Check for Service Call Response or Fault, some Faults do not return serviceCallStatus
+                    var service_call_status = (gs.nil(fault_error)) ? doc.getNodeText("//serviceCallStatus") : "FAULT"; // Service call status
+                    /*var status_message_level = doc.getNodeText("//statusMessageLevel"); // Service call status
+                    var message_type = doc.getNodeText("//messageType"); // Service call status;
+                    var status_message = doc.getNodeText("//statusMessage"); // Service call status
+                    var status_origin = doc.getNodeText("//statusOrigin"); // Service call status*/
+
+                    // Check for Success
+                    var ors_issue = doc.getNodeText("//issueId"); // This indicates success creating a new ORS Issue
+                    var ors_status = doc.getNodeText("//status"); // The status of the issue in ORS
+
+                    // #### ALWAYS log to the dedicated integration log table for tracking and debugging ####
+                    this.logger.log(method, requestBody, responseBody, status, service_call_status, glide_record.sys_id, endpoint);
+                    // ####
+
+
+                    if (!gs.nil(fault_error)) {
+                        //Something in the API went wrong, log.
+                        throw new Error("The ORS Service encountered a FAULT, see Integration Log for details, " + case_info);
+                    } else if (service_call_status == "ERROR" || service_call_status == "FAULT") {
+                        // Returned an Error code message, log.
+                        throw new Error("The ORS Service returned an ERROR or FAULT message, see Integration Log for details, " + case_info);
+                    } else if (gs.nil(ors_issue)) {
+                        //Looks like success but an issue id was not returned, log.
+                        throw new Error("An ORS Issue ID was not returned for this call, see Integration Log for details, " + case_info);
+                    } else if (!gs.nil(ors_issue)) {
+                        //Successful ORS Issue creation
+                        success_msg = case_info + " successfully sent to ORS, Issue # " + ors_issue;
+
+                        this.notateCase(success_msg, glide_record, ors_issue);
+                        gs.debug(this.LOGHEADER, this.LOGSOURCE, functName, this.LOG_DEBUG, success_msg);
+
+                    }
+                } else {
+                    throw new Error("The SOAP Response message was not valid, see Integration Log for details.");
+                }
+            } else {
+                throw new Error("The SOAP call failed, HTTP response code: &gt;[" +
+                    status + "], SNC error code: [" + error_msg + "], SOAP response:\r\n " + responseBody); //Systemic error
+            }
+
+
+
+        } catch (e) {
+            gs.error(this.LOGHEADER, this.LOGSOURCE, functName, this.LOG_ERROR, e.message);
+
+        }
+
+    },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Logs and returns the input for testing purposes
+
+ 		* Parameters:
+ 		* input: input message
+
+ 		* Returns: the input message
+ 		*/
+    echo: function(input) {
+        var functName = "echo()";
+        gs.info(this.LOGHEADER, this.LOGSOURCE, functName, this.LOG_INFO, input);
+        return input;
+    },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Chunks a string to an array of fixed bytes
+
+ 		* Parameters:
+ 		* str: the string to chuck
+ 		* maxPartSize: the max size of the chunk
+
+ 		* Returns: the chunked string in an array
+ 		*/
+    chunkStringToArray: function(str, maxPartSize) {
+
+        var chunkArr = [];
+        var leftStr = str;
+        var i = 0;
+        while (leftStr.length &gt; 0) {
+
+            chunkArr.push(leftStr.substring(0, maxPartSize));
+            leftStr = leftStr.substring(maxPartSize, leftStr.length);
+        }
+
+        return chunkArr;
+    },
+
+
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: maps Contact Relationship choice list values to ORS codes
+
+    * Parameters:
+    * contact_relationship: One of the defined choice values
+
+ 		* Returns: the mapped ORS code
+ 		*/
+    mapContactRelationship: function(contact_relationship) {
+        var result = "EM"; //Default to EM in case the requested item does not exist
+
+        //JSON Object to hold the mapping
+        var map = {
+            "agent_broker": "CB",
+            "applicant": "PM",
+            "attorney": "LA",
+            "attorney_general": "RC",
+            "billing_collection_agency": "CA",
+            "insured_participant": "EM",
+            "legislator": "RH",
+            "non_insurance_customer": "NM",
+            "other": "OT",
+            "physician_provider_service": "PR",
+            "policyowner_trustee_group": "BE",
+            "regulator": "RT",
+            "spouse_relative": "FF",
+            "third_party": "OI"
+
+        };
+
+        var map_value = map[contact_relationship];
+        //this.echo("The contact method is : " + contact_relationship + ", map value : " + map_value);
+        // Test in case the incoming value is not found
+        if (contact_relationship === undefined || contact_relationship === null || contact_relationship === '') {
+            return result;
+        } else {
+            return map_value;
+        }
+
+
+    },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: maps Contact Relationship choice list values to ORS codes
+
+    * Parameters:
+    * message: the string to write to the work notes field on the glide record
+    * glide_record: the glide record to write to
+    * issue_id: the ORS Issue ID returned from the ORS SOAP Response
+
+ 		*/
+    notateCase: function(message, glide_record, issue_id) {
+        glide_record.ors_issue_id = issue_id;
+        glide_record.last_ors_update = new GlideDateTime();
+        glide_record.work_notes = message;
+        glide_record.update();
+    },
+
+    addIntakeNoteToECM: function(message, glide_record) {
+        glide_record.intake_comments = message;
+        glide_record.update();
+    },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Retrieves Journal Notes for a specfied element, optionally older than after_date_time
+
+    * Parameters:
+    * table: name of the table where the notes were made
+    * sys_id: the sys_id of the record with the notes
+    * element: the type of note e.g. work_notes, intake_comments
+    * after_date_time: a GlideDateTime value to filter the result set (OPTIONAL)
+
+    * Returns: Array of notes prefixed with &gt; creation date - creation by - element type
+ 		*/
+    getNotes: function(table, sys_id, element, after_date_time) {
+        var gr = new GlideRecord("sys_journal_field");
+        var notes = [];
+        gr.addQuery("name", table);
+        gr.addQuery("element", element);
+        gr.addQuery("element_id", sys_id);
+        if (!after_date_time.nil()) {
+            gr.addQuery("sys_created_on", "&gt;", after_date_time);
+        }
+        gr.orderBy("sys_created_on");
+        gr.query();
+        while (gr.next()) {
+            var note = gr.sys_created_on + " - " + gr.sys_created_by + " (" + element + ") - " + gr.value;
+            notes.push(note);
+        }
+
+        return notes;
+
+    },
+
+    getAdHocComment: function(glide_record) {
+        var note = {};
+        var message = "";
+        note.fieldLabels = ["OCA/OCR Received: ",
+            "Submission Source: ",
+            "Responsible Dept: ",
+            "Due Date: ",
+            "Resolution Date: "
+        ];
+        note.fieldValues = [glide_record.oca_ocr_received_date_time,
+            glide_record.submission_source.getDisplayValue(),
+            glide_record.responsible_department.getDisplayValue(),
+            glide_record.due_date,
+            glide_record.resolution_date_resolved
+        ];
+
+        for (var j = 0; j &lt; note.fieldLabels.length; j++) {
+            message += note.fieldLabels[j] + note.fieldValues[j] + "\n";
+        }
+        return message;
+    },
+
+    type: 'ORSIntegration'
+};
+</script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-10-02 18:45:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1e0cdbfd4f250f001e6cb4fe0210c736</sys_id>
+        <sys_mod_count>268</sys_mod_count>
+        <sys_name>ORSIntegration</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_1e0cdbfd4f250f001e6cb4fe0210c736</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-11-22 14:22:53</sys_updated_on>
+    </sys_script_include>
+</record_update>
