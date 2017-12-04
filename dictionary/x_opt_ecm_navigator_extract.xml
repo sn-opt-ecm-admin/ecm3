@@ -10,7 +10,7 @@
         <element label="Member First Name" max_length="100" name="member_first_name" type="string"/>
         <element label="Member ID" max_length="100" name="member_id" type="string"/>
         <element label="Member Last Name" max_length="100" name="member_last_name" type="string"/>
-        <element label="Member MI" max_length="100" name="member_mi" type="string"/>
+        <element label="Member MI" max_length="2" name="member_mi" type="string"/>
         <element display="true" label="Number" max_length="100" name="number" type="string"/>
         <element label="OCA/OCR Received Date" max_length="100" name="oca_ocr_received_date" type="string"/>
         <element label="Resolved at" max_length="100" name="resolved_at" type="string"/>

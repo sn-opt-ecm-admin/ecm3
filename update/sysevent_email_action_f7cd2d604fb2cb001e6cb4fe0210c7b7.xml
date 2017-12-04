@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_opt_ecm_quality_review_task</collection>
+        <condition table="x_opt_ecm_quality_review_task">stateCHANGESTO5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>Quality Review ${number} received reply from the Advocate.</p>
+<p><strong>Advocate Comments:</strong> ${advocate_comments}</p>
+<p><strong>Click here to view Quality Review:&nbsp;${URI_REF}</strong></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>ECM-QR Reply from Advocate</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>assigned_to</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Quality Review: ${number} Reply from Advocate</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-11-29 16:30:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7cd2d604fb2cb001e6cb4fe0210c7b7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ECM-QR Reply from Advocate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sysevent_email_action_f7cd2d604fb2cb001e6cb4fe0210c7b7</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-12-01 16:10:02</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -12,11 +12,11 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_opt_ecm_quality_review</collection>
+        <collection>x_opt_ecm_quality_review_task</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_opt_ecm_quality_review">review_state=6^EQ<item endquery="false" field="review_state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+        <filter_condition table="x_opt_ecm_quality_review_task">state=6^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -47,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f4ea508e4fca8b801e6cb4fe0210c7ae</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>ECM-SetQRReviewCompleteDateAtClosed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_f4ea508e4fca8b801e6cb4fe0210c7ae</sys_update_name>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-11-28 17:52:52</sys_updated_on>
+        <sys_updated_on>2017-11-30 00:46:41</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

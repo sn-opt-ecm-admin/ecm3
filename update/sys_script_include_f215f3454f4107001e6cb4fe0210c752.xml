@@ -57,26 +57,18 @@ EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcess
 	
 	_getCorporateDueDate: function(receivedDate) {
 
+		var ecmDateUtils = new EcmSlaDateUtils();
+		
 		var slaNumberOfBusinessDays = parseInt(gs.getProperty('x_opt_ecm.manual_entry_sla_business_days_default')) || 10;		
-		var schedule = this._getSchedule();
+		var schedule = ecmDateUtils.getSchedule();
 		
-		// pick a random day from the schedule and get the hourly duration
-		var oneDay = schedule.duration(new GlideDateTime('2017-09-01 00:00:00'), new GlideDateTime('2017-09-01 23:59:59'));
-		
-		var allDays = new GlideDuration(oneDay.getDurationValue());
-		for (var i = 1; i < slaNumberOfBusinessDays; i++) {
-			allDays = allDays.add(new GlideDuration(oneDay.getDurationValue()));
-		}
-		
+		var duration = ecmDateUtils.getDuration(schedule, slaNumberOfBusinessDays);
+
 		var baseTime = new GlideDateTime();
 		baseTime.setDisplayValue(receivedDate);
 		
-		var dueDate = schedule.add(baseTime, allDays);
+		var dueDate = schedule.add(baseTime, duration);
 		return dueDate.getDisplayValue();
-	},
-	
-	_getSchedule: function() {
-		return new EcmSlaDateUtils().getSchedule();
 	},
 	
     type: 'EcmSlaDateCalculator'
@@ -86,7 +78,7 @@ EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_created_on>2017-09-05 16:17:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f215f3454f4107001e6cb4fe0210c752</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>EcmSlaDateCalculator</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -94,6 +86,6 @@ EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_f215f3454f4107001e6cb4fe0210c752</sys_update_name>
         <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-10-18 15:14:07</sys_updated_on>
+        <sys_updated_on>2017-11-30 19:47:41</sys_updated_on>
     </sys_script_include>
 </record_update>

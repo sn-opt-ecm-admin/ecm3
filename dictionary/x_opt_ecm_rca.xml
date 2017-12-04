@@ -17,32 +17,34 @@
         </element>
         <element choice="1" dependent="level_1" dependent_on_field="level_1" label="Level 2" max_length="4000" name="level_2" type="choice" use_dependent_field="true">
             <choice>
-                <element label="Access to care issues" value="access_to_care_issues"/>
-                <element label="Accounting" value="accounting"/>
-                <element label="Alternate Format" value="alternate_format"/>
-                <element label="Benefit" value="medication_benefit"/>
-                <element label="Clinician/Clinician Staff" value="clinician_clinician_staff"/>
-                <element label="Continuation Coverage" value="continuation_coverage"/>
-                <element label="Contracting/Credentialing" value="contracting_credentialing"/>
-                <element label="Discrimination" value="discrimination"/>
-                <element label="Group/Employer" value="eligibility_group_employer"/>
-                <element label="Help Desk" value="help_desk"/>
-                <element label="Home Delivery Pharmacy" value="home_delivery_pharmacy"/>
-                <element label="Individual" value="eligibility_individual"/>
-                <element label="Manual Claims" value="manual_claims"/>
-                <element label="Negotiated Rate" value="negotiated_rate"/>
-                <element label="Network" value="network"/>
-                <element label="Network Operations" value="network_operations"/>
-                <element label="Notice" value="notice"/>
-                <element label="OID" value="oid"/>
-                <element label="Opioid" value="opioid"/>
-                <element label="Order Entry" value="order_entry"/>
-                <element label="Price Check" value="price_check"/>
-                <element label="Retail" value="retail"/>
-                <element label="Service issues" value="service_issues"/>
-                <element label="Specialty Pharmacy" value="specialty_pharmacy"/>
-                <element label="Translation" value="translation"/>
-                <element label="Web Portal" value="web_portal"/>
+                <element dependent_value="quality_of_service" label="Access to care issues" value="quality_of_service_access_to_care_issues"/>
+                <element dependent_value="pharmacy" label="Accounting" value="pharmacy_accounting"/>
+                <element dependent_value="aca_section_1557" label="Alternate Format" value="aca_section_1557_alternate_format"/>
+                <element dependent_value="pharmacy" label="Benefit" value="pharmacy_benefit"/>
+                <element dependent_value="quality_of_care" label="Clinician/Clinician Staff" value="quality_of_care_clinician_clinician_staff"/>
+                <element dependent_value="eligibility" label="Continuation Coverage" value="eligibility_continuation_coverage"/>
+                <element dependent_value="network" label="Contracting/Credentialing" value="network_contracting_credentialing"/>
+                <element dependent_value="aca_section_1557" label="Discrimination" value="aca_section_1557_discrimination"/>
+                <element dependent_value="quality_of_care" label="Facility/Facility Staff" value="quality_of_care_facility_staff"/>
+                <element dependent_value="eligibility" label="Group/Employer" value="eligibility_group_employer"/>
+                <element dependent_value="pharmacy" label="Help Desk" value="pharmacy_help_desk"/>
+                <element dependent_value="pharmacy" label="Home Delivery Pharmacy" value="pharmacy_home_delivery_pharmacy"/>
+                <element dependent_value="eligibility" label="Individual" value="eligibility_individual"/>
+                <element dependent_value="pharmacy" label="Manual Claims" value="pharmacy_manual_claims"/>
+                <element dependent_value="network" label="Negotiated Rate" value="network_negotiated_rate"/>
+                <element dependent_value="pharmacy" label="Network" value="pharmacy_network"/>
+                <element dependent_value="network" label="Network Operations" value="network_network_operations"/>
+                <element dependent_value="aca_section_1557" label="Notice" value="aca_section_1557_notice"/>
+                <element dependent_value="pharmacy" label="OID" value="pharmacy_oid"/>
+                <element dependent_value="pharmacy" label="Opioid" value="pharmacy_opioid"/>
+                <element dependent_value="pharmacy" label="Order Entry" value="pharmacy_order_entry"/>
+                <element dependent_value="pharmacy" label="Price Check" value="pharmacy_price_check"/>
+                <element dependent_value="pharmacy" label="Prior Auth" value="pharmacy_prior_auth"/>
+                <element dependent_value="pharmacy" label="Retail" value="pharmacy_retail"/>
+                <element dependent_value="quality_of_service" label="Service issues" value="quality_of_service_service_issues"/>
+                <element dependent_value="pharmacy" label="Specialty Pharmacy" value="pharmacy_specialty_pharmacy"/>
+                <element dependent_value="aca_section_1557" label="Translation" value="aca_section_1557_translation"/>
+                <element dependent_value="pharmacy" label="Web Portal" value="pharmacy_web_portal"/>
                 <element dependent_value="appeal_processing" label="Appeal Timely Filing Expired" sequence="0" value="appeal_processing_appeal_timely_filing_expired"/>
                 <element dependent_value="benefit_administration" label="Benefit Exclusions" sequence="0" value="benefit_administration_benefit_exclusions"/>
                 <element dependent_value="sample" label="Four Level Sample, Level 2" sequence="0" value="sample_level2"/>
@@ -60,6 +62,324 @@
         </element>
         <element choice="1" dependent="level_2" dependent_on_field="level_2" label="Level 3" max_length="4000" name="level_3" type="choice" use_dependent_field="true">
             <choice>
+                <element dependent_value="pharmacy_accounting" label="Account Balance Due" value="pharmacy_accounting_account_balance_due"/>
+                <element dependent_value="pharmacy_accounting" label="Account Restriction Hold" value="pharmacy_accounting_account_restriction_hold"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Account Set-up" value="pharmacy_home_delivery_pharmacy_account_set_up"/>
+                <element dependent_value="network_network_operations" label="Accountable Care Organizations" value="network_network_operations_accountable_care_organizations"/>
+                <element dependent_value="pharmacy_benefit" label="Accumulators (Deductible/MOOP)" value="pharmacy_benefit_accumulators_deductible_moop"/>
+                <element dependent_value="pharmacy_accounting" label="ACH" value="pharmacy_accounting_ach"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Age" value="aca_section_1557_discrimination_age"/>
+                <element dependent_value="pharmacy_network" label="Ancillary Charge" value="pharmacy_network_ancillary_charge"/>
+                <element dependent_value="pharmacy_benefit" label="Appeal" value="pharmacy_benefit_appeal"/>
+                <element dependent_value="pharmacy_accounting" label="Applied incorrectly" value="pharmacy_accounting_applied_incorrectly"/>
+                <element dependent_value="network_negotiated_rate" label="ASC Groupers" value="network_negotiated_rate_asc_groupers"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Automated Notifications (Emails/Automated Calls)" value="pharmacy_home_delivery_pharmacy_automated_notifications_emails_automated_calls"/>
+                <element dependent_value="aca_section_1557_translation" label="Availability of Translator" value="aca_section_1557_translation_availability_of_translator"/>
+                <element dependent_value="pharmacy_benefit" label="B vs. D" value="pharmacy_benefit_b_vs_d"/>
+                <element dependent_value="pharmacy_web_portal" label="Billing/Pricing" value="pharmacy_web_portal_billing_pricing"/>
+                <element dependent_value="pharmacy_benefit" label="Brand /Generic" value="pharmacy_benefit_brand_generic"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Breach of confidentiality" value="quality_of_care_facility_staff_breach_of_confidentiality"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Breach of confidentiality" value="quality_of_care_clinician_clinician_staff_breach_of_confidentiality"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Captiva" value="pharmacy_home_delivery_pharmacy_captiva"/>
+                <element dependent_value="network_negotiated_rate" label="Carve outs/Exclusions" value="network_negotiated_rate_carve_outs_exclusions"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Change in manufacturer" value="pharmacy_home_delivery_pharmacy_change_in_manufacturer"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Clarification sent to wrong number/office/contact (Member or Doctor)" value="pharmacy_home_delivery_pharmacy_clarification_sent_to_wrong_number_office_contact_member_or_doctor"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Clinical documentation issues" value="quality_of_care_clinician_clinician_staff_clinical_documentation_issues"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Clinical documentation issues" value="quality_of_care_facility_staff_clinical_documentation_issues"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Clinical Education RPH" value="pharmacy_home_delivery_pharmacy_clinical_education_rph"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Clinical/Environmental Issues - Misrepresentation of clinical Tx program(s) to member" value="quality_of_care_facility_staff_clinical_environmental_issues_misrepresentation_of_clinical_tx_program_to_member"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Clinically unprofessional which negatively impacted clinical relationship with patient" value="quality_of_care_facility_staff_clinically_unprofessional_which_negatively_impacted_clinical_relationship_with_patient"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Clinically unprofessional which negatively impacted clinical relationship with patient" value="quality_of_care_clinician_clinician_staff_clinically_unprofessional_which_negatively_impacted_clinical_relationship_with_patient"/>
+                <element dependent_value="eligibility_continuation_coverage" label="COBRA" value="eligibility_continuation_coverage_cobra"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Color" value="aca_section_1557_discrimination_color"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Complaint Process" value="aca_section_1557_discrimination_complaint_process"/>
+                <element dependent_value="pharmacy_help_desk" label="Compound Medication" value="pharmacy_help_desk_compound_medication"/>
+                <element dependent_value="pharmacy_retail" label="Compound Medication" value="pharmacy_retail_compound_medication"/>
+                <element dependent_value="network_contracting_credentialing" label="Contract Effective Date" value="network_contracting_credentialing_contract_effective_date"/>
+                <element dependent_value="network_contracting_credentialing" label="Contract Load" value="network_contracting_credentialing_contract_load"/>
+                <element dependent_value="network_contracting_credentialing" label="Contracting Process" value="network_contracting_credentialing_contracting_process"/>
+                <element dependent_value="eligibility_continuation_coverage" label="Conversion" value="eligibility_continuation_coverage_conversion"/>
+                <element dependent_value="pharmacy_benefit" label="Copay/Member Responsibility/Copay Assistance or Copay Cards" value="pharmacy_benefit_copay_member_responsibility_copay_assistance_or_copay_cards"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="Copay/Pharmacy Billing" value="pharmacy_specialty_pharmacy_copay_pharmacy_billing"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="Coupon / Copay Assistance" value="pharmacy_specialty_pharmacy_coupon_copay_assistance"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Courier" value="pharmacy_home_delivery_pharmacy_courier"/>
+                <element dependent_value="pharmacy_benefit" label="Coverage" value="pharmacy_benefit_coverage"/>
+                <element dependent_value="network_contracting_credentialing" label="Credentialing Delay" value="network_contracting_credentialing_credentialing_delay"/>
+                <element dependent_value="network_contracting_credentialing" label="Credentialing Process" value="network_contracting_credentialing_credentialing_process"/>
+                <element dependent_value="pharmacy_help_desk" label="Customer Service" value="pharmacy_help_desk_customer_service"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Customer Service" value="pharmacy_home_delivery_pharmacy_customer_service"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Damaged Package" value="pharmacy_home_delivery_pharmacy_damaged_package"/>
+                <element dependent_value="pharmacy_oid" label="Data Entry Error" value="pharmacy_oid_data_entry_error"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Defective Medication" value="pharmacy_home_delivery_pharmacy_defective_medication"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Delay in delivery from PostMaster to OptumRx Mailroom" value="pharmacy_home_delivery_pharmacy_delay_in_delivery_from_postmaster_to_optumrx_mailroom"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Delay in order creation" value="pharmacy_home_delivery_pharmacy_delay_in_order_creation"/>
+                <element dependent_value="pharmacy_manual_claims" label="Delay in processing" value="pharmacy_manual_claims_delay_in_processing"/>
+                <element dependent_value="eligibility_individual" label="Delay in updates" value="eligibility_individual_delay_in_updates"/>
+                <element dependent_value="eligibility_group_employer" label="Delay in updates" value="eligibility_group_employer_delay_in_updates"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Delay of response to complaint" value="aca_section_1557_discrimination_delay_of_response_to_complaint"/>
+                <element dependent_value="pharmacy_accounting" label="Denial of Refund/Adjustment" value="pharmacy_accounting_denial_of_refund_adjustment"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Denied or Processed/Reprocessed Incorrectly" value="pharmacy_home_delivery_pharmacy_denied_or_processed_reprocessed_incorrectly"/>
+                <element dependent_value="eligibility_group_employer" label="Dependent Status" value="eligibility_group_employer_dependent_status"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Disability" value="aca_section_1557_discrimination_disability"/>
+                <element dependent_value="eligibility_group_employer" label="Disability" value="eligibility_group_employer_disability"/>
+                <element dependent_value="eligibility_individual" label="Disability" value="eligibility_individual_disability"/>
+                <element dependent_value="network_network_operations" label="Disagreement of acceptable professional decorum" value="network_network_operations_disagreement_of_acceptable_professional_decorum"/>
+                <element dependent_value="quality_of_service_service_issues" label="Dissatisfied with office procedure" value="quality_of_service_service_issues_dissatisfied_with_office_procedure"/>
+                <element dependent_value="aca_section_1557_translation" label="Document Translation" value="aca_section_1557_translation_document_translation"/>
+                <element dependent_value="pharmacy_benefit" label="Doughnut Hole" value="pharmacy_benefit_doughnut_hole"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Drug not being sent" value="pharmacy_home_delivery_pharmacy_drug not_being_sent"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Duplicate Account Creation" value="pharmacy_home_delivery_pharmacy_duplicate_account_creation"/>
+                <element dependent_value="pharmacy_oid" label="Duplicate Username/Registration" value="pharmacy_oid_duplicate_username_registration"/>
+                <element dependent_value="eligibility_individual" label="Effective Date" value="eligibility_individual_effective_date"/>
+                <element dependent_value="eligibility_group_employer" label="Effective Date" value="eligibility_group_employer_effective_date"/>
+                <element dependent_value="pharmacy_web_portal" label="Email Notification" value="pharmacy_web_portal_email_notification"/>
+                <element dependent_value="eligibility_group_employer" label="Employee Eligibility" value="eligibility_group_employer_employee_eligibility"/>
+                <element dependent_value="network_negotiated_rate" label="Escalators" value="network_negotiated_rate_escalators"/>
+                <element dependent_value="pharmacy_benefit" label="Exception" value="pharmacy_benefit_exception"/>
+                <element dependent_value="aca_section_1557_notice" label="Excessive documentation" value="aca_section_1557_notice_excessive_documentation"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Excessive wait time before being seen by physician" value="quality_of_service_access_to_care_issues_excessive_wait_time_before_being_seen_by_physician"/>
+                <element dependent_value="pharmacy_opioid" label="Excluded" value="pharmacy_opioid_excluded"/>
+                <element dependent_value="pharmacy_benefit" label="Experimental/Investigational/Unproven" value="pharmacy_benefit_experimental_investigational_unproven"/>
+                <element dependent_value="quality_of_service_service_issues" label="Facilities (waiting/exam room) are not adequate, or are too small, and/or privacy not respected" value="quality_of_service_service_issues_facilities_are_not_adequate_or_are_too_small_and_or_privacy_not_respected"/>
+                <element dependent_value="quality_of_service_service_issues" label="Facility was not handicap accessible or was poorly maintained" value="quality_of_service_service_issues_facility_was_not_handicap_accessible_or_was_poorly_maintained"/>
+                <element dependent_value="quality_of_service_service_issues" label="Fail to respect a Customer’s rights" value="quality_of_service_service_issues_fail_to_respect_a_customer’s_rights"/>
+                <element dependent_value="pharmacy_benefit" label="Failure in regards to OptumRx benefits (web, HFF, IVR, etc.)" value="pharmacy_benefit_failure_in_regards_to_optumrx_benefits"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to address lab results" value="quality_of_care_facility_staff_failure_to_address_lab_results"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to address lab results" value="quality_of_care_clinician_clinician_staff_failure_to_address_lab_results"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to apply/carry out appropriate monitoring precautions" value="quality_of_care_facility_staff_failure_to_apply_carry_out_appropriate_monitoring_precautions"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to apply/carry out appropriate monitoring precautions" value="quality_of_care_clinician_clinician_staff_failure_to_apply_carry_out_appropriate_monitoring_precautions"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to complete history and physical" value="quality_of_care_facility_staff_failure_to_complete_history_and_physical"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to complete labs" value="quality_of_care_facility_staff_failure_to_complete_labs"/>
+                <element dependent_value="network_network_operations" label="Failure to enforce the provider contract" value="network_network_operations_failure_to_enforce_the_provider_contract"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to follow standards of clinical care" value="quality_of_care_facility_staff_failure_to_follow_standards_of_clinical_care"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to follow standards of clinical care – OP" value="quality_of_care_clinician_clinician_staff_failure_to_follow_standards_of_clinical_care_op"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to identify/address medical issues" value="quality_of_care_clinician_clinician_staff_failure_to_identify_address_medical_issues"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to identify/address medical issues" value="quality_of_care_facility_staff_failure_to_identify_address_medical_issues"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to request lab work" value="quality_of_care_clinician_clinician_staff_failure_to_request_lab_work"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to use standardized assessment tool" value="quality_of_care_clinician_clinician_staff_failure_to_use_standardized_assessment_tool"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Failure to use standardized assessment tool" value="quality_of_care_facility_staff_failure_to_use_standardized_assessment_tool"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Faxed Images (Prescription Images)" value="pharmacy_home_delivery_pharmacy_faxed_images_prescription_images"/>
+                <element dependent_value="network_negotiated_rate" label="Fee Schedule Issue" value="network_negotiated_rate_fee_schedule_issue"/>
+                <element dependent_value="pharmacy_benefit" label="Foreign Pharmacy" value="pharmacy_benefit_foreign_pharmacy"/>
+                <element dependent_value="pharmacy_benefit" label="Formulary Exclusion" value="pharmacy_benefit_formulary_exclusion"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Hard Copies" value="pharmacy_home_delivery_pharmacy_hard_copies"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Hard Copy not scanned" value="pharmacy_home_delivery_pharmacy_hard_copy_not_scanned"/>
+                <element dependent_value="eligibility_continuation_coverage" label="Health Care Reform" value="eligibility_continuation_coverage_health_care_reform"/>
+                <element dependent_value="pharmacy_web_portal" label="HFF" value="pharmacy_web_portal_hff"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Hours of operation" value="quality_of_service_access_to_care_issues_hours_of_operation"/>
+                <element dependent_value="pharmacy_web_portal" label="HSID" value="pharmacy_web_portal_hsid"/>
+                <element dependent_value="pharmacy_web_portal" label="Inaccurate / Missing Benefit Info" value="pharmacy_web_portal_inaccurate_missing_benefit_info"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Inactive treatment – e.g. lack of programming" value="quality_of_care_facility_staff_inactive_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Inactive treatment – e.g. not addressing issues in session" value="quality_of_care_clinician_clinician_staff_inactive_treatment_not_addressing_issues_in_session"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Inadequate discharge plan" value="quality_of_care_facility_staff_inadequate_discharge_plan"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Inadequate discharge plan" value="quality_of_care_clinician_clinician_staff_inadequate_discharge_plan"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Inadequate monitoring/supervision of patients on the unit" value="quality_of_care_facility_staff_inadequate_monitoring_supervision_of_patients_on_the_unit"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Inadequate treatment" value="quality_of_care_facility_staff_inadequate_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Inadequate treatment" value="quality_of_care_clinician_clinician_staff_inadequate_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Inappropriate ages in same treatment groups" value="quality_of_care_clinician_clinician_staff_inappropriate_ages_in_same_treatment_groups"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Inappropriate ages on same treatment unit" value="quality_of_care_facility_staff_inappropriate_ages_on_same_treatment_unit"/>
+                <element dependent_value="quality_of_service_service_issues" label="Inappropriate, rude or disrespectful demeanor by physician/health care personnel" value="quality_of_service_service_issues_inappropriate_rude_or_disrespectful_demeanor_by_physician_health_care_personnel"/>
+                <element dependent_value="pharmacy_accounting" label="Incorrect Refund/Adjustment" value="pharmacy_accounting_incorrect_refund_adjustment"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Ineffective discharge procedure" value="quality_of_care_facility_staff_ineffective_discharge_procedure"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Invalid Clarification/Missed Required Clarification" value="pharmacy_home_delivery_pharmacy_invalid_clarification_missed_required_clarification"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of Complainant Educ/Understanding re: reason(s) certain medications can/cannot be Rx’d" value="quality_of_care_facility_staff_lack_of_complainant_educ_understanding_regarding_reason_certain_medications_can_cannot_be_rxd"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of Complainant Educ/Understanding re: reason(s) certain medications can/cannot be Rx’d" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_educ_understanding_regarding_reason_certain_medications_can_cannot_be_rx"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of Complainant Education/Understanding re: AMA discharge protocols " value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_ama_discharge_protocols"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of Complainant Education/Understanding re: Staff/clinician clinical communications" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_staff_clinician_clinical_communications"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of Complainant Education/Understanding re: Staff/clinician clinical communications" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_staff_clinician_clinical_communications"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of Complainant Education/Understanding re: The criteria for tx at various BH/SA LOC" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_the_criteria_for_tx_at_various_bh_sa_loc"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of Complainant Education/Understanding re: The criteria for Tx at various BH/SA LOC" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_the_criteria_for_tx_at_various_bh_sa LOC"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of Complainant Education/Understanding re: The expectations of BH/SA treatment" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_expectations_of_bh_sa_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of Complainant Education/Understanding re: The expectations of BH/SA treatment" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_the_expectations_of_bh_sa_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of medical oversight &amp; supervision (co-morbid medical issues)" value="quality_of_care_clinician_clinician_staff_lack_of_medical_oversight_supervision_co_morbid_medical_issues"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of medical oversight &amp; supervision (co-morbid medical issues)" value="quality_of_care_facility_staff_lack_of_medical_oversight_supervision"/>
+                <element dependent_value="network_network_operations" label="Lack of timely response/follow-up" value="network_network_operations_lack_of_timely_response_follow_up"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of treatment plan" value="quality_of_care_clinician_clinician_staff_lack_of_treatment_plan"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Lack of treatment plan" value="quality_of_care_facility_staff_lack_of_treatment_plan"/>
+                <element dependent_value="aca_section_1557_alternate_format" label="Large Print" value="aca_section_1557_alternate_format_large_print"/>
+                <element dependent_value="network_contracting_credentialing" label="Leased Network" value="network_contracting_credentialing_leased_network"/>
+                <element dependent_value="network_negotiated_rate" label="Lessor of language" value="network_negotiated_rate_lessor_of_language"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Limited/Lack of communication with patient/family" value="quality_of_care_clinician_clinician_staff_limited_lack_of_communication_with_patient_family"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Limited/Lack of communication with patient/family" value="quality_of_care_facility_staff_limited_lack_of_communication_with_patient_family"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Limited/restricted family contact with patient" value="quality_of_care_facility_staff_limited_restricted_family_contact_with_patient"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Limited/restricted family contact with patient" value="quality_of_care_clinician_clinician_staff_limited_restricted_family_contact_with_patient"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Lost/Stolen Package" value="pharmacy_home_delivery_pharmacy_lost_stolen_package"/>
+                <element dependent_value="pharmacy_network" label="MAC Pricing" value="pharmacy_network_mac_pricing"/>
+                <element dependent_value="pharmacy_benefit" label="Mail Service Saver" value="pharmacy_benefit_mail_service_saver"/>
+                <element dependent_value="pharmacy_benefit" label="Mail Service Saver Plus" value="pharmacy_benefit_mail_service_saver_plus"/>
+                <element dependent_value="pharmacy_benefit" label="Mandatory Mail" value="pharmacy_benefit_mandatory_mail"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="MD Error" value="pharmacy_home_delivery_pharmacy_md_error"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="Medical Billing" value="pharmacy_specialty_pharmacy_medical_billing"/>
+                <element dependent_value="pharmacy_benefit" label="Medical Necessity" value="pharmacy_benefit_medical_necessity"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Administered wrong medication" value="quality_of_care_facility_staff_medication_issues_administered_wrong_medication"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Failure to administer medications as ordered" value="quality_of_care_facility_staff_medication_issues_failure_to_administer_medications_as_ordered"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Failure to obtain consent for medication administration" value="quality_of_care_facility_staff_medication_issues_failure_to_obtain_consent_for_medication_administration"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Medication issues - Failure to obtain consent for medication administration" value="quality_of_care_clinician_clinician_staff_medication_issues_failure_to_obtain_consent_for_medication_administration"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Failure to provide medical (non-psychotropic) medications" value="quality_of_care_facility_staff_medication_issues_failure_to_provide_medical_non_psychotropic_medications"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Inappropriate medication administration" value="quality_of_care_facility_staff_medication issues_inappropriate_medication_administration"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Medication issues - Inappropriate medication prescribed" value="quality_of_care_clinician_clinician_staff_medication_issues_inappropriate_medication_prescribed"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Medication issues - Medications not adequately secured" value="quality_of_care_clinician_clinician_staff_medication_issues_medications_not_adequately_secured"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Medications not adequately secured" value="quality_of_care_facility_staff_medication issues_medications_not_adequately_secured"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication Issues - Meds given to the wrong patient – failure to match patient to chart" value="quality_of_care_facility_staff_medication_issues_meds_given_to_the_wrong_patient_failure_to_match_patient_to_chart"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Medication Issues - Meds not distributed in a timely fashion" value="quality_of_care_facility_staff_medication_issues_meds_not_distributed_in_a_timely_fashion"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Medication issues - Prescribed wrong medication dosage" value="quality_of_care_clinician_clinician_staff_medication_issues_prescribed_wrong_medication_dosage"/>
+                <element dependent_value="pharmacy_retail" label="Member education regarding refill dates" value="pharmacy_retail_member_education_regarding_refill_dates"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Member Follow-up RPH" value="pharmacy_home_delivery_pharmacy_member_follow_up_rph"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Member's order shipped without member's consent" value="pharmacy_home_delivery_pharmacy_member's_order_shipped_without_member's_consent"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Member’s perception of what transpired was directly impacted by member’s clinical condition" value="quality_of_care_facility_staff_member’s_perception_of_what_transpired_was_directly_impacted_by_member’s_clinical_condition"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Member’s perception of what transpired was directly impacted by member’s clinical condition" value="quality_of_care_clinician_clinician_staff_member’s_perception_of_what_transpired_was_directly_impacted_by_member’s_clinical_condition"/>
+                <element dependent_value="network_negotiated_rate" label="Methodology" value="network_negotiated_rate_methodology"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Missed Image/Attached incorrect Image" value="pharmacy_home_delivery_pharmacy_missed_image_attached_incorrect_image"/>
+                <element dependent_value="pharmacy_manual_claims" label="Missing information" value="pharmacy_manual_claims_missing_information"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Missing medications" value="pharmacy_home_delivery_pharmacy_missing_medications"/>
+                <element dependent_value="pharmacy_benefit" label="MSMS" value="pharmacy_benefit_msms"/>
+                <element dependent_value="aca_section_1557_discrimination" label="National Origin" value="aca_section_1557_discrimination_national_origin"/>
+                <element dependent_value="network_network_operations" label="Network Contractor issue" value="network_network_operations_network_contractor_issue"/>
+                <element dependent_value="pharmacy_order_entry" label="New CC not added to Order" value="pharmacy_order_entry_new_cc_not_added_to_order"/>
+                <element dependent_value="pharmacy_prior_auth" label="No MD Response/Delayed Response" value="pharmacy_prior_auth_no_md_response_delayed_response"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="No MD Response/Delayed Response" value="pharmacy_home_delivery_pharmacy_no_md_response_delayed_response"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="No message on answering system on how to obtain care after the office is closed" value="quality_of_service_access_to_care_issues_no_message_on_answering_system_on_how_to_obtain_care_after_the_office_is_closed"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="No/Limited coordination of clinical care" value="quality_of_care_clinician_clinician_staff_no_limited_coordination_of_clinical_care"/>
+                <element dependent_value="quality_of_care_facility_staff" label="No/Limited coordination of clinical care" value="quality_of_care_facility_staff_no_limited_coordination_of_clinical_care"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="No/limited family education" value="quality_of_care_clinician_clinician_staff_no_limited_family_education"/>
+                <element dependent_value="quality_of_care_facility_staff" label="No/limited family education" value="quality_of_care_facility_staff_no_limited_family_education"/>
+                <element dependent_value="network_contracting_credentialing" label="Not accepting new providers" value="network_contracting_credentialing_not_accepting_new_providers"/>
+                <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding balance billing" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_balance_billing"/>
+                <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding billing" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_billing"/>
+                <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding obtaining authorization" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_obtaining_authorization"/>
+                <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding upfront payment" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_upfront_payment"/>
+                <element dependent_value="network_network_operations" label="Not adhering to expectation regarding service - attitude/professionalism" value="network_network_operations_not_adhering_to_expectation_regarding_service_attitude_professionalism"/>
+                <element dependent_value="network_network_operations" label="Not adhering to expectation regarding timely follow-up with members" value="network_network_operations_not_adhering_to_expectation_regarding_timely_follow_up_with_members"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Not involving patient’s support system (e.g. family members) in clinical treatment" value="quality_of_care_facility_staff_not_involving_patient’s_support_system_in_clinical_treatment"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Not involving patient’s support system (e.g. family members) in clinical treatment" value="quality_of_care_clinician_clinician_staff_not_involving_patient’s_support_system__in_clinical_treatment"/>
+                <element dependent_value="aca_section_1557_notice" label="Objection to non-English translations" value="aca_section_1557_notice_objection_to_non_english_translations"/>
+                <element dependent_value="quality_of_service_service_issues" label="Office/exam rooms are dirty and untidy" value="quality_of_service_service_issues_office_exam_rooms_are_dirty and_untidy"/>
+                <element dependent_value="pharmacy_network" label="OON Pharmacy" value="pharmacy_network_oon_pharmacy"/>
+                <element dependent_value="pharmacy_retail" label="Order Confirmation/Accurate Order Process" value="pharmacy_retail_order_confirmation_accurate_order_process"/>
+                <element dependent_value="pharmacy_web_portal" label="Order Process Tracker" value="pharmacy_web_portal_order_process_tracker"/>
+                <element dependent_value="pharmacy_benefit" label="OTC" value="pharmacy_benefit_otc"/>
+                <element dependent_value="pharmacy_manual_claims" label="Other" value="pharmacy_manual_claims_other"/>
+                <element dependent_value="eligibility_continuation_coverage" label="Other" value="eligibility_continuation_coverage_other"/>
+                <element dependent_value="quality_of_service_service_issues" label="Other" value="quality_of_service_service_issues_other"/>
+                <element dependent_value="aca_section_1557_notice" label="Other" value="aca_section_1557_notice_other"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Other" value="aca_section_1557_discrimination_other"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Other" value="quality_of_service_access_to_care_issues_other"/>
+                <element dependent_value="network_negotiated_rate" label="Other - document in comments section" value="network_negotiated_rate_other_document_in_comments_section"/>
+                <element dependent_value="network_contracting_credentialing" label="Other - document in comments section" value="network_contracting_credentialing_other_document_in_comments_section"/>
+                <element dependent_value="network_network_operations" label="Other - document in comments section" value="network_network_operations_other_document_in_comments_section"/>
+                <element dependent_value="network_contracting_credentialing" label="Other Contractual Issue" value="network_contracting_credentialing_other_contractual_Issue"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Out-of-Stock" value="pharmacy_home_delivery_pharmacy_out_of_stock"/>
+                <element dependent_value="pharmacy_web_portal" label="Outages" value="pharmacy_web_portal_outages"/>
+                <element dependent_value="network_negotiated_rate" label="Outliers" value="network_negotiated_rate_outliers"/>
+                <element dependent_value="pharmacy_opioid" label="Over Morphine Equivalent Dosage (MED)" value="pharmacy_opioid_over_morphine_equivalent_dosage_med"/>
+                <element dependent_value="pharmacy_benefit" label="Override" value="pharmacy_benefit_override"/>
+                <element dependent_value="pharmacy_help_desk" label="Override" value="pharmacy_help_desk_override"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="PA Denial" value="pharmacy_specialty_pharmacy_pa_denial"/>
+                <element dependent_value="pharmacy_prior_auth" label="PA Pending/Approval/Denial" value="pharmacy_prior_auth_pa_pending_approval_denial"/>
+                <element dependent_value="network_contracting_credentialing" label="Par Status" value="network_contracting_credentialing_par_status"/>
+                <element dependent_value="pharmacy_oid" label="Password Reset" value="pharmacy_oid_password_reset"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient inappropriate for discharge" value="quality_of_care_facility_staff_patient_inappropriate_for_discharge"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient inappropriate for discharge" value="quality_of_care_clinician_clinician_staff_patient_inappropriate_for_discharge"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Failure to carry out appropriate fall precautions" value="quality_of_care_facility_staff_patient_safety_failure_to_carry_out_appropriate_fall_precautions"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Threatening sexual, physical, bullying beh by a staff /clinician – no contact" value="quality_of_care_facility_staff_patient_safety_threatening_sexual_physical_bullying_beh_by_a_staff_clinician_no_contact"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient Safety - Threatening sexual, physical, bullying beh by another patient – no contact" value="quality_of_care_clinician_clinician_staff_Patient Safety - Threatening sexual, physical, bullying beh by another patient – no contact"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Threatening sexual, physical, bullying beh by another patient – no contact" value="quality_of_care_facility_staff_patient_safety_threatening_sexual_physical_bullying_beh_by_another_patient_no_contact"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Allegation of physical or sexual abuse by a staff member/clinician" value="quality_of_care_clinician_clinician_staff_patient_safety_allegation_of_physical_or_sexual_abuse_by_a_staff_member_clinician"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Allegation of physical or sexual abuse by a staff member/clinician" value="quality_of_care_facility_staff_patient_safety_allegation_of_physical_or_sexual_abuse_by_a_staff_member_clinician"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Allegation of physical or sexual abuse by another patient" value="quality_of_care_clinician_clinician_staff_patient_safety_allegation_of_physical_or_sexual_abuse_by_another_patient"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Allegation of physical or sexual abuse by another patient" value="quality_of_care_facility_staff_patient_safety_allegation_of_physical_or_sexual_abuse_by_another_patient"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Contraband" value="quality_of_care_clinician_clinician_staff_patient_safety_contraband"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Contraband" value="quality_of_care_facility_staff_patient_safety_contraband"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Other (describe in comments)" value="quality_of_care_clinician_clinician_staff_patient_safety_other_describe_in_comments"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Other (describe in comments)" value="quality_of_care_facility_staff_patient_safety_other_describe_in_comments"/>
+                <element dependent_value="pharmacy_accounting" label="Payment Status" value="pharmacy_accounting_payment_status"/>
+                <element dependent_value="network_contracting_credentialing" label="PCP Designation" value="network_contracting_credentialing_pcp_designation"/>
+                <element dependent_value="pharmacy_benefit" label="PDL List" value="pharmacy_benefit_pdl_list"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Phone calls not returned in a timely manner" value="quality_of_service_access_to_care_issues_phone_calls_not_returned_in_a_timely_manner"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Phone calls placed on hold for an excessive amount of time" value="quality_of_service_access_to_care_issues_phone_calls_placed_on_hold_for_an_excessive_amount_of_time"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Phone line is busy after several attempts to call" value="quality_of_service_access_to_care_issues_phone_line_is_busy_after_several_attempts_to_call"/>
+                <element dependent_value="quality_of_service_service_issues" label="Physician/provider did not spend enough time with the customer" value="quality_of_service_service_issues_physician_provider_did_not_spend_enough_time_with_the_customer"/>
+                <element dependent_value="quality_of_service_service_issues" label="Physician/provider inappropriately/inaccurately informed customer of benefit information" value="quality_of_service_service_issues_physician_provider_inappropriately_inaccurately_informed_customer_of_benefit_information"/>
+                <element dependent_value="pharmacy_benefit" label="Plan Exclusion" value="pharmacy_benefit_plan_exclusion"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Practicing outside scope of clinician’s license" value="quality_of_care_clinician_clinician_staff_practicing_outside_scope_of_clinician’s_license"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Practicing outside scope of clinician’s license/facility’s credentialing" value="quality_of_care_facility_staff_practicing_outside_scope_of_clinician’s_license_facility’s_credentialing"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Practitioner’s office not clinically therapeutic environment" value="quality_of_care_clinician_clinician_staff_practitioner’s_office_not_clinically_therapeutic_environment"/>
+                <element dependent_value="pharmacy_accounting" label="Pre-Auth charges" value="pharmacy_accounting_pre_auth_charges"/>
+                <element dependent_value="pharmacy_benefit" label="Prescription Monitoring Program" value="pharmacy_benefit_prescription_monitoring_program"/>
+                <element dependent_value="pharmacy_retail" label="Prescription Not Received" value="pharmacy_retail_prescription_not_received"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Prescription Processed Incorrectly (Prior to Pharmacist Verification)" value="pharmacy_home_delivery_pharmacy_prescription_processed_incorrectly_prior_to_pharmacist_verification"/>
+                <element dependent_value="pharmacy_opioid" label="Prior Auth" value="pharmacy_opioid_prior_auth"/>
+                <element dependent_value="pharmacy_benefit" label="Prior Authorization" value="pharmacy_benefit_prior_authorization"/>
+                <element dependent_value="network_network_operations" label="Privacy breach" value="network_network_operations_privacy_breach"/>
+                <element dependent_value="pharmacy_prior_auth" label="Proactive Prior Authorization" value="pharmacy_prior_auth_proactive_prior_authorization"/>
+                <element dependent_value="pharmacy_retail" label="Proactive PSC" value="pharmacy_retail_proactive_psc"/>
+                <element dependent_value="pharmacy_retail" label="Proactive TST/Alignment" value="pharmacy_retail_proactive_tst_alignment"/>
+                <element dependent_value="pharmacy_retail" label="Profile/Cancel" value="pharmacy_retail_profile_cancel"/>
+                <element dependent_value="network_network_operations" label="Protocol Changes" value="network_network_operations_protocol_changes"/>
+                <element dependent_value="network_network_operations" label="Provider Demographics" value="network_network_operations_provider_demographics"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider failed to notify of changes in availability" value="network_contracting_credentialing_provider_failed_to_notify_of_changes_in_availability"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider failed to notify of demographic changes" value="network_contracting_credentialing_provider_failed_to_notify_of_demographic_changes"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider failed to respond to request for credentialing update" value="network_contracting_credentialing_provider_failed_to_respond to_request_for_credentialing_update"/>
+                <element dependent_value="network_network_operations" label="Provider perception" value="network_network_operations_provider_perception"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider submitted updates that were not processed" value="network_contracting_credentialing_provider_submitted_updates_that_were_not_processed"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider Termination" value="network_contracting_credentialing_provider_termination"/>
+                <element dependent_value="network_contracting_credentialing" label="Provider Termination Date" value="network_contracting_credentialing_provider_termination_date"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Quantity shortage/ incorrect medication" value="pharmacy_home_delivery_pharmacy_quantity_shortage_incorrect_medication"/>
+                <element dependent_value="aca_section_1557_discrimination" label="Race" value="aca_section_1557_discrimination_race"/>
+                <element dependent_value="pharmacy_benefit" label="Refill Too Soon" value="pharmacy_benefit_refill_too_soon"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Regulations/Policies" value="pharmacy_home_delivery_pharmacy_regulations_policies"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Resend/CTag /Process Schedule" value="pharmacy_home_delivery_pharmacy_resend_ctag_process_schedule"/>
+                <element dependent_value="eligibility_group_employer" label="Retroactive Termination" value="eligibility_group_employer_retroactive_termination"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Route appointment availability for preventive care services" value="quality_of_service_access_to_care_issues_route_appointment_availability_for_preventive_care_services"/>
+                <element dependent_value="quality_of_service_access_to_care_issues" label="Routine appointment availability for symptomatic illness" value="quality_of_service_access_to_care_issues_routine_appointment_availability_for_symptomatic_illness"/>
+                <element dependent_value="pharmacy_benefit" label="Secondary Insurance/COB" value="pharmacy_benefit_secondary_insurance_cob"/>
+                <element dependent_value="eligibility_individual" label="Set up" value="eligibility_individual_set_up"/>
+                <element dependent_value="eligibility_group_employer" label="Set up" value="eligibility_group_employer_set_up"/>
+                <element dependent_value="aca_section_1557_discrimination" hint="Sex discrimination includes, but is not limited to, discrimination based on an individual's sex, including pregnancy, related medical conditions, termination of pregnancy, gender identity and sex stereotypes." label="Sex" value="aca_section_1557_discrimination_sex"/>
+                <element dependent_value="network_network_operations" label="Shared Savings" value="network_network_operations_shared_savings"/>
+                <element dependent_value="network_negotiated_rate" label="Shared Savings" value="network_negotiated_rate_shared_savings"/>
+                <element dependent_value="pharmacy_order_entry" label="Ship and Bill Approval/Denial" value="pharmacy_order_entry_ship_and_bill_approval_denial"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Shipping / Tracking Info" value="pharmacy_home_delivery_pharmacy_shipping_tracking_info"/>
+                <element dependent_value="pharmacy_order_entry" label="Shipping Method" value="pharmacy_order_entry_shipping_method"/>
+                <element dependent_value="network_network_operations" label="Site of Service" value="network_network_operations_site_of_service"/>
+                <element dependent_value="network_negotiated_rate" label="Source schedule (AWP, CMS Etc) Load" value="network_negotiated_rate_source_schedule_load"/>
+                <element dependent_value="pharmacy_benefit" label="Specialty" value="pharmacy_benefit_specialty"/>
+                <element dependent_value="eligibility_continuation_coverage" label="State Continuation" value="eligibility_continuation_coverage_state_continuation"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="State Mandate" value="pharmacy_specialty_pharmacy_state_mandate"/>
+                <element dependent_value="pharmacy_benefit" label="State Regulations" value="pharmacy_benefit_state_regulations"/>
+                <element dependent_value="pharmacy_prior_auth" label="Step Therapy" value="pharmacy_prior_auth_step_therapy"/>
+                <element dependent_value="pharmacy_benefit" label="Step Therapy" value="pharmacy_benefit_step_therapy"/>
+                <element dependent_value="eligibility_group_employer" label="Student Status" value="eligibility_group_employer_student_status"/>
+                <element dependent_value="pharmacy_benefit" label="Supply Limits" value="pharmacy_benefit_supply_limits"/>
+                <element dependent_value="pharmacy_opioid" label="Suspicious Activity" value="pharmacy_opioid_suspicious_activity"/>
+                <element dependent_value="pharmacy_benefit" label="Suspicious Activity" value="pharmacy_benefit_suspicious_activity"/>
+                <element dependent_value="pharmacy_retail" label="TAT - Met" value="pharmacy_retail_tat_met"/>
+                <element dependent_value="pharmacy_retail" label="TAT - Shipping" value="pharmacy_retail_tat_shipping"/>
+                <element dependent_value="eligibility_individual" label="Termination Date" value="eligibility_individual_termination_date"/>
+                <element dependent_value="eligibility_group_employer" label="Termination Date" value="eligibility_group_employer_termination_date"/>
+                <element dependent_value="pharmacy_benefit" label="Therapeutic Equivalent" value="pharmacy_benefit_therapeutic_equivalent"/>
+                <element dependent_value="pharmacy_benefit" label="Tier Change" value="pharmacy_benefit_tier_change"/>
+                <element dependent_value="pharmacy_benefit" label="Tier Placement" value="pharmacy_benefit_tier_placement"/>
+                <element dependent_value="network_contracting_credentialing" label="Timely Notice of contract changes" value="network_contracting_credentialing_timely_notice_of_contract_changes"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Transfers" value="pharmacy_home_delivery_pharmacy_transfers"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Treatment Issues - Consistency and timeliness of clinical tx (f/u appts., RX refills, etc.)" value="quality_of_care_facility_staff_treatment_issues_consistency_and_timeliness_of_clinical_tx"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Treatment Issues - Consistency and timeliness of clinical Tx (f/u appts., RX refills, etc.)" value="quality_of_care_clinician_clinician_staff_treatment_issues_consistency_and_timelines_of_clinical_tx"/>
+                <element dependent_value="pharmacy_order_entry" label="TST Flag not executed correctly" value="pharmacy_order_entry_tst_flag_not_executed_correctly"/>
+                <element dependent_value="pharmacy_manual_claims" label="Unsatifactory reimbursement rate (contacted rate)" value="pharmacy_manual_claims_unsatifactory_reimbursement_rate_contacted_rate"/>
+                <element dependent_value="quality_of_service_service_issues" label="Untimely delivery of DME, home health services" value="quality_of_service_service_issues_untimely_delivery_of_dme_home_health_services"/>
+                <element dependent_value="quality_of_service_service_issues" label="Untimely, poor communication or language barrier" value="quality_of_service_service_issues_untimely_poor_communication_or_language_barrier"/>
+                <element dependent_value="pharmacy_network" label="Usual &amp; Customary Charge" value="pharmacy_network_usual_customary_charge"/>
+                <element dependent_value="pharmacy_benefit" label="Vacation Override" value="pharmacy_benefit_vacation_override"/>
+                <element dependent_value="aca_section_1557_translation" label="Verbal Translation" value="aca_section_1557_translation_verbal_translation"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Verify correct shipping address" value="pharmacy_home_delivery_pharmacy_verify_correct_shipping_address"/>
+                <element dependent_value="pharmacy_order_entry" label="Verify correct shipping address" value="pharmacy_order_entry_verify_correct_shipping_address"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Violated patient rights" value="quality_of_care_clinician_clinician_staff_violated_patient_rights"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Violated patient rights" value="quality_of_care_facility_staff_violated_patient_rights"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Violation of clinical boundaries" value="quality_of_care_clinician_clinician_staff_violation_of_clinical_boundaries"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Violation of clinical boundaries" value="quality_of_care_facility_staff_violation_of_clinical_boundaries"/>
+                <element dependent_value="pharmacy_price_check" label="Wrong Day Supply" value="pharmacy_price_check_wrong_day_supply"/>
+                <element dependent_value="pharmacy_price_check" label="Wrong Dosage" value="pharmacy_price_check_wrong_dosage"/>
+                <element dependent_value="pharmacy_price_check" label="Wrong Medication" value="pharmacy_price_check_wrong_medication"/>
                 <element dependent_value="administrative_billing_individual" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
                 <element dependent_value="administrative_billing_group_employer" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
                 <element dependent_value="sample_level2" label="Four Level Sample, Level 3" sequence="0" value="sample_level2_level3"/>

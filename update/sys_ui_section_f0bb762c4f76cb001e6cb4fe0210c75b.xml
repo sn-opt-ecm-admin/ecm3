@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Case" section_id="f0bb762c4f76cb001e6cb4fe0210c75b" sys_domain="global" table="x_opt_ecm_quality_review_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number</element>
+            <position>0</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>ead3dbe84fb6cb001e6cb4fe0210c788</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.state</element>
+            <position>1</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>62d3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.complaint_type</element>
+            <position>2</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>e2d3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.responsible_department</element>
+            <position>3</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>66d3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.platform</element>
+            <position>4</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>e6d3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>6ad3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compliance_met</element>
+            <position>6</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>ead3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.oca_ocr_received_date_time</element>
+            <position>7</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>6ed3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.due_date</element>
+            <position>8</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>eed3dbe84fb6cb001e6cb4fe0210c789</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.modified_due_date</element>
+            <position>9</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>62d3dbe84fb6cb001e6cb4fe0210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.assigned_to.manager</element>
+            <position>10</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>e2d3dbe84fb6cb001e6cb4fe0210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number.assigned_to</element>
+            <position>11</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>66d3dbe84fb6cb001e6cb4fe0210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>e6d3dbe84fb6cb001e6cb4fe0210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>qr_comments</element>
+            <position>13</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 23:49:04</sys_created_on>
+            <sys_id>6ad3dbe84fb6cb001e6cb4fe0210c78a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Case" display_value="Case" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">f0bb762c4f76cb001e6cb4fe0210c75b</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 23:49:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Case</caption>
+            <header>false</header>
+            <name>x_opt_ecm_quality_review_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:03:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0bb762c4f76cb001e6cb4fe0210c75b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_section_f0bb762c4f76cb001e6cb4fe0210c75b</sys_update_name>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:03:32</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

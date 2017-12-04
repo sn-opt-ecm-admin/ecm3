@@ -43,6 +43,11 @@ ECM Global Update Set CTL091117-1 : Adds new role to managed documents, list mod
 
 Version 1.9.5
 ECM_DOI_SLA_Calculator_v2_JWD : Bug fix for calendar-based DOI SLAs being a day late.
+ECM_DOI_SLA_Calculator_v3_JWD : Fixing North Carolina DOI SLAs being a day late.
+
+
+Version 1.9.6
+ECM_QualityReview_SLA_Repair_BusinessRule_v1_JWD : Business rules resetting ECM Quality Review SLAs on appropriate date changes.
 */
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -50,7 +55,7 @@ ECM_DOI_SLA_Calculator_v2_JWD : Bug fix for calendar-based DOI SLAs being a day 
         <sys_created_on>2017-09-11 16:24:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51287acf4f454b001e6cb4fe0210c711</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>DeploymentNotes</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -58,6 +63,6 @@ ECM_DOI_SLA_Calculator_v2_JWD : Bug fix for calendar-based DOI SLAs being a day 
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_51287acf4f454b001e6cb4fe0210c711</sys_update_name>
         <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-22 21:00:19</sys_updated_on>
+        <sys_updated_on>2017-12-01 13:25:47</sys_updated_on>
     </sys_script_include>
 </record_update>

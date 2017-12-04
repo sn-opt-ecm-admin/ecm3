@@ -10,6 +10,8 @@
         <script><![CDATA[var QualityReviewUtils = Class.create();
 QualityReviewUtils.prototype = {
 	
+	qualityReviewTable: 'x_opt_ecm_quality_review_task',
+	
 	initialize: function() { },
 	
 	getAdvocateRefQual : function() {
@@ -72,11 +74,7 @@ QualityReviewUtils.prototype = {
 		if (needsQualityReview) {
 			
 			current.state = 20;
-
-			var newQualityReview = new GlideRecord('x_opt_ecm_quality_review');
-			newQualityReview.initialize();
-			newQualityReview.case_number = current.sys_id;
-			newQualityReview.insert();
+			this.createQualityReviewRecord(current);
 		}
 
 		gs.info('{0} has {1} previous quality reviews on {2} cases --> {3}%.  Requires {4}% review. {5} this case for review.',
@@ -88,9 +86,36 @@ QualityReviewUtils.prototype = {
 				(needsQualityReview ? 'Scheduling' : 'Not scheduling')]);
 	},
 	
+	createQualityReviewRecord: function(caseGR) {
+	
+		var ecmDateUtils = new EcmSlaDateUtils();
+
+		var slaNumberOfBusinessDays = parseInt(gs.getProperty('x_opt_ecm.quality_review_sla_business_days_default')) || 5;		
+		var schedule = ecmDateUtils.getSchedule();
+		var duration = ecmDateUtils.getDuration(schedule, slaNumberOfBusinessDays);
+	
+		var newQualityReview = new GlideRecord(this.qualityReviewTable);
+		newQualityReview.initialize();
+		newQualityReview.case_number = caseGR.sys_id;
+		newQualityReview.due_date = schedule.add(new GlideDateTime(), duration);
+		newQualityReview.insert();
+		
+	},
+	
+	getQualityReviewDueDate: function() {
+	
+		var ecmDateUtils = new EcmSlaDateUtils();
+
+		var slaNumberOfBusinessDays = parseInt(gs.getProperty('x_opt_ecm.quality_review_sla_business_days_default')) || 5;		
+		var schedule = ecmDateUtils.getSchedule();
+		var duration = ecmDateUtils.getDuration(schedule, slaNumberOfBusinessDays);
+		
+		return schedule.add(new GlideDateTime(), duration);
+	},
+	
 	_getNumberOfReviewsForAdvocate: function(advocate) {
 	
-		var advocateReviews = new GlideAggregate('x_opt_ecm_quality_review');
+		var advocateReviews = new GlideAggregate(this.qualityReviewTable);
 		advocateReviews.addQuery('case_number.assigned_to', advocate);
 		advocateReviews.addAggregate('COUNT');
 		advocateReviews.query();
@@ -122,7 +147,7 @@ QualityReviewUtils.prototype = {
         <sys_created_on>2017-10-27 14:33:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>54f45f794f0a8b801e6cb4fe0210c728</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>QualityReviewUtils</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -130,6 +155,6 @@ QualityReviewUtils.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_54f45f794f0a8b801e6cb4fe0210c728</sys_update_name>
         <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-27 19:06:33</sys_updated_on>
+        <sys_updated_on>2017-11-30 21:01:44</sys_updated_on>
     </sys_script_include>
 </record_update>

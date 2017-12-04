@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="187" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="217" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -257,7 +257,7 @@
             </choice>
         </element>
         <element label="Provider" max_length="32" name="provider" reference="x_opt_im_provider" type="reference"/>
-        <element label="Quality Review Comments" max_length="4000" name="quality_review_comments" type="journal_input"/>
+        <element label="Quality Review Comments" max_length="4000" name="quality_review_comments" read_only="true" type="journal_input"/>
         <element label="Referred by" max_length="32" name="referred_by" reference="sys_user" type="reference"/>
         <element label="Date Resolved" max_length="40" name="resolution_date_resolved" type="glide_date_time"/>
         <element attributes="max_ref_dropdown=50" choice="1" label="Dept/Site of Error" max_length="40" name="resolution_dept_site_of_error" reference="x_opt_ecm_site_of_error" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
@@ -290,9 +290,6 @@
                 <element label="No"/>
                 <element label="Yes" value="true"/>
             </choice>
-        </element>
-        <element choice="1" label="RCA Codes" max_length="40" name="resolution_rca_codes" type="choice">
-            <choice/>
         </element>
         <element label="Responding Name" max_length="32" name="resolution_responding_name" reference="sys_user" type="reference"/>
         <element choice="1" label="Response Type" max_length="40" name="resolution_response_type" type="choice">

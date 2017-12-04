@@ -12,11 +12,11 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_opt_ecm_quality_review</collection>
+        <collection>x_opt_ecm_quality_review_task</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_opt_ecm_quality_review">case_numberVALCHANGES^EQ<item endquery="false" field="case_number" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="x_opt_ecm_quality_review_task">case_numberVALCHANGES^EQ<item endquery="false" field="case_number" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -33,14 +33,17 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
 	var cCase = (current.case_number);
+	//gs.addInfoMessage("QR Check IF Case Breach Ran" + cCase);
 	var cBreach = new GlideRecord('task_sla');
 	cBreach.addQuery('task', cCase);
 	cBreach.addQuery('has_breached', "true");
 	cBreach.query();
 	if(cBreach.next()){
+		//gs.addInfoMessage("Compliance Not Met");
 		current.compliance_met = "No";
 	}
 	else{
+		//gs.addInfoMessage("Compliance Met");
 		current.compliance_met= "Yes";
 	}
 	
@@ -53,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b3e2a0064f0e8b801e6cb4fe0210c7b3</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>ECM-QRCheckIfCaseBreach</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -61,8 +64,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_b3e2a0064f0e8b801e6cb4fe0210c7b3</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-27 19:35:07</sys_updated_on>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-11-30 01:20:59</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

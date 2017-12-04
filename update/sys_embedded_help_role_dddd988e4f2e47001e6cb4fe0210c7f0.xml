@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>100</order>
-        <role display_value="x_opt_ecm.quality_review_manager" name="x_opt_ecm.quality_review_manager">51dd988e4f2e47001e6cb4fe0210c7ef</role>
+        <role/>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>john.daniel</sys_created_by>
         <sys_created_on>2017-11-21 16:09:00</sys_created_on>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Timely Submission" section_id="25064be04fb6cb001e6cb4fe0210c71e" sys_domain="global" table="x_opt_ecm_quality_review_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>timely_submission</element>
+            <position>0</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:40</sys_created_on>
+            <sys_id>b106cfe04fb6cb001e6cb4fe0210c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timely Submission" display_value="Timely Submission" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">25064be04fb6cb001e6cb4fe0210c71e</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>timely_submission_root_causes</element>
+            <position>1</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:40</sys_created_on>
+            <sys_id>3506cfe04fb6cb001e6cb4fe0210c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timely Submission" display_value="Timely Submission" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">25064be04fb6cb001e6cb4fe0210c71e</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:40</sys_created_on>
+            <sys_id>b506cfe04fb6cb001e6cb4fe0210c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timely Submission" display_value="Timely Submission" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">25064be04fb6cb001e6cb4fe0210c71e</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:40</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:40</sys_created_on>
+            <sys_id>3906cfe04fb6cb001e6cb4fe0210c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timely Submission" display_value="Timely Submission" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">25064be04fb6cb001e6cb4fe0210c71e</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:40</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>timely_submission_comments</element>
+            <position>4</position>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:40</sys_created_on>
+            <sys_id>b906cfe04fb6cb001e6cb4fe0210c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Timely Submission" display_value="Timely Submission" name="x_opt_ecm_quality_review_task" sys_domain="global" view="Default view">25064be04fb6cb001e6cb4fe0210c71e</sys_ui_section>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Timely Submission</caption>
+            <header>false</header>
+            <name>x_opt_ecm_quality_review_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-11-29 22:48:39</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>25064be04fb6cb001e6cb4fe0210c71e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Timely Submission</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_section_25064be04fb6cb001e6cb4fe0210c71e</sys_update_name>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-11-29 22:48:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

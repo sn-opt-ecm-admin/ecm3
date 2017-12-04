@@ -13,7 +13,7 @@
         <sys_created_on>2017-08-11 22:00:09</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>260c90514f2c8b001e6cb4fe0210c7dc</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>glide.ui.x_opt_ecm_case_activity.fields</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -21,7 +21,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_properties_260c90514f2c8b001e6cb4fe0210c7dc</sys_update_name>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-11-29 04:09:01</sys_updated_on>
+        <sys_updated_on>2017-11-29 17:01:07</sys_updated_on>
         <type>string</type>
         <value>assigned_to,cmdb_ci,state,impact,priority,opened_by,work_notes,comments,*Attachments*,*Email*,advocate_comments,comments_and_work_notes,intake_comments,short_description,business_unit,quality_review_comments</value>
         <write_roles/>
