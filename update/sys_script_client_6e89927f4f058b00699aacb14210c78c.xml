@@ -15,13 +15,21 @@
 		return;
 	}
 	
+	var checkStates = ['6','19','20','3']; // Resolved, QR Pending, QR, Closed
+	var state = g_form.getValue('state');
+	//g_form.addInfoMessage('the state is ' + state);
 	
 	if(newValue=='true') {
 		g_form.setMandatory('patient_first_name',false);
 		g_form.setMandatory('patient_lastname',false);
-		g_form.setMandatory('patient_gender',false);
-		g_form.setMandatory('member_gender',true);
-		//g_form.setMandatory('patient_relationship',false);
+		// Only if the state is one of the checkStates
+		if(checkStates.indexOf(state) != -1 ){
+			//g_form.addInfoMessage('the state is a valid one: ' + state);
+			g_form.setMandatory('patient_gender',false);
+			g_form.setMandatory('patient_relationship',false);
+			g_form.setMandatory('member_gender',true);
+		}
+		
 		g_form.setVisible('contact_is_patient', false);
 		g_form.setVisible('contact_is_member', false);
 		g_form.setSectionDisplay('patient',false);
@@ -29,9 +37,14 @@
 	else if(newValue=='false') {
 		g_form.setMandatory('patient_first_name',true);
 		g_form.setMandatory('patient_lastname',true);
-		g_form.setMandatory('patient_gender',true);
-		//g_form.setMandatory('patient_relationship',true);
-		g_form.setMandatory('member_gender',false);
+		// Only if the state is one of the checkStates
+		if(checkStates.indexOf(state) != -1) {
+			//g_form.addInfoMessage('the state is a valid one: ' + state);
+			g_form.setMandatory('patient_gender',true);
+			g_form.setMandatory('patient_relationship',true);
+			g_form.setMandatory('member_gender',false);
+		}
+		
 		g_form.setVisible('contact_is_patient', true);
 		g_form.setVisible('contact_is_member', true);
 		g_form.setSectionDisplay('patient',true);
@@ -46,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6e89927f4f058b00699aacb14210c78c</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Show/Hide Patient section onChange MIP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -55,7 +68,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_client_6e89927f4f058b00699aacb14210c78c</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-12-01 18:47:51</sys_updated_on>
+        <sys_updated_on>2017-12-06 19:30:19</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

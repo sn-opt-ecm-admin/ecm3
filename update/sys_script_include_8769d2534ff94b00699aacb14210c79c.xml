@@ -35,7 +35,11 @@ OptumRxIntegration.prototype = {
         this.logger = new IntegrationLogUtil();
 
     },
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
 
+ 		* Description: Calls the OptumRx Member service
+ 		*/
     optumRxMemberSearch: function(search_values) {
         var functName = "optumRxMemberSearch()";
         // Refresh the OAuth token
@@ -197,6 +201,13 @@ OptumRxIntegration.prototype = {
 
     },
 
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: Add the claims to the ECM Claims table
+
+ 		* Returns: the sys_ids of the created claim records
+ 		*/
     insertClaimsForCase: function(inputs) {
         var functName = "insertClaimsForCase()";
         try {
@@ -223,7 +234,7 @@ OptumRxIntegration.prototype = {
                 fields.plan_pay_amount = claims[c].planPayAmount;
                 fields.product_id = claims[c].productId;
                 fields.product_name = claims[c].productNameAbbreviation;
-
+                // Check for a reject code before accessing the message array object
                 if (!gs.nil(claims[c].rejectCode[0])) {
                     fields.reject_code = claims[c].rejectCode[0];
                     fields.reject_message = claims[c].rejectMessage[0].message;
@@ -255,7 +266,7 @@ OptumRxIntegration.prototype = {
         <sys_created_on>2017-10-19 15:34:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8769d2534ff94b00699aacb14210c79c</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>105</sys_mod_count>
         <sys_name>OptumRxIntegration</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -263,6 +274,6 @@ OptumRxIntegration.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_8769d2534ff94b00699aacb14210c79c</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-11-17 00:30:09</sys_updated_on>
+        <sys_updated_on>2017-12-06 16:37:22</sys_updated_on>
     </sys_script_include>
 </record_update>

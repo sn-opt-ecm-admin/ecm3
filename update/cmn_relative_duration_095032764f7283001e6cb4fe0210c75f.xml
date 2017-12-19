@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="cmn_relative_duration">
+    <cmn_relative_duration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>Breach on ECM Case QR Response Due Date</name>
+        <script><![CDATA[// Consider combining this with the other "Breach on XXX" relative durations and adding a config table to stop the "Insert and Stay" dominoes.
+
+/* This relative duration script will set the Breach Time of the Task SLA to the value in the "Quality Review Response Due Date" of the Case record.
+   
+   If the Due Date field is empty or in the past, the script will instead set the Breach Time of the SLA to 1 second
+   after the Start time
+*/
+
+(function() {
+  var startDateMs = calculator.startDateTime.getNumericValue();
+  var dueDate;
+
+  // Work out if "current" is a Task record or Task SLA and then get the "quality_review_response_due_date" element from the Case
+  var tableName = current.getTableName();
+  if (tableName) {
+       var baseTableName = GlideDBObjectManager.getAbsoluteBase(tableName);
+       if (baseTableName == "task")
+            dueDate = current.getElement("quality_review_response_due_date");
+       else if (baseTableName == "task_sla")
+            dueDate = current.getElement("task.quality_review_response_due_date");
+  }
+
+  // if we've got a "due_date" and it's after our SLA's Start time then use it
+  // otherwise we'll have to default to the same as Start Time plus 1 second (i.e. instant breach of SLA)
+  if (dueDate && !dueDate.nil() && dueDate.dateNumericValue() > startDateMs)
+       dueDate = dueDate.getGlideObject();
+  else {
+       dueDate = new GlideDateTime(calculator.startDateTime);
+       dueDate.addSeconds(1);
+  }
+
+  // if we have a schedule then check if the Due Date is in it and if it isn't
+  // find the next time we are in the schedule
+  if (calculator.schedule && !calculator.schedule.isInSchedule(dueDate))
+       dueDate.add(calculator.schedule.whenNext(dueDate, calculator.timezone));
+
+  // set the endDateTime property of the calculator object to dueDate
+  calculator.endDateTime = dueDate;
+  calculator.calcScheduleDuration();
+})();]]></script>
+        <sys_class_name>cmn_relative_duration</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-12-06 21:00:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>095032764f7283001e6cb4fe0210c75f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Breach on ECM Case QR Response Due Date</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>cmn_relative_duration_095032764f7283001e6cb4fe0210c75f</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-12-06 21:07:15</sys_updated_on>
+    </cmn_relative_duration>
+</record_update>

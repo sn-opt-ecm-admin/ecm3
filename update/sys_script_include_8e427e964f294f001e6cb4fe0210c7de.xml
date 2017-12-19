@@ -98,6 +98,14 @@ AuditFileCreator.prototype = {
 		templateCopyGR.auto_increment_revision = templateDocumentGR.auto_increment_revision;
 		templateCopyGR.insert();
 		
+		// grant QR access to the file
+		var qrAccessRights = new GlideRecord('dms_document_group_permission');
+		qrAccessRights.initialize();
+		qrAccessRights.document = templateCopyGR.sys_id;
+		qrAccessRights.group = gs.getProperty('x_opt_ecm.quality_review_group');
+		qrAccessRights.type = 'Editor';
+		qrAccessRights.insert();
+		
 		return templateCopyGR;
 	},
 
@@ -160,7 +168,7 @@ AuditFileCreator.prototype = {
         <sys_created_on>2017-10-04 04:41:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8e427e964f294f001e6cb4fe0210c7de</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>AuditFileCreator</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -168,6 +176,6 @@ AuditFileCreator.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_8e427e964f294f001e6cb4fe0210c7de</sys_update_name>
         <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-10-05 13:27:43</sys_updated_on>
+        <sys_updated_on>2017-12-12 14:34:33</sys_updated_on>
     </sys_script_include>
 </record_update>

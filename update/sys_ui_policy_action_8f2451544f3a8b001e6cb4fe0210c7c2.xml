@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-11-28 19:53:08</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for contact_is_patient">8c925dd04f3a8b001e6cb4fe0210c715</ui_policy>
+        <ui_policy display_value="Policy for CIP on Resolved">8c925dd04f3a8b001e6cb4fe0210c715</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

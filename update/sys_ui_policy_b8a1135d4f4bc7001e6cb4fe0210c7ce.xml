@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_opt_ecm_case">contact_is_patient=true^contact_is_member=false^stateIN6,19,20,3^EQ<item endquery="false" field="contact_is_patient" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="contact_is_member" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6,19,20,3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>200</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Require Contact Relationship CIP on Resolve</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-12-14 17:50:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8a1135d4f4bc7001e6cb4fe0210c7ce</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Require Contact Relationship CIP on Resolve</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_policy_b8a1135d4f4bc7001e6cb4fe0210c7ce</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-12-14 18:01:22</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

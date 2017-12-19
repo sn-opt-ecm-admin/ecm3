@@ -4,7 +4,7 @@
         <category>general</category>
         <client_script><![CDATA[function openClicked(item){
 	//alert(item.checked);
-	var gr = new GlideAjax('RCACodes');
+	var gr = new GlideAjax('x_opt_ecm.RCACodes');
 		gr.addParam('sysparm_name', 'updateCode');
 		gr.addParam('sysparm_rca',item.value);
 		gr.addParam('sysparm_checked',item.checked);
@@ -261,7 +261,7 @@ th {
         <sys_created_on>2017-11-29 19:28:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0ff7d2e04f760f00699aacb14210c788</sys_id>
-        <sys_mod_count>90</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_name>rca_codes</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -269,6 +269,6 @@ th {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_page_0ff7d2e04f760f00699aacb14210c788</sys_update_name>
         <sys_updated_by>mark.didrikson</sys_updated_by>
-        <sys_updated_on>2017-11-30 14:36:45</sys_updated_on>
+        <sys_updated_on>2017-12-08 14:45:34</sys_updated_on>
     </sys_ui_page>
 </record_update>

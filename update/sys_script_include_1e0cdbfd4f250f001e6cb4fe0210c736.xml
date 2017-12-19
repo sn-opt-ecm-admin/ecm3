@@ -104,13 +104,11 @@ ORSIntegration.prototype = {
             transaction_source = this.MAIL;
 
         }
-        //this.echo("The transaction source is: " + transaction_source);
 
         // Set the proper codes based on a create or a modify operation in ORS
         var created_by = (insert_or_update_constant == this.INSERT) ? "Q" : "";
         var modified_by = (insert_or_update_constant == this.UPDATE) ? "Q" : "";
 
-     // member.eligibilitySourceSystem
 
         try {
             var s = new sn_ws.SOAPMessageV2(soap_message, soap_method);
@@ -122,19 +120,20 @@ ORSIntegration.prototype = {
             s.setStringParameterNoEscape('requestHeader.logLevel', 'DEBUG');
             s.setStringParameterNoEscape('orsSystemParameter.logonOffice', '888'); // required
             s.setStringParameterNoEscape('orsSystemParameter.logonId', 'ECM'); // required
-            // Check the member number to see if it is a number or longer than 9
-            // if not force it to Diamond EE ID field by setting eligibilitySourceSystem
+
+            // If the group number is not a number force it to policy number
+            if (isNaN(m_group_number)) {
+                this.echo("Mapping group number to policy number: " + m_group_number);
+                m_policy_number = m_group_number;
+                m_group_number = '';
+            }
+            // Force memberId to Diamond EE ID field by setting eligibilitySourceSystem
             // Diamond EE ID is (12) alpha-numeric, UPM maps the field when set
-            if(isNaN(m_member_number) || m_member_number.length &gt; 9){
-              this.echo("Member number is alpha-numeric, set eligibilitySourceSystem = D");
+            // If &gt;9 or alpha numeric (NaN) then shift
+            if(m_member_number.length &gt; 9 || isNaN(m_member_number)) {
               s.setStringParameterNoEscape('member.eligibilitySourceSystem', 'D');
             }
-            // If the group number is not a number force it to policy number
-            if(isNaN(m_group_number)){
-              this.echo("Mapping group number to policy number: " + m_group_number);
-              m_policy_number = m_group_number;
-              m_group_number = '';
-            }
+
             s.setStringParameterNoEscape('member.memberNumber', m_member_number); // PIC 9 (09)
             s.setStringParameterNoEscape('member.groupNumber', m_group_number); // PIC 9 (07)
             s.setStringParameterNoEscape('member.policy', m_policy_number); // PIC X (07)
@@ -375,16 +374,16 @@ ORSIntegration.prototype = {
 
 
     },
+
     /** V E R A C I T Y ~ www.meetveracity.com ~ **
  		* Author: Todd Fudala ~ tfudala@meetveracity.com
 
- 		* Description: maps Contact Relationship choice list values to ORS codes
+ 		* Description: notates the Case with the ORS Issue ID and field values
 
     * Parameters:
-    * message: the string to write to the work notes field on the glide record
-    * glide_record: the glide record to write to
-    * issue_id: the ORS Issue ID returned from the ORS SOAP Response
-
+    * message: The message to add to work notes
+    * glide_record: The glide record we are working on
+    * issue_id: The ORS Issue ID
  		*/
     notateCase: function(message, glide_record, issue_id) {
         glide_record.ors_issue_id = issue_id;
@@ -393,10 +392,20 @@ ORSIntegration.prototype = {
         glide_record.update();
     },
 
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: notates the Case with a message
+
+    * Parameters:
+    * message: The message to add to work notes
+    * glide_record: The glide record we are working on
+ 		*/
     addIntakeNoteToECM: function(message, glide_record) {
         glide_record.intake_comments = message;
         glide_record.update();
     },
+
     /** V E R A C I T Y ~ www.meetveracity.com ~ **
  		* Author: Todd Fudala ~ tfudala@meetveracity.com
 
@@ -430,16 +439,31 @@ ORSIntegration.prototype = {
 
     },
 
+    /** V E R A C I T Y ~ www.meetveracity.com ~ **
+ 		* Author: Todd Fudala ~ tfudala@meetveracity.com
+
+ 		* Description: build the message for notating the case
+
+    * Parameters:
+
+    * glide_record: The glide record we are working on
+
+    * Returns: String message
+ 		*/
     getAdHocComment: function(glide_record) {
         var note = {};
         var message = "";
-        note.fieldLabels = ["OCA/OCR Received: ",
+        note.fieldLabels = ["Member ID: ",
+            "Contact ID: ",
+            "OCA/OCR Received: ",
             "Submission Source: ",
             "Responsible Dept: ",
             "Due Date: ",
             "Resolution Date: "
         ];
-        note.fieldValues = [glide_record.oca_ocr_received_date_time,
+        note.fieldValues = [glide_record.member_number,
+            glide_record.contact_number,
+            glide_record.oca_ocr_received_date_time,
             glide_record.submission_source.getDisplayValue(),
             glide_record.responsible_department.getDisplayValue(),
             glide_record.due_date,
@@ -460,7 +484,7 @@ ORSIntegration.prototype = {
         <sys_created_on>2017-10-02 18:45:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1e0cdbfd4f250f001e6cb4fe0210c736</sys_id>
-        <sys_mod_count>268</sys_mod_count>
+        <sys_mod_count>273</sys_mod_count>
         <sys_name>ORSIntegration</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -468,6 +492,6 @@ ORSIntegration.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_1e0cdbfd4f250f001e6cb4fe0210c736</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-11-22 14:22:53</sys_updated_on>
+        <sys_updated_on>2017-12-18 18:50:41</sys_updated_on>
     </sys_script_include>
 </record_update>

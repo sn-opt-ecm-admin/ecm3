@@ -34,16 +34,42 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
+	
+	
 	var gr = new GlideRecord('x_opt_ecm_tasks');
 	gr.initialize();
-	gr.task_reason = "due_date_modification";
+	if(current.business_unit == "regulatory_affairs"){
+		gr.task_reason = "regulatory_due_date_modification";
+	}
+	else if (current.business_unit == "consumer_affairs"){
+		gr.task_reason = "consumer_due_date_modification";
+	}
+	
 	gr.assigned_to = current.assigned_to;
 	gr.parent = current.getUniqueValue();
 	gr.short_description = "Due Date Modification Request";
-	gr.description = "Due Date Modification Request for " + current.number;
+	gr.description = getDescription();
 	gr.insert();
 	
+	
+	function getDescription(){
+		
+		var msg = "";
+		msg += "Due Date Modification Request for " + current.number + "\n";
+		msg += "Business Unit: " + current.business_unit.getDisplayValue() + "\n";
+		msg += "Current Due Date: " + current.due_date + "\n";
+		msg += "Requested Due Date: " + current.modified_due_date + "\n";
+		msg += "DOI State: " + current.doi_state.getDisplayValue() + "\n";
+		msg += "File Number: " + current.file_number + "\n";
+		msg += "Contact Name: " + current.contact_first_name + " " + current.contact_middle_initial + " " + current.contact_last_name + "\n";
+		msg += "Member Name: " + current.member_first_name + " " + current.member_mi + " " + current.member_last_name + "\n";
+		msg += "Patient Name: " + current.patient_first_name + " " + current.patient_middle_initial + " " + current.patient_lastname + "\n";
+		msg += "Provider Name: " + current.provider.first_name + " " + current.provider.last_name + "\n";
+		msg += "Additional Comments: " + current.requested_due_date_comments + "\n";
+		
+		
+		return msg;
+	}
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -53,7 +79,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ca0c6c514ffe4f00699aacb14210c78c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Create Modified Due Date Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -62,7 +88,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_ca0c6c514ffe4f00699aacb14210c78c</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-12-01 20:40:19</sys_updated_on>
+        <sys_updated_on>2017-12-05 20:47:36</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

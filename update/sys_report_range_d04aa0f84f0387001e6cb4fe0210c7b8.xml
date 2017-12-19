@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_range">
+    <sys_report_range action="INSERT_OR_UPDATE">
+        <color/>
+        <color_name/>
+        <display>background-color:</display>
+        <element>opened_at</element>
+        <label>All Opened</label>
+        <name>x_opt_ecm_case</name>
+        <order>100</order>
+        <sys_class_name>sys_report_range</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-12-12 16:23:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d04aa0f84f0387001e6cb4fe0210c7b8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_opt_ecm_case</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_report_range_d04aa0f84f0387001e6cb4fe0210c7b8</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-12-14 06:09:30</sys_updated_on>
+        <upper_value_duration>1997-05-18 23:59:59</upper_value_duration>
+        <upper_value_int/>
+        <value_list/>
+    </sys_report_range>
+    <sys_translated_text action="delete_multiple" query="documentkey=d04aa0f84f0387001e6cb4fe0210c7b8"/>
+</record_update>

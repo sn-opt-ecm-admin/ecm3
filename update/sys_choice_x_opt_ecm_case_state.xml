@@ -172,6 +172,44 @@
             <sys_updated_on>2017-11-21 21:10:11</sys_updated_on>
             <value>7</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Awaiting Letter Review from Quality Review</hint>
+            <inactive>false</inactive>
+            <label>Awaiting Letter Review</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>9</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-12-13 21:50:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f10fba494fcbc740699aacb14210c778</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-12-13 21:53:46</sys_updated_on>
+            <value>16</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint>Awaiting Letter Review from Quality Review</hint>
+            <inactive>false</inactive>
+            <label>Letter Review Complete</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>10</sequence>
+            <sys_created_by>craig.leonard</sys_created_by>
+            <sys_created_on>2017-12-13 21:53:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3b8fba094fcbc740699aacb14210c7e6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>craig.leonard</sys_updated_by>
+            <sys_updated_on>2017-12-13 21:53:58</sys_updated_on>
+            <value>17</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>
             <name>x_opt_ecm_case</name>

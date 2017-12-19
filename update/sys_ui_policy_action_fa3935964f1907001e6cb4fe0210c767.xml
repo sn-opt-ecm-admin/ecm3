@@ -19,7 +19,7 @@
         <sys_updated_by>john.daniel</sys_updated_by>
         <sys_updated_on>2017-09-21 14:08:19</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for required fields on Resolved or Closed">69bd84174fe487001e6cb4fe0210c702</ui_policy>
+        <ui_policy display_value="Policy for required fields on Resolved or beyond">69bd84174fe487001e6cb4fe0210c702</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

@@ -82,7 +82,7 @@
             <element>task_reason</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Due Date Modification</label>
+            <label>Consumer Due Date Modification</label>
             <language>en</language>
             <name>x_opt_ecm_tasks</name>
             <sequence>4</sequence>
@@ -91,10 +91,29 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1217ac5d4fbe4f00699aacb14210c7ff</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-05 20:17:03</sys_updated_on>
+            <value>consumer_due_date_modification</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Regulatory Due Date Modification</label>
+            <language>en</language>
+            <name>x_opt_ecm_tasks</name>
+            <sequence>5</sequence>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-05 20:18:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2efcd5664f724340699aacb14210c7e7</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-12-01 19:36:55</sys_updated_on>
-            <value>due_date_modification</value>
+            <sys_updated_on>2017-12-05 20:19:01</sys_updated_on>
+            <value>regulatory_due_date_modification</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>task_reason</element>

@@ -42,6 +42,8 @@
         <sys_updated_by>craig.leonard</sys_updated_by>
         <sys_updated_on>2017-12-01 04:10:38</sys_updated_on>
         <table>x_opt_ecm_quality_review_task</table>
+        <u_product_line/>
+        <u_routing_condition/>
         <user/>
     </sysrule_assignment>
 </record_update>

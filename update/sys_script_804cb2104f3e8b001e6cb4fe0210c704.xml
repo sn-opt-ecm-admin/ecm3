@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_opt_ecm_quality_review_task</collection>
-        <condition>current.state.changesTo(4) </condition>
+        <condition>current.state.changesTo(-4) </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -34,6 +34,10 @@
 	var cNum = current.case_number;
 // 	gs.addInfoMessage("QR Notes: " + qrn1 + "Case Number: " + cNum);
 	
+	if (!current.advocate_response_due_date) {
+		current.advocate_response_due_date = new QualityReviewUtils().getQualityReviewDueDate();
+	}
+	
 	if ((qrn1 != '')){
 		var cse = new GlideRecord("x_opt_ecm_case");
 // 		gs.addInfoMessage("QR Notes: " + qrn1 + "Case Number: " + cNum);
@@ -43,6 +47,7 @@
 // 			gs.addInfoMessage ('found case');
 // 			gs.addInfoMessage(qrn1);
 			cse.quality_review_comments = qrn1;
+			cse.quality_review_response_due_date = current.advocate_response_due_date;
 			cse.state = 19;
 			cse.update();
 		}
@@ -55,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>804cb2104f3e8b001e6cb4fe0210c704</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>ECM-StateChangesToPendAdvAction</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -64,7 +69,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_804cb2104f3e8b001e6cb4fe0210c704</sys_update_name>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-11-30 00:48:05</sys_updated_on>
+        <sys_updated_on>2017-12-11 21:28:38</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

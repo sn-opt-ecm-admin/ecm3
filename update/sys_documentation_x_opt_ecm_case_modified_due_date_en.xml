@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="modified_due_date" label="Modified Due Date" language="en" table="x_opt_ecm_case">
+    <sys_documentation element="modified_due_date" label="Requested Due Date" language="en" table="x_opt_ecm_case">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>modified_due_date</element>
             <help/>
             <hint/>
-            <label>Modified Due Date</label>
+            <label>Requested Due Date</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
-            <plural>Modified Due Dates</plural>
+            <plural>Requested Due Dates</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>todd.fudala</sys_created_by>
             <sys_created_on>2017-08-09 16:57:40</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>c8a30d684fa40b00699aacb14210c7ae</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Modified Due Date</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Requested Due Date</sys_name>
             <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
             <sys_update_name>sys_documentation_x_opt_ecm_case_modified_due_date_en</sys_update_name>
             <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-09 19:00:44</sys_updated_on>
+            <sys_updated_on>2017-12-05 17:23:23</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

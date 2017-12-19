@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>patient_country</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-12-06 19:55:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57512a724fbe4340699aacb14210c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>patient_country</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_policy_action_57512a724fbe4340699aacb14210c7c4</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-12-06 19:55:01</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <ui_policy display_value="Policy for required fields - Patient on Resolved or beyond">47e0e2fe4f7e4340699aacb14210c78c</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
