@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-08-24 20:37:43</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for required fields on initial save (Intake)">eb8503554fb8c700699aacb14210c79f</ui_policy>
+        <ui_policy display_value="Policy for required fields on Initial Save (Intake)">eb8503554fb8c700699aacb14210c79f</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

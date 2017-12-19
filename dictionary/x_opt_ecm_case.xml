@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="365" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="369" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -109,10 +109,10 @@
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Intake Comments" max_length="4000" name="intake_comments" type="journal_input"/>
         <element label="Last ORS Update" max_length="40" name="last_ors_update" type="glide_date_time"/>
+        <element label="Letter Review Comments" max_length="4000" name="letter_review_comments" type="journal"/>
         <element choice="1" label="Product Line" max_length="40" name="market_business" type="choice">
             <choice>
                 <element label="Behavioral Solutions" value="Behavioral Solutions"/>
-                <element label="Catamaran" value="Catamaran"/>
                 <element label="Complex Medical Conditions" value="Complex Medical Conditions"/>
                 <element label="HI Health Innovations" value="HI Health Innovations"/>
                 <element label="International" value="International"/>
@@ -157,7 +157,6 @@
         <element label="Legal Entity" max_length="32" name="market_legal_entity" reference="x_opt_ecm_market_legal_entity" type="reference"/>
         <element choice="1" label="Product" max_length="40" name="market_product" type="choice">
             <choice>
-                <element label="Catamaran" sequence="0" value="Catamaran"/>
                 <element label="Commercial" sequence="1" value="Commercial"/>
                 <element label="Direct Business" sequence="2" value="Direct Business"/>
                 <element label="Medicare" sequence="3" value="Medicare"/>
@@ -309,7 +308,7 @@
             <choice/>
         </element>
         <element label="Total overturned amounts" max_length="15" name="resolution_total_overturned_amounts" type="currency"/>
-        <element label="Responsible Department" max_length="32" name="responsible_department" reference="x_opt_ecm_department" reference_qual="parent=2308c16c4fa40b00699aacb14210c71e^EQ" reference_qual_condition="parent=2308c16c4fa40b00699aacb14210c71e^EQ" type="reference"/>
+        <element label="Responsible Department" max_length="32" name="responsible_department" reference="x_opt_ecm_department" type="reference"/>
         <element choice="1" dependent="business_unit" dependent_on_field="business_unit" label="Submission Source" max_length="40" name="submission_source" type="choice" use_dependent_field="true">
             <choice>
                 <element dependent_value="consumer_affairs" label="Attorney" sequence="0" value="attorney"/>
@@ -347,6 +346,7 @@
         </element>
         <element label="UHG Received" max_length="40" name="uhg_received_date" type="glide_date"/>
         <element label="UNET Market" max_length="32" name="unet_market" reference="x_opt_ecm_unet_market" type="reference"/>
+        <element label="Letter Review Requested Due Date" max_length="40" name="u_letter_review_requested_due_date" type="glide_date_time"/>
         <element choice="1" label="Verbal Source" max_length="40" name="verbal_source" type="choice">
             <choice>
                 <element label="800#" sequence="0" value="800#"/>

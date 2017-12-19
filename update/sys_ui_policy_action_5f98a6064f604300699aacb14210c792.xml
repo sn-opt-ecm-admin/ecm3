@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-08-14 16:10:08</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for written source">248866064f604300699aacb14210c75c</ui_policy>
+        <ui_policy display_value="Policy for Written Source">248866064f604300699aacb14210c75c</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

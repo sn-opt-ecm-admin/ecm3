@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-09-21 15:28:54</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for contact_ssn">b45a0ed24f5907001e6cb4fe0210c732</ui_policy>
+        <ui_policy display_value="Policy for Contact SSN">b45a0ed24f5907001e6cb4fe0210c732</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

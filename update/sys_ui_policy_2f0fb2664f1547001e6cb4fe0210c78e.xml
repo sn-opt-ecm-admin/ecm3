@@ -22,7 +22,7 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>Policy for member_alt_id</short_description>
+        <short_description>Policy for Member Alternate ID</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>todd.fudala</sys_created_by>
         <sys_created_on>2017-09-22 13:52:13</sys_created_on>
@@ -30,8 +30,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f0fb2664f1547001e6cb4fe0210c78e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Policy for member_alt_id</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Policy for Member Alternate ID</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_policy_2f0fb2664f1547001e6cb4fe0210c78e</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-10-24 18:34:11</sys_updated_on>
+        <sys_updated_on>2017-12-19 19:38:32</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui_type>0</ui_type>
         <view/>

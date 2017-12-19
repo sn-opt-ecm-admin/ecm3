@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_opt_ecm_case">submission_source=media_relations^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="=" or="false" value="media_relations"/>
+        <conditions table="x_opt_ecm_case">resolution_response_type=Written^EQ<item endquery="false" field="resolution_response_type" goto="false" newquery="false" operator="=" or="false" value="Written"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -13,36 +13,32 @@
         <on_load>true</on_load>
         <order>100</order>
         <reverse_if_false>true</reverse_if_false>
-        <run_scripts>true</run_scripts>
+        <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	
-	// Set the Priority to HIGH when submission source is Media Relations.
-	g_form.setValue('priority','1');
-	
+
 }]]></script_true>
         <set_values/>
-        <short_description>Policy for submission source</short_description>
+        <short_description>ECM-LetterReview Requested Due Date Mandatory and Visible if Response Type Written</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
-        <sys_created_by>todd.fudala</sys_created_by>
-        <sys_created_on>2017-08-29 22:43:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2017-12-19 15:52:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7a62194f4fbc07001e6cb4fe0210c70b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Policy for submission source</sys_name>
+        <sys_id>c056a8434fcf8b001e6cb4fe0210c77c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ECM-LetterReview Requested Due Date Mandatory and Visible if Response Type Written</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_ui_policy_7a62194f4fbc07001e6cb4fe0210c70b</sys_update_name>
-        <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-08-31 14:10:52</sys_updated_on>
+        <sys_update_name>sys_ui_policy_c056a8434fcf8b001e6cb4fe0210c77c</sys_update_name>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2017-12-19 15:52:45</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui_type>0</ui_type>
         <view/>

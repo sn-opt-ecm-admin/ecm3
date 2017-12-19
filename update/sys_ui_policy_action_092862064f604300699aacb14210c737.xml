@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-08-14 16:08:10</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for verbal source">cfe76ac24f604300699aacb14210c7d5</ui_policy>
+        <ui_policy display_value="Policy for Verbal Source">cfe76ac24f604300699aacb14210c7d5</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

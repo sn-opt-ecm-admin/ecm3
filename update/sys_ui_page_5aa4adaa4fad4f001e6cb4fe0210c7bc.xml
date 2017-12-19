@@ -201,6 +201,7 @@ function onClaimSearch(member_data) {
 
     $j('#search_results_container').hide(); // Hide the member results container
     $j('#claim_results_container').show(); // Show the claims results container
+    var effDate = $j("#effectiveDate").val(); // Effective Date supplied
     displayMessage("Claims for " + member_data.firstName + ' ' + member_data.lastName + '...');
     // Claim Search Inputs based on REST Message
     var inputs = {
@@ -210,8 +211,8 @@ function onClaimSearch(member_data) {
         "memberId": member_data.memberId,
         "memberKey": member_data.memberKey,
         "rXClaimInstanceId": member_data.instanceId, /// "SXCD1-QA"
-        "fillDateFrom": moment().subtract(180, "days").format("YYYYMMDD"), // 180 days back
-        "fillDateThru": moment().format("YYYYMMDD") // Today
+        "fillDateFrom": moment(effDate, "YYYYMMDD").subtract(180, "days").format("YYYYMMDD"), // 180 days back
+        "fillDateThru": effDate
     }
 
     loading(true);
@@ -386,7 +387,7 @@ function bindMemberTable(data_object) {
         if (type === 'row') {
             var member = table.row(index).data();
             onClaimSearch(member);
-
+            // Need to pass in the effective data on the form
         }
     });
 
@@ -637,7 +638,7 @@ function postClaimsFromDataTableRows(dt_rows, case_number, sys_id) {
         <sys_created_on>2017-10-04 17:39:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5aa4adaa4fad4f001e6cb4fe0210c7bc</sys_id>
-        <sys_mod_count>857</sys_mod_count>
+        <sys_mod_count>859</sys_mod_count>
         <sys_name>orx_search</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -645,6 +646,6 @@ function postClaimsFromDataTableRows(dt_rows, case_number, sys_id) {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_page_5aa4adaa4fad4f001e6cb4fe0210c7bc</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-11-28 18:14:44</sys_updated_on>
+        <sys_updated_on>2017-12-19 18:04:29</sys_updated_on>
     </sys_ui_page>
 </record_update>

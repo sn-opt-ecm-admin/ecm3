@@ -16,7 +16,8 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_opt_ecm_case">resolution_response_typeCHANGESTOWritten^EQ<item endquery="false" field="resolution_response_type" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Written"/>
+        <filter_condition table="x_opt_ecm_case">resolution_response_typeCHANGESTOWritten^u_letter_review_requested_due_dateISNOTEMPTY^EQ<item endquery="false" field="resolution_response_type" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Written"/>
+            <item endquery="false" field="u_letter_review_requested_due_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -43,6 +44,7 @@
 	tsk.assignment_group.setDisplayValue("ECM Quality Review");
 	tsk.assigned_to = "";
 	tsk.task_reason = "Awaiting Quality Review";
+	tsk.due_date = current.u_letter_review_requested_due_date;
 	
 	var t_id = tsk.insert();
 	
@@ -58,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4c9e1ac14f8bc740699aacb14210c77e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>ECM-CreateTaskifResponseTypeWritten</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -67,7 +69,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_4c9e1ac14f8bc740699aacb14210c77e</sys_update_name>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-12-15 03:42:28</sys_updated_on>
+        <sys_updated_on>2017-12-19 15:57:09</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

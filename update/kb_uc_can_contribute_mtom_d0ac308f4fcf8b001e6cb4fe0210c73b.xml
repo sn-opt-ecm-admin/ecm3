@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="kb_uc_can_contribute_mtom">
+    <kb_uc_can_contribute_mtom action="INSERT_OR_UPDATE">
+        <kb_knowledge_base display_value="Consumer Affairs">b6370f7a4f728340699aacb14210c732</kb_knowledge_base>
+        <sys_class_name>kb_uc_can_contribute_mtom</sys_class_name>
+        <sys_created_by>todd.fudala</sys_created_by>
+        <sys_created_on>2017-12-19 17:28:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d0ac308f4fcf8b001e6cb4fe0210c73b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Affairs.ECM Managers</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>kb_uc_can_contribute_mtom_d0ac308f4fcf8b001e6cb4fe0210c73b</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2017-12-19 17:28:52</sys_updated_on>
+        <user_criteria display_value="ECM Managers">3e6cb0434f03cb001e6cb4fe0210c715</user_criteria>
+    </kb_uc_can_contribute_mtom>
+</record_update>

@@ -19,7 +19,7 @@
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-10-10 15:56:27</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for resolution_prompt_pay_amount">0ce74c604f39c3401e6cb4fe0210c7ae</ui_policy>
+        <ui_policy display_value="Policy for Resolution Prompt Pay Amount">0ce74c604f39c3401e6cb4fe0210c7ae</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
