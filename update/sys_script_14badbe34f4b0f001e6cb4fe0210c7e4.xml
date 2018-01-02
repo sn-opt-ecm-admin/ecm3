@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_opt_ecm_case</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_opt_ecm_case">member_first_nameVALCHANGES^ORmember_miVALCHANGES^ORmember_last_nameVALCHANGES^NQcontact_is_member=true^contact_first_nameVALCHANGES^ORcontact_middle_initialVALCHANGES^ORcontact_last_nameVALCHANGES^EQ<item endquery="false" field="member_first_name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="member_mi" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="member_last_name" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="contact_is_member" goto="false" newquery="true" operator="=" or="false" value="true"/>
+            <item endquery="false" field="contact_first_name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="contact_middle_initial" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="contact_last_name" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Member Full Name</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	current.member_full_name = new NameCalculator().calculateName(current, 'member');
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-12-21 18:16:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14badbe34f4b0f001e6cb4fe0210c7e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Calculate Member Full Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_14badbe34f4b0f001e6cb4fe0210c7e4</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-12-21 18:22:28</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=14badbe34f4b0f001e6cb4fe0210c7e4"/>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_opt_ecm.NameCalculator</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>NameCalculator</name>
+        <script><![CDATA[var NameCalculator = Class.create();
+NameCalculator.prototype = {
+    
+	PATIENT_TYPE: 'patient',
+	MEMBER_TYPE: 'member',
+	CONTACT_TYPE: 'contact',
+	
+	CONTACT_FIRST_FIELD: 'contact_first_name',
+	CONTACT_MI_FIELD: 'contact_middle_initial',
+	CONTACT_LAST_FIELD: 'contact_last_name',
+	
+	MEMBER_FIRST_FIELD: 'member_first_name',
+	MEMBER_MI_FIELD: 'member_mi',
+	MEMBER_LAST_FIELD: 'member_last_name',
+	
+	PATIENT_FIRST_FIELD: 'patient_first_name',
+	PATIENT_MI_FIELD: 'patient_middle_initial',
+	PATIENT_LAST_FIELD: 'patient_lastname',
+	
+	
+	
+	initialize: function() { },
+	
+	calculateName: function(caseGR, type) {
+
+		var fullName = '';
+		
+		if (caseGR && caseGR.isValidRecord()) {
+			
+			if (type == this.PATIENT_TYPE) {
+				fullName = (caseGR.contact_is_patient ? this._getContactName(caseGR) : this._getNameFromFields(caseGR, this.PATIENT_FIRST_FIELD, this.PATIENT_MI_FIELD, this.PATIENT_LAST_FIELD));
+			}
+			
+			if (type == this.MEMBER_TYPE) {
+				fullName = (caseGR.contact_is_member ? this._getContactName(caseGR) : this._getNameFromFields(caseGR, this.MEMBER_FIRST_FIELD, this.MEMBER_MI_FIELD, this.MEMBER_LAST_FIELD));
+			}
+			
+			if (type == this.CONTACT_TYPE) {
+				fullName = this._getContactName(caseGR);
+			}
+		}
+		
+		return fullName;
+	},
+	
+	_getContactName: function(caseGR) {
+		return this._getNameFromFields(caseGR, this.CONTACT_FIRST_FIELD, this.CONTACT_MI_FIELD, this.CONTACT_LAST_FIELD);
+	},
+	
+	_getNameFromFields: function(caseGR, firstField, middleField, lastField) {
+	
+		var middle = this._getFieldValue(caseGR, middleField);
+		return this._getFieldValue(caseGR, firstField) + (middle != '' ? ' ' + middle : '' )  +  ' ' + this._getFieldValue(caseGR, lastField);
+	},
+	
+	_getFieldValue: function(caseGR, field) {
+	
+		var value = caseGR.getValue(field);
+		return gs.nil(value) ? '' : value;
+	},
+
+    type: 'NameCalculator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-12-21 18:11:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6f45db234f4b0f001e6cb4fe0210c7fa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>NameCalculator</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_include_6f45db234f4b0f001e6cb4fe0210c7fa</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-12-21 19:09:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

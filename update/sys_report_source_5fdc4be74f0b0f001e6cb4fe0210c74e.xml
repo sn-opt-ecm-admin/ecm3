@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>ECM 24 Hour Callback Cases (ECM Case)</display>
+        <filter table="x_opt_ecm_case">sys_idINjavascript: new x_opt_ecm.ReportingUtils().getCasesWithCallback();^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="IN" or="false" value="javascript: new x_opt_ecm.ReportingUtils().getCasesWithCallback();"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <name>ECM 24 Hour Callback Cases</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2017-12-21 17:17:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5fdc4be74f0b0f001e6cb4fe0210c74e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ECM 24 Hour Callback Cases (ECM Case)</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_report_source_5fdc4be74f0b0f001e6cb4fe0210c74e</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2017-12-21 17:17:10</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+    </sys_report_source>
+</record_update>

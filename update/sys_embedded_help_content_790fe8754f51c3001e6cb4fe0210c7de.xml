@@ -4,7 +4,7 @@
         <active>true</active>
         <category>mid-server</category>
         <content><![CDATA[ <h1 class="title topictitle1">MID Server form</h1>  <div class="body conbody">  <p class="p">Use this form to configure a MID Server, define capabilities and the IP ranges in which it   operates, and view log messages. Configuration parameters control the behavior of your MID Server   when it connects to various devices in your network. </p>  <div class="p">These parameters are required for the MID Server and are included by default when it is    installed:<div class="tablenoborder"><table id="ecc_agent-normal__table_xbf_41p_2z" class="table"><thead class="thead"><tr class="row"><th class="entry" id="d390195e39">Name</th><th class="entry" id="d390195e42">Description</th></tr></thead><tbody class="tbody"><tr class="row"><td class="entry">url</td><td class="entry">Specifies the URL to the associated <span class="ph">ServiceNow</span> instance. Normally the URL is        similar to <span class="ph uicontrol">https://instance.service-now.com</span>, where you replace         <span class="ph uicontrol">&lt;instance&gt;</span> with the instance name. </td></tr><tr class="row"><td class="entry">mid_sys_id</td><td class="entry">Records the MID Server record&#39;s unique identifier. This parameter should be empty when        you initially configure a MID Server . Do not change the value.</td></tr><tr class="row"><td class="entry">name</td><td class="entry">Use this parameter to supply a name that is meaningful for you. If you do not supply        this parameter, the MID Server uses the default value.</td></tr><tr class="row"><td class="entry">mid.instance.username</td><td class="entry">If the instance has authentication enabled, set this parameter to the user name the        MID Server should use to log in to the instance. This user should have the mid_server role        on the instance to access necessary tables and fields.</td></tr><tr class="row"><td class="entry">mid.instance.password</td><td class="entry">If the instance has authentication enabled, set this parameter to define the password        the MID Server should use to log in to the instance.</td></tr></tbody></table></div></div> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MIDIPRangeAutoAssign&amp;version&#61;jakarta" target="_blank" rel="nofollow">MID Server IP range auto-assignment</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MIDPropertiesParameters&amp;version&#61;jakarta" target="_blank" rel="nofollow">MID Server properties and parameters</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MID_Server_Capability&amp;version&#61;jakarta" target="_blank" rel="nofollow">MID Server capabilities</a></div></div></div></div>]]></content>
-        <last_sync>2017-12-03 19:30:05</last_sync>
+        <last_sync>2018-01-02 19:31:06</last_sync>
         <modifier>normal</modifier>
         <name>ecc_agent-normal</name>
         <page>ecc_agent</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2017-09-19 19:27:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>790fe8754f51c3001e6cb4fe0210c7de</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>ecc_agent-normal</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_embedded_help_content_790fe8754f51c3001e6cb4fe0210c7de</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-12-03 19:30:05</sys_updated_on>
+        <sys_updated_on>2018-01-02 19:31:06</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=790fe8754f51c3001e6cb4fe0210c7de"/>

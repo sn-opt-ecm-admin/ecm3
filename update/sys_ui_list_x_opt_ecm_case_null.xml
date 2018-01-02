@@ -3,258 +3,198 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_opt_ecm_case" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>number</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>case</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>99e70f7b4fc6cf801e6cb4fe0210c776</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1937e7ef4f4b0f001e6cb4fe0210c777</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>priority</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>1de70f7b4fc6cf801e6cb4fe0210c776</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9937e7ef4f4b0f001e6cb4fe0210c777</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>resolved_at</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>state</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>9de70f7b4fc6cf801e6cb4fe0210c776</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1d37e7ef4f4b0f001e6cb4fe0210c777</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>oca_ocr_received_date_time</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>11e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>due_date</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9d37e7ef4f4b0f001e6cb4fe0210c777</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>91e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1137e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>submission_source</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>uhg_received_date</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>15e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9137e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>responsible_department</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>member_full_name</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>95e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1537e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>member_last_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>patient_full_name</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>19e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9537e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>member_first_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>provider</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>99e70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1937e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>member_mi</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>contact_full_name</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>1de70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9937e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>member_number</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>doi_state</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>9de70f7b4fc6cf801e6cb4fe0210c777</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1d37e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>intake_comments</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>file_number</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>11e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>9d37e7ef4f4b0f001e6cb4fe0210c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>resolution_drug_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
+            <element>submission_source</element>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9137e7ef4f4b0f001e6cb4fe0210c777</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>12</position>
             <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>91e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-12-21 19:11:06</sys_created_on>
+            <sys_id>1137e7ef4f4b0f001e6cb4fe0210c779</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>contact_carrier_id</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>13</position>
-            <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>15e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>member_carrier_id</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>14</position>
-            <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>95e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>contact_account_id</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>15</position>
-            <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>19e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>member_account_id</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="NULL">15e70f7b4fc6cf801e6cb4fe0210c776</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>16</position>
-            <sum>false</sum>
-            <sys_created_by>mark.didrikson</sys_created_by>
-            <sys_created_on>2017-11-02 18:29:59</sys_created_on>
-            <sys_id>99e70f7b4fc6cf801e6cb4fe0210c778</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mark.didrikson</sys_updated_by>
-            <sys_updated_on>2017-11-02 18:29:59</sys_updated_on>
+            <sys_updated_by>todd.fudala</sys_updated_by>
+            <sys_updated_on>2017-12-21 19:11:06</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>

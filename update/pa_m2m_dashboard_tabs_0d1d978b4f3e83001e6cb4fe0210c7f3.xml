@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
     <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
-        <dashboard display_value="Escalated Case Management">3bec578b4f3e83001e6cb4fe0210c773</dashboard>
+        <dashboard display_value="Escalated Case Management KPIs">3bec578b4f3e83001e6cb4fe0210c773</dashboard>
         <home>false</home>
         <homepage/>
         <order>1</order>

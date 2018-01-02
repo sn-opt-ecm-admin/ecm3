@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="369" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="418" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -38,6 +38,7 @@
         <element label="Contact Email Address" max_length="40" name="contact_email" type="string"/>
         <element label="Contact Fax" max_length="40" name="contact_fax_number" type="string"/>
         <element label="Contact First Name" max_length="40" name="contact_first_name" type="string"/>
+        <element label="Contact Name" max_length="120" name="contact_full_name" read_only="true" type="string"/>
         <element choice="3" label="Contact Gender" max_length="40" name="contact_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
@@ -178,6 +179,7 @@
         <element label="Member Email" max_length="40" name="member_email" type="string"/>
         <element label="Member Fax" max_length="40" name="member_fax_number" type="string"/>
         <element label="Member First Name" max_length="40" name="member_first_name" type="string"/>
+        <element label="Member Name" max_length="120" name="member_full_name" read_only="true" type="string"/>
         <element choice="3" label="Member Gender" max_length="40" name="member_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
@@ -213,6 +215,7 @@
         <element label="Patient Email" max_length="40" name="patient_email" type="string"/>
         <element label="Patient Fax" max_length="40" name="patient_fax" type="string"/>
         <element label="Patient First Name" max_length="40" name="patient_first_name" type="string"/>
+        <element label="Patient Name" max_length="120" name="patient_full_name" read_only="true" type="string"/>
         <element choice="3" label="Patient Gender" max_length="40" name="patient_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
@@ -329,7 +332,7 @@
                 <element dependent_value="consumer_affairs" label="OCR - Civil Rights Mailbox" sequence="7" value="ocr_civil_rights_mailbox"/>
                 <element dependent_value="regulatory_affairs" label="OCR - Regulatory Office" sequence="8" value="ocr_regulatory_office"/>
                 <element dependent_value="consumer_affairs" label="Other" sequence="8" value="other"/>
-                <element dependent_value="consumer_affairs" label="Media1" sequence="9" value="Media1"/>
+                <element dependent_value="consumer_affairs" label="Media Relations" sequence="9" value="media_relations"/>
                 <element dependent_value="regulatory_affairs" label="Ombudsman" sequence="9" value="ombudsman"/>
                 <element dependent_value="regulatory_affairs" label="Other" sequence="10" value="other"/>
                 <element dependent_value="regulatory_affairs" label="State Exchange" sequence="11" value="state_exchange"/>
