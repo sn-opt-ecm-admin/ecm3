@@ -65,34 +65,33 @@ ORSIntegration.prototype = {
         var open_or_closed = (insert_or_update_constant == this.INSERT) ? this.OPEN : this.CLOSED;
 
         // Handle Contact is Member mappings
-        var m_member_number = "";
-        var m_group_number = "";
-        var m_policy_number = "";
-        var m_first_name = "";
-        var m_last_name = "";
+        var m_member_number, m_group_number, m_policy_number, m_first_name, m_last_name, memberNumberLength = 0;
+
         if (gr.contact_is_member) {
-            m_member_number = gr.contact_number;
-            m_group_number = gr.contact_group_number;
-            m_first_name = gr.contact_first_name;
-            m_last_name = gr.contact_last_name;
-            m_policy_number = gr.contact_policy_number;
+            this.echo("Contact is the Member, using contact_number");
+            m_member_number = gr.contact_number.toString();
+            m_group_number = gr.contact_group_number.toString();
+            m_first_name = gr.contact_first_name.toString();
+            m_last_name = gr.contact_last_name.toString();
+            m_policy_number = gr.contact_policy_number.toString();
         } else {
-            m_member_number = gr.member_number;
-            m_group_number = gr.member_group_number;
-            m_first_name = gr.member_first_name;
-            m_last_name = gr.member_last_name;
-            m_policy_number = gr.member_policy_number;
+            this.echo("Member is the Member, using member_number");
+            m_member_number = gr.member_number.toString();
+            m_group_number = gr.member_group_number.toString();
+            m_first_name = gr.member_first_name.toString();
+            m_last_name = gr.member_last_name.toString();
+            m_policy_number = gr.member_policy_number.toString();
         }
+        memberNumberLength = m_member_number.length; // For later testing
 
         // Handle Contact is Patient
-        var p_first_name = "";
-        var p_last_name = "";
+        var p_first_name, p_last_name;
         if (gr.contact_is_member) {
-            p_first_name = gr.contact_first_name;
-            p_last_name = gr.contact_last_name;
+            p_first_name = gr.contact_first_name.toString();
+            p_last_name = gr.contact_last_name.toString();
         } else {
-            p_first_name = gr.member_first_name;
-            p_last_name = gr.member_last_name;
+            p_first_name = gr.member_first_name.toString();
+            p_last_name = gr.member_last_name.toString();
         }
 
         // If the transaction source is Verbal then (P)hone, if Written then (M)ail
@@ -130,8 +129,10 @@ ORSIntegration.prototype = {
             // Force memberId to Diamond EE ID field by setting eligibilitySourceSystem
             // Diamond EE ID is (12) alpha-numeric, UPM maps the field when set
             // If &gt;9 or alpha numeric (NaN) then shift
-            if(m_member_number.length &gt; 9 || isNaN(m_member_number)) {
-              s.setStringParameterNoEscape('member.eligibilitySourceSystem', 'D');
+            this.echo("The Member ID length is : " + memberNumberLength);
+            if (memberNumberLength &gt; 9 || isNaN(m_member_number)) {
+                this.echo("Settting member.eligibilitySourceSystem to 'D'iamond, the Member ID is " + memberNumberLength + " characters.");
+                s.setStringParameterNoEscape('member.eligibilitySourceSystem', 'D');
             }
 
             s.setStringParameterNoEscape('member.memberNumber', m_member_number); // PIC 9 (09)
@@ -145,16 +146,16 @@ ORSIntegration.prototype = {
             s.setStringParameterNoEscape('memberName.lastName', m_last_name); // PIC X(16)
             s.setStringParameterNoEscape('dependentName.firstName', p_first_name); // PIC X(12)
             s.setStringParameterNoEscape('dependentName.lastName', p_last_name); // PIC X(16)
-            s.setStringParameterNoEscape('callerName.firstName', gr.contact_first_name); // required PIC X(14)
-            s.setStringParameterNoEscape('callerName.lastName', gr.contact_last_name); // required PIC X(16)
+            s.setStringParameterNoEscape('callerName.firstName', gr.contact_first_name.toString()); // required PIC X(14)
+            s.setStringParameterNoEscape('callerName.lastName', gr.contact_last_name.toString()); // required PIC X(16)
             // values for the reported case
             s.setStringParameterNoEscape('issue.status', open_or_closed);
-            s.setStringParameterNoEscape('issue.issueId', gr.ors_issue_id);
+            s.setStringParameterNoEscape('issue.issueId', gr.ors_issue_id.toString());
             s.setStringParameterNoEscape('issue.reasonCategory', 'GENERAL');
             s.setStringParameterNoEscape('issue.reasonCode', 'ECOO');
             s.setStringParameterNoEscape('issue.reasonType', ''); // Leave blank per Manish Arora
             s.setStringParameterNoEscape('issue.callHistoryFlag', 'N'); // Default to N per Manish Arora
-            s.setStringParameterNoEscape('issue.caseNumber', gr.number); // The case number
+            s.setStringParameterNoEscape('issue.caseNumber', gr.number.toString()); // The case number
             s.setStringParameterNoEscape('issue.createdByApplicationIndicator', created_by); //required
             s.setStringParameterNoEscape('issue.modifiedByApplicationIndicator', modified_by); //required
             s.setStringParameterNoEscape('issue.directionCode', 'I'); // (I)ncoming // required
@@ -220,7 +221,7 @@ ORSIntegration.prototype = {
         var functName = "validateORS()";
 
         try {
-            var case_info = "Case # :" + glide_record.number;
+            var case_info = "Case # :" + glide_record.number.toString();
             var error_msg = soapresponse.haveError() ? soapresponse.getErrorMessage() : null;
             var status = soapresponse.getStatusCode();
             var endpoint = soap.getEndpoint();
@@ -359,14 +360,16 @@ ORSIntegration.prototype = {
             "policyowner_trustee_group": "BE",
             "regulator": "RT",
             "spouse_relative": "FF",
-            "third_party": "OI"
+            "third_party": "OI",
+            "": "EM"
 
         };
 
         var map_value = map[contact_relationship];
-        //this.echo("The contact method is : " + contact_relationship + ", map value : " + map_value);
+        this.echo("The contact method is : '" + contact_relationship + "', map value is : " + map_value);
         // Test in case the incoming value is not found
-        if (contact_relationship === undefined || contact_relationship === null || contact_relationship === '') {
+        if (typeof map_value === "undefined") {
+            this.echo("The Contact Relationship mapped value was not found, returning default value " + result);
             return result;
         } else {
             return map_value;
@@ -484,7 +487,7 @@ ORSIntegration.prototype = {
         <sys_created_on>2017-10-02 18:45:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1e0cdbfd4f250f001e6cb4fe0210c736</sys_id>
-        <sys_mod_count>273</sys_mod_count>
+        <sys_mod_count>296</sys_mod_count>
         <sys_name>ORSIntegration</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -492,6 +495,6 @@ ORSIntegration.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_1e0cdbfd4f250f001e6cb4fe0210c736</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-12-18 18:50:41</sys_updated_on>
+        <sys_updated_on>2018-01-09 19:54:24</sys_updated_on>
     </sys_script_include>
 </record_update>

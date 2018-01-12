@@ -19,7 +19,7 @@
         <sys_updated_by>john.daniel</sys_updated_by>
         <sys_updated_on>2017-09-12 13:28:20</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Require Due Date if Manual Entry SLA related Submission Source">b9391b1b4f018b001e6cb4fe0210c7d9</ui_policy>
+        <ui_policy display_value="Require Due Date if Manual Entry SLA related">b9391b1b4f018b001e6cb4fe0210c7d9</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

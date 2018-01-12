@@ -19,7 +19,7 @@
         <sys_updated_by>john.daniel</sys_updated_by>
         <sys_updated_on>2017-10-18 20:17:41</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Policy for DOI Complaints">45ed41aa4fac4300699aacb14210c7f7</ui_policy>
+        <ui_policy display_value="Policy for Regulatory DOI Complaints">45ed41aa4fac4300699aacb14210c7f7</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

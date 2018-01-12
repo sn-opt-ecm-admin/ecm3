@@ -48,21 +48,39 @@ ECM_DOI_SLA_Calculator_v3_JWD : Fixing North Carolina DOI SLAs being a day late.
 
 Version 1.9.6
 ECM_SLA_Repair_BusinessRule_v3_JWD : Business rules resetting ECM Quality Review SLAs on appropriate date changes.
+
+Version 1.9.9
+Update set named "ECM Global Update Set CTL112017-1" 
+Update set contains;
+Created NEW UI Action named "Reject" with condition;  current.source_table != 'kb_knowledge' && current.state == 'requested' && (gs.hasRole('admin')) && !isApprovalMine(current)
+Modified UI Action named "Reject" modified condition to be: current.source_table != 'kb_knowledge' && current.state == 'requested' && isApprovalMine(current)
+
+Created NEW notification named "Optum Approval Request" with condition "Approval for.Task type is ECM Tasks" AND "Approval for.Short Description is NOT "Written Response Letter Review" "
+Created NEW Email Template named ecm.approve.role
+Created NEW Email Notification named "ECM Approval Request"
+Set baseline notification named "Approval Request" to not active
+
+Set baseline WRITE ACL named "sysapproval_approver.state" active false
+Created two new WRITE ACLs named "sysapproval_approver.state
+One has condition of "Source table is x_opt_ecm_tasks" with script of "answer = (current.approver == gs.getUserID());"
+Second one replaces the baseline WRITE ACL with a condition of "Source table is x_opt_ecm_tasks" and Role of approval_admin.
+
 */
+
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>todd.fudala</sys_created_by>
         <sys_created_on>2017-09-11 16:24:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51287acf4f454b001e6cb4fe0210c711</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>DeploymentNotes</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_51287acf4f454b001e6cb4fe0210c711</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-12-07 04:00:43</sys_updated_on>
+        <sys_updated_by>craig.leonard</sys_updated_by>
+        <sys_updated_on>2018-01-12 20:45:24</sys_updated_on>
     </sys_script_include>
 </record_update>

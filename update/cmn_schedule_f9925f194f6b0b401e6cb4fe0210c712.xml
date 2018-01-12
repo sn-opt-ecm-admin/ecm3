@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="cmn_schedule">
+    <cmn_schedule action="INSERT_OR_UPDATE">
+        <description/>
+        <document/>
+        <document_key/>
+        <name>John Daniel Personal Schedule</name>
+        <parent/>
+        <read_only>false</read_only>
+        <sys_class_name>cmn_schedule</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-01-08 14:26:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f9925f194f6b0b401e6cb4fe0210c712</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>John Daniel Personal Schedule</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>cmn_schedule_f9925f194f6b0b401e6cb4fe0210c712</sys_update_name>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2018-01-09 15:17:42</sys_updated_on>
+        <time_zone>US/Eastern</time_zone>
+        <type>Phone Calls</type>
+    </cmn_schedule>
+</record_update>

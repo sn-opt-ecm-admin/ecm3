@@ -19,7 +19,8 @@
 	// don't change the due date if it already exists, and can't do anything if Received Date is empty
 	var dueDate = g_form.getValue('due_date');
 	var receivedDate = g_form.getValue('oca_ocr_received_date_time');
-	if (dueDate != '' || receivedDate == '') {
+	var doiComplaint = g_form.getValue('doi_complaint');
+	if (dueDate != '' || receivedDate == '' || doiComplaint == 'yes') {
 		return;
 	}
 
@@ -41,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>83240c234f818b001e6cb4fe0210c71d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Calc Due Date:  Sub. Source change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -50,7 +51,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_client_83240c234f818b001e6cb4fe0210c71d</sys_update_name>
         <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-10-18 15:10:22</sys_updated_on>
+        <sys_updated_on>2018-01-10 16:56:25</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

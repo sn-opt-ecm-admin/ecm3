@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_chart_color_schemes">
+    <pa_chart_color_schemes action="INSERT_OR_UPDATE">
+        <color_1 display_value="Optum Brand Orange">233a12d84fe74b80699aacb14210c7eb</color_1>
+        <color_10 display_value="Optum Teal 2">000c5ed84fe74b80699aacb14210c7c5</color_10>
+        <color_11 display_value="Optum Green 2">ee1cd21c4fe74b80699aacb14210c74f</color_11>
+        <color_12 display_value="Optum Blue">89fcd61c4fe74b80699aacb14210c7cf</color_12>
+        <color_13 display_value="Optum Error Red">522dd61c4fe74b80699aacb14210c7d3</color_13>
+        <color_14 display_value="Optum Dark Blue">641d121c4fe74b80699aacb14210c7af</color_14>
+        <color_15 display_value="Optum Gray 1">ba4d5e1c4fe74b80699aacb14210c795</color_15>
+        <color_16 display_value="Optum Gray 5">628d5e1c4fe74b80699aacb14210c799</color_16>
+        <color_17/>
+        <color_18/>
+        <color_19/>
+        <color_2 display_value="Optum Brand Gold">eb9a12d84fe74b80699aacb14210c7cd</color_2>
+        <color_20/>
+        <color_21/>
+        <color_22/>
+        <color_23/>
+        <color_24/>
+        <color_25/>
+        <color_26/>
+        <color_27/>
+        <color_28/>
+        <color_29/>
+        <color_3 display_value="Optum Accessible Orange">b37a5e984fe74b80699aacb14210c782</color_3>
+        <color_30/>
+        <color_31/>
+        <color_32/>
+        <color_4 display_value="Optum Red 1">973b9e984fe74b80699aacb14210c76b</color_4>
+        <color_5 display_value="Optum Purple 1">8f8b52d84fe74b80699aacb14210c7c9</color_5>
+        <color_6 display_value="Optum Teal 1">50ab9ad84fe74b80699aacb14210c7f3</color_6>
+        <color_7 display_value="Optum Green 1">d1bb92d84fe74b80699aacb14210c771</color_7>
+        <color_8 display_value="Optum Red 2">9adb92d84fe74b80699aacb14210c773</color_8>
+        <color_9 display_value="Optum Purple 2">5aeb521c4fe74b80699aacb14210c73b</color_9>
+        <description/>
+        <name>Optum Brand</name>
+        <sys_class_name>pa_chart_color_schemes</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2018-01-05 07:56:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>84d9da984fe74b80699aacb14210c7f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Optum Brand</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>pa_chart_color_schemes_84d9da984fe74b80699aacb14210c7f7</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2018-01-09 16:01:22</sys_updated_on>
+    </pa_chart_color_schemes>
+    <sys_translated_text action="delete_multiple" query="documentkey=84d9da984fe74b80699aacb14210c7f7"/>
+</record_update>

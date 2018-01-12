@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="418" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="506" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -33,7 +33,7 @@
         <element label="Contact Alternate ID" max_length="40" name="contact_alternate_id" type="string"/>
         <element label="Contact Carrier ID" max_length="40" name="contact_carrier_id" type="string"/>
         <element label="Contact City" max_length="40" name="contact_city" type="string"/>
-        <element label="Contact Country" max_length="32" name="contact_country" type="string"/>
+        <element default="US" label="Contact Country" max_length="32" name="contact_country" type="string"/>
         <element label="Contact DOB" max_length="40" name="contact_dob" type="glide_date"/>
         <element label="Contact Email Address" max_length="40" name="contact_email" type="string"/>
         <element label="Contact Fax" max_length="40" name="contact_fax_number" type="string"/>

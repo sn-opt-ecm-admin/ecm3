@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_color">
+    <sys_report_color action="INSERT_OR_UPDATE">
+        <color>#B1B3B3</color>
+        <display>background-color:#B1B3B3</display>
+        <name>Optum Gray 5</name>
+        <sys_class_name>sys_report_color</sys_class_name>
+        <sys_created_by>john.daniel</sys_created_by>
+        <sys_created_on>2018-01-05 08:00:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>628d5e1c4fe74b80699aacb14210c799</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Optum Gray 5</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_report_color_628d5e1c4fe74b80699aacb14210c799</sys_update_name>
+        <sys_updated_by>john.daniel</sys_updated_by>
+        <sys_updated_on>2018-01-05 08:00:40</sys_updated_on>
+    </sys_report_color>
+</record_update>
