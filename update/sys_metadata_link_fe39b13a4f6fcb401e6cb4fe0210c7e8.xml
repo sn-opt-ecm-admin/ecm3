@@ -2,7 +2,7 @@
 <record_update table="sys_metadata_link">
     <sys_metadata_link action="INSERT_OR_UPDATE">
         <directory>update</directory>
-        <documentkey>627fa5cf4f6087001e6cb4fe0210c700</documentkey>
+        <documentkey>b1b7382b4f3ac3001e6cb4fe0210c79e</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_user_group">
     <sys_user_group action="INSERT_OR_UPDATE">
@@ -10,45 +10,45 @@
         <average_daily_fte/>
         <cost_center/>
         <default_assignee/>
-        <description>Group for ECM Intake Users</description>
-        <email/>
+        <description>triageoxfordclinical@uhc.com	Oxford Clinical Review  Group Email </description>
+        <email>triageoxfordclinical@uhc.com</email>
         <exclude_manager>false</exclude_manager>
         <hourly_rate>0</hourly_rate>
         <include_members>false</include_members>
         <manager/>
-        <name>ECM Intake</name>
-        <parent display_value="OCA / ORA" name="OCA / ORA">989a8f094f79c7401e6cb4fe0210c73d</parent>
+        <name>Oxford Clinical Review </name>
+        <parent/>
         <points>0</points>
         <roles/>
         <source/>
         <sys_class_name>sys_user_group</sys_class_name>
         <sys_created_by>craig.leonard</sys_created_by>
-        <sys_created_on>2017-08-17 14:34:24</sys_created_on>
-        <sys_id>627fa5cf4f6087001e6cb4fe0210c700</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2017-12-08 20:08:40</sys_created_on>
+        <sys_id>b1b7382b4f3ac3001e6cb4fe0210c79e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-10-16 23:25:48</sys_updated_on>
-        <type/>
+        <sys_updated_on>2017-12-08 20:08:40</sys_updated_on>
+        <type>bf4d87cf4fa9c340699aacb14210c774</type>
         <u_allow_group_member_assignment>false</u_allow_group_member_assignment>
         <u_allow_submitter_escalation>false</u_allow_submitter_escalation>
-        <u_onshore_offshore/>
+        <u_onshore_offshore>Both</u_onshore_offshore>
     </sys_user_group>
 </record_update>
 ]]></payload>
         <sys_class_name>sys_metadata_link</sys_class_name>
-        <sys_created_by>todd.fudala</sys_created_by>
-        <sys_created_on>2017-10-13 17:32:08</sys_created_on>
+        <sys_created_by>craig.leonard</sys_created_by>
+        <sys_created_on>2018-01-12 23:46:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>72dabf514ff50b401e6cb4fe0210c7af</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>ECM Intake</sys_name>
+        <sys_id>fe39b13a4f6fcb401e6cb4fe0210c7e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Oxford Clinical Review </sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_metadata_link_72dabf514ff50b401e6cb4fe0210c7af</sys_update_name>
+        <sys_update_name>sys_metadata_link_fe39b13a4f6fcb401e6cb4fe0210c7e8</sys_update_name>
         <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2018-01-12 23:46:21</sys_updated_on>
+        <sys_updated_on>2018-01-12 23:46:33</sys_updated_on>
         <tablename>sys_user_group</tablename>
     </sys_metadata_link>
 </record_update>

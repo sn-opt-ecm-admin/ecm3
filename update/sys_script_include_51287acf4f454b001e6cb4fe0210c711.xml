@@ -23,12 +23,12 @@ ECM_DocumentValidation_ClientScript_v1_JWD ( no longer necessary past v1.0.8 )
 global.US778318-History-TSF v1.0
 
 
-Version 1.8.1 ** switched verison convention to major.minor.fix
+Version 1.8.1 ** switched version convention to major.minor.fix
 ECM_DocumentValidation_ClientScript_v2_JWD : This negates earlier update set ECM_DocumentValidation_ClientScript_v1_JWD.  It can be ignored if that update set was not applied.
 ECM_DOI_SLA_Calculator_v1_JWD : Supports State-level Regulatory SLA calculations
 
 
-Version 1.10.0
+Version 1.9.0
 ECM_SLA_Repair_BusinessRule_v2_JWD : No-op update set.  Fixes missing file in upstream environment.  May not be necessary for future deployments.
 
 ** NOTE : Calendar spans and children for the ECM Business Schedule were missing at this point and manually imported to TEST.  Make sure these migrated correctly.
@@ -38,7 +38,7 @@ Version 1.9.4
 ECM_SSN-List-Mask_v1_JWD : Adds global UI Script on load of page to mask SSN fields in the ECM Case list view.
 ECM_SSN-List-Mask_v2_JWD : bug fix for above, clearing console error
 Managed_Documents-Option-Fix_JWD_v1 : Fix for ServiceNow bug in Managed Documents type setting.  *** Not ECM-related ***
-ECM Global Update Set CTL091117-1 : Adds new role to managed documents, list modification for dms_document, Lockdown of Create NEW button on managed documents, lable override on task.due_date 
+ECM Global Update Set CTL091117-1 : Adds new role to managed documents, list modification for dms_document, Lockdown of Create NEW button on managed documents, label override on task.due_date 
 
 
 Version 1.9.5
@@ -73,14 +73,14 @@ Second one replaces the baseline WRITE ACL with a condition of "Source table is 
         <sys_created_on>2017-09-11 16:24:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51287acf4f454b001e6cb4fe0210c711</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>DeploymentNotes</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_51287acf4f454b001e6cb4fe0210c711</sys_update_name>
-        <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2018-01-12 20:45:24</sys_updated_on>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2018-01-12 22:08:30</sys_updated_on>
     </sys_script_include>
 </record_update>
