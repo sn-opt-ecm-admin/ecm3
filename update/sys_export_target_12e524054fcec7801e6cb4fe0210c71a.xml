@@ -2,7 +2,7 @@
 <record_update table="sys_export_target">
     <sys_export_target action="INSERT_OR_UPDATE">
         <description>Target for Navigator File</description>
-        <file_path>/</file_path>
+        <file_path>/navigator_ecm</file_path>
         <method>File on MID Server</method>
         <mid_server display_value="EIM_DEV">72a8728d4fc0cf40699aacb14210c789</mid_server>
         <name>Navigator File_EIM_DEV</name>
@@ -11,14 +11,14 @@
         <sys_created_on>2017-10-24 17:38:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>12e524054fcec7801e6cb4fe0210c71a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Navigator File_EIM_DEV</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_export_target_12e524054fcec7801e6cb4fe0210c71a</sys_update_name>
-        <sys_updated_by>mark.didrikson</sys_updated_by>
-        <sys_updated_on>2017-10-25 19:03:28</sys_updated_on>
+        <sys_updated_by>todd.fudala</sys_updated_by>
+        <sys_updated_on>2018-01-25 22:48:44</sys_updated_on>
     </sys_export_target>
 </record_update>

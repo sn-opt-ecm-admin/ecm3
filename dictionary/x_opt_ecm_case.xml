@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="510" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="525" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -24,7 +24,7 @@
                 <element label="Consumer Affairs" sequence="1" value="consumer_affairs"/>
             </choice>
         </element>
-        <element choice="1" label="Complaint Type" max_length="32" name="complaint_type" reference="x_opt_ecm_complaint_type" type="reference">
+        <element choice="1" label="Complaint Type" max_length="32" name="complaint_type" reference="x_opt_ecm_complaint_type" reference_qual="javascript: var refqual=new ECMRefQualUtil().ECMComlaintTypeRefQual(current); refqual;" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element label="Contact Account ID" max_length="40" name="contact_account_id" type="string"/>
@@ -339,7 +339,9 @@
             </choice>
         </element>
         <element choice="1" label="Submitted on behalf of" max_length="40" name="submitted_on_behalf_of" reference="x_opt_ecm_submitted_obo" type="reference">
-            <choice/>
+            <choice>
+                <element label="Leve2ram1" sequence="0" value="Leve2ram1"/>
+            </choice>
         </element>
         <element choice="1" label="Transaction Source" max_length="40" name="transaction_source" type="choice">
             <choice>

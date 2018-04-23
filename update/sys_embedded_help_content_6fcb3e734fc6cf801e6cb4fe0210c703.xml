@@ -4,7 +4,7 @@
         <active>true</active>
         <category/>
         <content><![CDATA[ <h1 class="title topictitle1">In-form analytics</h1>  <div class="body conbody">  <p class="p">In-form analytics integrate performance insights                into forms so that users can access important metrics in context, and make better                decisions. A dashboard with relevant visualizations appears as a pop-up when a user                clicks the Analytics icon ( next to a field. For example, in-form analytics on an incident form show                the expected to time close that incident based on historical data, enabling support                engineers to set appropriate customer expectations.</p>  <p class="p">Before adding in-form analytics for a specific table and field, a                breakdown dashboard that uses that table and field as a breakdown source must                exist.</p> </div>]]></content>
-        <last_sync>2018-01-16 17:40:04</last_sync>
+        <last_sync>2018-04-16 17:44:07</last_sync>
         <modifier>normal</modifier>
         <name>$pa_inform_analytics-normal</name>
         <page>$pa_inform_analytics</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2017-11-02 17:37:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fcb3e734fc6cf801e6cb4fe0210c703</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>$pa_inform_analytics-normal</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_embedded_help_content_6fcb3e734fc6cf801e6cb4fe0210c703</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-01-16 17:40:04</sys_updated_on>
+        <sys_updated_on>2018-04-16 17:44:07</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=6fcb3e734fc6cf801e6cb4fe0210c703"/>
