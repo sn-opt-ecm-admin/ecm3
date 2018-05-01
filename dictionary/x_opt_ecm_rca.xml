@@ -172,9 +172,9 @@
                 <element dependent_value="Timely Filing" label="Non-Standard Contract" sequence="0" value="Non-Standard Contract"/>
                 <element dependent_value="HSA" label="Null" sequence="0" value="Null"/>
                 <element dependent_value="Subrogation" label="Null" sequence="0" value="Null"/>
-                <element dependent_value="pharmacy_order_entry" label="Other - document in comments section" sequence="0" value="Other - document in comments section"/>
-                <element dependent_value="Other - document in comments section" label="Other - document in comments section" sequence="0" value="Other - document in comments section"/>
-                <element dependent_value="Quality Management" label="Other - document in comments section" sequence="0" value="Other - document in comments section"/>
+                <element dependent_value="pharmacy_order_entry" label="Other - document in comments section" sequence="0" value="Other - document in comments section_other"/>
+                <element dependent_value="Other - document in comments section" label="Other - document in comments section" sequence="0" value="Other - document in comments section_other"/>
+                <element dependent_value="Quality Management" label="Other - document in comments section" sequence="0" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_accounting" label="Account Restriction Hold" sequence="1" value="pharmacy_accounting_account_restriction_hold"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Address Incorrect" sequence="1" value="Address Incorrect"/>
                 <element dependent_value="Reimbursement Policy" label="After Hours and Weekend Care" sequence="1" value="After Hours and Weekend Care"/>
@@ -231,12 +231,12 @@
                 <element dependent_value="appeal_processing_communication" label="Other" sequence="1" value="appeal_processing_communication_other"/>
                 <element dependent_value="benefit_administration_health_care_reform" label="Other" sequence="1" value="benefit_administration_health_care_reform_other"/>
                 <element dependent_value="appeal_processing_misroute" label="Other" sequence="1" value="appeal_processing_misroute_other"/>
-                <element dependent_value="Privacy" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
-                <element dependent_value="HSA" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
-                <element dependent_value="RMSA" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_opioid" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_help_desk" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
-                <element dependent_value="Website/portals" label="Other - document in comments section" sequence="1" value="Other - document in comments section"/>
+                <element dependent_value="Privacy" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
+                <element dependent_value="HSA" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
+                <element dependent_value="RMSA" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_opioid" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_help_desk" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
+                <element dependent_value="Website/portals" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
                 <element dependent_value="administrative_billing_individual" label="Premium Dispute" sequence="1" value="administrative_billing_individual_premium_dispute"/>
                 <element dependent_value="administrative_billing_group_employer" label="Premium Dispute" sequence="1" value="administrative_billing_group_employer_premium_dispute"/>
                 <element dependent_value="Quality Management" label="Privacy breach" sequence="1" value="Privacy breach"/>
@@ -289,11 +289,11 @@
                 <element dependent_value="pharmacy_retail" label="OON Pharmacy" sequence="2" value="OON Pharmacy"/>
                 <element dependent_value="benefit_administration_communication" label="Other" sequence="2" value="benefit_administration_communication_other"/>
                 <element dependent_value="aca_section_1557_notice" label="Other" sequence="2" value="aca_section_1557_notice_other"/>
-                <element dependent_value="Materials" label="Other - document in comments section" sequence="2" value="Other - document in comments section"/>
-                <element dependent_value="Clin Ops Support Staff" label="Other - document in comments section" sequence="2" value="Other - document in comments section"/>
-                <element dependent_value="Eligibility" label="Other - document in comments section" sequence="2" value="Other - document in comments section"/>
-                <element dependent_value="eligibility_continuation_coverage" label="Other - document in comments section" sequence="2" value="Other - document in comments section"/>
-                <element dependent_value="Prior Auth" label="Other - document in comments section" sequence="2" value="Other - document in comments section"/>
+                <element dependent_value="Clin Ops Support Staff" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
+                <element dependent_value="Eligibility" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
+                <element dependent_value="eligibility_continuation_coverage" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
+                <element dependent_value="Prior Auth" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
+                <element dependent_value="Materials" label="Other - document in comments section_other" sequence="2" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_opioid" label="Over Morphine Equivalent Dosage (MED)" sequence="2" value="pharmacy_opioid_over_morphine_equivalent_dosage_med"/>
                 <element dependent_value="pharmacy_help_desk" label="Override" sequence="2" value="pharmacy_help_desk_override"/>
                 <element dependent_value="Website/portals" label="Privacy breach" sequence="2" value="Privacy breach"/>
@@ -345,10 +345,10 @@
                 <element dependent_value="administrative_billing_individual" label="Other" sequence="3" value="administrative_billing_individual_other"/>
                 <element dependent_value="administrative_billing_group_employer" label="Other" sequence="3" value="administrative_billing_group_employer_other"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" label="Other" sequence="3" value="quality_of_service_access_to_care_issues_other"/>
-                <element dependent_value="HRA" label="Other - document in comments section" sequence="3" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_retail" label="Other - document in comments section" sequence="3" value="Other - document in comments section"/>
-                <element dependent_value="Medical Director" label="Other - document in comments section" sequence="3" value="Other - document in comments section"/>
-                <element dependent_value="SCA" label="Other - document in comments section" sequence="3" value="Other - document in comments section"/>
+                <element dependent_value="HRA" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_retail" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
+                <element dependent_value="Medical Director" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
+                <element dependent_value="SCA" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
                 <element dependent_value="Prior Auth" label="PA Appeals" sequence="3" value="PA Appeals"/>
                 <element dependent_value="pharmacy_opioid" label="Prior Auth" sequence="3" value="pharmacy_opioid_prior_auth"/>
                 <element dependent_value="Clin Ops Support Staff" label="Privacy breach" sequence="3" value="Privacy breach"/>
@@ -390,11 +390,11 @@
                 <element dependent_value="Clinician/Clinician Staff" label="Not adhering to contractual obligations regarding obtaining authorization" sequence="4" value="Not adhering to contractual obligations regarding obtaining authorization"/>
                 <element dependent_value="Overpayment Recovery" label="Offset out of compliance" sequence="4" value="Offset out of compliance"/>
                 <element dependent_value="Set up" label="OOP" sequence="4" value="OOP"/>
-                <element dependent_value="Billing" label="Other - document in comments section" sequence="4" value="Other - document in comments section"/>
-                <element dependent_value="eligibility_group_employer" label="Other - document in comments section" sequence="4" value="Other - document in comments section"/>
-                <element dependent_value="Prac Mgmt/ALERT" label="Other - document in comments section" sequence="4" value="Other - document in comments section"/>
-                <element dependent_value="FSA" label="Other - document in comments section" sequence="4" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_manual_claims" label="Other - document in comments section" sequence="4" value="Other - document in comments section"/>
+                <element dependent_value="Billing" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
+                <element dependent_value="eligibility_group_employer" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
+                <element dependent_value="Prac Mgmt/ALERT" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
+                <element dependent_value="FSA" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_manual_claims" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
                 <element dependent_value="Prior Auth" label="PA Approval" sequence="4" value="PA Approval"/>
                 <element dependent_value="HRA" label="Pay to wrong Payee" sequence="4" value="Pay to wrong Payee"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" label="Phone calls not returned in a timely manner" sequence="4" value="quality_of_service_access_to_care_issues_phone_calls_not_returned_in_a_timely_manner"/>
@@ -432,9 +432,9 @@
                 <element dependent_value="aca_section_1557_discrimination" label="National Origin" sequence="5" value="aca_section_1557_discrimination_national_origin"/>
                 <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding balance billing" sequence="5" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_balance_billing"/>
                 <element dependent_value="Clinician/Clinician Staff" label="Not adhering to expectation regarding service - attitude/professionalism" sequence="5" value="Not adhering to expectation regarding service - attitude/professionalism"/>
-                <element dependent_value="pharmacy_specialty_pharmacy" label="Other - document in comments section" sequence="5" value="Other - document in comments section"/>
-                <element dependent_value="eligibility_individual" label="Other - document in comments section" sequence="5" value="Other - document in comments section"/>
-                <element dependent_value="Overpayment Recovery" label="Other - document in comments section" sequence="5" value="Other - document in comments section"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
+                <element dependent_value="eligibility_individual" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
+                <element dependent_value="Overpayment Recovery" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_manual_claims" label="Override Request" sequence="5" value="Override Request"/>
                 <element dependent_value="Prior Auth" label="PA Denial" sequence="5" value="PA Denial"/>
                 <element dependent_value="Billing" label="Payment not posted" sequence="5" value="Payment not posted"/>
@@ -471,9 +471,9 @@
                 <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding billing" sequence="6" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_billing"/>
                 <element dependent_value="Clinician/Clinician Staff" label="Not adhering to expectation regarding timely follow-up with members" sequence="6" value="Not adhering to expectation regarding timely follow-up with members"/>
                 <element dependent_value="Benefit Administration" label="OON" sequence="6" value="OON"/>
-                <element dependent_value="ABA" label="Other - document in comments section" sequence="6" value="Other - document in comments section"/>
-                <element dependent_value="Set up" label="Other - document in comments section" sequence="6" value="Other - document in comments section"/>
-                <element dependent_value="network_negotiated_rate" label="Other - document in comments section" sequence="6" value="Other - document in comments section"/>
+                <element dependent_value="ABA" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
+                <element dependent_value="Set up" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
+                <element dependent_value="network_negotiated_rate" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_specialty_pharmacy" label="PA Denial" sequence="6" value="pharmacy_specialty_pharmacy_pa_denial"/>
                 <element dependent_value="Prior Auth" label="PA Initiation" sequence="6" value="PA Initiation"/>
                 <element dependent_value="Billing" label="Payment not posted timely" sequence="6" value="Payment not posted timely"/>
@@ -504,10 +504,10 @@
                 <element dependent_value="quality_of_service_service_issues" label="Office/exam rooms are dirty and untidy" sequence="7" value="quality_of_service_service_issues_office_exam_rooms_are_dirty and_untidy"/>
                 <element dependent_value="pharmacy_web_portal" label="Order Process Tracker" sequence="7" value="pharmacy_web_portal_order_process_tracker"/>
                 <element dependent_value="Payment Integrity" label="Orthonet" sequence="7" value="Orthonet"/>
-                <element dependent_value="Benefit Administration" label="Other - document in comments section" sequence="7" value="Other - document in comments section"/>
-                <element dependent_value="MAC" label="Other - document in comments section" sequence="7" value="Other - document in comments section"/>
-                <element dependent_value="Sales" label="Other - document in comments section" sequence="7" value="Other - document in comments section"/>
-                <element dependent_value="network_contracting_credentialing" label="Other - document in comments section" sequence="7" value="Other - document in comments section"/>
+                <element dependent_value="Benefit Administration" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
+                <element dependent_value="MAC" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
+                <element dependent_value="Sales" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
+                <element dependent_value="network_contracting_credentialing" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
                 <element dependent_value="network_negotiated_rate" label="Outliers" sequence="7" value="network_negotiated_rate_outliers"/>
                 <element dependent_value="Prior Auth" label="PA Pending" sequence="7" value="PA Pending"/>
                 <element dependent_value="Outreach" label="Phone calls" sequence="7" value="Phone calls"/>
@@ -534,11 +534,11 @@
                 <element dependent_value="network_network_operations" label="Not adhering to contractual obligations regarding upfront payment" sequence="8" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_upfront_payment"/>
                 <element dependent_value="quality_of_service_service_issues" label="Other" sequence="8" value="quality_of_service_service_issues_other"/>
                 <element dependent_value="aca_section_1557_discrimination" label="Other" sequence="8" value="aca_section_1557_discrimination_other"/>
-                <element dependent_value="Payment Integrity" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_accounting" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
-                <element dependent_value="ABD" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
-                <element dependent_value="UM/Care Advocacy" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_web_portal" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
+                <element dependent_value="Payment Integrity" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_accounting" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
+                <element dependent_value="ABD" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
+                <element dependent_value="UM/Care Advocacy" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_web_portal" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
                 <element dependent_value="network_contracting_credentialing" label="Other Contractual Issue" sequence="8" value="network_contracting_credentialing_other_contractual_Issue"/>
                 <element dependent_value="Prior Auth" label="PA Status Inquiries" sequence="8" value="PA Status Inquiries"/>
                 <element dependent_value="Clinician/Clinician Staff" label="Provider failed to notify Optum of changes in availability" sequence="8" value="Provider failed to notify Optum of changes in availability"/>
@@ -588,7 +588,7 @@
                 <element dependent_value="network_network_operations" label="Not adhering to expectation regarding timely follow-up with members" sequence="10" value="network_network_operations_not_adhering_to_expectation_regarding_timely_follow_up_with_members"/>
                 <element dependent_value="Plan" label="OON Benefits" sequence="10" value="OON Benefits"/>
                 <element dependent_value="COB" label="Order of Benefits (Primary vs. Secondary)" sequence="10" value="Order of Benefits (Primary vs. Secondary)"/>
-                <element dependent_value="Delay" label="Other - document in comments section" sequence="10" value="Other - document in comments section"/>
+                <element dependent_value="Delay" label="Other - document in comments section" sequence="10" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_web_portal" label="Password Reset" sequence="10" value="Password Reset"/>
                 <element dependent_value="pharmacy_accounting" label="Payment Status" sequence="10" value="pharmacy_accounting_payment_status"/>
                 <element dependent_value="network_contracting_credentialing" label="PCP Designation" sequence="10" value="network_contracting_credentialing_pcp_designation"/>
@@ -608,7 +608,7 @@
                 <element dependent_value="Fraud" label="Medical Records-Misrouted" sequence="11" value="Medical Records-Misrouted"/>
                 <element dependent_value="Appeals" label="Member not allowed to give input" sequence="11" value="Member not allowed to give input"/>
                 <element dependent_value="Plan" label="OOP" sequence="11" value="OOP"/>
-                <element dependent_value="network_network_operations" label="Other - document in comments section" sequence="11" value="Other - document in comments section"/>
+                <element dependent_value="network_network_operations" label="Other - document in comments section" sequence="11" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_accounting" label="Pre-Auth charges" sequence="11" value="pharmacy_accounting_pre_auth_charges"/>
                 <element dependent_value="Delay" label="Processing" sequence="11" value="Processing"/>
                 <element dependent_value="network_contracting_credentialing" label="Provider failed to notify of changes in availability" sequence="11" value="network_contracting_credentialing_provider_failed_to_notify_of_changes_in_availability"/>
@@ -640,8 +640,8 @@
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Lost/Stolen Package" sequence="13" value="pharmacy_home_delivery_pharmacy_lost_stolen_package"/>
                 <element dependent_value="pharmacy_benefit" label="Medical Necessity" sequence="13" value="pharmacy_benefit_medical_necessity"/>
                 <element dependent_value="Fraud" label="Misrouted to RAVE" sequence="13" value="Misrouted to RAVE"/>
-                <element dependent_value="Plan" label="Other - document in comments section" sequence="13" value="Other - document in comments section"/>
-                <element dependent_value="Appeals" label="Other - document in comments section" sequence="13" value="Other - document in comments section"/>
+                <element dependent_value="Plan" label="Other - document in comments section" sequence="13" value="Other - document in comments section_other"/>
+                <element dependent_value="Appeals" label="Other - document in comments section" sequence="13" value="Other - document in comments section_other"/>
                 <element dependent_value="network_network_operations" label="Protocol Changes" sequence="13" value="network_network_operations_protocol_changes"/>
                 <element dependent_value="network_contracting_credentialing" label="Provider failed to respond to request for credentialing update" sequence="13" value="network_contracting_credentialing_provider_failed_to_respond to_request_for_credentialing_update"/>
                 <element dependent_value="Delay" label="Third Party Payor" sequence="13" value="Third Party Payor"/>
@@ -651,8 +651,8 @@
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Lack of Complainant Education/Understanding re: Staff/clinician clinical communications" sequence="14" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_staff_clinician_clinical_communications"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="MD Error" sequence="14" value="pharmacy_home_delivery_pharmacy_md_error"/>
                 <element dependent_value="Customer Service" label="Misquote/Inaccurate Information Given" sequence="14" value="Misquote/Inaccurate Information Given"/>
-                <element dependent_value="Fraud" label="Other - document in comments section" sequence="14" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_benefit" label="Other - document in comments section" sequence="14" value="Other - document in comments section"/>
+                <element dependent_value="Fraud" label="Other - document in comments section" sequence="14" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_benefit" label="Other - document in comments section" sequence="14" value="Other - document in comments section_other"/>
                 <element dependent_value="Appeals" label="Privacy breach" sequence="14" value="Privacy breach"/>
                 <element dependent_value="network_network_operations" label="Provider Demographics" sequence="14" value="network_network_operations_provider_demographics"/>
                 <element dependent_value="network_contracting_credentialing" label="Provider submitted updates that were not processed" sequence="14" value="network_contracting_credentialing_provider_submitted_updates_that_were_not_processed"/>
@@ -683,7 +683,7 @@
                 <element dependent_value="Processing" label="Manual processing error" sequence="17" value="Manual processing error"/>
                 <element dependent_value="Reimbursement Policy" label="Max Freq per day" sequence="17" value="Max Freq per day"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Missing medications" sequence="17" value="pharmacy_home_delivery_pharmacy_missing_medications"/>
-                <element dependent_value="Customer Service" label="Other - document in comments section" sequence="17" value="Other - document in comments section"/>
+                <element dependent_value="Customer Service" label="Other - document in comments section" sequence="17" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_benefit" label="Part B vs. Part D" sequence="17" value="Part B vs. Part D"/>
                 <element dependent_value="Fraud" label="Provider Advocate Education" sequence="17" value="Provider Advocate Education"/>
                 <element dependent_value="network_network_operations" label="Site of Service" sequence="17" value="network_network_operations_site_of_service"/>
@@ -709,7 +709,7 @@
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Limited/Lack of communication with patient/family" sequence="20" value="quality_of_care_clinician_clinician_staff_limited_lack_of_communication_with_patient_family"/>
                 <element dependent_value="Reimbursement Policy" label="Modifier Reference" sequence="20" value="Modifier Reference"/>
                 <element dependent_value="Processing" label="Network gap" sequence="20" value="Network gap"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Other - document in comments section" sequence="20" value="Other - document in comments section"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" label="Other - document in comments section" sequence="20" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_benefit" label="Prescription Monitoring Program" sequence="20" value="pharmacy_benefit_prescription_monitoring_program"/>
                 <element dependent_value="Customer Service" label="Records Request - COC/SPD" sequence="20" value="Records Request - COC/SPD"/>
                 <element dependent_value="Fraud" label="Reimbursement/Drug Policy not applied correctly" sequence="20" value="Reimbursement/Drug Policy not applied correctly"/>
@@ -732,7 +732,7 @@
                 <element dependent_value="quality_of_care_facility_staff" label="Lack of treatment plan" sequence="23" value="quality_of_care_facility_staff_lack_of_treatment_plan"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Medication issues - Inappropriate medication prescribed" sequence="23" value="quality_of_care_clinician_clinician_staff_medication_issues_inappropriate_medication_prescribed"/>
                 <element dependent_value="Reimbursement Policy" label="Observation Care E and M Codes" sequence="23" value="Observation Care E and M Codes"/>
-                <element dependent_value="Processing" label="Other - document in comments section" sequence="23" value="Other - document in comments section"/>
+                <element dependent_value="Processing" label="Other - document in comments section" sequence="23" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Proactive Script Renewal" sequence="23" value="Proactive Script Renewal"/>
                 <element dependent_value="Fraud" label="Requires Provider Education" sequence="23" value="Requires Provider Education"/>
                 <element dependent_value="pharmacy_benefit" label="Specialty" sequence="23" value="pharmacy_benefit_specialty"/>
@@ -759,7 +759,7 @@
                 <element dependent_value="Fraud" label="Timely Filing Policy" sequence="26" value="Timely Filing Policy"/>
                 <element dependent_value="quality_of_care_facility_staff" label="Medication issues - Failure to administer medications as ordered" sequence="27" value="quality_of_care_facility_staff_medication_issues_failure_to_administer_medications_as_ordered"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="No/Limited coordination of clinical care" sequence="27" value="quality_of_care_clinician_clinician_staff_no_limited_coordination_of_clinical_care"/>
-                <element dependent_value="Reimbursement Policy" label="Other - document in comments section" sequence="27" value="Other - document in comments section"/>
+                <element dependent_value="Reimbursement Policy" label="Other - document in comments section" sequence="27" value="Other - document in comments section_other"/>
                 <element dependent_value="Processing" label="PNI Issue - Records not reviewed/received" sequence="27" value="PNI Issue - Records not reviewed/received"/>
                 <element dependent_value="pharmacy_benefit" label="Therapeutic Equivalent" sequence="27" value="pharmacy_benefit_therapeutic_equivalent"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Transfers" sequence="27" value="pharmacy_home_delivery_pharmacy_transfers"/>
@@ -794,7 +794,7 @@
                 <element dependent_value="Reimbursement Policy" label="Rebundling" sequence="33" value="Rebundling"/>
                 <element dependent_value="Processing" label="Split Claim" sequence="33" value="Split Claim"/>
                 <element dependent_value="quality_of_care_facility_staff" label="Member’s perception of what transpired was directly impacted by member’s clinical condition" sequence="34" value="quality_of_care_facility_staff_member’s_perception_of_what_transpired_was_directly_impacted_by_member’s_clinical_condition"/>
-                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Other (describe in comments)" sequence="34" value="Patient safety – Other (describe in comments)"/>
+                <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient safety – Other (describe in comments)_other" sequence="34" value="Patient safety – Other (describe in comments)_other"/>
                 <element dependent_value="Reimbursement Policy" label="Reduced Services" sequence="34" value="Reduced Services"/>
                 <element dependent_value="quality_of_care_facility_staff" label="No/Limited coordination of clinical care" sequence="35" value="quality_of_care_facility_staff_no_limited_coordination_of_clinical_care"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Patient Safety - Threatening sexual, physical, bullying beh  by a staff /clinician – no contact" sequence="35" value="quality_of_care_clinician_clinician_staff_patient_safety_threatening_sexual_physical_bullying_beh_by_a_staff_clinician_no_contact"/>
@@ -817,9 +817,9 @@
                 <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Contraband" sequence="41" value="quality_of_care_facility_staff_patient_safety_contraband"/>
                 <element dependent_value="Reimbursement Policy" label="Timespan" sequence="41" value="Timespan"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Violation of clinical boundaries" sequence="41" value="quality_of_care_clinician_clinician_staff_violation_of_clinical_boundaries"/>
-                <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Failure to carry out appropriate fall precautions" sequence="42" value="quality_of_care_facility_staff_patient_safety_failure_to_carry_out_appropriate_fall_precautions"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Other (describe in comments)_other" sequence="42" value="Patient safety – Other (describe in comments)_other"/>
                 <element dependent_value="Reimbursement Policy" label="T-Status Codes" sequence="42" value="T-Status Codes"/>
-                <element dependent_value="quality_of_care_facility_staff" label="Patient safety – Other (describe in comments)" sequence="43" value="Patient safety – Other (describe in comments)"/>
+                <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Failure to carry out appropriate fall precautions" sequence="43" value="quality_of_care_facility_staff_patient_safety_failure_to_carry_out_appropriate_fall_precautions"/>
                 <element dependent_value="Reimbursement Policy" label="Urgent Care" sequence="43" value="Urgent Care"/>
                 <element dependent_value="quality_of_care_facility_staff" label="Patient Safety - Threatening sexual, physical, bullying beh by another patient – no contact" sequence="44" value="quality_of_care_facility_staff_patient_safety_threatening_sexual_physical_bullying_beh_by_another_patient_no_contact"/>
                 <element dependent_value="Reimbursement Policy" label="Wrong Surgical or other Invasive Procedure" sequence="44" value="Wrong Surgical or other Invasive Procedure"/>

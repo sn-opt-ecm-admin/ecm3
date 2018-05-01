@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_opt_ecm_case">complaint_type=6844f24e4f604300699aacb14210c780^EQ<item display_table="x_opt_ecm_complaint_type" display_value="Inquiry" endquery="false" field="complaint_type" goto="false" newquery="false" operator="=" or="false" value="6844f24e4f604300699aacb14210c780"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>10000</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	// difficult to restore state of all mandatory or optional fields, perhaps set using code
+	// from form load.
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	var complaint = g_form.getDisplayBox('complaint_type').value;
+	if (!complaint || complaint!='Inquiry') return;
+		setAllFieldsOptional();
+}
+
+function setAllFieldsOptional() {
+	// Hide ALL fields except in 'never_hide'
+	for (var i in g_form.elements) {
+		if (g_form.elements.hasOwnProperty(i)) {
+			var field = g_form.elements[i];
+			g_form.setMandatory(field.fieldName, false);
+		}
+	}
+}]]></script_true>
+        <set_values/>
+        <short_description>Policy for Set Fields Optional for Inquiry Complaint Type</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-04-26 14:23:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7abc57484ff597041e6cb4fe0210c75f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Policy for Set Fields Optional for Inquiry Complaint Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_policy_7abc57484ff597041e6cb4fe0210c75f</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-04-26 21:08:07</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

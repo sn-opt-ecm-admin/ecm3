@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_opt_ecm.ECMCaseFormUtil</name>
+        <script><![CDATA[var x_opt_ecm = x_opt_ecm || {};
+	
+	x_opt_ecm.ECMCaseFormUtil = (function() {
+		"use strict";
+		
+		myDocument = document;
+		myWindow = window;
+		
+		function dom_doc_function() {
+			return myDocument;
+		}
+		
+		function dom_window_function() {
+			return myWindow;
+		}
+		/* set your private variables and functions here. For example:
+		var privateVar = 0;
+		function private_function() {
+			return ++privateVar;
+		}
+ 		*/
+		
+		/* Share variables between multiple UI scripts by adding them to your scope object. For example:
+		x_opt_ecm.sharedVar = 0;
+		
+		Then access them in your scripts the same way. For example:
+		function get_shared() {
+			return x_opt_ecm.sharedVar;
+		}
+ 		*/
+		
+		return {
+			
+			document : document,
+			
+			window : window,
+			
+			// set your public API here.
+			getDocument: function() {
+				return dom_doc_function();
+			},
+			
+			getWindow: function() {
+				return dom_window_function();
+			},
+			
+			showHideRequireLoad: function(g_form) {
+				g_form.setMandatory('business_unit',true);
+				
+				var checkStates = ['6','19','20','3']; // Resolved, QR Pending, QR, Closed
+				var state = g_form.getValue('state');
+				
+				// The Contact is the Member
+				if (g_form.getValue('contact_is_member') == 'true') {
+					g_form.setMandatory('member_number', false);
+					g_form.setMandatory('contact_number', true);
+					g_form.setMandatory('member_ssn', false);
+					g_form.setMandatory('member_alt_id', false);
+					g_form.setSectionDisplay('memberprovider', false);
+				}
+				// The Contact is not the Member
+				else if (g_form.getValue('contact_is_member') == 'false') {
+					g_form.setMandatory('member_number', true);
+					g_form.setMandatory('contact_number', false);
+					g_form.setMandatory('member_ssn', true);
+					g_form.setMandatory('member_alt_id', true);
+					g_form.setSectionDisplay('memberprovider', true);
+				}
+				
+				
+				// Neither Contact or Member is the Patient
+				if(g_form.getValue('contact_is_patient') == 'false' && g_form.getValue('member_is_patient') == 'false'){
+					//g_form.addInfoMessage('patient is the patient');
+					//Mandatory
+					g_form.setMandatory('patient_first_name',true);
+					g_form.setMandatory('patient_lastname',true);
+					// Only if the state is one of the checkStates
+					if(checkStates.indexOf(state) != -1){
+						g_form.setMandatory('patient_relationship',true);
+						g_form.setMandatory('patient_gender',true);
+						g_form.setMandatory('contact_gender',false);
+						g_form.setMandatory('member_gender',false);
+					}
+					//Allow selection
+					g_form.setVisible('member_is_patient',true);
+					g_form.setVisible('contact_is_patient', true);
+					//Show the Patient Tab
+					g_form.setSectionDisplay('patient',true);
+				}
+				
+				
+				// The Contact is the Patient
+				if(g_form.getValue('contact_is_patient') == 'true'){
+					//g_form.addInfoMessage('contact is the patient');
+					console.log("Contact is the patient, turn off patient tab.");
+					//Turn off other Mandatory fields so we can hide tab
+					g_form.setMandatory('patient_first_name',false);
+					g_form.setMandatory('patient_lastname',false);
+					// Only if the state is one of the checkStates
+					if(checkStates.indexOf(state) != -1){
+						g_form.setMandatory('contact_patient_relationship',true);
+						g_form.setMandatory('patient_gender',false);
+						//Turn on moved Mandatory fields
+						g_form.setMandatory('contact_gender',true);
+					}
+					//Disallow selection
+					g_form.setVisible('member_is_patient',false);
+					//Hide the Patient tab
+					g_form.setSectionDisplay('patient',false);
+					console.log("Turned off Patient Tab.");
+				}
+				
+				// The Member is the Patient
+				if(g_form.getValue('member_is_patient') == 'true'){
+					//g_form.addInfoMessage('member is the patient');
+					//Turn off other Mandatory fields so we can hide tab
+					g_form.setMandatory('patient_first_name',false);
+					g_form.setMandatory('patient_lastname',false);
+					// Only if the state is one of the checkStates
+					if(checkStates.indexOf(state) != -1){
+						g_form.setMandatory('patient_relationship',false);
+						g_form.setMandatory('patient_gender',false);
+						//Turn on moved Mandatory fields
+						g_form.setMandatory('member_gender',true);
+					}
+					//Disallow selection
+					g_form.setVisible('contact_is_patient', false); //disallow contact to be patient
+					g_form.setVisible('contact_is_member', false);
+					//Hide the Patient tab
+					g_form.setSectionDisplay('patient',false);
+				}
+			},
+			
+			showHideRequireCIM: function(g_form, field, isLoading, newValue, oldValue) {
+				// The Contact is the Member
+				if (g_form.getValue('contact_is_member') == 'true') {
+					g_form.setMandatory('member_number', false);
+					// per Enhancement instructions - April 2018 - do not make contact number required
+					// g_form.setMandatory('contact_number', true);
+					g_form.setMandatory('member_ssn', false);
+					g_form.setMandatory('member_alt_id', false);
+					g_form.setSectionDisplay('memberprovider', false);
+				}
+				// The Contact is not the Member
+				else if (g_form.getValue('contact_is_member') == 'false') {
+					g_form.setMandatory('member_number', true);
+					g_form.setMandatory('contact_number', false);
+					g_form.setMandatory('member_ssn', true);
+					g_form.setMandatory('member_alt_id', true);
+					g_form.setSectionDisplay('memberprovider', true);
+				}
+			},
+			
+			type:  "ECMCaseFormUtil"
+		};
+	})();
+	]]></script>
+        <script_name>ECMCaseFormUtil</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-04-26 20:54:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4546bcd84ff997041e6cb4fe0210c7fb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_opt_ecm.ECMCaseFormUtil</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_script_4546bcd84ff997041e6cb4fe0210c7fb</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-04-27 15:18:38</sys_updated_on>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="525" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="550" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -107,6 +107,7 @@
             <choice/>
         </element>
         <element label="Executive Summary" max_length="4000" name="executive_summary" type="string"/>
+        <element label="Facility Contact" max_length="120" name="facility_contact" type="string"/>
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Intake Comments" max_length="4000" name="intake_comments" type="journal_input"/>
         <element label="Last ORS Update" max_length="40" name="last_ors_update" type="glide_date_time"/>
@@ -349,7 +350,7 @@
                 <element label="Written" sequence="1" value="written"/>
             </choice>
         </element>
-        <element label="UHG Received" max_length="40" name="uhg_received_date" type="glide_date"/>
+        <element label="Original Department Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>
         <element label="UNET Market" max_length="32" name="unet_market" reference="x_opt_ecm_unet_market" type="reference"/>
         <element label="Letter Review Requested Due Date" max_length="40" name="u_letter_review_requested_due_date" type="glide_date_time"/>
         <element choice="1" label="Verbal Source" max_length="40" name="verbal_source" type="choice">

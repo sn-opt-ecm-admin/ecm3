@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This script will reactivate  mandatory fields according to a snapshot of UI policies.  If the user selects a complaint type of 'Inquiry', all fields are set as optional.  This scripts turns them back to mandatory according to UI Policy conditions and UI policy actions.  Future version could fire onChange events for each an iteration of elements so that UI policy actions are re-enabled.  Also consider separating out inquiry complaints to their own record type.</description>
+        <field>complaint_type</field>
+        <global>true</global>
+        <messages/>
+        <name>All Fields Optional 4 Inquiry Complaint</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	
+	if (isLoading) {
+		return;
+	}
+	var complaint = g_form.getDisplayBox('complaint_type').value;
+	if (complaint && complaint=='Inquiry')  {
+		return;
+	} else {
+		
+		
+		g_form.setMandatory('business_unit',true);
+		
+		var checkStates = ['6','19','20','3']; // Resolved, QR Pending, QR, Closed
+		var state = g_form.getValue('state');
+		
+		// The Contact is the Member
+		if (g_form.getValue('contact_is_member') == 'true') {
+			g_form.setMandatory('member_number', false);
+			// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+			// g_form.setMandatory('contact_number', true);
+			
+			g_form.setMandatory('member_ssn', false);
+			g_form.setMandatory('member_alt_id', false);
+			g_form.setSectionDisplay('memberprovider', false);
+		}
+		// The Contact is not the Member
+		else if (g_form.getValue('contact_is_member') == 'false') {
+			// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+			//g_form.setMandatory('member_number', true);
+			g_form.setMandatory('contact_number', false);
+			// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+			//g_form.setMandatory('member_ssn', true);
+			//g_form.setMandatory('member_alt_id', true);
+			g_form.setSectionDisplay('memberprovider', true);
+		}
+		
+		
+		// Neither Contact or Member is the Patient
+		if(g_form.getValue('contact_is_patient') == 'false' && g_form.getValue('member_is_patient') == 'false'){
+			//g_form.addInfoMessage('patient is the patient');
+			//Mandatory
+			g_form.setMandatory('patient_first_name',true);
+			g_form.setMandatory('patient_lastname',true);
+			// Only if the state is one of the checkStates
+			if(checkStates.indexOf(state) != -1){
+				g_form.setMandatory('patient_relationship',true);
+				g_form.setMandatory('patient_gender',true);
+				g_form.setMandatory('contact_gender',false);
+				g_form.setMandatory('member_gender',false);
+			}
+			//Allow selection
+			g_form.setVisible('member_is_patient',true);
+			g_form.setVisible('contact_is_patient', true);
+			//Show the Patient Tab
+			g_form.setSectionDisplay('patient',true);
+		}
+		
+		// The Contact is the Patient
+		if(g_form.getValue('contact_is_patient') == 'true'){
+			//g_form.addInfoMessage('contact is the patient');
+			console.log("Contact is the patient, turn off patient tab.");
+			//Turn off other Mandatory fields so we can hide tab
+			g_form.setMandatory('patient_first_name',false);
+			g_form.setMandatory('patient_lastname',false);
+			// Only if the state is one of the checkStates
+			if(checkStates.indexOf(state) != -1){
+				g_form.setMandatory('contact_patient_relationship',true);
+				g_form.setMandatory('patient_gender',false);
+				//Turn on moved Mandatory fields
+				g_form.setMandatory('contact_gender',true);
+			}
+			//Disallow selection
+			g_form.setVisible('member_is_patient',false);
+			//Hide the Patient tab
+			g_form.setSectionDisplay('patient',false);
+			console.log("Turned off Patient Tab.");
+		}
+		
+		// The Member is the Patient
+		if(g_form.getValue('member_is_patient') == 'true'){
+			//g_form.addInfoMessage('member is the patient');
+			//Turn off other Mandatory fields so we can hide tab
+			g_form.setMandatory('patient_first_name',false);
+			g_form.setMandatory('patient_lastname',false);
+			// Only if the state is one of the checkStates
+			if(checkStates.indexOf(state) != -1){
+				g_form.setMandatory('patient_relationship',false);
+				g_form.setMandatory('patient_gender',false);
+				//Turn on moved Mandatory fields
+				g_form.setMandatory('member_gender',true);
+			}
+			//Disallow selection
+			g_form.setVisible('contact_is_patient', false); //disallow contact to be patient
+			g_form.setVisible('contact_is_member', false);
+			//Hide the Patient tab
+			g_form.setSectionDisplay('patient',false);
+		}
+		
+		if (g_form.getValue('resolution_response_type')=='Written')
+			g_form.setMandatory('u_letter_review_requested_due_date',true);
+		
+		
+		checkStates = [3,6];
+		if (g_form.getValue('contact_is_member')=='true' && checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('contact_group_number',true);
+			g_form.setMandatory('contact_group_name',true);
+		}
+		
+		// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+		//if (g_form.getValue('contact_is_member')=='true' && g_form.getValue('contact_ssn')=='')
+		//	g_form.setMandatory('contact_alternate_id',true);
+		
+		
+		//if (g_form.getValue('contact_is_member')==true && g_form.getValue('contact_alternate_id')=='')
+		//	g_form.setMandatory('contact_ssn',true);
+		
+		if (g_form.getValue('submission_source')=='executive' && g_form.getValue('executive_department')=='')
+			g_form.setMandatory('executive',true);
+		
+		
+		if (g_form.getValue('submission_source')=='executive' && g_form.getValue('executive')=='')
+			g_form.setMandatory('executive_department',true);
+		
+		checkStates = [6];
+		if (g_form.getValue('contact_is_patient')=='true' || g_form.getValue('member_is_patient')=='true' && checkStates.indexOf(state) != -1)
+			g_form.setMandatory('contact_gender',true);
+		
+		// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+		//if (g_form.getValue('member_ssn')=='' && g_form.getValue('contact_is_member')=='false')
+		//	g_form.setMandatory('member_alt_id',true);
+		
+		checkStates = [6];
+		if (g_form.getValue('member_is_patient')=='true' &&  checkStates.indexOf(state) != -1)
+			g_form.setMandatory('member_gender',true);
+		
+		checkStates = [3,6];
+		if (g_form.getValue('contact_is_member')=='false' && checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('member_group_number',true);
+			g_form.setMandatory('member_group_name',true);
+		}
+		
+		// enhancment/defect list - turn mandatory off for contact alternate id and contact ssn and contact number
+		//if (g_form.getValue('member_alt_id')=='' && g_form.getValue('contact_is_member')=='false')
+		//	g_form.setMandatory('member_ssn',true);
+		
+		if (g_form.getValue('modified_due_date')!='')
+			g_form.setMandatory('modification_reason',true);
+		
+		if (g_form.getValue('business_unit')=='regulatory_affairs')
+			g_form.setMandatory('doi_complaint',true);
+		
+		if (g_form.getValue('business_unit')=='regulatory_affairs' && g_form.getValue('doi_complaint')=='yes') {
+			g_form.setMandatory('correspondence_received_date',true);
+			g_form.setMandatory('doi_state',true);
+		}
+		
+		checkStates = [3,6,19,20];
+		if (g_form.getValue('contact_is_patient')=='false' && g_form.getValue('member_is_patient')=='false' &&
+			checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('patient_gender',true);
+			g_form.setMandatory('patient_relationship',true);
+		}
+		
+		if (g_form.getValue('contact_first_name')=='' || g_form.getValue('contact_last_name')=='') {
+			g_form.setMandatory('facility_contact',true);
+		}
+		if (g_form.getValue('facility_contact')=='') {
+			g_form.setMandatory('contact_last_name',true);
+			g_form.setMandatory('contact_first_name',true);
+		}
+		
+		g_form.setMandatory('submission_source',true);
+		g_form.setMandatory('business_unit',true);
+		g_form.setMandatory('submitted_on_behalf_of',true);
+		g_form.setMandatory('oca_ocr_received_date_time',true);
+		g_form.setMandatory('complaint_type',true);
+		g_form.setMandatory('uhg_received_date',true);
+		g_form.setMandatory('complaint_type',true);
+		g_form.setMandatory('intake_comments',true);
+		
+		checkStates = [3,6,19,20];
+		if (g_form.getValue('market_product')!='Direct Business' && checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('market_state_of_situs',true);
+			g_form.setMandatory('market_erisa',true);
+			g_form.setMandatory('market_legal_entity',true);
+			g_form.setMandatory('market_health_plan',true);
+			g_form.setMandatory('market_funding',true);
+			g_form.setMandatory('market_business',true);
+		}
+		
+		checkStates = [3,6,19,20];
+		if (checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('audit_file',true);
+			g_form.setMandatory('close_notes',true);
+			g_form.setMandatory('resolution_date_resolved',true);
+			g_form.setMandatory('resolution_response_type',true);
+			g_form.setMandatory('resolution_responding_name',true);
+			g_form.setMandatory('resolution_outcome',true);
+			g_form.setMandatory('resolution_issue_originally_handled_by',true);
+			g_form.setMandatory('resolution_dept_site_of_error',true);
+			g_form.setMandatory('resolution_service_type',true);
+			g_form.setMandatory('platform',true);
+		}
+		
+		checkStates = [2,3,6,19,20];
+		if (checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('assigned_to',true);
+			g_form.setMandatory('market_business',true);
+			g_form.setMandatory('market_product',true);
+			g_form.setMandatory('transaction_source',true);
+			g_form.setMandatory('responsible_department',true);
+		}
+		
+		if (g_form.getValue('resolution_prompt_pay_violation')=='true')
+			g_form.setMandatory('resolution_prompt_pay_amount',true);
+		
+		checkStates = [3,6,19,20];
+		if (g_form.getValue('contact_is_patient')=='true' && g_form.getValue('contact_is_member')=='false' &&
+			checkStates.indexOf(state) != -1) {
+			g_form.setMandatory('contact_patient_relationship',true);
+		}
+		
+		checkStates = [2,3,6,19,20];
+		if ((g_form.getValue('contact_is_member')=='false' && g_form.getValue('contact_is_patient')==false &&
+			checkStates.indexOf(state) != -1) || (g_form.getValue('member_is_patient')=='true' &&
+		checkStates.indexOf(state) != -1)) {
+			g_form.setMandatory('contact_patient_relationship',true);
+		}
+		
+		var checkSubSource = ['attorney','attorney_general','bbb','doh','doi','dol','ethics_and_integrity','external_review','medical_society','misc_state_agency','ocr_regulatory_office','ombudsman','other','state_exchange'];
+		var subSource = g_form.getValue('submission_source');
+		if ((checkSubSource.indexOf(subSource) != -1) || (g_form.getValue('doi_complaint')=='yes')) {
+			g_form.setMandatory('due_date',true);
+		}
+		
+		checkStates = [3,6];
+		if (checkStates.indexOf(state) != -1 && g_form.getValue('resolution_dept_site_of_error')=='d7a663e54f9d83001e6cb4fe0210c7e7') {
+			g_form.setMandatory('resolution_other_site_of_error',true);
+		}
+		
+		checkStates = [3,6];
+		if (checkStates.indexOf(state) != -1 && g_form.getValue('resolution_issue_originally_handled_by')=='894398f14f11c3001e6cb4fe0210c705') {
+			g_form.setMandatory('resolution_other_issue_handler',true);
+		}
+		
+	}
+	
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-04-25 20:51:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d9c673f4f6d57041e6cb4fe0210c756</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name>All Fields Optional 4 Inquiry Complaint</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_client_7d9c673f4f6d57041e6cb4fe0210c756</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-04-28 11:03:35</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
