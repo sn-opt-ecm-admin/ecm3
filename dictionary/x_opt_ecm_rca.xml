@@ -328,7 +328,7 @@
                 <element dependent_value="ABD" label="Exclusions" sequence="3" value="Exclusions"/>
                 <element dependent_value="quality_of_service_service_issues" label="Facility was not handicap accessible or was poorly maintained" sequence="3" value="quality_of_service_service_issues_facility_was_not_handicap_accessible_or_was_poorly_maintained"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" label="Failure to address lab results" sequence="3" value="quality_of_care_clinician_clinician_staff_failure_to_address_lab_results"/>
-                <element dependent_value="MAC" label="Federal Jurisdiction - Medicare" sequence="3" value="Federal Jurisdiction - Medicare"/>
+                <element dependent_value="MAC" label="Federal Jurisdiction – Government Program" sequence="3" value="Federal Jurisdiction – Government Program"/>
                 <element dependent_value="network_negotiated_rate" label="Fee Schedule Issue" sequence="3" value="network_negotiated_rate_fee_schedule_issue"/>
                 <element dependent_value="Fraud" label="Flag Placed on Incorrect TIN or Provider" sequence="3" value="Flag Placed on Incorrect TIN or Provider"/>
                 <element dependent_value="Set up" label="History Conversion Accuracy" sequence="3" value="History Conversion Accuracy"/>

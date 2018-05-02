@@ -6,7 +6,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_opt_ecm_case</collection>
         <condition table="x_opt_ecm_case">priority=1^ORpriorityCHANGESTO1^assigned_toISNOTEMPTY^ORassigned_toVALCHANGES^EQ<item endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="1"/>
             <item endquery="false" field="priority" goto="false" newquery="false" operator="CHANGESTO" or="true" value="1"/>

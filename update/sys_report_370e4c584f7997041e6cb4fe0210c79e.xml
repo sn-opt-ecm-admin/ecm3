@@ -37,16 +37,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>parent_case,parent_case.assigned_to,parent_case.submission_source,parent_case.submitted_on_behalf_of,parent_case.complaint_type,parent_case.transaction_source,parent_case.market_business,parent_case.uhg_received_date,parent_case.oca_ocr_received_date_time,parent_case.due_date,parent_case.resolution_date_resolved,parent_case.closed_at,parent_case.resolution_outcome,level_1,level_2,level_3,level_4,other_reason,parent_case.platform,parent_case.resolution_dept_site_of_error,parent_case.state,parent_case.member_alt_id,parent_case.business_unit</field_list>
-        <filter table="x_opt_ecm_rca">parent_case.business_unit=consumer_affairs^parent_case.complaint_type.name=Complaint^parent_case.market_business=OptumRx^parent_case.oca_ocr_received_date_timeONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^parent_case.state=6^ORparent_case.state=20^ORparent_case.state=3^ORparent_case.state=19^ORparent_case.state=16^ORparent_case.state=17<item endquery="false" field="parent_case.business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
+        <filter table="x_opt_ecm_rca">parent_case.business_unit=consumer_affairs^parent_case.complaint_type.name=Complaint^parent_case.market_business=OptumRx^parent_case.resolution_date_resolvedONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()<item endquery="false" field="parent_case.business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
             <item endquery="false" field="parent_case.complaint_type.name" goto="false" newquery="false" operator="=" or="false" value="Complaint"/>
             <item endquery="false" field="parent_case.market_business" goto="false" newquery="false" operator="=" or="false" value="OptumRx"/>
-            <item endquery="false" field="parent_case.oca_ocr_received_date_time" goto="false" newquery="false" operator="ON" or="false" value="This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="false" value="6"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="true" value="20"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="true" value="3"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="true" value="19"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="true" value="16"/>
-            <item endquery="false" field="parent_case.state" goto="false" newquery="false" operator="=" or="true" value="17"/>
+            <item endquery="false" field="parent_case.resolution_date_resolved" goto="false" newquery="false" operator="ON" or="false" value="This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -99,7 +93,7 @@
         <sys_created_on>2018-04-26 17:54:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>370e4c584f7997041e6cb4fe0210c79e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>OptumRx Weekly Report Resolved RCA Codes MTD</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -107,7 +101,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_report_370e4c584f7997041e6cb4fe0210c79e</sys_update_name>
         <sys_updated_by>cleach10</sys_updated_by>
-        <sys_updated_on>2018-04-27 20:02:19</sys_updated_on>
+        <sys_updated_on>2018-05-01 19:39:36</sys_updated_on>
         <table>x_opt_ecm_rca</table>
         <title>OptumRx Weekly Report Resolved RCA Codes MTD</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

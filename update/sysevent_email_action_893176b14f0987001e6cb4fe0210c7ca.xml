@@ -6,7 +6,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="SLA">be9d02137f232200ee2e108c3ffa915b</category>
+        <category display_value="SLA" name="SLA">be9d02137f232200ee2e108c3ffa915b</category>
         <collection>x_opt_ecm_case</collection>
         <condition/>
         <content_type>multipart/mixed</content_type>

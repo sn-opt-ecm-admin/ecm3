@@ -6,7 +6,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_opt_ecm_tasks</collection>
         <condition table="x_opt_ecm_tasks">stateCHANGESTO-1^awaiting_info_fromISNOTEMPTY^task_reasonINOBC,Research,Awaiting Project Completion,Awaiting Quality Review^descriptionISNOTEMPTY^due_dateISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="-1"/>
             <item endquery="false" field="awaiting_info_from" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
