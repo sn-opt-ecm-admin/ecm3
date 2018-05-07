@@ -4,7 +4,7 @@
         <active>true</active>
         <category>service-catalog</category>
         <content><![CDATA[ <h1 class="title topictitle1">Service catalog UI policies</h1>  <div class="body conbody">  <p class="p">Catalog UI policies control the behavior of catalog item forms when        presented to your users. Catalog UI policies can be applied to a catalog item or a variable        set. </p> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Service-Catalog-Items&amp;version&#61;jakarta" target="_blank" rel="nofollow">Introduction to catalog items</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Service-Catalog-Variable-Sets&amp;version&#61;jakarta" target="_blank" rel="nofollow">Service catalog variable sets</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Service_Catalog_UI_Policy&amp;version&#61;jakarta" target="_blank" rel="nofollow">Service catalog UI policy</a></div></div></div></div>]]></content>
-        <last_sync>2018-04-18 18:39:12</last_sync>
+        <last_sync>2018-05-03 18:40:07</last_sync>
         <modifier>normal</modifier>
         <name>catalog_ui_policy_list-normal</name>
         <page>catalog_ui_policy_list</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2017-09-05 18:29:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>137bd0514fc107001e6cb4fe0210c7c4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>catalog_ui_policy_list-normal</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_embedded_help_content_137bd0514fc107001e6cb4fe0210c7c4</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-04-18 18:39:12</sys_updated_on>
+        <sys_updated_on>2018-05-03 18:40:07</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=137bd0514fc107001e6cb4fe0210c7c4"/>

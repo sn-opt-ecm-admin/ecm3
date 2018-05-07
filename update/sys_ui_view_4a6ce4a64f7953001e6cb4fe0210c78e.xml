@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>rpt-tempf8e58d724fbd0f401e6cb4fe0210c701vicki.warren</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>vicki.warren</sys_created_by>
+        <sys_created_on>2018-05-03 19:53:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a6ce4a64f7953001e6cb4fe0210c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>vicki.warren</sys_updated_by>
+        <sys_updated_on>2018-05-03 19:53:42</sys_updated_on>
+        <title>Rpt-tempf8e58d724fbd0f401e6cb4fe0210c701vicki.warren</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
