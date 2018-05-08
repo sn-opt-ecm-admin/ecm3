@@ -17,7 +17,7 @@
 	
 	// 	g_form.addInfoMessage(newValue);
 	
-	// 5-7-2018 check the complaint type.  Only set mandatory fields with not inquiry.
+	// 5-8-2018 check the complaint type.  Only set mandatory fields with not inquiry.
 	// Otherwise, just enable or disable form sections for inquiry complaint type.
 	var complaint = g_form.getDisplayBox('complaint_type').value;
 	if (complaint && complaint=='Inquiry')  {
@@ -58,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bafa1a0a4fddc3001e6cb4fe0210c72d</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Show/Hide Member section onChange CIM</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_client_bafa1a0a4fddc3001e6cb4fe0210c72d</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-05-07 20:57:03</sys_updated_on>
+        <sys_updated_on>2018-05-08 11:57:40</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
