@@ -82,19 +82,19 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>DOH</label>
+            <label>DMHC</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>1</sequence>
-            <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:21:26</sys_created_on>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-05-21 16:58:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e8fecef84fb48700699aacb14210c738</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:19:18</sys_updated_on>
-            <value>doh</value>
+            <sys_id>5901f8144fd2d300699aacb14210c788</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:35</sys_updated_on>
+            <value>dmhc</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -120,38 +120,38 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>DOI</label>
+            <label>DOH</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>2</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 15:19:18</sys_created_on>
+            <sys_created_on>2017-08-23 03:21:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fb5330094f3c8700699aacb14210c78f</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:20:21</sys_updated_on>
-            <value>doi</value>
+            <sys_id>e8fecef84fb48700699aacb14210c738</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:36</sys_updated_on>
+            <value>doh</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>regulatory_affairs</dependent_value>
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>DOL</label>
+            <label>DOI</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>3</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:21:47</sys_created_on>
+            <sys_created_on>2017-08-23 15:19:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>dc1fc63c4fb48700699aacb14210c7ef</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:19:18</sys_updated_on>
-            <value>dol</value>
+            <sys_id>fb5330094f3c8700699aacb14210c78f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:38</sys_updated_on>
+            <value>doi</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -173,6 +173,25 @@
             <value>elected_official</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>regulatory_affairs</dependent_value>
+            <element>submission_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DOL</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>4</sequence>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-23 03:21:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc1fc63c4fb48700699aacb14210c7ef</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:39</sys_updated_on>
+            <value>dol</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
             <element>submission_source</element>
             <hint/>
@@ -190,25 +209,6 @@
             <sys_updated_by>sram100</sys_updated_by>
             <sys_updated_on>2017-12-14 16:50:56</sys_updated_on>
             <value>ethics_and_integrity</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value>regulatory_affairs</dependent_value>
-            <element>submission_source</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>External Review</label>
-            <language>en</language>
-            <name>x_opt_ecm_case</name>
-            <sequence>4</sequence>
-            <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:22:02</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d92f4a3c4fb48700699aacb14210c7bc</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:19:18</sys_updated_on>
-            <value>external_review</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -234,38 +234,38 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Medical Society</label>
+            <label>External Review</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>5</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:22:21</sys_created_on>
+            <sys_created_on>2017-08-23 03:22:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b43fc63c4fb48700699aacb14210c7d5</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:19:18</sys_updated_on>
-            <value>medical_society</value>
+            <sys_id>d92f4a3c4fb48700699aacb14210c7bc</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:41</sys_updated_on>
+            <value>external_review</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>regulatory_affairs</dependent_value>
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Member/Provider Direct</label>
+            <label>Medical Society</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>6</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 15:21:16</sys_created_on>
+            <sys_created_on>2017-08-23 03:22:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b8d3f4094f3c8700699aacb14210c741</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:51</sys_updated_on>
-            <value>member_provider_direct</value>
+            <sys_id>b43fc63c4fb48700699aacb14210c7d5</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:42</sys_updated_on>
+            <value>medical_society</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -291,19 +291,19 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Misc. State Agency</label>
+            <label>Member/Provider Direct</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>7</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:22:41</sys_created_on>
+            <sys_created_on>2017-08-23 15:21:16</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2d4f0e3c4fb48700699aacb14210c75c</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
-            <value>misc_state_agency</value>
+            <sys_id>b8d3f4094f3c8700699aacb14210c741</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:44</sys_updated_on>
+            <value>member_provider_direct</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -329,19 +329,19 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>OCR - Regulatory Office</label>
+            <label>Misc. State Agency</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>8</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
-            <sys_created_on>2017-08-23 03:23:05</sys_created_on>
+            <sys_created_on>2017-08-23 03:22:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a65f8a3c4fb48700699aacb14210c7ed</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
-            <value>ocr_regulatory_office</value>
+            <sys_id>2d4f0e3c4fb48700699aacb14210c75c</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:45</sys_updated_on>
+            <value>misc_state_agency</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>consumer_affairs</dependent_value>
@@ -386,18 +386,37 @@
             <element>submission_source</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Ombudsman</label>
+            <label>OCR - Regulatory Office</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
             <sequence>9</sequence>
+            <sys_created_by>todd.fudala</sys_created_by>
+            <sys_created_on>2017-08-23 03:23:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a65f8a3c4fb48700699aacb14210c7ed</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:47</sys_updated_on>
+            <value>ocr_regulatory_office</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>regulatory_affairs</dependent_value>
+            <element>submission_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ombudsman</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>10</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
             <sys_created_on>2017-08-23 03:23:49</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>587f8e3c4fb48700699aacb14210c775</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:50</sys_updated_on>
             <value>ombudsman</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -408,15 +427,15 @@
             <label>Other</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
-            <sequence>10</sequence>
+            <sequence>11</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
             <sys_created_on>2017-08-23 03:24:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4f9f0e3c4fb48700699aacb14210c7ce</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 18:03:51</sys_updated_on>
             <value>other</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -427,35 +446,16 @@
             <label>State Exchange</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
-            <sequence>11</sequence>
+            <sequence>12</sequence>
             <sys_created_by>todd.fudala</sys_created_by>
             <sys_created_on>2017-08-23 03:24:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>16af027c4fb48700699aacb14210c7c5</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>todd.fudala</sys_updated_by>
-            <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
-            <value>state_exchange</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value>regulatory_affairs</dependent_value>
-            <element>submission_source</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>DMHC</label>
-            <language>en</language>
-            <name>x_opt_ecm_case</name>
-            <sequence>12</sequence>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-21 16:58:55</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>5901f8144fd2d300699aacb14210c788</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-21 16:58:55</sys_updated_on>
-            <value>dmhc</value>
+            <sys_updated_on>2018-05-21 18:03:52</sys_updated_on>
+            <value>state_exchange</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>submission_source</element>

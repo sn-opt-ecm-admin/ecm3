@@ -325,26 +325,26 @@
                 <element dependent_value="consumer_affairs" label="Attorney" sequence="0" value="attorney"/>
                 <element dependent_value="regulatory_affairs" label="Attorney General" sequence="0" value="attorney_general"/>
                 <element dependent_value="consumer_affairs" label="BBB" sequence="1" value="bbb"/>
-                <element dependent_value="regulatory_affairs" label="DOH" sequence="1" value="doh"/>
+                <element dependent_value="regulatory_affairs" label="DMHC" sequence="1" value="dmhc"/>
                 <element dependent_value="consumer_affairs" label="Corporate Contact" sequence="2" value="corporate_contact"/>
-                <element dependent_value="regulatory_affairs" label="DOI" sequence="2" value="doi"/>
-                <element dependent_value="regulatory_affairs" label="DOL" sequence="3" value="dol"/>
+                <element dependent_value="regulatory_affairs" label="DOH" sequence="2" value="doh"/>
+                <element dependent_value="regulatory_affairs" label="DOI" sequence="3" value="doi"/>
                 <element dependent_value="consumer_affairs" label="Elected Official" sequence="3" value="elected_official"/>
+                <element dependent_value="regulatory_affairs" label="DOL" sequence="4" value="dol"/>
                 <element dependent_value="consumer_affairs" label="Ethics &amp; Integrity" sequence="4" value="ethics_and_integrity"/>
-                <element dependent_value="regulatory_affairs" label="External Review" sequence="4" value="external_review"/>
                 <element dependent_value="consumer_affairs" label="Executive" sequence="5" value="executive"/>
-                <element dependent_value="regulatory_affairs" label="Medical Society" sequence="5" value="medical_society"/>
-                <element dependent_value="regulatory_affairs" label="Member/Provider Direct" sequence="6" value="member_provider_direct"/>
+                <element dependent_value="regulatory_affairs" label="External Review" sequence="5" value="external_review"/>
+                <element dependent_value="regulatory_affairs" label="Medical Society" sequence="6" value="medical_society"/>
                 <element dependent_value="consumer_affairs" label="OCR - Civil Rights Appeals" sequence="6" value="ocr_civil_rights_appeals"/>
-                <element dependent_value="regulatory_affairs" label="Misc. State Agency" sequence="7" value="misc_state_agency"/>
+                <element dependent_value="regulatory_affairs" label="Member/Provider Direct" sequence="7" value="member_provider_direct"/>
                 <element dependent_value="consumer_affairs" label="OCR - Civil Rights Mailbox" sequence="7" value="ocr_civil_rights_mailbox"/>
-                <element dependent_value="regulatory_affairs" label="OCR - Regulatory Office" sequence="8" value="ocr_regulatory_office"/>
+                <element dependent_value="regulatory_affairs" label="Misc. State Agency" sequence="8" value="misc_state_agency"/>
                 <element dependent_value="consumer_affairs" label="Other" sequence="8" value="other"/>
                 <element dependent_value="consumer_affairs" label="Media Relations" sequence="9" value="media_relations"/>
-                <element dependent_value="regulatory_affairs" label="Ombudsman" sequence="9" value="ombudsman"/>
-                <element dependent_value="regulatory_affairs" label="Other" sequence="10" value="other"/>
-                <element dependent_value="regulatory_affairs" label="State Exchange" sequence="11" value="state_exchange"/>
-                <element dependent_value="regulatory_affairs" label="DMHC" sequence="12" value="dmhc"/>
+                <element dependent_value="regulatory_affairs" label="OCR - Regulatory Office" sequence="9" value="ocr_regulatory_office"/>
+                <element dependent_value="regulatory_affairs" label="Ombudsman" sequence="10" value="ombudsman"/>
+                <element dependent_value="regulatory_affairs" label="Other" sequence="11" value="other"/>
+                <element dependent_value="regulatory_affairs" label="State Exchange" sequence="12" value="state_exchange"/>
             </choice>
         </element>
         <element choice="1" label="Submitted on behalf of" max_length="40" name="submitted_on_behalf_of" reference="x_opt_ecm_submitted_obo" type="reference">
