@@ -19,7 +19,7 @@
         <sys_updated_by>mike.ward</sys_updated_by>
         <sys_updated_on>2018-05-21 16:05:27</sys_updated_on>
         <table>x_opt_ecm_case</table>
-        <ui_policy display_value="Require Executive Fields for Executive Summary Required">3174e8584f92d300699aacb14210c700</ui_policy>
+        <ui_policy display_value="Require Executive Summary for Executive Summary Required Flag">3174e8584f92d300699aacb14210c700</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>
