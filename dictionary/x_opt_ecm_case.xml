@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="565" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="567" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -72,6 +72,8 @@
             </choice>
         </element>
         <element label="Contact Phone" max_length="40" name="contact_phone" type="string"/>
+        <element label="Contact Phone Extension" max_length="9" name="contact_phone_extension" type="string"/>
+        <element label="Contact Phone Prompt" max_length="2" name="contact_phone_prompt" type="string"/>
         <element label="Contact Policy Number" max_length="20" name="contact_policy_number" type="string"/>
         <element label="Contact Postal Code" max_length="40" name="contact_postal_code" type="string"/>
         <element choice="1" label="Contact Relationship to Member" max_length="40" name="contact_relationship" type="choice">
@@ -107,6 +109,7 @@
             <choice/>
         </element>
         <element label="Executive Summary" max_length="4000" name="executive_summary" type="string"/>
+        <element label="Executive Summary Required" max_length="40" name="executive_summary_required" type="boolean"/>
         <element label="Facility Contact" max_length="120" name="facility_contact" type="string"/>
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Intake Comments" max_length="4000" name="intake_comments" type="journal_input"/>
@@ -194,6 +197,8 @@
         <element label="Member MI" max_length="2" name="member_mi" type="string"/>
         <element label="Member ID" max_length="20" name="member_number" type="string"/>
         <element label="Member Phone" max_length="40" name="member_phone" type="string"/>
+        <element label="Member Phone Extension" max_length="9" name="member_phone_extension" type="string"/>
+        <element label="Member Phone Prompt" max_length="2" name="member_phone_prompt" type="string"/>
         <element label="Member Policy Number" max_length="20" name="member_policy_number" type="string"/>
         <element label="Member Postal Code" max_length="40" name="member_postal_code" type="string"/>
         <element label="Member SSN" max_length="9" name="member_ssn" type="string"/>
@@ -226,6 +231,8 @@
         <element label="Patient Last Name" max_length="40" name="patient_lastname" type="string"/>
         <element label="Patient Middle Initial" max_length="2" name="patient_middle_initial" type="string"/>
         <element label="Patient Phone" max_length="40" name="patient_phone" type="string"/>
+        <element label="Patient Phone Extension" max_length="9" name="patient_phone_extension" type="string"/>
+        <element label="Patient Phone Prompt" max_length="2" name="patient_phone_prompt" type="string"/>
         <element label="Patient Postal Code" max_length="40" name="patient_postal_code" type="string"/>
         <element choice="1" label="Patient Relationship to Member" max_length="40" name="patient_relationship" type="choice">
             <choice>
@@ -337,6 +344,7 @@
                 <element dependent_value="regulatory_affairs" label="Ombudsman" sequence="9" value="ombudsman"/>
                 <element dependent_value="regulatory_affairs" label="Other" sequence="10" value="other"/>
                 <element dependent_value="regulatory_affairs" label="State Exchange" sequence="11" value="state_exchange"/>
+                <element dependent_value="regulatory_affairs" label="DMHC" sequence="12" value="dmhc"/>
             </choice>
         </element>
         <element choice="1" label="Submitted on behalf of" max_length="40" name="submitted_on_behalf_of" reference="x_opt_ecm_submitted_obo" type="reference">

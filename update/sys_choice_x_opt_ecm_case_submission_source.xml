@@ -438,6 +438,25 @@
             <sys_updated_on>2017-08-23 15:21:16</sys_updated_on>
             <value>state_exchange</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>regulatory_affairs</dependent_value>
+            <element>submission_source</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DMHC</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>12</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-05-21 16:58:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5901f8144fd2d300699aacb14210c788</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-05-21 16:58:55</sys_updated_on>
+            <value>dmhc</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>submission_source</element>
             <name>x_opt_ecm_case</name>

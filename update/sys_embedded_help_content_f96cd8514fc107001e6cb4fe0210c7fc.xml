@@ -4,7 +4,7 @@
         <active>true</active>
         <category>service-catalog</category>
         <content><![CDATA[ <h1 class="title topictitle1">Service catalogs</h1>  <div class="body conbody">  <p class="p"><span class="ph"><span class="ph">Service Catalog</span>          enables you to set up one or more service catalogs and provides self-service          opportunities. You can organize your catalog offerings by using the ability to publish          multiple catalogs targeted to specific audiences.</span></p>  <div class="p">You can perform the following on a catalog:<ul class="ul" id="sc_catalog-normal__ul_ty2_mtz_b1b"><li class="li">Enable the wish list for the catalog.</li><li class="li">Designate editors who can edit or update the catalog, its categories, and items.</li><li class="li">Create a custom homepage for the catalog.</li><li class="li">Create a custom page by clicking <span class="ph uicontrol">Continue Shopping</span>.</li></ul></div> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:set-up-catalog&amp;version&#61;jakarta" target="_blank" rel="nofollow">Set up a catalog</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:wishlist-cat-item&amp;version&#61;jakarta" target="_blank" rel="nofollow">Wish list for catalog items</a></div></div></div></div>]]></content>
-        <last_sync>2018-05-03 18:42:07</last_sync>
+        <last_sync>2018-05-18 18:43:04</last_sync>
         <modifier>normal</modifier>
         <name>sc_catalog_list-normal</name>
         <page>sc_catalog_list</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2017-09-05 18:33:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f96cd8514fc107001e6cb4fe0210c7fc</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>sc_catalog_list-normal</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_embedded_help_content_f96cd8514fc107001e6cb4fe0210c7fc</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-03 18:42:07</sys_updated_on>
+        <sys_updated_on>2018-05-18 18:43:04</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=f96cd8514fc107001e6cb4fe0210c7fc"/>

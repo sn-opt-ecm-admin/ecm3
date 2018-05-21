@@ -4,25 +4,25 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-04-26 15:55:47</sys_created_on>
-            <sys_id>3cd27f484f3997041e6cb4fe0210c786</sys_id>
+            <sys_created_on>2018-05-21 16:32:25</sys_created_on>
+            <sys_id>89faa8104fd2d300699aacb14210c76c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-04-26 15:55:47</sys_updated_on>
+            <sys_updated_on>2018-05-21 16:32:25</sys_updated_on>
             <text>The Audit managed document is used to track steps taken to resolve the case by the advocate. This file can be checked out, checked in and automatically versioned. Security to read the document is controlled by the owner and owner group.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>3cd27f484f3997041e6cb4fe0210c786</element>
+            <element>89faa8104fd2d300699aacb14210c76c</element>
             <position>0</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-04-26 15:55:47</sys_created_on>
-            <sys_id>f0d27f484f3997041e6cb4fe0210c787</sys_id>
+            <sys_created_on>2018-05-21 16:32:25</sys_created_on>
+            <sys_id>4dfaa8104fd2d300699aacb14210c76c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Audit" display_value="Audit" name="x_opt_ecm_case" sys_domain="global" view="Default view">7f1273ff4f110b001e6cb4fe0210c793</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-04-26 15:55:47</sys_updated_on>
+            <sys_updated_on>2018-05-21 16:32:25</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -30,13 +30,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-04-26 15:55:47</sys_created_on>
-            <sys_id>74d27f484f3997041e6cb4fe0210c787</sys_id>
+            <sys_created_on>2018-05-21 16:32:25</sys_created_on>
+            <sys_id>cdfaa8104fd2d300699aacb14210c76c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Audit" display_value="Audit" name="x_opt_ecm_case" sys_domain="global" view="Default view">7f1273ff4f110b001e6cb4fe0210c793</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-04-26 15:55:47</sys_updated_on>
+            <sys_updated_on>2018-05-21 16:32:25</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -44,13 +44,13 @@
             <element>audit_file</element>
             <position>2</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-04-26 15:55:47</sys_created_on>
-            <sys_id>f4d27f484f3997041e6cb4fe0210c787</sys_id>
+            <sys_created_on>2018-05-21 16:32:25</sys_created_on>
+            <sys_id>41faa8104fd2d300699aacb14210c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Audit" display_value="Audit" name="x_opt_ecm_case" sys_domain="global" view="Default view">7f1273ff4f110b001e6cb4fe0210c793</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-04-26 15:55:47</sys_updated_on>
+            <sys_updated_on>2018-05-21 16:32:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
