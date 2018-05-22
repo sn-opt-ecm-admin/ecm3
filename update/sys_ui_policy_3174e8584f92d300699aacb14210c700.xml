@@ -2,8 +2,9 @@
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_opt_ecm_case">executive_summary_required=true^complaint_type!=6844f24e4f604300699aacb14210c780^EQ<item endquery="false" field="executive_summary_required" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <conditions table="x_opt_ecm_case">executive_summary_required=true^complaint_type!=6844f24e4f604300699aacb14210c780^stateIN6,3^EQ<item endquery="false" field="executive_summary_required" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item display_table="x_opt_ecm_complaint_type" display_value="Inquiry" endquery="false" field="complaint_type" goto="false" newquery="false" operator="!=" or="false" value="6844f24e4f604300699aacb14210c780"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6,3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -30,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3174e8584f92d300699aacb14210c700</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Require Executive Summary for Executive Summary Required Flag</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -39,7 +40,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_policy_3174e8584f92d300699aacb14210c700</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-05-21 17:28:03</sys_updated_on>
+        <sys_updated_on>2018-05-22 16:38:38</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui_type>0</ui_type>
         <view/>
