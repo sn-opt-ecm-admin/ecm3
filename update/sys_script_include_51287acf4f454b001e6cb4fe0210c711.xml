@@ -65,7 +65,18 @@ Created two new WRITE ACLs named "sysapproval_approver.state
 One has condition of "Source table is x_opt_ecm_tasks" with script of "answer = (current.approver == gs.getUserID());"
 Second one replaces the baseline WRITE ACL with a condition of "Source table is x_opt_ecm_tasks" and Role of approval_admin.
 
+Versions 2.x to 2.0.21 include multiple enhancements and fixes:
+Changes to required fields on case.
+Addition of fields such as phone number extensions and prompts.
+Inquiry complaint types require no fields on case.
+Add DMHC on submission source.
+Additional complaint types.
+Disabling 24 Hour callback notifications for groups.
+Adding executive summary required field with rules on making summary field required on resolve/close
+Several dot release versions are due to the publisher not behaving and prematurely ending, but
+advancing the version number - forcing another publish.
 */
+
 
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -73,14 +84,14 @@ Second one replaces the baseline WRITE ACL with a condition of "Source table is 
         <sys_created_on>2017-09-11 16:24:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51287acf4f454b001e6cb4fe0210c711</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>DeploymentNotes</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_51287acf4f454b001e6cb4fe0210c711</sys_update_name>
-        <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2018-01-12 22:08:30</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-05-22 18:18:01</sys_updated_on>
     </sys_script_include>
 </record_update>
