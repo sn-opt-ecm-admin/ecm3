@@ -19,7 +19,7 @@
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
+        <color_palette display_value="Optum Brand">84d9da984fe74b80699aacb14210c7f7</color_palette>
         <colors/>
         <column>market_business</column>
         <compute_percent>aggregate</compute_percent>
@@ -35,12 +35,13 @@
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>account</field>
+        <field>market_business</field>
         <field_list/>
-        <filter table="x_opt_ecm_case">business_unit=consumer_affairs^complaint_type.name=Complaint^oca_ocr_received_date_timeONLast week@javascript:gs.beginningOfLastWeek()@javascript:gs.endOfLastWeek()^GROUPBYaccount<item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
+        <filter table="x_opt_ecm_case">business_unit=consumer_affairs^complaint_type.name=Complaint^oca_ocr_received_date_timeONLast week@javascript:gs.beginningOfLastWeek()@javascript:gs.endOfLastWeek()^EQ^GROUPBYmarket_business<item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
             <item endquery="false" field="complaint_type.name" goto="false" newquery="false" operator="=" or="false" value="Complaint"/>
             <item endquery="false" field="oca_ocr_received_date_time" goto="false" newquery="false" operator="ON" or="false" value="Last week@javascript:gs.beginningOfLastWeek()@javascript:gs.endOfLastWeek()"/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="account"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="market_business"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -76,7 +77,7 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
-        <set_color/>
+        <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -93,7 +94,7 @@
         <sys_created_on>2018-04-27 11:58:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>051644ac4fb19f00699aacb14210c7c6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>OCA Weekly Report Received - Product Line</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -101,14 +102,14 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_report_051644ac4fb19f00699aacb14210c7c6</sys_update_name>
         <sys_updated_by>cleach10</sys_updated_by>
-        <sys_updated_on>2018-05-01 19:19:50</sys_updated_on>
+        <sys_updated_on>2018-05-29 19:33:09</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <title>OCA Weekly Report Received - Product Line</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
         <trend_field/>
-        <type>pivot</type>
+        <type>pie</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
