@@ -3,6 +3,7 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
+        <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -27,6 +28,7 @@
         <created_by_user display_value="Mike Ward">023d890f4f03cb001e6cb4fe0210c7f5</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
+        <custom_config/>
         <decimal_precision>0</decimal_precision>
         <description/>
         <direction>minimize</direction>
@@ -34,14 +36,13 @@
         <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
+        <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>account</field>
         <field_list/>
-        <filter table="x_opt_ecm_case">ack_call_completed_dateISEMPTY^complaint_type=26047e0e4f604300699aacb14210c73f^EQ^TRENDBYaccount...,hour^GROUPBYaccount<item endquery="false" field="ack_call_completed_date" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <filter table="x_opt_ecm_case">ack_call_completed_dateISEMPTY^complaint_type=26047e0e4f604300699aacb14210c73f^ack_call_required=yes<item endquery="false" field="ack_call_completed_date" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item display_table="x_opt_ecm_complaint_type" display_value="Complaint" endquery="false" field="complaint_type" goto="false" newquery="false" operator="=" or="false" value="26047e0e4f604300699aacb14210c73f"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="account...,hour"/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="account"/>
+            <item endquery="false" field="ack_call_required" goto="false" newquery="false" operator="=" or="false" value="yes"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -77,24 +78,28 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
+        <series_name_text/>
         <set_color/>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
+        <show_data_label_position_middle>false</show_data_label_position_middle>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
         <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
+        <source_type>source</source_type>
+        <start_time/>
         <sumfield>account...</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>mike.ward</sys_created_by>
         <sys_created_on>2017-12-27 18:10:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0af21ae54f5b8380699aacb14210c7c5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>24HR Callback Breaches Count</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -102,13 +107,13 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_report_0af21ae54f5b8380699aacb14210c7c5</sys_update_name>
         <sys_updated_by>cleach10</sys_updated_by>
-        <sys_updated_on>2018-05-29 15:13:08</sys_updated_on>
+        <sys_updated_on>2018-06-07 15:41:34</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <title>24HR Callback Breaches Count</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>account...</trend_field>
+        <trend_field>ack_call_completed_date</trend_field>
         <type>single_score</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>

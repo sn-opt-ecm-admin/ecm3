@@ -3,7 +3,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2017-09-13 15:51:46</change_date>
         <changed_by display_value="Todd Fudala">d70716f24f33fa40699aacb14210c760</changed_by>
-        <content display_value="Email Filter">bdb4c43711632200964f016bcc1bdd4c</content>
+        <content display_value="Email Spam Scoring and Filtering">bdb4c43711632200964f016bcc1bdd4c</content>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

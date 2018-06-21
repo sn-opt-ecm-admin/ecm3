@@ -3,6 +3,7 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
+        <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -24,9 +25,10 @@
         <column>account</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="John Daniel">f877fa894f284b00699aacb14210c744</created_by_user>
+        <created_by_user display_value="John Daniel">6b104a104f3b470090d397411310c70f</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
+        <custom_config/>
         <decimal_precision>0</decimal_precision>
         <description/>
         <direction>minimize</direction>
@@ -34,6 +36,7 @@
         <display_grid>false</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
+        <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>transaction_source</field>
         <field_list/>
@@ -76,17 +79,21 @@
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
+        <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
+        <show_data_label_position_middle>false</show_data_label_position_middle>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
         <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
+        <source_type>table</source_type>
+        <start_time/>
         <sumfield>account...</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>john.daniel</sys_created_by>

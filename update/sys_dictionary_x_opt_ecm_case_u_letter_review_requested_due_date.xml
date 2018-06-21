@@ -26,6 +26,8 @@
         <element>u_letter_review_requested_due_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
         <internal_type display_value="">glide_date_time</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -48,7 +50,7 @@
         <sys_created_by>craig.leonard</sys_created_by>
         <sys_created_on>2017-12-19 15:50:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ca1624434fcf8b001e6cb4fe0210c71a</sys_id>
+        <sys_id>e27b3b104f7f870090d397411310c7ad</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Letter Review Requested Due Date</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -56,8 +58,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_dictionary_x_opt_ecm_case_u_letter_review_requested_due_date</sys_update_name>
-        <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-12-19 15:50:24</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-01-18 01:07:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

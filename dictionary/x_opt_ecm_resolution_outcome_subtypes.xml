@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Resolution Outcome Subtypes" max_length="40" name="x_opt_ecm_resolution_outcome_subtypes" type="collection">
+        <element display="true" label="Label" max_length="50" name="label" type="string"/>
+        <element label="Value" max_length="50" name="value" type="string"/>
+    </element>
+</database>

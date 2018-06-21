@@ -5,7 +5,7 @@
         <condition/>
         <conditional>false</conditional>
         <name>Auto-close ECM resolved cases</name>
-        <run_as display_value="John Daniel">f877fa894f284b00699aacb14210c744</run_as>
+        <run_as display_value="John Daniel">6b104a104f3b470090d397411310c70f</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>

@@ -26,6 +26,8 @@
         <element>review_completed_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
         <internal_type display_value="">glide_date_time</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
@@ -48,16 +50,16 @@
         <sys_created_by>craig.leonard</sys_created_by>
         <sys_created_on>2017-10-27 19:10:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ceb7d0ca4fca8b801e6cb4fe0210c7a3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>ad8bbb104f7f870090d397411310c7d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Review Completed Date</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_dictionary_x_opt_ecm_quality_review_review_completed_date</sys_update_name>
-        <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2017-10-27 19:30:52</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-01-18 01:07:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

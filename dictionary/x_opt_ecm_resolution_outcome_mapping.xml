@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Resolution Outcome Mapping" max_length="40" name="x_opt_ecm_resolution_outcome_mapping" type="collection">
+        <element label="Outcome" max_length="50" name="outcome" reference="x_opt_ecm_resolution_outcome" type="reference"/>
+        <element label="Outcome Subtype" max_length="32" name="outcome_subtype" reference="x_opt_ecm_resolution_outcome_subtypes" type="reference"/>
+        <element label="Site of Error" max_length="4000" name="site_of_error" reference="x_opt_ecm_site_of_error" type="glide_list"/>
+        <index name="index">
+            <element name="outcome_subtype"/>
+        </index>
+        <index name="index2">
+            <element name="outcome"/>
+        </index>
+    </element>
+</database>

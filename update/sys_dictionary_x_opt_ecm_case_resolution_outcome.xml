@@ -9,9 +9,7 @@
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
-	if (current.resolution_outcome_subtype.getDisplayValue()=='Additional Information Requested'||
-	   current.resolution_outcome_subtype.getDisplayValue()=='Address Service Issue')
-	return 'Upheld';  // return the calculated value
+	return '';  // return the calculated value
 
 })(current);]]></calculation>
         <choice>1</choice>
@@ -33,18 +31,20 @@
         <element>resolution_outcome</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Choice">choice</internal_type>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>50</max_length>
         <name>x_opt_ecm_case</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_opt_ecm_resolution_outcome">x_opt_ecm_resolution_outcome</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
-        <reference_key/>
+        <reference_key>value</reference_key>
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
@@ -55,8 +55,8 @@
         <sys_created_by>john.daniel</sys_created_by>
         <sys_created_on>2017-09-18 13:12:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>7bee0edd4f5183001e6cb4fe0210c793</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_id>967b3b104f7f870090d397411310c79b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Outcome</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -64,7 +64,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_dictionary_x_opt_ecm_case_resolution_outcome</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-05-24 18:16:43</sys_updated_on>
+        <sys_updated_on>2018-06-08 00:22:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

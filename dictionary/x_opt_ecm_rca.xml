@@ -171,6 +171,8 @@
                 <element dependent_value="Prior Auth" label="Multiple PA Causing Rejections" sequence="0" value="Multiple PA Causing Rejections"/>
                 <element dependent_value="Timely Filing" label="Non-Standard Contract" sequence="0" value="Non-Standard Contract"/>
                 <element dependent_value="HSA" label="Null" sequence="0" value="Null"/>
+                <element dependent_value="HSA" label="Null" sequence="0" value="Null"/>
+                <element dependent_value="Subrogation" label="Null" sequence="0" value="Null"/>
                 <element dependent_value="Subrogation" label="Null" sequence="0" value="Null"/>
                 <element dependent_value="pharmacy_order_entry" label="Other - document in comments section" sequence="0" value="Other - document in comments section_other"/>
                 <element dependent_value="Other - document in comments section" label="Other - document in comments section" sequence="0" value="Other - document in comments section_other"/>

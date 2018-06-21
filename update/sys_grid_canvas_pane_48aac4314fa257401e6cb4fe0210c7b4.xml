@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">248a84314fa257401e6cb4fe0210c77e</grid_canvas>
+        <height>18</height>
+        <portal_widget display_value="Created 06-07-2018 12:17:45">44aa08fd4f6257401e6cb4fe0210c7e1</portal_widget>
+        <posx>6</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>cleach10</sys_created_by>
+        <sys_created_on>2018-06-07 16:17:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>48aac4314fa257401e6cb4fe0210c7b4</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_48aac4314fa257401e6cb4fe0210c7b4</sys_update_name>
+        <sys_updated_by>cleach10</sys_updated_by>
+        <sys_updated_on>2018-06-07 16:20:24</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+</record_update>

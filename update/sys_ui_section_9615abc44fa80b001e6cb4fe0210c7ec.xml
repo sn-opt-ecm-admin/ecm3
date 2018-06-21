@@ -5,13 +5,13 @@
             <element>resolution_service_type</element>
             <position>0</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>73fbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>78adbcfd4f2657401e6cb4fe0210c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>resolution_document_type</element>
             <position>1</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f3fbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f8adbcfd4f2657401e6cb4fe0210c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>resolution_issue_log</element>
             <position>2</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>77fbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>7cadbcfd4f2657401e6cb4fe0210c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>resolution_other_site_of_error</element>
             <position>3</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f7fbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>fcadbcfd4f2657401e6cb4fe0210c7bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>resolution_issue_originally_handled_by</element>
             <position>4</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7bfbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>70adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>resolution_other_issue_handler</element>
             <position>5</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fbfbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f0adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>resolution_responding_name</element>
             <position>6</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7ffbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>74adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>resolution_response_type</element>
             <position>7</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fffbbb4d4f569f001e6cb4fe0210c705</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f4adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>u_letter_review_requested_due_date</element>
             <position>8</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>73fbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>78adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>resolution_date_resolved</element>
             <position>9</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f3fbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f8adbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>closed_at</element>
             <position>10</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>77fbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>7cadbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>.split</element>
             <position>11</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f7fbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>fcadbcfd4f2657401e6cb4fe0210c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>resolution_service_start_date</element>
             <position>12</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7bfbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>70adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>resolution_service_end_date</element>
             <position>13</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fbfbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f0adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -201,13 +201,13 @@
             <element>resolution_drug_name</element>
             <position>14</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7ffbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>74adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -215,13 +215,13 @@
             <element>resolution_total_overturned_amounts</element>
             <position>15</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fffbbb4d4f569f001e6cb4fe0210c706</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f4adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -229,13 +229,13 @@
             <element>resolution_prompt_pay_violation</element>
             <position>16</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>73fbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>78adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -243,13 +243,13 @@
             <element>resolution_prompt_pay_amount</element>
             <position>17</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f3fbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f8adbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -257,13 +257,13 @@
             <element>resolution_fine_amount</element>
             <position>18</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>77fbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>7cadbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -271,13 +271,13 @@
             <element>resolution_outcome_subtype</element>
             <position>19</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>f7fbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>fcadbcfd4f2657401e6cb4fe0210c7be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -285,13 +285,13 @@
             <element>resolution_outcome</element>
             <position>20</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7bfbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>70adbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -299,13 +299,13 @@
             <element>resolution_dept_site_of_error</element>
             <position>21</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fbfbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f0adbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -313,13 +313,13 @@
             <element>.end_split</element>
             <position>22</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>7ffbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>74adbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -327,13 +327,13 @@
             <element>close_notes</element>
             <position>23</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>fffbbb4d4f569f001e6cb4fe0210c707</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>f4adbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -341,13 +341,13 @@
             <element>attached_knowledge</element>
             <position>24</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>73fbbb4d4f569f001e6cb4fe0210c708</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>78adbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Attached Knowledge">cfa76e850a0a0b1f01446f67c8538d00</sys_ui_formatter>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -355,13 +355,13 @@
             <element>letter_review_comments</element>
             <position>25</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-05-24 15:41:11</sys_created_on>
-            <sys_id>37fbbb4d4f569f001e6cb4fe0210c708</sys_id>
+            <sys_created_on>2018-06-07 20:00:37</sys_created_on>
+            <sys_id>3cadbcfd4f2657401e6cb4fe0210c7bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution" display_value="Resolution" name="x_opt_ecm_case" sys_domain="global" view="Default view">9615abc44fa80b001e6cb4fe0210c7ec</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-05-24 15:41:11</sys_updated_on>
+            <sys_updated_on>2018-06-07 20:00:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

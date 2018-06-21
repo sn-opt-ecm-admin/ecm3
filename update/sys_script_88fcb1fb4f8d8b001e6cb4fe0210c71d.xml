@@ -38,7 +38,7 @@
         <sys_created_on>2017-09-13 20:02:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>88fcb1fb4f8d8b001e6cb4fe0210c71d</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>ECM-SetAssignedToSameAsCaseOnCreate</sys_name>

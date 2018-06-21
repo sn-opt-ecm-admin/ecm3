@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>task_sla</collection>
+        <condition>current.sla.collection == 'x_opt_ecm_quality_review_task' &amp;&amp; current.stage.changes()</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update SLA Due Date from UNKNOWN</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var new_sla_due;
+	var gr = new GlideRecord("task_sla");
+	gr.addQuery("task", current.task);
+	gr.addQuery("stage", '!=', 'achieved');
+	gr.orderBy("planned_end_time");
+	gr.query();
+	if (gr.next()) {
+		new_sla_due = gr.planned_end_time;
+	}
+	
+	if (new_sla_due) {
+		var taskRec = new GlideRecord('x_opt_ecm_quality_review_task');
+		taskRec.addQuery('sys_id', current.task);
+		taskRec.query();
+		if(taskRec.next())
+			{
+			taskRec.sla_due = new_sla_due;
+			taskRec.update();
+		}
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-06-05 16:37:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c4bbf5c54fa25300699aacb14210c7c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update SLA Due Date from UNKNOWN</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_c4bbf5c54fa25300699aacb14210c7c7</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-06-05 16:37:35</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c4bbf5c54fa25300699aacb14210c7c7"/>
+</record_update>

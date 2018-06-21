@@ -5,7 +5,7 @@
         <basic_auth_password/>
         <basic_auth_profile/>
         <basic_auth_user/>
-        <content>grant_type=client_credentials&amp;client_id=l7xx0a00273dca384233abaf337d3da922e9&amp;client_secret=d1739870d5924a1bbc628531185489de</content>
+        <content>grant_type=client_credentials&amp;client_id=l7xx82fcb560943b42ceaad9e16930a2ac5d&amp;client_secret=eee1fdd2d8004d42b6e8f1a99984e6ed</content>
         <function_name>GetToken</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
@@ -19,7 +19,7 @@
         <sys_created_on>2017-10-09 22:41:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2f3bd0d84f3943401e6cb4fe0210c786</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>GetToken</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -27,7 +27,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_rest_message_fn_2f3bd0d84f3943401e6cb4fe0210c786</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
-        <sys_updated_on>2017-11-03 18:52:26</sys_updated_on>
+        <sys_updated_on>2018-01-18 01:55:27</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

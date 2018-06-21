@@ -8,6 +8,7 @@
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_opt_ecm.quality_review</name>
+        <scoped_admin>false</scoped_admin>
         <suffix>quality_review</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>todd.fudala</sys_created_by>

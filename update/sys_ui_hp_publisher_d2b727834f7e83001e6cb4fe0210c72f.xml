@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_ui_hp_publisher">
     <sys_ui_hp_publisher action="INSERT_OR_UPDATE">
+        <allow_extended_table>false</allow_extended_table>
         <boolean_field/>
         <boolean_table/>
         <date_filter>115_Last 30 days@javascript:gs.daysAgoStart(30)@javascript:gs.daysAgoEnd(0),110_Last 7 days@javascript:gs.daysAgoStart(7)@javascript:gs.daysAgoEnd(0),035_Last month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth(),070_Last quarter@javascript:gs.quartersAgoStart(1)@javascript:gs.quartersAgoEnd(1),030_This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth(),065_This quarter@javascript:gs.beginningOfThisQuarter()@javascript:gs.endOfThisQuarter()</date_filter>

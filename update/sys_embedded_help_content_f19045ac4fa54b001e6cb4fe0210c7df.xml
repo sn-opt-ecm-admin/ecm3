@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_embedded_help_content">
+<record_update sys_domain="global" table="sys_embedded_help_content">
     <sys_embedded_help_content action="INSERT_OR_UPDATE">
         <active>true</active>
         <category/>
         <content><![CDATA[ <h1 class="title topictitle1">Detailed scorecard</h1>   <div class="body conbody"><p class="shortdesc">  </p><ul class="ul" id="zz_pa_detailed-normal__ul_ej5_wnv_fw"><li class="li">To view aggregate data, such as the monthly sum of scores, apply a time series such as      <span class="ph uicontrol">By week SUM</span>.</li><li class="li">To view the score at a certain date, click that date. After you select a date, you can     add a comment, target, or threshold at that date.</li><li class="li">To change the period for which the chart is drawn, you can select one of the fixed time     frames, specify specific <span class="ph uicontrol">from</span> and <span class="ph uicontrol">to</span> dates, or     use the date selector at the bottom of the chart.</li><li class="li">To export the scorecard to a PNG, JPG, PDF, or CSV file, click the show functions icon     and     select the format you want to export to.</li><li class="li">To access the indicator record, or to modify the scores manually, click the show functions     icon          and select <span class="ph uicontrol">Edit indicator</span> or <span class="ph uicontrol">Edit scores</span>.</li><li class="li">To control which elements appear on the chart, such as to show a trendline or confidence     band, click the chart settings     icon.</li></ul> </div>]]></content>
-        <last_sync>2018-05-26 09:55:06</last_sync>
+        <last_sync>2018-05-11 09:54:07</last_sync>
         <modifier>normal</modifier>
         <name>$pa_detailed-normal</name>
         <page>$pa_detailed</page>
@@ -17,8 +17,10 @@
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2017-09-28 09:47:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>f19045ac4fa54b001e6cb4fe0210c7df</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>$pa_detailed-normal</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
@@ -26,7 +28,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_embedded_help_content_f19045ac4fa54b001e6cb4fe0210c7df</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-26 09:55:06</sys_updated_on>
+        <sys_updated_on>2018-05-11 09:54:07</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=f19045ac4fa54b001e6cb4fe0210c7df"/>

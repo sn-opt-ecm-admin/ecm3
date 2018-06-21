@@ -41,6 +41,66 @@ ECMAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		}
 	},
 	
+	getResolutionOutcomes: function() {
+		try {
+			var subtype = this.getParameter('sysparm_subtype');				
+			var answer  = '';
+			var mappings = new GlideRecord('x_opt_ecm_resolution_outcome_mapping');
+			if (!gs.nil(subtype)) {
+				mappings.addQuery('outcome_subtype',subtype);
+			}
+			mappings.orderBy('outcome.name');
+			mappings.query();
+			var arrOptions = [];
+			while(mappings.next()) {
+				var object = {};
+					var outcome = mappings.outcome.getRefRecord();
+					object.id = outcome.getValue('value');
+					object.label = outcome.getValue('label');
+					arrOptions.push(object);
+			}
+			var jsonString = JSON.stringify(arrOptions);
+			return jsonString;
+		} catch (e) {
+			gs.error('ECMAjaxUtil.getResolutionOutcomes:error:'+e);
+		}
+	},
+			
+	getResolutionDeptSiteErrors: function() {
+		try {
+			var subtype = this.getParameter('sysparm_subtype');
+			var answer  = '';
+			var mappings = new GlideRecord('x_opt_ecm_resolution_outcome_mapping');
+			if (!gs.nil(subtype)) {
+				mappings.addQuery('outcome_subtype',subtype);
+			}
+			mappings.orderBy('outcome.name');
+			mappings.query();
+			var arrOptions = [];
+			var idOptions = [];
+			var arrayUtil = new global.ArrayUtil();
+			while(mappings.next()) {
+				if (!gs.nil(mappings.site_of_error)) {
+					var tmpArray = mappings.site_of_error.split(',');
+					arrayUtil.concat(arrOptions,tmpArray);
+				}
+			}
+			var grDSOE = new GlideRecord('x_opt_ecm_site_of_error');
+			grDSOE.addQuery('sys_id','IN',arrOptions);
+			grDSOE.query();
+			while (grDSOE.next()) {
+				var object = {};
+				object.id = grDSOE.getValue('sys_id');
+				object.label = grDSOE.getDisplayValue('name');
+				idOptions.push(object);
+			}
+			var jsonString = JSON.stringify(idOptions);
+			return jsonString;
+		} catch (e) {
+			gs.error('ECMAjaxUtil.getResolutionDeptSiteErrors:error:'+e);
+		}
+	},
+	
 	type: 'ECMAjaxUtil'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -48,7 +108,7 @@ ECMAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-04-23 10:17:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>20a8430f4f25db00699aacb14210c79d</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>ECMAjaxUtil</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -56,6 +116,6 @@ ECMAjaxUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_20a8430f4f25db00699aacb14210c79d</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-04-23 14:53:03</sys_updated_on>
+        <sys_updated_on>2018-06-08 12:00:23</sys_updated_on>
     </sys_script_include>
 </record_update>

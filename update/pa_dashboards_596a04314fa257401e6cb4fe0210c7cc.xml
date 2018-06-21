@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_dashboards">
+    <pa_dashboards action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <breakdown_source/>
+        <group display_value="Escalated Case Management">1834bb8b4fc7cb001e6cb4fe0210c7a9</group>
+        <groups/>
+        <is_breakdown>false</is_breakdown>
+        <managed_breakdown/>
+        <managed_publisher/>
+        <name>OCA Weekly Report</name>
+        <no_tabs>false</no_tabs>
+        <order/>
+        <owner display_value="CATHERINE LEACH">af06f8874f504b0045a4e8128110c758</owner>
+        <restrict_to_roles>x_opt_ecm.admin,x_opt_ecm.advocate,x_opt_ecm.manager,x_opt_ecm.quality_review</restrict_to_roles>
+        <role_override>true</role_override>
+        <roles/>
+        <should_migrate_permissions>false</should_migrate_permissions>
+        <sys_class_name>pa_dashboards</sys_class_name>
+        <sys_created_by>cleach10</sys_created_by>
+        <sys_created_on>2018-06-07 16:17:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>596a04314fa257401e6cb4fe0210c7cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OCA Weekly Report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>pa_dashboards_596a04314fa257401e6cb4fe0210c7cc</sys_update_name>
+        <sys_updated_by>cleach10</sys_updated_by>
+        <sys_updated_on>2018-06-07 16:17:15</sys_updated_on>
+        <users/>
+        <visible_to>2</visible_to>
+    </pa_dashboards>
+</record_update>

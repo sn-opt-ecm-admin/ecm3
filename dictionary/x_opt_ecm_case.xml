@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="576" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="589" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -39,7 +39,7 @@
         <element label="Contact Fax" max_length="40" name="contact_fax_number" type="string"/>
         <element label="Contact First Name" max_length="40" name="contact_first_name" type="string"/>
         <element label="Contact Name" max_length="120" name="contact_full_name" read_only="true" type="string"/>
-        <element choice="3" label="Contact Gender" max_length="40" name="contact_gender" type="string">
+        <element choice="1" label="Contact Gender" max_length="40" name="contact_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
@@ -184,7 +184,7 @@
         <element label="Member Fax" max_length="40" name="member_fax_number" type="string"/>
         <element label="Member First Name" max_length="40" name="member_first_name" type="string"/>
         <element label="Member Name" max_length="120" name="member_full_name" read_only="true" type="string"/>
-        <element choice="3" label="Member Gender" max_length="40" name="member_gender" type="string">
+        <element choice="1" label="Member Gender" max_length="40" name="member_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
@@ -221,8 +221,8 @@
         <element label="Patient Email" max_length="40" name="patient_email" type="string"/>
         <element label="Patient Fax" max_length="40" name="patient_fax" type="string"/>
         <element label="Patient First Name" max_length="40" name="patient_first_name" type="string"/>
-        <element label="Patient Name" max_length="120" name="patient_full_name" read_only="true" type="string"/>
-        <element choice="3" label="Patient Gender" max_length="40" name="patient_gender" type="string">
+        <element attributes="edge_encryption_enabled=true" label="Patient Name" max_length="120" name="patient_full_name" read_only="true" type="string"/>
+        <element choice="1" label="Patient Gender" max_length="40" name="patient_gender" type="string">
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
@@ -290,32 +290,11 @@
         </element>
         <element label="Issue Handled By" max_length="80" name="resolution_other_issue_handler" type="string"/>
         <element label="Department Not Listed" max_length="80" name="resolution_other_site_of_error" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;if (current.resolution_outcome_subtype.getDisplayValue()=='Additional Information Requested'||&#13;&#10;&#9;   current.resolution_outcome_subtype.getDisplayValue()=='Address Service Issue')&#13;&#10;&#9;return 'Upheld';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Outcome" max_length="40" name="resolution_outcome" type="choice">
-            <choice>
-                <element label="Upheld" sequence="0" value="Upheld"/>
-                <element label="Overturned - New Information" sequence="1" value="Overturned - New Information"/>
-                <element label="Overturned - Error" sequence="2" value="Overturned - Error"/>
-                <element label="Overturned - Exception" sequence="4" value="Overturned - Exception"/>
-            </choice>
+        <element choice="1" label="Outcome" max_length="50" name="resolution_outcome" reference="x_opt_ecm_resolution_outcome" reference_key="value" type="reference">
+            <choice/>
         </element>
-        <element choice="1" label="Outcome Subtype" max_length="40" name="resolution_outcome_subtype" type="choice">
-            <choice>
-                <element hint="Requests for additional information is generated in order to adequately resolve the complaint." label="Additional Information Requested" sequence="0" value="Additional Information Requested"/>
-                <element hint="Any service issue(s) identified in the complaint have been identified, acknowledged and resolved.  To be used for Medicare Agent Complaints." label="Addressed Service Issue" sequence="1" value="Addressed Service Issue"/>
-                <element hint="To be used in conjunction with MD or OH  DOI Inquiries that require appeals to be exhausted prior to the filing of a DOI complaint; Medicare may also use this resolution in response to AG or BBB Inquiries." label="Appeal Rights not Exhausted" sequence="2" value="Appeal Rights not Exhausted"/>
-                <element hint="Compliance with the customer's information/service request.  Administrative - provider directories, benefit booklet, HIPAA letters, ID card requests. There was not a previous error related to this request. " label="Complied with Complainant's Request" sequence="3" value="Complied with Complainant's Request"/>
-                <element hint="A previous benefit determination was overturned." label="Decision Overturned" sequence="4" value="Decision Overturned"/>
-                <element hint="A previous benefit determination was overturned due to an error. " label="Decision Overturned - Error" sequence="5" value="Decision Overturned - Error"/>
-                <element hint="The complaint is a duplicate of the another file already in ETS.  Complaint type should be populated with 'Inquiry' if issue is a RCA case and duplicate to another file number." label="Duplicate Complaint" sequence="6" value="Duplicate Complaint"/>
-                <element hint="To be used as the resolution code when either UHC or DOI determines the application is not eligible for external review." label="External Review Application Denied" sequence="7" value="External Review Application Denied"/>
-                <element hint="A benefit/administrative exception is granted to adequately resolve the complaint.  Although there was no prior error made by UHC, the decision to grant an exception was made.  Use any time an exception is granted, claims or non-claims related. " label="Granted Exception" sequence="8" value="Granted Exception"/>
-                <element hint="A benefit/administrative exception is granted to adequately resolve the complaint.  There was a previous error on the part of UHC related to this issue that caused us to grant an exception." label="Granted Exception - Error" sequence="9" value="Granted Exception - Error"/>
-                <element label="Issue Previously Resolved/Corrected" sequence="10" value="Issue Previously Resolved/Corrected"/>
-                <element hint="To be used when we uphold our original decision and no action is necessary.  We provide further education regarding the benefit package and how to navigate within the healthcare system." label="Provided Explanation of Benefits/Coverage/Position" sequence="11" value="Provided Explanation of Benefits/Coverage/Position"/>
-                <element hint="To be used as the resolution code when the issue was resolved by offering a settlement to the provider.  UHC is not admitting any wrong-doing, rather in order to resolve the issue a settlement is offered." label="Settlement Offered" sequence="12" value="Settlement Offered"/>
-                <element hint="To be used as the resolution code when the issue was resolved by offering a settlement to the provider; UHC made an error originally and decided a settlement was the most effective way to resolve the issue." label="Settlement Offered - Error" sequence="13" value="Settlement Offered - Error"/>
-                <element hint="To be used when the claim was already covered under a previous settlement agreement, so the new complaint will not result in any additional action." label="Under Settlement Agreement" sequence="14" value="Under Settlement Agreement"/>
-            </choice>
+        <element choice="1" label="Resolution Outcome Subtype" max_length="50" name="resolution_outcome_subtype" reference="x_opt_ecm_resolution_outcome_subtypes" type="reference">
+            <choice/>
         </element>
         <element default="0" label="Prompt Pay Amount" max_length="20" name="resolution_prompt_pay_amount" type="currency"/>
         <element choice="3" label="Prompt Pay Violation" max_length="40" name="resolution_prompt_pay_violation" type="choice">
@@ -337,7 +316,7 @@
         <element choice="1" label="Service Type" max_length="32" name="resolution_service_type" reference="x_opt_ecm_service_type" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
             <choice/>
         </element>
-        <element label="Total overturned amounts" max_length="15" name="resolution_total_overturned_amounts" type="currency"/>
+        <element label="Total overturned amounts" max_length="20" name="resolution_total_overturned_amounts" type="currency"/>
         <element label="Responsible Department" max_length="32" name="responsible_department" reference="x_opt_ecm_department" type="reference"/>
         <element choice="1" dependent="business_unit" dependent_on_field="business_unit" label="Submission Source" max_length="40" name="submission_source" type="choice" use_dependent_field="true">
             <choice>

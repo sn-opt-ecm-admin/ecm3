@@ -13,6 +13,7 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </pause_condition>
         <relative_duration_works_on>Task record</relative_duration_works_on>
+        <reset_action>complete</reset_action>
         <reset_condition/>
         <resume_condition/>
         <retroactive>true</retroactive>
@@ -34,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>41fc9c6a4ff80300699aacb14210c7e9</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Critical Priority (24 hour)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -42,8 +43,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>contract_sla_41fc9c6a4ff80300699aacb14210c7e9</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-30 19:19:56</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-04 20:06:48</sys_updated_on>
         <target/>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>

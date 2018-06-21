@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>oca_ocr_received_date_time</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>resolution_service_type</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>market_business</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>intake_comments</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -64,7 +64,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>member_first_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -79,7 +79,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>member_last_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -94,7 +94,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>contact_first_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
@@ -109,7 +109,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>contact_last_name</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
@@ -124,7 +124,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
@@ -139,7 +139,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>resolution_date_resolved</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
@@ -154,7 +154,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>close_notes</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
@@ -169,7 +169,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>case</element>
-            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="3531df9c4fcad3001e6cb4fe0210c7ba">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
+            <list_id display_value="x_opt_ecm_case" element="NULL" name="x_opt_ecm_case" parent="NULL" relationship="NULL" sys_domain="global" view="f5bf2760135e5384a47b3262f244b051">6ca7a7984f0ed3001e6cb4fe0210c71e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
@@ -208,7 +208,7 @@
             <sys_updated_by>cleach10</sys_updated_by>
             <sys_updated_on>2018-05-09 20:01:05</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt7131df9c4fcad3001e6cb4fe0210c7b5" name="RPT7131df9c4fcad3001e6cb4fe0210c7b5">3531df9c4fcad3001e6cb4fe0210c7ba</view>
+            <view display_value="Rpt7131df9c4fcad3001e6cb4fe0210c7b5" name="RPT7131df9c4fcad3001e6cb4fe0210c7b5">f5bf2760135e5384a47b3262f244b051</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

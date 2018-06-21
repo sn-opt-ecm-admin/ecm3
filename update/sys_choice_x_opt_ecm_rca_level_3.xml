@@ -1321,6 +1321,25 @@
             <language>en</language>
             <name>x_opt_ecm_rca</name>
             <sequence>0</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-05-23 01:30:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>269fafec131e5384a47b3262f244b02e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-05-23 01:30:04</sys_updated_on>
+            <value>Null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>HSA</dependent_value>
+            <element>level_3</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Null</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca</name>
+            <sequence>0</sequence>
             <sys_created_by>cleach10</sys_created_by>
             <sys_created_on>2018-04-23 01:11:30</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -1329,6 +1348,25 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>cleach10</sys_updated_by>
             <sys_updated_on>2018-04-23 01:11:30</sys_updated_on>
+            <value>Null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Subrogation</dependent_value>
+            <element>level_3</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Null</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca</name>
+            <sequence>0</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-05-23 01:30:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>629fafec131e5384a47b3262f244b02f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-05-23 01:30:04</sys_updated_on>
             <value>Null</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -15645,7 +15683,7 @@
             <sys_created_by>john.daniel</sys_created_by>
             <sys_created_on>2017-10-24 21:10:23</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>c746d1494f420b801e6cb4fe0210c71c</sys_id>
+            <sys_id>8e4c271a13311780a47b3262f244b045</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>level_3</sys_name>
             <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>

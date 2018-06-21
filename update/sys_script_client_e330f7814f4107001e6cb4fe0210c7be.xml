@@ -40,7 +40,7 @@
         <sys_created_on>2017-09-05 16:17:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_domain_path/>
+        <sys_domain_path>/</sys_domain_path>
         <sys_id>e330f7814f4107001e6cb4fe0210c7be</sys_id>
         <sys_mod_count>9</sys_mod_count>
         <sys_name>Calc Due Date: OCA Received Date change</sys_name>

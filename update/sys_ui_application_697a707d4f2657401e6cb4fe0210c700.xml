@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Resolution Outcome Mapping</name>
+        <order/>
+        <roles>x_opt_ecm.resolution_outcome_mapping_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-06-07 19:46:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>697a707d4f2657401e6cb4fe0210c700</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resolution Outcome Mapping</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_application_697a707d4f2657401e6cb4fe0210c700</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-06-07 19:46:46</sys_updated_on>
+    </sys_ui_application>
+</record_update>

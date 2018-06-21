@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_grid_canvas" unload_date="2018-06-21 19:09:19">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA New Tab">2439c4fd4f6257401e6cb4fe0210c7ca</legacy_page>
+        <name>PA New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>cleach10</sys_created_by>
+        <sys_created_on>2018-06-07 16:11:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a439c4fd4f6257401e6cb4fe0210c7cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_grid_canvas_a439c4fd4f6257401e6cb4fe0210c7cb</sys_update_name>
+        <sys_updated_by>cleach10</sys_updated_by>
+        <sys_updated_on>2018-06-07 16:11:30</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

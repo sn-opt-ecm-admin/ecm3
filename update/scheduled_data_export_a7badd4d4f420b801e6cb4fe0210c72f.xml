@@ -7,7 +7,7 @@
         <delta_on_or_after>sys_updated_on</delta_on_or_after>
         <enable_delta_export>false</enable_delta_export>
         <export_set display_value="Navigator File">651524814fcec7801e6cb4fe0210c7fb</export_set>
-        <last_export_run>2018-05-30 19:29:49</last_export_run>
+        <last_export_run>2018-06-21 18:29:52</last_export_run>
         <name>Navigator Export Schedule</name>
         <order/>
         <parent/>
@@ -72,7 +72,7 @@ while (gr.next()){
 	
 }]]></pre_script>
         <pre_script_bool>true</pre_script_bool>
-        <run_as display_value="Import Admin">6e0a09934f505b401e6cb4fe0210c72d</run_as>
+        <run_as display_value="">6e0a09934f505b401e6cb4fe0210c72d</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -85,15 +85,15 @@ while (gr.next()){
         <sys_created_on>2017-10-24 21:30:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a7badd4d4f420b801e6cb4fe0210c72f</sys_id>
-        <sys_mod_count>4750</sys_mod_count>
+        <sys_mod_count>5247</sys_mod_count>
         <sys_name>Navigator Export Schedule</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>scheduled_data_export_a7badd4d4f420b801e6cb4fe0210c72f</sys_update_name>
-        <sys_updated_by>import.admin</sys_updated_by>
-        <sys_updated_on>2018-05-30 19:29:50</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-21 18:29:53</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_data_export>
 </record_update>

@@ -8,6 +8,7 @@
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_opt_ecm.manager</name>
+        <scoped_admin>false</scoped_admin>
         <suffix>manager</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>craig.leonard</sys_created_by>
