@@ -43,7 +43,7 @@
             <dependent_value/>
             <element>patient_gender</element>
             <hint/>
-            <inactive>true</inactive>
+            <inactive>false</inactive>
             <label>N/A</label>
             <language>en</language>
             <name>x_opt_ecm_case</name>
@@ -53,10 +53,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>559b79a14f3adf00699aacb14210c7a1</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-06-21 18:46:00</sys_updated_on>
-            <value>n/a</value>
+            <sys_updated_on>2018-06-22 17:04:01</sys_updated_on>
+            <value>na</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>patient_gender</element>

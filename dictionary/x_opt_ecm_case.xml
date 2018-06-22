@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="589" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="590" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -43,6 +43,7 @@
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
+                <element label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Contact Group Name" max_length="40" name="contact_group_name" type="string"/>
@@ -188,6 +189,7 @@
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
+                <element label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Member Group Name" max_length="40" name="member_group_name" type="string"/>
@@ -226,6 +228,7 @@
             <choice>
                 <element label="Female" value="female"/>
                 <element label="Male" value="male"/>
+                <element label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Patient Last Name" max_length="40" name="patient_lastname" type="string"/>
