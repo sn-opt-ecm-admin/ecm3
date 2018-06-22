@@ -2,7 +2,7 @@
 <database>
     <element label="Market Legal Entity" max_length="40" name="x_opt_ecm_market_legal_entity" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Name" max_length="80" name="name" type="string"/>
+        <element label="Name" max_length="90" name="name" type="string"/>
         <element label="Value" max_length="40" name="value" type="string"/>
         <index name="index">
             <element name="name"/>
