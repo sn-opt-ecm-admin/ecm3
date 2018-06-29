@@ -4,8 +4,8 @@
         <action_name/>
         <active>true</active>
         <client>true</client>
-        <comments/>
-        <condition>!(gs.getUser().hasRole('x_opt_ecm.read_only') || gs.getUser().hasRole('x_opt_ecm.uhc_advocate'));</condition>
+        <comments>!(gs.hasRole('x_opt_ecm.read_only') || gs.hasRole('x_opt_ecm.uhc_advocate'));</comments>
+        <condition>gs.getUser().hasRole('x_opt_ecm.user') </condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_context_menu>true</form_context_menu>
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f029d80e4fca8b801e6cb4fe0210c77c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>C360 Member Search</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -49,7 +49,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_action_f029d80e4fca8b801e6cb4fe0210c77c</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-06-20 11:38:31</sys_updated_on>
+        <sys_updated_on>2018-06-28 15:09:10</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
