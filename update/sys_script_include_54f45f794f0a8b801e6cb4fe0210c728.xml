@@ -73,7 +73,8 @@ QualityReviewUtils.prototype = {
 
 		if (needsQualityReview) {
 			
-			current.state = 20;
+			// defering change to state to an After Insert BR for the QR
+			// current.state = 20;
 			this.createQualityReviewRecord(current);
 		}
 
@@ -147,14 +148,14 @@ QualityReviewUtils.prototype = {
         <sys_created_on>2017-10-27 14:33:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>54f45f794f0a8b801e6cb4fe0210c728</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>QualityReviewUtils</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_54f45f794f0a8b801e6cb4fe0210c728</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-30 21:01:44</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-07-05 15:57:19</sys_updated_on>
     </sys_script_include>
 </record_update>
