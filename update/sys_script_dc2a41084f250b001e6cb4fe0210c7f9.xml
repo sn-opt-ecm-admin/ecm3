@@ -37,20 +37,20 @@
 	
 	// 	(current.state==2) WIP
 	// 	(current.state==6) RESOLVED
-	//gs.info("Integration trigger - ORS [ENTER] called for " + current.number);
+	gs.info("Integration trigger - ORS [ENTER] called for " + current.number);
 	
 	var ors = new ORSIntegration();
 	if (current.state==2 && current.ors_issue_id.nil()){
 		ors.callORS(current, ors.INSERT);
-		//gs.info("Integration trigger - ORS [INSERT] called for " + current.number);
+		gs.info("Integration trigger - ORS [INSERT] called for " + current.number);
 	}
 	else if(current.state==2 && !current.ors_issue_id.nil()){
 		ors.callORS(current, ors.UPDATE);
-		//gs.info("Integration trigger - ORS [UPDATE] called for " + current.number);
+		gs.info("Integration trigger - ORS [UPDATE] called for " + current.number);
 	}
 	else if (current.state==6 && !current.ors_issue_id.nil()){
 		ors.callORS(current, ors.UPDATE);
-		//gs.info("Integration trigger - ORS [UPDATE] called for " + current.number);
+		gs.info("Integration trigger - ORS [UPDATE] called for " + current.number);
 		
 	}
 	
@@ -65,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dc2a41084f250b001e6cb4fe0210c7f9</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Integration trigger - ORS</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -74,7 +74,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_dc2a41084f250b001e6cb4fe0210c7f9</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-07-05 16:13:23</sys_updated_on>
+        <sys_updated_on>2018-07-11 17:50:59</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
