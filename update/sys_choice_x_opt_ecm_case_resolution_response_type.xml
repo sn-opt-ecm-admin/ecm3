@@ -58,6 +58,25 @@
             <sys_updated_on>2018-01-18 01:06:36</sys_updated_on>
             <value>Email</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resolution_response_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Research Only</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>3</sequence>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-07-16 13:46:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dedd98d24f9bd380699aacb14210c7e4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-07-16 13:46:22</sys_updated_on>
+            <value>Research Only</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>resolution_response_type</element>
             <name>x_opt_ecm_case</name>
