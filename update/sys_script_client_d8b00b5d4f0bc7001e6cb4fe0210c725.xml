@@ -31,6 +31,14 @@
 	if (state != 20){
 		g_form.removeOption('state', '20');//removes Quality Review
 	}
+	// if in letter review complete, prevent advocates from closing case when it has not yet been resolved
+	if (state == 17) {
+		var resolved = g_form.getValue('resolution_date_resolved');
+		if (!resolved) {
+			g_form.removeOption('state', '3');//removes Close
+		}
+	}
+	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>craig.leonard</sys_created_by>
@@ -39,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d8b00b5d4f0bc7001e6cb4fe0210c725</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>ECM-HideStateChoices</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -47,8 +55,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_client_d8b00b5d4f0bc7001e6cb4fe0210c725</sys_update_name>
-        <sys_updated_by>craig.leonard</sys_updated_by>
-        <sys_updated_on>2018-01-03 23:46:24</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-07-21 12:58:09</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
