@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="60adf3e74fabd3c0699aacb14210c703" sys_domain="global" table="x_opt_ecm_case_metrics" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>a0adf3e74fabd3c0699aacb14210c709</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case</element>
+            <position>1</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>a8adf3e74fabd3c0699aacb14210c709</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_duration</element>
+            <position>2</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>2cadf3e74fabd3c0699aacb14210c709</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>case_number</element>
+            <position>3</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>acadf3e74fabd3c0699aacb14210c709</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pause_duration</element>
+            <position>4</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>20adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>5</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>a0adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>24adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_resolved</element>
+            <position>7</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>a4adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_first_name</element>
+            <position>8</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>28adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>member_last_name</element>
+            <position>9</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>a8adf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>oca_ocr_received_date</element>
+            <position>10</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>2cadf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:39</sys_created_on>
+            <sys_id>acadf3e74fabd3c0699aacb14210c70a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:39</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>12</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 15:50:11</sys_created_on>
+            <sys_id>065d5c374f2fd3c0699aacb14210c73d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 15:50:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>13</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-07 15:08:56</sys_created_on>
+            <sys_id>eed38e194f3f1b041e6cb4fe0210c75d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:08:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>14</position>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-07 15:23:15</sys_created_on>
+            <sys_id>ec278ad94f3f1b041e6cb4fe0210c70e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case_metrics" sys_domain="global" view="Default view">60adf3e74fabd3c0699aacb14210c703</sys_ui_section>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:23:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_opt_ecm_case_metrics</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>will.mayes</sys_created_by>
+            <sys_created_on>2018-08-02 13:31:38</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>60adf3e74fabd3c0699aacb14210c703</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_opt_ecm_case_metrics</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_ui_section_60adf3e74fabd3c0699aacb14210c703</sys_update_name>
+            <sys_updated_by>will.mayes</sys_updated_by>
+            <sys_updated_on>2018-08-02 13:31:38</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

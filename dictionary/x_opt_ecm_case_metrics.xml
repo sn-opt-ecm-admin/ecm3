@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Case Metrics" max_length="40" name="x_opt_ecm_case_metrics" type="collection">
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Case" max_length="32" name="case" reference="x_opt_ecm_case" type="reference"/>
+        <element label="Case duration" max_length="40" name="case_duration" type="glide_duration"/>
+        <element label="Case number" max_length="40" name="case_number" type="string"/>
+        <element label="Date Resolved" max_length="40" name="date_resolved" type="glide_date_time"/>
+        <element label="Member first name" max_length="40" name="member_first_name" type="string"/>
+        <element label="Member last name" max_length="40" name="member_last_name" type="string"/>
+        <element label="Priority" max_length="40" name="priority" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <index name="index">
+            <element name="case"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

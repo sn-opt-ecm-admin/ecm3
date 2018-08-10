@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_cubes">
+    <pa_cubes action="INSERT_OR_UPDATE">
+        <benchmarking>false</benchmarking>
+        <conditions table="x_opt_ecm_case">complaint_type!=Inquiry<item endquery="false" field="complaint_type" goto="false" newquery="false" operator="!=" or="false" value="Inquiry"/>
+        </conditions>
+        <description/>
+        <facts_table>x_opt_ecm_case</facts_table>
+        <facts_table_pk/>
+        <facts_table_pktable/>
+        <facts_table_pkview/>
+        <frequency>10</frequency>
+        <name>ECM.Cases.Turnaround</name>
+        <report_source/>
+        <report_source_updated_at/>
+        <sys_class_name>pa_cubes</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-08-07 13:06:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9a761d14ffb1b041e6cb4fe0210c729</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ECM.Cases.Turnaround</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>pa_cubes_d9a761d14ffb1b041e6cb4fe0210c729</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-08-07 13:06:49</sys_updated_on>
+    </pa_cubes>
+    <sys_translated_text action="delete_multiple" query="documentkey=d9a761d14ffb1b041e6cb4fe0210c729"/>
+</record_update>

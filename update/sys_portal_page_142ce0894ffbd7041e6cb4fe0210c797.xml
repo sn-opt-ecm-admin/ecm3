@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2018-08-10 14:43:44">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>will.mayes</sys_created_by>
+        <sys_created_on>2018-08-06 14:07:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>142ce0894ffbd7041e6cb4fe0210c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_portal_page_142ce0894ffbd7041e6cb4fe0210c797</sys_update_name>
+        <sys_updated_by>will.mayes</sys_updated_by>
+        <sys_updated_on>2018-08-06 14:07:11</sys_updated_on>
+        <title>PA New Tab 2</title>
+        <user/>
+        <view>pa_new_tab_2_35</view>
+    </sys_portal_page>
+</record_update>

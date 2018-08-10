@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="595" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="598" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -264,7 +264,7 @@
                 <element label="Iris (mail order)" sequence="3" value="Iris (mail order)"/>
                 <element label="Oxford" sequence="4" value="Oxford"/>
                 <element label="PRIME" sequence="5" value="PRIME"/>
-                <element label="RxHD (drug related)" sequence="6" value="RxHD (drug related)"/>
+                <element label="Navigator (drug related)" sequence="6" value="RxHD (drug related)"/>
                 <element label="UNET (UHC claims)" sequence="7" value="UNET (UHC claims)"/>
                 <element label="Other" sequence="8" value="Other"/>
             </choice>
@@ -360,6 +360,7 @@
                 <element label="Written" sequence="1" value="written"/>
             </choice>
         </element>
+        <element label="Turn Around Time" max_length="40" name="turn_around_time" read_only="true" type="glide_duration"/>
         <element label="Original Department Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>
         <element label="UNET Market" max_length="32" name="unet_market" reference="x_opt_ecm_unet_market" type="reference"/>
         <element label="Letter Review Requested Due Date" max_length="40" name="u_letter_review_requested_due_date" type="glide_date_time"/>
