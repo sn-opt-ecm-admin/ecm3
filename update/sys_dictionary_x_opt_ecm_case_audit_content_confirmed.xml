@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="sn_customerservice_case" table="x_opt_ecm_case">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="audit_content_confirmed" table="x_opt_ecm_case">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>live_feed=true,email_client=true</attributes>
-        <audit>true</audit>
+        <attributes/>
+        <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Audit Content Confirmed</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,12 +28,12 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>audit_content_confirmed</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_opt_ecm_case</name>
@@ -48,23 +48,23 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>619</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>craig.leonard</sys_created_by>
-        <sys_created_on>2017-08-08 13:53:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>587bf7104f7f870090d397411310c792</sys_id>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-09-07 14:37:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e8c5e19f4f9c2700699aacb14210c7a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_opt_ecm_case</sys_name>
+        <sys_name>Audit Content Confirmed</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_dictionary_x_opt_ecm_case_NULL</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-23 01:30:14</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_opt_ecm_case_audit_content_confirmed</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-09-07 14:37:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

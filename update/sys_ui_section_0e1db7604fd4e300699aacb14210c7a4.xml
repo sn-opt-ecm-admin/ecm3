@@ -2,16 +2,30 @@
 <record_update>
     <sys_ui_section caption="Audit File" section_id="0e1db7604fd4e300699aacb14210c7a4" sys_domain="global" table="x_opt_ecm_case" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>required_file_data</element>
+            <element>audit_content_confirmed</element>
             <position>0</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-08-30 12:35:45</sys_created_on>
-            <sys_id>435dbba04fd4e300699aacb14210c7bc</sys_id>
+            <sys_created_on>2018-09-07 14:41:14</sys_created_on>
+            <sys_id>0fc6ed9f4f9c2700699aacb14210c723</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Audit File" display_value="Audit File" name="x_opt_ecm_case" sys_domain="global" view="Default view">0e1db7604fd4e300699aacb14210c7a4</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-08-30 12:35:45</sys_updated_on>
+            <sys_updated_on>2018-09-07 14:41:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>required_file_data</element>
+            <position>1</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-09-07 14:41:14</sys_created_on>
+            <sys_id>8fc6ed9f4f9c2700699aacb14210c723</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Audit File" display_value="Audit File" name="x_opt_ecm_case" sys_domain="global" view="Default view">0e1db7604fd4e300699aacb14210c7a4</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:41:14</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
