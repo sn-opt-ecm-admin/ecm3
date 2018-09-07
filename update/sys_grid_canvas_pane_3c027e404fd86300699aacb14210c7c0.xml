@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">000ca4894ffbd7041e6cb4fe0210c711</grid_canvas>
+        <height>14</height>
+        <portal_widget display_value="Created 08-28-2018 13:49:36">70027e404fd86300699aacb14210c7bd</portal_widget>
+        <posx>0</posx>
+        <posy>14</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-08-28 17:49:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c027e404fd86300699aacb14210c7c0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_3c027e404fd86300699aacb14210c7c0</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-09-07 12:22:17</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

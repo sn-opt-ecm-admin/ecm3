@@ -141,6 +141,20 @@
             <sys_updated_by>todd.fudala</sys_updated_by>
             <sys_updated_on>2017-09-26 14:47:23</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>10</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-08-30 12:34:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a1db7604fd4e300699aacb14210c7a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_opt_ecm_case" name="x_opt_ecm_case" sys_domain="global" view="Default view">9a15abc44fa80b001e6cb4fe0210c7ea</sys_ui_form>
+            <sys_ui_section caption="Audit File" display_value="Audit File" name="x_opt_ecm_case" sys_domain="global" view="Default view">0e1db7604fd4e300699aacb14210c7a4</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-08-30 12:34:36</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_opt_ecm_case</name>
             <roles/>

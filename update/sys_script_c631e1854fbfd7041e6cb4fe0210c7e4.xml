@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Calculate Turn Around Time</name>
+        <name>ECM-Calculate Turn Around Time</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,30 +29,44 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var start = new GlideDateTime();
-	start.setDisplayValue(current.oca_ocr_received_date_time.getDisplayValue());
-	var now = new GlideDateTime();
-	if(!gs.nil(current.resolution_date_resolved)){
-		now.setDisplayValue(current.resolution_date_resolved.getDisplayValue());
-	}
-	var dur = GlideDateTime.subtract(start, now);
-	var pauseDur = new GlideDuration();
-	pauseDur.setDisplayValue("00:00:00");
-	var sla = new GlideRecord('task_sla');
-	sla.addQuery('task', current.sys_id);
-	sla.orderByDesc('end_time');
-	var pauseDuration = new GlideDuration();
-	pauseDuration.setDisplayValue('00:00:00');
-	sla.query();
-	if(sla.next()){
-		gs.info("SEARCH HERE " + sla.pause_duration);
-		if(!gs.nil(sla.pause_duration)){
-			pauseDuration = new GlideDuration();
-			pauseDuration.setValue(sla.pause_duration);
+	if (current.state != 18 && current.state != 1 && !gs.nil(current.oca_ocr_received_date_time)) {
+		var start = new GlideDateTime();
+		start.setDisplayValue(current.oca_ocr_received_date_time.getDisplayValue());
+		var now = new GlideDateTime();
+		if(!gs.nil(current.resolution_date_resolved)){
+			now.setDisplayValue(current.resolution_date_resolved.getDisplayValue());
 		}
+		var dur = GlideDateTime.subtract(start, now);
+		var pauseDur = new GlideDuration();
+		pauseDur.setDisplayValue("00:00:00");
+		var sla = new GlideRecord('task_sla');
+		sla.addQuery('task', current.sys_id);
+		sla.addQuery('sla.set_start_to', 'oca_ocr_received_date_time');
+		sla.addQuery('sla.pause_condition','state=18^EQ');
+		sla.orderByDesc('end_time');
+		var pauseDuration = new GlideDuration();
+		pauseDuration.setDisplayValue('00:00:00');
+		sla.query();
+		// technically, if the SLA is defined such that it starts with the OCA/ORA received date
+		// and it pauses on awaiting info,
+		// then any one SLA can be queried to calculate turn-around time.
+		if(sla.next()){
+			if(!gs.nil(sla.pause_duration)){
+				pauseDuration = new GlideDuration();
+				pauseDuration.setValue(sla.pause_duration);
+			}
+		}
+		var finalDur = dur.subtract(pauseDuration);
+		gs.info("Final Dur " + finalDur + " " + finalDur.getDisplayValue() + " " + finalDur.getValue());
+		current.setValue('turn_around_time',finalDur.getValue());
+		gs.info("Final Dur current "
+		+ current.turn_around_time
+		+ " " + current.turn_around_time.getDisplayValue()
+		+ " " + finalDur.getValue());
+	} else {
+		current.setValue('turn_around_time',0);
+		
 	}
-	var finalDur = dur.subtract(pauseDuration);
-	current.turn_around_time = finalDur;
 	//current.update();
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -62,16 +76,16 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c631e1854fbfd7041e6cb4fe0210c7e4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Calculate Turn Around Time</sys_name>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>ECM-Calculate Turn Around Time</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_c631e1854fbfd7041e6cb4fe0210c7e4</sys_update_name>
-        <sys_updated_by>will.mayes</sys_updated_by>
-        <sys_updated_on>2018-08-06 18:08:58</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-09-06 10:30:21</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>

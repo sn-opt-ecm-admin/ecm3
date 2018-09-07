@@ -39,8 +39,12 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>assigned_to</field>
-        <field_list>sys_created_on,definition,id,value,start,end,duration,calculation_complete</field_list>
-        <filter/>
+        <field_list>assigned_to,state,case_duration</field_list>
+        <filter table="x_opt_ecm_case_metrics">state!=Closed^state!=Cancelled^EQ^ORDERBYassigned_to<item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="Closed"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="Cancelled"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="assigned_to"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -96,22 +100,22 @@
         <sys_created_on>2018-08-06 19:13:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8722b1094fffd7041e6cb4fe0210c720</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>ECM Case Duration in State</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_report_8722b1094fffd7041e6cb4fe0210c720</sys_update_name>
-        <sys_updated_by>will.mayes</sys_updated_by>
-        <sys_updated_on>2018-08-07 16:48:40</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-09-06 18:12:00</sys_updated_on>
         <table>x_opt_ecm_case_metrics</table>
         <title>ECM Case Duration in State</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field/>
-        <type>pivot_v2</type>
+        <trend_field>assigned_to...</trend_field>
+        <type>pivot</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
@@ -121,7 +125,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color/>
+        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_opposite>false</x_axis_opposite>
         <x_axis_title/>
@@ -134,7 +138,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color/>
+        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_opposite>false</y_axis_opposite>
         <y_axis_title/>
