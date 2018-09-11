@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <conditions table="x_opt_ecm_case">audit_fileISEMPTY^EQ<item endquery="false" field="audit_file" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </conditions>
+        <active>true</active>
+        <conditions/>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
@@ -12,33 +10,29 @@
         <model_table/>
         <on_load>true</on_load>
         <order>100</order>
-        <reverse_if_false>true</reverse_if_false>
-        <run_scripts>true</run_scripts>
-        <script_false><![CDATA[function onCondition() {
-	g_form.setSectionDisplay('audit',true);
-}]]></script_false>
-        <script_true><![CDATA[function onCondition() {
-	g_form.setSectionDisplay('audit',false);
-}]]></script_true>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false/>
+        <script_true/>
         <set_values/>
-        <short_description>ECM Hide Legacy Audit Tab</short_description>
+        <short_description>ECM Hide Document Type - Deprecated Field</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>mike.ward</sys_created_by>
-        <sys_created_on>2018-08-30 14:28:48</sys_created_on>
+        <sys_created_on>2018-09-10 23:53:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ed1750f04f18e300699aacb14210c784</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>ECM Hide Legacy Audit Tab</sys_name>
+        <sys_id>f7d1c3d44fe4e3001e6cb4fe0210c768</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ECM Hide Document Type - Deprecated Field</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_ui_policy_ed1750f04f18e300699aacb14210c784</sys_update_name>
+        <sys_update_name>sys_ui_policy_f7d1c3d44fe4e3001e6cb4fe0210c768</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-09-10 23:34:41</sys_updated_on>
+        <sys_updated_on>2018-09-11 00:03:07</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui_type>0</ui_type>
         <view/>
