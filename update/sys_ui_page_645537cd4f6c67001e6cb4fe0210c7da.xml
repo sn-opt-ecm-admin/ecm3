@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[print_ecm_case_audit();
+
+function print_ecm_case_audit() {
+	var caseId = gel('ecm_case_sys_id').value;
+	var caseNum = gel('case_number').value;
+	var text;
+	var gr = new GlideRecord('x_opt_ecm_audit_content');
+	gr.addQuery('ecm_case',caseId+'');
+	gr.query();
+	if (gr.next()) {
+		
+		text = "<html><body><title>Audit File for "+caseNum+
+		"</title>"+gr.getValue('audit_content')+"</body></html>";
+				
+	} else {
+		
+		text = "<html><body><title>Audit File for "+caseNum+
+		"</title>There was no audit content found for this case.  Please contact your ECM Administrator</body></html>";
+	}
+	
+	// center dialog on screen
+	var l=(screen.width-400)/2;
+	var t=(screen.height-600)/2;
+	
+	var mywindow = window.open('', 'PRINT', 'height=400,width=600,scrollbars=1,left='+l+',top='+t);
+	mywindow.document.write(text);
+
+	setTimeout(function() { 
+		mywindow.document.close(); // necessary for IE >= 10
+		mywindow.focus(); // necessary for IE >= 10*/
+		mywindow.print();
+		mywindow.close();
+		GlideDialogWindow.get().destroy();
+	}, 1500);
+
+	
+	return true;
+}
+
+
+
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_opt_ecm_print_ecm_case_audit.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+		
+	<j:set var="jvar_pref_id" value="${JS:RP.getWindowProperties().ecm_sys_id}"/>
+	<j:set var="jvar_pref_num" value="${JS:RP.getWindowProperties().case_number}"/>
+    <input type="hidden" id="ecm_case_sys_id" name="export_set_id" value="${jvar_pref_id}" />
+    <input type="hidden" id="case_number" name="export_set_id" value="${jvar_pref_num}" />
+	
+</j:jelly>]]></html>
+        <name>print_ecm_case_audit</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-09-13 11:54:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>645537cd4f6c67001e6cb4fe0210c7da</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>print_ecm_case_audit</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_page_645537cd4f6c67001e6cb4fe0210c7da</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-09-14 15:45:28</sys_updated_on>
+    </sys_ui_page>
+</record_update>

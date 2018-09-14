@@ -4,7 +4,7 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -16,13 +16,15 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_opt_ecm_case">business_unit=consumer_affairs^audit_contentISEMPTY^EQ<item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
-            <item endquery="false" field="audit_content" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <filter_condition table="x_opt_ecm_case">stateIN6,3^audit_contentISNOTEMPTY^business_unit=consumer_affairs^audit_content_confirmed=false^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6,3"/>
+            <item endquery="false" field="audit_content" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
+            <item endquery="false" field="audit_content_confirmed" goto="false" newquery="false" operator="=" or="false" value="false"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>ECM Audit Content - Insert for  OCA</name>
+        <name>ECM Audit Content Confirm</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,38 +34,30 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-	var gr = new GlideRecord('x_opt_ecm_audit_content');
-	gr.addQuery('ecm_case',current.sys_id);
-	gr.query();
-	if (!gr.next()) {
-		gr.initialize();
-		gr.setValue('ecm_case',current.sys_id);
-		gr.setValue('audit_content',gs.getProperty('x_opt_ecm.oca.required.files.template'));
-		gr.insert();
-		current.audit_content=gr.getValue('sys_id');
-	}
-	
+
+	gs.addErrorMessage('Please confirm the audit content for this case.');
+	current.setAbortAction(true);
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mike.ward</sys_created_by>
-        <sys_created_on>2018-08-30 12:31:20</sys_created_on>
+        <sys_created_on>2018-09-14 12:44:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>525cf3604fd4e300699aacb14210c7c4</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>ECM Audit Content - Insert for  OCA</sys_name>
+        <sys_id>59be09254f642f00699aacb14210c7bf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ECM Audit Content Confirm</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_script_525cf3604fd4e300699aacb14210c7c4</sys_update_name>
+        <sys_update_name>sys_script_59be09254f642f00699aacb14210c7bf</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-09-14 12:15:16</sys_updated_on>
+        <sys_updated_on>2018-09-14 12:52:07</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=525cf3604fd4e300699aacb14210c7c4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=59be09254f642f00699aacb14210c7bf"/>
 </record_update>
