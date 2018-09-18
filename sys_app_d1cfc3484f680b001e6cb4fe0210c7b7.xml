@@ -16,21 +16,21 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_opt_ecm</source>
-        <store_correlation_id>REPOAPP0000077028</store_correlation_id>
+        <store_correlation_id>REPOAPP0000077800</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>todd.fudala</sys_created_by>
         <sys_created_on>2018-01-18 01:01:30</sys_created_on>
         <sys_id>d1cfc3484f680b001e6cb4fe0210c7b7</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-09-14 15:52:54</sys_updated_on>
+        <sys_updated_on>2018-09-18 00:49:19</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>2.0.44</version>
+        <version>2.0.45</version>
     </sys_app>
 </record_update>
