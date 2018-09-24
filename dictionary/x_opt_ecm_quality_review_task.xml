@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Quality Review" max_length="40" name="x_opt_ecm_quality_review_task" sizeclass="192" type="collection">
+    <element audit="true" extends="task" label="Quality Review" max_length="40" name="x_opt_ecm_quality_review_task" sizeclass="193" type="collection">
         <element label="Advocate Comments" max_length="4000" name="advocate_comments" type="journal_input"/>
         <element label="Advocate Response Due Date" max_length="40" name="advocate_response_due_date" type="glide_date_time"/>
         <element label="Case Number" max_length="32" name="case_number" reference="x_opt_ecm_case" type="reference"/>
