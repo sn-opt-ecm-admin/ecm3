@@ -5,13 +5,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d187c0ef4fe4a340699aacb14210c72e</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>126482e64fc963801e6cb4fe0210c765</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="ECM Process Flow">105e876c4fa80b00699aacb14210c706</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5d87c0ef4fe4a340699aacb14210c72e</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9a6482e64fc963801e6cb4fe0210c765</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>dd87c0ef4fe4a340699aacb14210c72e</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1e6482e64fc963801e6cb4fe0210c765</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>business_unit</element>
             <position>3</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5187c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9e6482e64fc963801e6cb4fe0210c765</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>doi_complaint</element>
             <position>4</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d187c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>126482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>doi_state</element>
             <position>5</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5587c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>926482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>submission_source</element>
             <position>6</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d587c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>166482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>complaint_type</element>
             <position>7</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5987c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>966482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>executive_summary_required</element>
             <position>8</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d987c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1a6482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>executive</element>
             <position>9</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5d87c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9a6482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>executive_department</element>
             <position>10</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>dd87c0ef4fe4a340699aacb14210c72f</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1e6482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>transaction_source</element>
             <position>11</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5187c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9e6482e64fc963801e6cb4fe0210c766</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>verbal_source</element>
             <position>12</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d187c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>126482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>written_source</element>
             <position>13</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5587c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>926482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -201,13 +201,13 @@
             <element>file_number</element>
             <position>14</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d587c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>166482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -215,13 +215,13 @@
             <element>.split</element>
             <position>15</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5987c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>966482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -229,13 +229,13 @@
             <element>opened_at</element>
             <position>16</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d987c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1a6482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -243,13 +243,13 @@
             <element>turn_around_time</element>
             <position>17</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5d87c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9a6482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -257,13 +257,13 @@
             <element>priority</element>
             <position>18</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>dd87c0ef4fe4a340699aacb14210c730</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1e6482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -271,153 +271,153 @@
             <element>state</element>
             <position>19</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5187c0ef4fe4a340699aacb14210c731</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9e6482e64fc963801e6cb4fe0210c767</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>referred_by</element>
-            <position>20</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d187c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>responsible_department</element>
-            <position>21</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5587c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assignment_group</element>
-            <position>22</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d587c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
-            <position>23</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5987c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>platform</element>
-            <position>24</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d987c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>25</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5d87c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
-            <position>26</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>dd87c0ef4fe4a340699aacb14210c731</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>executive_summary</element>
-            <position>27</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>5187c0ef4fe4a340699aacb14210c732</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>quality_review_comments</element>
-            <position>28</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-09-20 12:39:08</sys_created_on>
-            <sys_id>d187c0ef4fe4a340699aacb14210c732</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-09-20 12:39:08</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>awaiting_info_from</element>
-            <position>29</position>
+            <position>20</position>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-10-12 11:17:07</sys_created_on>
-            <sys_id>9eb7416e4f0963801e6cb4fe0210c7e0</sys_id>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>126482e64fc963801e6cb4fe0210c768</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-10-12 11:17:07</sys_updated_on>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>referred_by</element>
+            <position>21</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>926482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsible_department</element>
+            <position>22</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>166482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>23</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>966482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>24</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1a6482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>platform</element>
+            <position>25</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9a6482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>26</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>1e6482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>27</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>9e6482e64fc963801e6cb4fe0210c768</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>executive_summary</element>
+            <position>28</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>126482e64fc963801e6cb4fe0210c769</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quality_review_comments</element>
+            <position>29</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 15:42:16</sys_created_on>
+            <sys_id>926482e64fc963801e6cb4fe0210c769</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 15:42:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
