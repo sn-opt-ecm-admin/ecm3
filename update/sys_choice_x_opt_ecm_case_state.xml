@@ -80,6 +80,25 @@
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Awaiting Project Completion</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>3</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-11 10:31:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b723374e4f8923801e6cb4fe0210c70d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-11 10:32:58</sys_updated_on>
+            <value>21</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
             <hint>Customer Service case has been updated by agent with solution</hint>
             <inactive>false</inactive>
             <label>Resolved</label>

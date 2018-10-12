@@ -521,6 +521,7 @@
                 <element dependent_value="aca_section_1557_discrimination" hint="Sex discrimination includes, but is not limited to, discrimination based on an individual's sex, including pregnancy, related medical conditions, termination of pregnancy, gender identity and sex stereotypes." label="Sex" sequence="7" value="aca_section_1557_discrimination_sex"/>
                 <element dependent_value="ABA" label="Staff qualification" sequence="7" value="Staff qualification"/>
                 <element dependent_value="eligibility_group_employer" label="Termination Date" sequence="7" value="eligibility_group_employer_termination_date"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" label="Watchdog" sequence="7" value="Watchdog"/>
                 <element dependent_value="Processing" label="Claim submitted under the wrong member name/ID" sequence="8" value="Claim submitted under the wrong member name/ID"/>
                 <element dependent_value="Reimbursement Policy" label="Contrast and Radiopharmaceutical Materials" sequence="8" value="Contrast and Radiopharmaceutical Materials"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" label="Damaged Package" sequence="8" value="pharmacy_home_delivery_pharmacy_damaged_package"/>
@@ -853,6 +854,7 @@
         <element choice="1" dependent="level_3" dependent_on_field="level_3" label="Level 4" max_length="4000" name="level_4" type="choice" use_dependent_field="true">
             <choice>
                 <element dependent_value="sample_level2_level3" label="Four Level Sample, Level 4" sequence="0" value="sample_level2_level3_level4"/>
+                <element dependent_value="Administration" label="NA" sequence="0" value="NA"/>
                 <element dependent_value="sample_level2_level3" label="Four Level Sample, Level 4 Other" sequence="1" value="sample_level2_level3_other"/>
                 <element dependent_value="3 of 4, A1" label="4 of 4, A1a" sequence="4" value="4 of 4, A1a"/>
             </choice>

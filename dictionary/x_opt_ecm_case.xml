@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="644" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="649" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -20,6 +20,7 @@
         <element label="Audit Content" max_length="32" name="audit_content" reference="x_opt_ecm_audit_content" type="reference"/>
         <element label="Audit Content Confirmed" max_length="40" name="audit_content_confirmed" type="boolean"/>
         <element attributes="readonly_clickthrough=true" label="Audit File" max_length="32" name="audit_file" reference="dms_document" reference_qual="javascript: refqual=''; refqual = new x_opt_ecm.ECMRefQualUtil().ECMAuditFileRefQual(current); refqual;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Awaiting Info From" max_length="32" name="awaiting_info_from" reference="x_opt_ecm_awaiting_info_entity" type="reference"/>
         <element choice="1" label="Business Unit" max_length="40" name="business_unit" type="choice">
             <choice>
                 <element label="Regulatory Affairs" sequence="0" value="regulatory_affairs"/>

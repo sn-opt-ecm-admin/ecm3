@@ -9236,6 +9236,25 @@
             <value>Staff qualification</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>pharmacy_specialty_pharmacy</dependent_value>
+            <element>level_3</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Watchdog</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca</name>
+            <sequence>7</sequence>
+            <sys_created_by>cleach10</sys_created_by>
+            <sys_created_on>2018-10-11 19:56:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3f439924f45a780699aacb14210c7d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cleach10</sys_updated_by>
+            <sys_updated_on>2018-10-11 19:56:26</sys_updated_on>
+            <value>Watchdog</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>aca_section_1557_discrimination</dependent_value>
             <element>level_3</element>
             <hint/>

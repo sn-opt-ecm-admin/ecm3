@@ -407,6 +407,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>awaiting_info_from</element>
+            <position>29</position>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-10-12 11:17:07</sys_created_on>
+            <sys_id>9eb7416e4f0963801e6cb4fe0210c7e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_opt_ecm_case" sys_domain="global" view="Default view">9c494eec4f280b00699aacb14210c73e</sys_ui_section>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-12 11:17:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
