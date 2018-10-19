@@ -4,5 +4,6 @@
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="40" name="description" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Referrer" max_length="40" name="referrer" type="boolean"/>
     </element>
 </database>
