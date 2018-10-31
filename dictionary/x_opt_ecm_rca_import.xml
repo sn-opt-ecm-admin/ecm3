@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_import_set_row" label="RCA Import" max_length="40" name="x_opt_ecm_rca_import" type="collection">
         <element attributes="import_attribute_name=Level 1,edge_encryption_enabled=true" label="Level 1" max_length="40" name="u_level_1" type="string"/>
         <element attributes="import_attribute_name=Level 2,edge_encryption_enabled=true" label="Level 2" max_length="40" name="u_level_2" type="string"/>

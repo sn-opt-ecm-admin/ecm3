@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Quality Review Advocate Percentage" max_length="40" name="x_opt_ecm_quality_review_advocate_percentage" type="collection">
         <element label="Advocate" mandatory="true" max_length="32" name="advocate" reference="sys_user" reference_qual="javascript:new QualityReviewUtils().getAdvocateRefQual()" type="reference" use_reference_qualifier="advanced"/>
         <element choice="1" label="Percentage" mandatory="true" max_length="40" name="percentage" type="choice">
             <choice>
-                <element label="100" sequence="0" value="100"/>
-                <element label="50" sequence="1" value="50"/>
-                <element label="25" sequence="2" value="25"/>
-                <element label="10" sequence="3" value="10"/>
+                <element inactive_on_update="false" label="100" sequence="0" value="100"/>
+                <element inactive_on_update="false" label="50" sequence="1" value="50"/>
+                <element inactive_on_update="false" label="25" sequence="2" value="25"/>
+                <element inactive_on_update="false" label="10" sequence="3" value="10"/>
             </choice>
         </element>
         <index name="index">

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_import_set_row" label="Imp Market Legal Entity" max_length="40" name="x_opt_ecm_imp_market_legal_entity" type="collection">
         <element attributes="import_attribute_name=Legal Entity,edge_encryption_enabled=true" label="Legal Entity" max_length="85" name="u_legal_entity" type="string"/>
     </element>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="drug_name" label="Drug Name" language="en" table="x_opt_ecm_navigator_extract">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>drug_name</element>

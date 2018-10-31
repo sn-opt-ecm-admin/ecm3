@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_users_groups">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id/>
         <report_id display_value="OCA OptumRx Weekly Report Received">2bf7e3804f3997041e6cb4fe0210c776</report_id>

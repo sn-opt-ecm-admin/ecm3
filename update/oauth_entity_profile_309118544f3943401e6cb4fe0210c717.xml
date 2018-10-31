@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="oauth_entity_profile">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
     <oauth_entity_profile action="INSERT_OR_UPDATE">
         <default>true</default>
         <grant_type>client_credentials</grant_type>

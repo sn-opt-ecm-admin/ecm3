@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_color">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_color">
     <sys_report_color action="INSERT_OR_UPDATE">
         <color>#F2B411</color>
         <display>background-color:#F2B411</display>

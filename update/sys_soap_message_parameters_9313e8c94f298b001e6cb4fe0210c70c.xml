@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_soap_message_parameters">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_parameters">
     <sys_soap_message_parameters action="INSERT_OR_UPDATE">
         <name>requestHeader.applicationName</name>
         <soap_function display_value="invokeService">8d6190764fd547001e6cb4fe0210c7a4</soap_function>

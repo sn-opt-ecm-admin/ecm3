@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_range">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_range">
     <sys_report_range action="INSERT_OR_UPDATE">
         <color/>
         <color_name/>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_export_definition">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_export_definition">
     <sys_export_definition action="INSERT_OR_UPDATE">
         <field_list>name,abbreviation,active</field_list>
         <filter/>

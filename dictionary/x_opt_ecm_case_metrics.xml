@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Case Metrics" max_length="40" name="x_opt_ecm_case_metrics" type="collection">
         <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
         <element label="Case" max_length="32" name="case" reference="x_opt_ecm_case" type="reference"/>

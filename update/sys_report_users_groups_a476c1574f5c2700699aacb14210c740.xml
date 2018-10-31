@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_users_groups">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id display_value="OCA Managers" name="OCA Managers">52a056464f2007001e6cb4fe0210c77f</group_id>
         <report_id display_value="ECM Case Duration in State">8722b1094fffd7041e6cb4fe0210c720</report_id>

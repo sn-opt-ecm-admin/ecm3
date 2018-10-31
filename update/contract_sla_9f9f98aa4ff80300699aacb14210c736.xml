@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="contract_sla">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="contract_sla">
     <contract_sla action="INSERT_OR_UPDATE">
         <active>true</active>
         <cancel_condition/>

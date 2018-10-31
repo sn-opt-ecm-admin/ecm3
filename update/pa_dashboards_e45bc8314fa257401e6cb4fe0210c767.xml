@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="pa_dashboards">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards">
     <pa_dashboards action="INSERT_OR_UPDATE">
         <active>true</active>
         <breakdown_source/>
+        <color>#ffffff</color>
         <group display_value="Escalated Case Management">1834bb8b4fc7cb001e6cb4fe0210c7a9</group>
         <groups/>
         <is_breakdown>false</is_breakdown>

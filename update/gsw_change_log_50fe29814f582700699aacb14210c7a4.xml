@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="gsw_change_log">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2018-08-31 15:30:29</change_date>
         <changed_by display_value="ANGELINA KALAYTOWICZ">3ad5f4474f504b0045a4e8128110c717</changed_by>

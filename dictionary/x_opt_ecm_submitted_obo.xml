@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Submitted OBO Type" max_length="40" name="x_opt_ecm_submitted_obo" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Name" max_length="40" name="name" type="string"/>

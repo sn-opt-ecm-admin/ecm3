@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="pa_dashboards_group">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_group">
     <pa_dashboards_group action="INSERT_OR_UPDATE">
         <groups name="OCA / ORA">989a8f094f79c7401e6cb4fe0210c73d</groups>
         <name>Escalated Case Management</name>

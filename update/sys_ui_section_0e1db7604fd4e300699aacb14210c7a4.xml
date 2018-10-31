@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Audit File" section_id="0e1db7604fd4e300699aacb14210c7a4" sys_domain="global" table="x_opt_ecm_case" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>audit_content_confirmed</element>

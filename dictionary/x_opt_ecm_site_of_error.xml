@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Site of Error" max_length="40" name="x_opt_ecm_site_of_error" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Name" max_length="80" name="name" type="string"/>

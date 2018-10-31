@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_rest_message_fn_headers">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
     <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
         <name>Content-Type</name>
         <rest_message_function display_value="MemberSearch">c3bf0dee4f6d4f001e6cb4fe0210c7e7</rest_message_function>

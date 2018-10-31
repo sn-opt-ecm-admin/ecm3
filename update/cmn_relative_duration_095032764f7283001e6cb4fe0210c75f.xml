@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="cmn_relative_duration">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_relative_duration">
     <cmn_relative_duration action="INSERT_OR_UPDATE">
         <active>true</active>
         <name>Breach on ECM Case QR Response Due Date</name>

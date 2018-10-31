@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Update ECM Task Actual Duration</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var gr = new GlideRecord('x_opt_ecm_tasks');
+gr.addQuery('state','3');
+gr.addNullQuery('work_start');
+gr.addNullQuery('work_end');
+gr.query();
+while (gr.next()) {
+	gr.work_start = gr.sys_created_on;
+	gr.work_end = gr.sys_updated_on;
+	var start = new GlideDateTime();
+	start.setDisplayValue(gr.work_start.getDisplayValue());
+	var end = new GlideDateTime();
+	end.setDisplayValue(gr.work_end.getDisplayValue());
+	gr.calendar_duration = GlideDateTime.subtract(start, end);
+	gr.update();
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>mike.ward</sys_created_by>
+        <sys_created_on>2018-10-26 10:26:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1c2149874f552300699aacb14210c74e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update ECM Task Actual Duration</sys_name>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_script_fix_1c2149874f552300699aacb14210c74e</sys_update_name>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-10-26 10:26:23</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

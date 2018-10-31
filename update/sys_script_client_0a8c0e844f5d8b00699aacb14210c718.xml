@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -9,6 +8,7 @@ If the contact is also the member, do not show the Member/Provider section.&#13;
 If the contact is also the patient, do not show the Patient section.</description>
         <field>account</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Show/Hide Section-Fields onLoad</name>
         <order/>

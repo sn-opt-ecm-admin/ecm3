@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ui_script">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
     <sys_ui_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <description/>
@@ -227,6 +226,7 @@ c){"dt"===a.namespace&&g.select.init(new g.Api(c))});return g.select});
         <sys_update_name>sys_ui_script_7419ff364f828340699aacb14210c732</sys_update_name>
         <sys_updated_by>todd.fudala</sys_updated_by>
         <sys_updated_on>2017-11-13 19:05:49</sys_updated_on>
+        <ui_type>0</ui_type>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_email_client_template">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_client_template">
     <sys_email_client_template action="INSERT_OR_UPDATE">
         <blind_copied/>
         <body/>

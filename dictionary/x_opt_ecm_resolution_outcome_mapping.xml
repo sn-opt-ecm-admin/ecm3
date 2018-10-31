@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Resolution Outcome Mapping" max_length="40" name="x_opt_ecm_resolution_outcome_mapping" type="collection">
         <element label="Outcome" max_length="50" name="outcome" reference="x_opt_ecm_resolution_outcome" type="reference"/>
         <element label="Outcome Subtype" max_length="32" name="outcome_subtype" reference="x_opt_ecm_resolution_outcome_subtypes" type="reference"/>

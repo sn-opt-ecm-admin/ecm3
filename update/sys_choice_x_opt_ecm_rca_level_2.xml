@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="level_2" table="x_opt_ecm_rca" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>eligibility</dependent_value>
@@ -1354,7 +1353,7 @@
             <dependent_value>Behavioral</dependent_value>
             <element>level_2</element>
             <hint/>
-            <inactive>false</inactive>
+            <inactive>true</inactive>
             <label>Other - document in comments section</label>
             <language>en</language>
             <name>x_opt_ecm_rca</name>
@@ -1364,9 +1363,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b62eadde4f2d53041e6cb4fe0210c779</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>cleach10</sys_updated_by>
-            <sys_updated_on>2018-04-20 19:46:51</sys_updated_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-10-31 10:42:29</sys_updated_on>
             <value>Other - document in comments section</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

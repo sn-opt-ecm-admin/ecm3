@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Audit Content" max_length="40" name="x_opt_ecm_audit_content" type="collection">
         <element label="Audit Content" max_length="8000" name="audit_content" type="html"/>
         <element label="ECM Case" max_length="32" name="ecm_case" reference="x_opt_ecm_case" type="reference"/>

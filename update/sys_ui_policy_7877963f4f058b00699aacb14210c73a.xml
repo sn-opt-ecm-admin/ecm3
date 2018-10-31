@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_policy">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_opt_ecm_case">submitted_on_behalf_of=d683ba0e4f604300699aacb14210c7b4^ORsubmitted_on_behalf_of=e7733eca4f604300699aacb14210c7e1^contact_relationship=physician_provider_service^EQ<item display_table="x_opt_ecm_submitted_obo" display_value="Par Provider" endquery="false" field="submitted_on_behalf_of" goto="false" newquery="false" operator="=" or="false" value="d683ba0e4f604300699aacb14210c7b4"/>
@@ -10,6 +9,7 @@
         <description/>
         <global>true</global>
         <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>

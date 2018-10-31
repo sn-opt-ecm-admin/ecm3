@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_policy">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_opt_ecm_case">member_group_number=javascript:g_scratchpad.uhg_ee_policy_group_number^contact_is_member=false^NQcontact_is_member=true^contact_group_number=javascript:g_scratchpad.uhg_ee_policy_group_number^EQ<item endquery="false" field="member_group_number" goto="false" newquery="false" operator="=" or="false" value="javascript:g_scratchpad.uhg_ee_policy_group_number"/>
@@ -11,6 +10,7 @@
         <description/>
         <global>true</global>
         <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>

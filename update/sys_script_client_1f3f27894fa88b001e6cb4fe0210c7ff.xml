@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -7,6 +6,7 @@
         <description>Clears Assigned to field if Assignment group changes so that you dont have a case assigned to a person who is not part of the Assignment Group.</description>
         <field>assignment_group</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>ECM-ClearAssignedTo if AssignGrp Changes</name>
         <order/>

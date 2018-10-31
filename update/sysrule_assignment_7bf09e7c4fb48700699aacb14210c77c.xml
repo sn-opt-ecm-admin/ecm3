@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysrule_assignment">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
     <sysrule_assignment action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="x_opt_ecm_case">business_unit=regulatory_affairs^assignment_group!=44cf06064f2007001e6cb4fe0210c77f^EQ<item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="regulatory_affairs"/>

@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element attributes="email_client=true" audit="true" extends="sn_customerservice_task" label="ECM Tasks" max_length="40" name="x_opt_ecm_tasks" sizeclass="313" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true" audit="true" extends="sn_customerservice_task" label="ECM Tasks" max_length="40" name="x_opt_ecm_tasks" sizeclass="317" type="collection">
+        <element label="Awaiting Info Entity" max_length="32" name="awaiting_info_entity" reference="x_opt_ecm_awaiting_info_entity" type="reference"/>
         <element label="Awaiting Info From" max_length="32" name="awaiting_info_from" reference="sys_user" type="reference"/>
         <element hint="Person is not found in Awaiting Info From search.  Check this box and use email client with Task Request Information template to send to people request to people outside ServiceNow." label="Awaiting Info From Outside" max_length="40" name="awaiting_info_from_outside" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Task Reason" max_length="40" name="task_reason" type="string">
             <choice>
-                <element label="OBC" sequence="0" value="OBC"/>
-                <element label="Research" sequence="1" value="Research"/>
-                <element label="Awaiting Project Completion" sequence="2" value="Awaiting Project Completion"/>
-                <element label="Awaiting Quality Review" sequence="3" value="Awaiting Quality Review"/>
-                <element label="Consumer Due Date Modification" sequence="4" value="consumer_due_date_modification"/>
-                <element label="Regulatory Due Date Modification" sequence="5" value="regulatory_due_date_modification"/>
+                <element inactive_on_update="false" label="OBC" sequence="0" value="OBC"/>
+                <element inactive_on_update="false" label="Research" sequence="1" value="Research"/>
+                <element inactive_on_update="false" label="Awaiting Project Completion" sequence="2" value="Awaiting Project Completion"/>
+                <element inactive_on_update="false" label="Awaiting Quality Review" sequence="3" value="Awaiting Quality Review"/>
+                <element inactive_on_update="false" label="Consumer Due Date Modification" sequence="4" value="consumer_due_date_modification"/>
+                <element inactive_on_update="false" label="Regulatory Due Date Modification" sequence="5" value="regulatory_due_date_modification"/>
             </choice>
         </element>
     </element>

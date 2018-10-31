@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Navigator Extract" max_length="40" name="x_opt_ecm_navigator_extract" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Account ID" max_length="100" name="account_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Carrier ID" max_length="100" name="carrier_id" type="string"/>

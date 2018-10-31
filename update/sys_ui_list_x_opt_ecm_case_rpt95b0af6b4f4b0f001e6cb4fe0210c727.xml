@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_opt_ecm_case" version="2" view="RPT95b0af6b4f4b0f001e6cb4fe0210c727">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>

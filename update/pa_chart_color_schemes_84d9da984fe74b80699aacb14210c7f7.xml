@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="pa_chart_color_schemes">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_chart_color_schemes">
     <pa_chart_color_schemes action="INSERT_OR_UPDATE">
         <color_1 display_value="Optum Brand Orange">233a12d84fe74b80699aacb14210c7eb</color_1>
         <color_10 display_value="Optum Teal 2">000c5ed84fe74b80699aacb14210c7c5</color_10>

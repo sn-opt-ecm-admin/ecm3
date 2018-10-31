@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="level_2" label="Level 2" language="en" table="x_opt_ecm_rca">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>level_2</element>

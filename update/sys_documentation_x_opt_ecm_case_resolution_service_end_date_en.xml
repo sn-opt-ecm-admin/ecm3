@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="resolution_service_end_date" label="Final Date of Service" language="en" table="x_opt_ecm_case">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>resolution_service_end_date</element>

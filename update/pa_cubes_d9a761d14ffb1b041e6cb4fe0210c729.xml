@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="pa_cubes">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_cubes">
     <pa_cubes action="INSERT_OR_UPDATE">
         <benchmarking>false</benchmarking>
         <conditions table="x_opt_ecm_case">complaint_type!=Inquiry<item endquery="false" field="complaint_type" goto="false" newquery="false" operator="!=" or="false" value="Inquiry"/>

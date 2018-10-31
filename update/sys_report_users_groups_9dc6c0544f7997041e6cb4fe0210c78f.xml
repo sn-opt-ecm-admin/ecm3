@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_users_groups">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id/>
         <report_id display_value="OptumRx Weekly Report Resolved RCA Codes">99c6c0544f7997041e6cb4fe0210c78f</report_id>

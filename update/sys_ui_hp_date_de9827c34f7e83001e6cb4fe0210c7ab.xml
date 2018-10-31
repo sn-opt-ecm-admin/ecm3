@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ui_hp_date">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_date">
     <sys_ui_hp_date action="INSERT_OR_UPDATE">
         <date_field>opened_at</date_field>
         <date_table>x_opt_ecm_case</date_table>

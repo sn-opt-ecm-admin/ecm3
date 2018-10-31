@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="New Audit" section_id="2962dabf4f4c2300699aacb14210c74e" sys_domain="global" table="sys_db_object" version="3" view="">
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>New Audit</caption>

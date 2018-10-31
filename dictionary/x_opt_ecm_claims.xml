@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Claims" max_length="40" name="x_opt_ecm_claims" type="collection">
         <element label="Account ID" max_length="40" name="account_id" type="string"/>
         <element label="Carrier ID" max_length="40" name="carrier_id" type="string"/>

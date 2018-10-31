@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_policy">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_opt_ecm_case">submission_sourceINattorney,attorney_general,bbb,doh,doi,dol,ethics_and_integrity,external_review,medical_society,misc_state_agency,ocr_regulatory_office,ombudsman,other,state_exchange^NQdoi_complaint=yes^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="IN" or="false" value="attorney,attorney_general,bbb,doh,doi,dol,ethics_and_integrity,external_review,medical_society,misc_state_agency,ocr_regulatory_office,ombudsman,other,state_exchange"/>
@@ -9,6 +8,7 @@
         <description/>
         <global>true</global>
         <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>

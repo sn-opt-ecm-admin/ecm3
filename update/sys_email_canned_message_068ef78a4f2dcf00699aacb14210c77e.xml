@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_email_canned_message">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_canned_message">
     <sys_email_canned_message action="INSERT_OR_UPDATE">
         <active>true</active>
         <body><![CDATA[<div><strong>Executive Summary:</strong> ${executive_summary}</div>

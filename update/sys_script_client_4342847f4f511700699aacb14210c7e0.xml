@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -8,6 +7,7 @@
 There are multiple client scripts (task, csm, ecm) for this lable so the order is set to 1001 in order to run last.</description>
         <field>account</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Modify Comments Label ECM</name>
         <order>1001</order>

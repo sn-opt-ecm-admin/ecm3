@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_ui_policy">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_opt_ecm_case">resolution_dept_site_of_error=d7a663e54f9d83001e6cb4fe0210c7e7^EQ<item display_table="x_opt_ecm_site_of_error" display_value="Other" endquery="false" field="resolution_dept_site_of_error" goto="false" newquery="false" operator="=" or="false" value="d7a663e54f9d83001e6cb4fe0210c7e7"/>
@@ -8,6 +7,7 @@
         <description/>
         <global>true</global>
         <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>

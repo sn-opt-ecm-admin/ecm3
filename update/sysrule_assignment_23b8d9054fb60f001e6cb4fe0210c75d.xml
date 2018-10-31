@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysrule_assignment">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
     <sysrule_assignment action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="x_opt_ecm_quality_review_task">assignment_groupISEMPTY^EQ<item endquery="false" field="assignment_group" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>

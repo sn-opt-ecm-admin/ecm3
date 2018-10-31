@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="5615a7c44fa80b001e6cb4fe0210c70b" sys_domain="global" table="x_opt_ecm_case" version="3" view="case">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sn_res_shaper_resolution_shaper.xml</element>

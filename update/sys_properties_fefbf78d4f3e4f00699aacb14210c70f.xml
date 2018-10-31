@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_properties">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
     <sys_properties action="INSERT_OR_UPDATE">
         <choices/>
         <description>Approval engine to use for the problem_task table.  Valid options are: 'approval_rules' to use Approval Rules, 'process_guide' to use Process Guides and 'off' to turn off the approval engines for the table (set to 'off' when using Workflow to manage approvals). Off is the default setting.</description>

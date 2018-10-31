@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="ws_security_username_profile_outbound">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ws_security_username_profile_outbound">
     <ws_security_username_profile_outbound action="INSERT_OR_UPDATE">
         <name>UPM_ECM_TST</name>
         <password>4ewY/Tyun1eqdPR57zMQJg==</password>

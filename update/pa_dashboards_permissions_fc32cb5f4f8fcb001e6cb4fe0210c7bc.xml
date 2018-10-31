@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="pa_dashboards_permissions">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
     <pa_dashboards_permissions action="INSERT_OR_UPDATE">
         <dashboard display_value="Escalated Case Management - Intake">7e157fcb4fc7cb001e6cb4fe0210c7fc</dashboard>
         <delete>false</delete>

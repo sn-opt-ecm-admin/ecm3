@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_export_target">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_export_target">
     <sys_export_target action="INSERT_OR_UPDATE">
         <description>Target for Navigator File</description>
         <file_path>/navigator_ecm</file_path>

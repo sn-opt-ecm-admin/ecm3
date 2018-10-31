@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Member/Provider" section_id="56869fce4fa04300699aacb14210c70e" sys_domain="global" table="x_opt_ecm_case" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>member_carrier_id</element>

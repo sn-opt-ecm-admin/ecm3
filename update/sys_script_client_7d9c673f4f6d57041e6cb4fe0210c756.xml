@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -7,6 +6,7 @@
         <description>This script will reactivate  mandatory fields according to a snapshot of UI policies.  If the user selects a complaint type of 'Inquiry', all fields are set as optional.  This scripts turns them back to mandatory according to UI Policy conditions and UI policy actions.  Future version could fire onChange events for each an iteration of elements so that UI policy actions are re-enabled.  Also consider separating out inquiry complaints to their own record type.</description>
         <field>complaint_type</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>All Fields Optional 4 Inquiry Complaint</name>
         <order/>

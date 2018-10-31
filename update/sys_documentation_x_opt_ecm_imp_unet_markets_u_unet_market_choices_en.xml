@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="u_unet_market_choices" label="UNET Market Choices" language="en" table="x_opt_ecm_imp_unet_markets">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>u_unet_market_choices</element>

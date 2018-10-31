@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysrule_approvals">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_approvals">
     <sysrule_approvals action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="x_opt_ecm_tasks">sys_class_name=x_opt_ecm_tasks^task_reason=regulatory_due_date_modification^EQ<item endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="x_opt_ecm_tasks"/>

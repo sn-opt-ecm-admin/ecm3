@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="652" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="655" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
-                <element label="Yes" sequence="0" value="yes"/>
-                <element label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
             </choice>
         </element>
         <element label="Ack Letter Completed date" max_length="40" name="ack_letter_completed_date" type="glide_date"/>
         <element label="Ack Letter Due Date" max_length="40" name="ack_letter_due_date" type="glide_date"/>
         <element choice="1" label="Ack Letter Required" max_length="40" name="ack_letter_required" type="choice">
             <choice>
-                <element label="Yes" sequence="0" value="yes"/>
-                <element label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
             </choice>
         </element>
         <element label="Advocate Comments" max_length="4000" name="advocate_comments" type="journal_input"/>
@@ -23,8 +22,8 @@
         <element label="Awaiting Info From" max_length="32" name="awaiting_info_from" reference="x_opt_ecm_awaiting_info_entity" type="reference"/>
         <element choice="1" label="Business Unit" max_length="40" name="business_unit" type="choice">
             <choice>
-                <element label="Regulatory Affairs" sequence="0" value="regulatory_affairs"/>
-                <element label="Consumer Affairs" sequence="1" value="consumer_affairs"/>
+                <element inactive_on_update="false" label="Regulatory Affairs" sequence="0" value="regulatory_affairs"/>
+                <element inactive_on_update="false" label="Consumer Affairs" sequence="1" value="consumer_affairs"/>
             </choice>
         </element>
         <element choice="1" label="Complaint Type" max_length="32" name="complaint_type" reference="x_opt_ecm_complaint_type" reference_qual="javascript: var refqual=new ECMRefQualUtil().ECMComlaintTypeRefQual(current); refqual;" type="reference" use_reference_qualifier="advanced">
@@ -44,9 +43,9 @@
         <element label="Contact Name" max_length="120" name="contact_full_name" read_only="true" type="string"/>
         <element choice="1" label="Contact Gender" max_length="40" name="contact_gender" type="string">
             <choice>
-                <element label="Female" value="female"/>
-                <element label="Male" value="male"/>
-                <element label="N/A" value="na"/>
+                <element inactive_on_update="false" label="Female" value="female"/>
+                <element inactive_on_update="false" label="Male" value="male"/>
+                <element inactive_on_update="false" label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Contact Group Name" max_length="40" name="contact_group_name" type="string"/>
@@ -60,19 +59,19 @@
         <element label="Contact OBO Last Name" max_length="40" name="contact_obo_last_name" type="string"/>
         <element choice="1" label="Patient Relationship to Member" max_length="40" name="contact_patient_relationship" type="choice">
             <choice>
-                <element label="Child" value="child"/>
-                <element label="Collateral Dependent" value="collateral_dependent"/>
-                <element label="Domestic Partner" value="domestic_partner"/>
-                <element label="Employee" value="employee"/>
-                <element label="Handicapped Child" value="handicapped_child"/>
-                <element label="Newborn" value="newborn"/>
-                <element label="Other" value="other"/>
-                <element label="Retired Employee" value="retired_employee"/>
-                <element label="Sponsored Dependent" value="sponsored_dependent"/>
-                <element label="Spouse" value="spouse"/>
-                <element label="Stepchild" value="step_child"/>
-                <element label="Student" value="student"/>
-                <element label="Surviving Spouse" value="surviving_spouse"/>
+                <element inactive_on_update="false" label="Child" value="child"/>
+                <element inactive_on_update="false" label="Collateral Dependent" value="collateral_dependent"/>
+                <element inactive_on_update="false" label="Domestic Partner" value="domestic_partner"/>
+                <element inactive_on_update="false" label="Employee" value="employee"/>
+                <element inactive_on_update="false" label="Handicapped Child" value="handicapped_child"/>
+                <element inactive_on_update="false" label="Newborn" value="newborn"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+                <element inactive_on_update="false" label="Retired Employee" value="retired_employee"/>
+                <element inactive_on_update="false" label="Sponsored Dependent" value="sponsored_dependent"/>
+                <element inactive_on_update="false" label="Spouse" value="spouse"/>
+                <element inactive_on_update="false" label="Stepchild" value="step_child"/>
+                <element inactive_on_update="false" label="Student" value="student"/>
+                <element inactive_on_update="false" label="Surviving Spouse" value="surviving_spouse"/>
             </choice>
         </element>
         <element label="Contact Phone" max_length="40" name="contact_phone" type="string"/>
@@ -82,20 +81,20 @@
         <element label="Contact Postal Code" max_length="40" name="contact_postal_code" type="string"/>
         <element choice="1" label="Contact Relationship to Member" max_length="40" name="contact_relationship" type="choice">
             <choice>
-                <element label="Agent/Broker" sequence="0" value="agent_broker"/>
-                <element label="Applicant (Not yet enrolled)" sequence="1" value="applicant"/>
-                <element label="Attorney" sequence="2" value="attorney"/>
-                <element label="Attorney General" sequence="3" value="attorney_general"/>
-                <element label="Billing/Collection Agency" sequence="4" value="billing_collection_agency"/>
-                <element label="Insured/Participant" sequence="5" value="insured_participant"/>
-                <element label="Legislator (Gvt. Official, Senator)" sequence="6" value="legislator"/>
-                <element label="Non-insurance Customer" sequence="7" value="non_insurance_customer"/>
-                <element label="Other" sequence="8" value="other"/>
-                <element label="Physician and Provider Service" sequence="9" value="physician_provider_service"/>
-                <element label="Policyowner/Trustee/Group" sequence="10" value="policyowner_trustee_group"/>
-                <element label="Regulator (DOI, Auditor, IURO, IPRO)" sequence="11" value="regulator"/>
-                <element label="Spouse/Relative (uninsured relative to enrollee)" sequence="12" value="spouse_relative"/>
-                <element label="Third Party Claimant (Another Ins. Carrier)" sequence="13" value="third_party"/>
+                <element inactive_on_update="false" label="Agent/Broker" sequence="0" value="agent_broker"/>
+                <element inactive_on_update="false" label="Applicant (Not yet enrolled)" sequence="1" value="applicant"/>
+                <element inactive_on_update="false" label="Attorney" sequence="2" value="attorney"/>
+                <element inactive_on_update="false" label="Attorney General" sequence="3" value="attorney_general"/>
+                <element inactive_on_update="false" label="Billing/Collection Agency" sequence="4" value="billing_collection_agency"/>
+                <element inactive_on_update="false" label="Insured/Participant" sequence="5" value="insured_participant"/>
+                <element inactive_on_update="false" label="Legislator (Gvt. Official, Senator)" sequence="6" value="legislator"/>
+                <element inactive_on_update="false" label="Non-insurance Customer" sequence="7" value="non_insurance_customer"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
+                <element inactive_on_update="false" label="Physician and Provider Service" sequence="9" value="physician_provider_service"/>
+                <element inactive_on_update="false" label="Policyowner/Trustee/Group" sequence="10" value="policyowner_trustee_group"/>
+                <element inactive_on_update="false" label="Regulator (DOI, Auditor, IURO, IPRO)" sequence="11" value="regulator"/>
+                <element inactive_on_update="false" label="Spouse/Relative (uninsured relative to enrollee)" sequence="12" value="spouse_relative"/>
+                <element inactive_on_update="false" label="Third Party Claimant (Another Ins. Carrier)" sequence="13" value="third_party"/>
             </choice>
         </element>
         <element label="Contact SSN" max_length="9" name="contact_ssn" type="string"/>
@@ -103,8 +102,8 @@
         <element label="Date of Correspondence" max_length="40" name="correspondence_received_date" type="glide_date"/>
         <element choice="1" label="DOI Complaint" max_length="40" name="doi_complaint" type="choice">
             <choice>
-                <element label="Yes" sequence="0" value="yes"/>
-                <element label="No" sequence="1" value="no"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
             </choice>
         </element>
         <element label="DOI State" max_length="32" name="doi_state" reference="x_opt_im_state_location" reference_qual="parent=0e55153437d0200044e0bfc8bcbe5d9d^EQ" reference_qual_condition="parent=0e55153437d0200044e0bfc8bcbe5d9d^EQ" type="reference"/>
@@ -121,58 +120,58 @@
         <element label="Letter Review Comments" max_length="4000" name="letter_review_comments" type="journal"/>
         <element choice="1" label="Product Line" max_length="40" name="market_business" type="choice">
             <choice>
-                <element label="Behavioral Solutions" value="Behavioral Solutions"/>
-                <element label="Complex Medical Conditions" value="Complex Medical Conditions"/>
-                <element label="HI Health Innovations" value="HI Health Innovations"/>
-                <element label="International" value="International"/>
-                <element label="Optum Care" value="Optum Care"/>
-                <element label="Optum Financial" value="Optum Financial"/>
-                <element label="OptumInsight" value="OptumInsight"/>
-                <element label="OptumRx" value="OptumRx"/>
-                <element label="Payment Integrity" value="Payment Integrity"/>
-                <element label="Physical Health" value="Physical Health"/>
-                <element label="UHC" value="UHC"/>
-                <element label="Wellness Programs" value="Wellness Programs"/>
+                <element inactive_on_update="false" label="Behavioral Solutions" value="Behavioral Solutions"/>
+                <element inactive_on_update="false" label="Complex Medical Conditions" value="Complex Medical Conditions"/>
+                <element inactive_on_update="false" label="HI Health Innovations" value="HI Health Innovations"/>
+                <element inactive_on_update="false" label="International" value="International"/>
+                <element inactive_on_update="false" label="Optum Care" value="Optum Care"/>
+                <element inactive_on_update="false" label="Optum Financial" value="Optum Financial"/>
+                <element inactive_on_update="false" label="OptumInsight" value="OptumInsight"/>
+                <element inactive_on_update="false" label="OptumRx" value="OptumRx"/>
+                <element inactive_on_update="false" label="Payment Integrity" value="Payment Integrity"/>
+                <element inactive_on_update="false" label="Physical Health" value="Physical Health"/>
+                <element inactive_on_update="false" label="UHC" value="UHC"/>
+                <element inactive_on_update="false" label="Wellness Programs" value="Wellness Programs"/>
             </choice>
         </element>
         <element choice="1" label="Erisa" max_length="40" name="market_erisa" type="choice">
             <choice>
-                <element label="Yes" sequence="0" value="Yes"/>
-                <element label="No - Follow State Regulations" sequence="1" value="No - Follow State Regulations"/>
-                <element label="No - Follow Federal Regulations" sequence="2" value="No - Follow Federal Regulations"/>
-                <element label="NA" sequence="3" value="NA"/>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No - Follow State Regulations" sequence="1" value="No - Follow State Regulations"/>
+                <element inactive_on_update="false" label="No - Follow Federal Regulations" sequence="2" value="No - Follow Federal Regulations"/>
+                <element inactive_on_update="false" label="NA" sequence="3" value="NA"/>
             </choice>
         </element>
         <element choice="1" label="Funding" max_length="40" name="market_funding" type="choice">
             <choice>
-                <element label="Fully Insured" sequence="0" value="Fully Insured"/>
-                <element label="Self Funded" sequence="1" value="Self Funded"/>
-                <element label="Network" sequence="2" value="Network"/>
+                <element inactive_on_update="false" label="Fully Insured" sequence="0" value="Fully Insured"/>
+                <element inactive_on_update="false" label="Self Funded" sequence="1" value="Self Funded"/>
+                <element inactive_on_update="false" label="Network" sequence="2" value="Network"/>
             </choice>
         </element>
         <element choice="1" label="Health Plan" max_length="40" name="market_health_plan" type="choice">
             <choice>
-                <element label="Aetna" sequence="0" value="Aetna"/>
-                <element label="Blue Cross" sequence="1" value="Blue Cross"/>
-                <element label="Cigna" sequence="2" value="Cigna"/>
-                <element label="Medica" sequence="3" value="Medica"/>
-                <element label="Oscar" sequence="4" value="Oscar"/>
-                <element label="Other" sequence="5" value="Other"/>
-                <element label="Oxford" sequence="6" value="Oxford"/>
-                <element label="UHC" sequence="7" value="UHC"/>
-                <element label="NA" sequence="8" value="NA"/>
+                <element inactive_on_update="false" label="Aetna" sequence="0" value="Aetna"/>
+                <element inactive_on_update="false" label="Blue Cross" sequence="1" value="Blue Cross"/>
+                <element inactive_on_update="false" label="Cigna" sequence="2" value="Cigna"/>
+                <element inactive_on_update="false" label="Medica" sequence="3" value="Medica"/>
+                <element inactive_on_update="false" label="Oscar" sequence="4" value="Oscar"/>
+                <element inactive_on_update="false" label="Other" sequence="5" value="Other"/>
+                <element inactive_on_update="false" label="Oxford" sequence="6" value="Oxford"/>
+                <element inactive_on_update="false" label="UHC" sequence="7" value="UHC"/>
+                <element inactive_on_update="false" label="NA" sequence="8" value="NA"/>
             </choice>
         </element>
         <element label="Legal Entity" max_length="32" name="market_legal_entity" reference="x_opt_ecm_market_legal_entity" type="reference"/>
         <element choice="1" label="Product" max_length="40" name="market_product" type="choice">
             <choice>
-                <element label="Commercial" sequence="1" value="Commercial"/>
-                <element label="Direct Business" sequence="2" value="Direct Business"/>
-                <element label="Medicare" sequence="3" value="Medicare"/>
-                <element label="Medicaid" sequence="4" value="Medicaid"/>
-                <element label="Network" sequence="5" value="Network"/>
-                <element label="Non-Member" sequence="6" value="Non-Member"/>
-                <element label="NA" sequence="7" value="NA"/>
+                <element inactive_on_update="false" label="Commercial" sequence="1" value="Commercial"/>
+                <element inactive_on_update="false" label="Direct Business" sequence="2" value="Direct Business"/>
+                <element inactive_on_update="false" label="Medicare" sequence="3" value="Medicare"/>
+                <element inactive_on_update="false" label="Medicaid" sequence="4" value="Medicaid"/>
+                <element inactive_on_update="false" label="Network" sequence="5" value="Network"/>
+                <element inactive_on_update="false" label="Non-Member" sequence="6" value="Non-Member"/>
+                <element inactive_on_update="false" label="NA" sequence="7" value="NA"/>
             </choice>
         </element>
         <element label="State of Situs" max_length="32" name="market_state_of_situs" reference="x_opt_im_state_location" type="reference"/>
@@ -190,9 +189,9 @@
         <element label="Member Name" max_length="120" name="member_full_name" read_only="true" type="string"/>
         <element choice="1" label="Member Gender" max_length="40" name="member_gender" type="string">
             <choice>
-                <element label="Female" value="female"/>
-                <element label="Male" value="male"/>
-                <element label="N/A" value="na"/>
+                <element inactive_on_update="false" label="Female" value="female"/>
+                <element inactive_on_update="false" label="Male" value="male"/>
+                <element inactive_on_update="false" label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Member Group Name" max_length="40" name="member_group_name" type="string"/>
@@ -210,9 +209,9 @@
         <element label="Member State" max_length="40" name="member_state" type="string"/>
         <element choice="1" label="Modification Reason" max_length="40" name="modification_reason" type="choice">
             <choice>
-                <element label="Appeal" sequence="0" value="appeal"/>
-                <element label="Follow up" sequence="1" value="follow_up"/>
-                <element label="Extension request" sequence="2" value="extension_request"/>
+                <element inactive_on_update="false" label="Appeal" sequence="0" value="appeal"/>
+                <element inactive_on_update="false" label="Follow up" sequence="1" value="follow_up"/>
+                <element inactive_on_update="false" label="Extension request" sequence="2" value="extension_request"/>
             </choice>
         </element>
         <element label="Requested Due Date" max_length="40" name="modified_due_date" type="glide_date"/>
@@ -229,9 +228,9 @@
         <element attributes="edge_encryption_enabled=true" label="Patient Name" max_length="120" name="patient_full_name" read_only="true" type="string"/>
         <element choice="1" label="Patient Gender" max_length="40" name="patient_gender" type="string">
             <choice>
-                <element label="Female" value="female"/>
-                <element label="Male" value="male"/>
-                <element label="N/A" value="na"/>
+                <element inactive_on_update="false" label="Female" value="female"/>
+                <element inactive_on_update="false" label="Male" value="male"/>
+                <element inactive_on_update="false" label="N/A" value="na"/>
             </choice>
         </element>
         <element label="Patient Last Name" max_length="40" name="patient_lastname" type="string"/>
@@ -242,34 +241,34 @@
         <element label="Patient Postal Code" max_length="40" name="patient_postal_code" type="string"/>
         <element choice="1" label="Patient Relationship to Member" max_length="40" name="patient_relationship" type="choice">
             <choice>
-                <element label="Child" value="child"/>
-                <element label="Collateral Dependent" value="collateral_dependent"/>
-                <element label="Domestic Partner" value="domestic_partner"/>
-                <element label="Employee" value="employee"/>
-                <element label="Handicapped Child" value="handicapped_child"/>
-                <element label="Newborn" value="newborn"/>
-                <element label="Other" value="other"/>
-                <element label="Retired Employee" value="retired_employee"/>
-                <element label="Sponsored Dependent" value="sponsored_dependent"/>
-                <element label="Spouse" value="spouse"/>
-                <element label="Stepchild" value="step_child"/>
-                <element label="Student" value="student"/>
-                <element label="Surviving Spouse" value="surviving_spouse"/>
+                <element inactive_on_update="false" label="Child" value="child"/>
+                <element inactive_on_update="false" label="Collateral Dependent" value="collateral_dependent"/>
+                <element inactive_on_update="false" label="Domestic Partner" value="domestic_partner"/>
+                <element inactive_on_update="false" label="Employee" value="employee"/>
+                <element inactive_on_update="false" label="Handicapped Child" value="handicapped_child"/>
+                <element inactive_on_update="false" label="Newborn" value="newborn"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+                <element inactive_on_update="false" label="Retired Employee" value="retired_employee"/>
+                <element inactive_on_update="false" label="Sponsored Dependent" value="sponsored_dependent"/>
+                <element inactive_on_update="false" label="Spouse" value="spouse"/>
+                <element inactive_on_update="false" label="Stepchild" value="step_child"/>
+                <element inactive_on_update="false" label="Student" value="student"/>
+                <element inactive_on_update="false" label="Surviving Spouse" value="surviving_spouse"/>
             </choice>
         </element>
         <element label="Patient SSN" max_length="9" name="patient_ssn" type="string"/>
         <element label="Patient State" max_length="40" name="patient_state" type="string"/>
         <element choice="1" label="Platform" max_length="40" name="platform" type="choice">
             <choice>
-                <element label="Cosmos" sequence="0" value="Cosmos"/>
-                <element label="Diamond" sequence="1" value="Diamond"/>
-                <element label="Facets" sequence="2" value="Facets"/>
-                <element label="Iris (mail order)" sequence="3" value="Iris (mail order)"/>
-                <element label="Oxford" sequence="4" value="Oxford"/>
-                <element label="PRIME" sequence="5" value="PRIME"/>
-                <element label="Navigator (drug related)" sequence="6" value="RxHD (drug related)"/>
-                <element label="UNET (UHC claims)" sequence="7" value="UNET (UHC claims)"/>
-                <element label="Other" sequence="8" value="Other"/>
+                <element inactive_on_update="false" label="Cosmos" sequence="0" value="Cosmos"/>
+                <element inactive_on_update="false" label="Diamond" sequence="1" value="Diamond"/>
+                <element inactive_on_update="false" label="Facets" sequence="2" value="Facets"/>
+                <element inactive_on_update="false" label="Iris (mail order)" sequence="3" value="Iris (mail order)"/>
+                <element inactive_on_update="false" label="Oxford" sequence="4" value="Oxford"/>
+                <element inactive_on_update="false" label="PRIME" sequence="5" value="PRIME"/>
+                <element inactive_on_update="false" label="Navigator (drug related)" sequence="6" value="RxHD (drug related)"/>
+                <element inactive_on_update="false" label="UNET (UHC claims)" sequence="7" value="UNET (UHC claims)"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="Other"/>
             </choice>
         </element>
         <element label="Provider" max_length="32" name="provider" reference="x_opt_im_provider" type="reference"/>
@@ -290,7 +289,7 @@
         <element default="0" label="Fine Amount" max_length="20" name="resolution_fine_amount" type="currency"/>
         <element attributes="max_ref_dropdown=100" choice="1" label="Issue Log" max_length="32" name="resolution_issue_log" reference="x_opt_ecm_issue_options" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
             <choice>
-                <element label="abc" sequence="0" value="abc"/>
+                <element inactive_on_update="false" label="abc" sequence="0" value="abc"/>
             </choice>
         </element>
         <element choice="1" label="Issue Originally Handled By" max_length="40" name="resolution_issue_originally_handled_by" reference="x_opt_ecm_original_issue_handler" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
@@ -307,17 +306,17 @@
         <element default="0" label="Prompt Pay Amount" max_length="20" name="resolution_prompt_pay_amount" type="currency"/>
         <element choice="3" label="Prompt Pay Violation" max_length="40" name="resolution_prompt_pay_violation" type="choice">
             <choice>
-                <element label="No"/>
-                <element label="Yes" value="true"/>
+                <element inactive_on_update="false" label="No"/>
+                <element inactive_on_update="false" label="Yes" value="true"/>
             </choice>
         </element>
         <element label="Responding Name" max_length="32" name="resolution_responding_name" reference="sys_user" type="reference"/>
         <element choice="1" label="Response Type" max_length="40" name="resolution_response_type" type="choice">
             <choice>
-                <element label="Verbal" sequence="0" value="Verbal"/>
-                <element label="Written" sequence="1" value="Written"/>
-                <element label="Email" sequence="2" value="Email"/>
-                <element label="Research Only" sequence="3" value="Research Only"/>
+                <element inactive_on_update="false" label="Verbal" sequence="0" value="Verbal"/>
+                <element inactive_on_update="false" label="Written" sequence="1" value="Written"/>
+                <element inactive_on_update="false" label="Email" sequence="2" value="Email"/>
+                <element inactive_on_update="false" label="Research Only" sequence="3" value="Research Only"/>
             </choice>
         </element>
         <element label="Final Date of Service" max_length="40" name="resolution_service_end_date" type="glide_date"/>
@@ -329,40 +328,41 @@
         <element label="Responsible Department" max_length="32" name="responsible_department" reference="x_opt_ecm_department" type="reference"/>
         <element choice="1" dependent="business_unit" dependent_on_field="business_unit" label="Submission Source" max_length="40" name="submission_source" type="choice" use_dependent_field="true">
             <choice>
-                <element dependent_value="consumer_affairs" label="Attorney" sequence="0" value="attorney"/>
-                <element dependent_value="regulatory_affairs" label="Attorney General" sequence="0" value="attorney_general"/>
-                <element dependent_value="consumer_affairs" label="BBB" sequence="1" value="bbb"/>
-                <element dependent_value="regulatory_affairs" label="DMHC" sequence="1" value="dmhc"/>
-                <element dependent_value="consumer_affairs" label="Corporate Contact" sequence="2" value="corporate_contact"/>
-                <element dependent_value="regulatory_affairs" label="DOH" sequence="2" value="doh"/>
-                <element dependent_value="regulatory_affairs" label="DOI" sequence="3" value="doi"/>
-                <element dependent_value="consumer_affairs" label="Elected Official" sequence="3" value="elected_official"/>
-                <element dependent_value="regulatory_affairs" label="DOL" sequence="4" value="dol"/>
-                <element dependent_value="consumer_affairs" label="Ethics &amp; Integrity" sequence="4" value="ethics_and_integrity"/>
-                <element dependent_value="consumer_affairs" label="Executive" sequence="5" value="executive"/>
-                <element dependent_value="regulatory_affairs" label="External Review" sequence="5" value="external_review"/>
-                <element dependent_value="regulatory_affairs" label="Medical Society" sequence="6" value="medical_society"/>
-                <element dependent_value="consumer_affairs" label="OCR - Civil Rights Appeals" sequence="6" value="ocr_civil_rights_appeals"/>
-                <element dependent_value="regulatory_affairs" label="Member/Provider Direct" sequence="7" value="member_provider_direct"/>
-                <element dependent_value="consumer_affairs" label="OCR - Civil Rights Mailbox" sequence="7" value="ocr_civil_rights_mailbox"/>
-                <element dependent_value="regulatory_affairs" label="Misc. State Agency" sequence="8" value="misc_state_agency"/>
-                <element dependent_value="consumer_affairs" label="Other" sequence="8" value="other"/>
-                <element dependent_value="consumer_affairs" label="Media Relations" sequence="9" value="media_relations"/>
-                <element dependent_value="regulatory_affairs" label="OCR - Regulatory Office" sequence="9" value="ocr_regulatory_office"/>
-                <element dependent_value="regulatory_affairs" label="Ombudsman" sequence="10" value="ombudsman"/>
-                <element dependent_value="regulatory_affairs" label="Other" sequence="11" value="other"/>
-                <element dependent_value="regulatory_affairs" label="State Exchange" sequence="12" value="state_exchange"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Attorney" sequence="0" value="attorney"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Attorney General" sequence="0" value="attorney_general"/>
+                <element dependent_value="consumer_affairs" inactive="true" inactive_on_update="true" label="Media1" sequence="0" value="Media1"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="BBB" sequence="1" value="bbb"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="DMHC" sequence="1" value="dmhc"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Corporate Contact" sequence="2" value="corporate_contact"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="DOH" sequence="2" value="doh"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="DOI" sequence="3" value="doi"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Elected Official" sequence="3" value="elected_official"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="DOL" sequence="4" value="dol"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Ethics &amp; Integrity" sequence="4" value="ethics_and_integrity"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Executive" sequence="5" value="executive"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="External Review" sequence="5" value="external_review"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Medical Society" sequence="6" value="medical_society"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="OCR - Civil Rights Appeals" sequence="6" value="ocr_civil_rights_appeals"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Member/Provider Direct" sequence="7" value="member_provider_direct"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="OCR - Civil Rights Mailbox" sequence="7" value="ocr_civil_rights_mailbox"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Misc. State Agency" sequence="8" value="misc_state_agency"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Other" sequence="8" value="other"/>
+                <element dependent_value="consumer_affairs" inactive_on_update="false" label="Media Relations" sequence="9" value="media_relations"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="OCR - Regulatory Office" sequence="9" value="ocr_regulatory_office"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Ombudsman" sequence="10" value="ombudsman"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="Other" sequence="11" value="other"/>
+                <element dependent_value="regulatory_affairs" inactive_on_update="false" label="State Exchange" sequence="12" value="state_exchange"/>
             </choice>
         </element>
         <element choice="1" label="Submitted on behalf of" max_length="40" name="submitted_on_behalf_of" reference="x_opt_ecm_submitted_obo" type="reference">
             <choice>
-                <element label="Leve2ram1" sequence="0" value="Leve2ram1"/>
+                <element inactive_on_update="false" label="Leve2ram1" sequence="0" value="Leve2ram1"/>
             </choice>
         </element>
         <element choice="1" label="Transaction Source" max_length="40" name="transaction_source" type="choice">
             <choice>
-                <element label="Verbal" sequence="0" value="verbal"/>
-                <element label="Written" sequence="1" value="written"/>
+                <element inactive_on_update="false" label="Verbal" sequence="0" value="verbal"/>
+                <element inactive_on_update="false" label="Written" sequence="1" value="written"/>
             </choice>
         </element>
         <element label="Turn Around Time" max_length="40" name="turn_around_time" read_only="true" type="glide_duration"/>
@@ -371,16 +371,16 @@
         <element label="Letter Review Requested Due Date" max_length="40" name="u_letter_review_requested_due_date" type="glide_date_time"/>
         <element choice="1" label="Verbal Source" max_length="40" name="verbal_source" type="choice">
             <choice>
-                <element label="800#" sequence="0" value="800#"/>
-                <element label="Other Verbal" sequence="1" value="other_verbal"/>
+                <element inactive_on_update="false" label="800#" sequence="0" value="800#"/>
+                <element inactive_on_update="false" label="Other Verbal" sequence="1" value="other_verbal"/>
             </choice>
         </element>
         <element choice="1" label="Written Source" max_length="40" name="written_source" type="choice">
             <choice>
-                <element label="Email" sequence="0" value="Email"/>
-                <element label="Paper" sequence="1" value="Paper"/>
-                <element label="Fax" sequence="2" value="Fax"/>
-                <element label="Online" sequence="3" value="Online"/>
+                <element inactive_on_update="false" label="Email" sequence="0" value="Email"/>
+                <element inactive_on_update="false" label="Paper" sequence="1" value="Paper"/>
+                <element inactive_on_update="false" label="Fax" sequence="2" value="Fax"/>
+                <element inactive_on_update="false" label="Online" sequence="3" value="Online"/>
             </choice>
         </element>
     </element>

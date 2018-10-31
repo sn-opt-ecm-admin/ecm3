@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_soap_message">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message">
     <sys_soap_message action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <authentication_type/>

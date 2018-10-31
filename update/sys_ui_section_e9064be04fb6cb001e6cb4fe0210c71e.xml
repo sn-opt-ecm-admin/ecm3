@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Correspondence" section_id="e9064be04fb6cb001e6cb4fe0210c71e" sys_domain="global" table="x_opt_ecm_quality_review_task" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>correspondence</element>

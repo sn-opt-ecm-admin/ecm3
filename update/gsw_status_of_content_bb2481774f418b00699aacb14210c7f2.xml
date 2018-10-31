@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="gsw_status_of_content">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_status_of_content">
     <gsw_status_of_content action="INSERT_OR_UPDATE">
         <best_practice_allowed_ever>0</best_practice_allowed_ever>
         <checksum/>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="cmn_schedule">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_schedule">
     <cmn_schedule action="INSERT_OR_UPDATE">
         <description/>
         <document/>

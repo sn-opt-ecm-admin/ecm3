@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="ecm_case" label="ECM Case" language="en" table="x_opt_ecm_audit_content">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>ecm_case</element>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_soap_message_function">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
     <sys_soap_message_function action="INSERT_OR_UPDATE">
         <authentication_type/>
         <basic_auth_password/>

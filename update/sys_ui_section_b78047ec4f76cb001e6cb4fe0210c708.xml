@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Determination" section_id="b78047ec4f76cb001e6cb4fe0210c708" sys_domain="global" table="x_opt_ecm_quality_review_task" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>determination</element>

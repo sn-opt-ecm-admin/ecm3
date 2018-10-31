@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="scheduled_data_export">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_data_export">
     <scheduled_data_export action="INSERT_OR_UPDATE">
         <active>false</active>
         <condition/>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="advocate_response_due_date" label="Advocate Response Due Date" language="en" table="x_opt_ecm_quality_review_task">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>advocate_response_due_date</element>
