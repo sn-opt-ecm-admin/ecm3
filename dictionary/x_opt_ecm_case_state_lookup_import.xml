@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="ECM Case State Lookup" max_length="40" name="x_opt_ecm_case_state_lookup_import" type="collection">
+        <element attributes="import_attribute_name=DOI State,edge_encryption_enabled=true" label="DOI State" max_length="40" name="u_doi_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="market_state_of_situs" max_length="40" name="u_market_state_of_situs" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="number" max_length="40" name="u_number" type="string"/>
+    </element>
+</database>

@@ -106,7 +106,7 @@
                 <element inactive_on_update="false" label="No" sequence="1" value="no"/>
             </choice>
         </element>
-        <element label="DOI State" max_length="32" name="doi_state" reference="x_opt_im_state_location" type="reference"/>
+        <element label="DOI State" max_length="32" name="doi_state" reference="x_opt_ecm_state_lookup" type="reference"/>
         <element label="Executive" max_length="32" name="executive" reference="sys_user" reference_qual="u_job_grade=ELT^EQ" reference_qual_condition="u_job_grade=ELT^EQ" type="reference"/>
         <element choice="1" label="Executive Department" max_length="32" name="executive_department" reference="x_opt_ecm_department" type="reference">
             <choice/>
@@ -174,7 +174,7 @@
                 <element inactive_on_update="false" label="NA" sequence="7" value="NA"/>
             </choice>
         </element>
-        <element label="State of Situs" max_length="32" name="market_state_of_situs" reference="x_opt_im_state_location" type="reference"/>
+        <element label="State of Situs" max_length="32" name="market_state_of_situs" reference="x_opt_ecm_state_lookup" type="reference"/>
         <element label="Member Account ID" max_length="40" name="member_account_id" type="string"/>
         <element label="Member Address 1" max_length="40" name="member_address_1" type="string"/>
         <element label="Member Address 2" max_length="40" name="member_address_2" type="string"/>

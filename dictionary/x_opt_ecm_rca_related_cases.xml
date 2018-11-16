@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="RCA Related Cases" max_length="40" name="x_opt_ecm_rca_related_cases" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Related RCA Case List" max_length="4000" name="related_rca_case_list" reference="x_opt_ecm_rca_case" reference_floats="true" type="glide_list"/>
+    </element>
+</database>

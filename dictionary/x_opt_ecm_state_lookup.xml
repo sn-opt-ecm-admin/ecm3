@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="State Lookup" max_length="40" name="x_opt_ecm_state_lookup" type="collection">
+        <element display="true" label="Abbreviation" max_length="10" name="abbreviation" type="string"/>
+        <element label="Name" max_length="50" name="name" type="string"/>
+    </element>
+</database>

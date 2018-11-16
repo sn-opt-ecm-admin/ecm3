@@ -95,6 +95,63 @@
             <sys_updated_on>2018-01-18 01:06:43</sys_updated_on>
             <value>Database</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Case Handling</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_root_cause</name>
+            <sequence>5</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:11:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fbe6427cdbf16f0078019806b9961902</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:11:51</sys_updated_on>
+            <value>Case Handling</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internal Procedure</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_root_cause</name>
+            <sequence>6</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:11:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8017ce3cdbf16f0078019806b99619eb</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:12:06</sys_updated_on>
+            <value>Internal Procedure</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manager Notification</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_root_cause</name>
+            <sequence>7</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:12:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f927863cdbf16f0078019806b9961982</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:12:42</sys_updated_on>
+            <value>Manager Notification</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>category_name</element>
             <name>x_opt_ecm_quality_review_root_cause</name>

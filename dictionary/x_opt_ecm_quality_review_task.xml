@@ -2,6 +2,17 @@
     <element audit="true" extends="task" label="Quality Review" max_length="40" name="x_opt_ecm_quality_review_task" sizeclass="193" type="collection">
         <element label="Advocate Comments" max_length="4000" name="advocate_comments" type="journal_input"/>
         <element label="Advocate Response Due Date" max_length="40" name="advocate_response_due_date" type="glide_date_time"/>
+        <element choice="1" label="Case Handling" max_length="40" name="case_handling" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive_on_update="false" label="Needs Improvement (external)" sequence="2" value="Needs Improvement (external)"/>
+                <element inactive_on_update="false" label="Waived By Manager" sequence="3" value="Waived By Manager"/>
+                <element inactive_on_update="false" label="N/A" sequence="4" value="N/A"/>
+            </choice>
+        </element>
+        <element label="Case Handling Comments" max_length="4000" name="case_handling_comments" type="journal_input"/>
+        <element label="Case Handling Root Cause" max_length="32" name="case_handling_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Case Handling^active=true^EQ" reference_qual_condition="category_name=Case Handling^active=true^EQ" type="glide_list"/>
         <element label="Case Number" max_length="32" name="case_number" reference="x_opt_ecm_case" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Compliance Met" max_length="40" name="compliance_met" read_only="true" type="string">
             <choice>
@@ -12,49 +23,69 @@
         <element choice="1" label="Correspondence" max_length="40" name="correspondence" type="string">
             <choice>
                 <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
-                <element inactive_on_update="false" label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive="true" inactive_on_update="true" label="Satisfactory" sequence="1" value="Satisfactory"/>
                 <element inactive_on_update="false" label="Needs Improvement (external)" sequence="2" value="Needs Improvement (external)"/>
-                <element inactive_on_update="false" label="Needs Improvement (internal)" sequence="3" value="Needs Improvement (internal)"/>
+                <element inactive="true" inactive_on_update="true" label="Needs Improvement (internal)" sequence="3" value="Needs Improvement (internal)"/>
                 <element inactive_on_update="false" label="Waived by Manager" sequence="4" value="Waived by Manager"/>
                 <element inactive_on_update="false" label="NA" sequence="5" value="NA"/>
             </choice>
         </element>
         <element label="Correspondence Comments" max_length="4000" name="correspondence_comments" type="journal_input"/>
-        <element label="Correspondence Root Cause" max_length="4000" name="correspondence_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Correspondence^EQ" reference_qual_condition="category_name=Correspondence^EQ" type="glide_list"/>
+        <element label="Correspondence Root Cause" max_length="4000" name="correspondence_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Correspondence^active=true^EQ" reference_qual_condition="category_name=Correspondence^active=true^EQ" type="glide_list"/>
         <element choice="1" label="Database" max_length="40" name="database" type="string">
             <choice>
                 <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
-                <element inactive_on_update="false" label="Satisfactory" sequence="1" value="Satisfactory"/>
-                <element inactive_on_update="false" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive="true" inactive_on_update="true" label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element inactive="true" inactive_on_update="true" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
                 <element inactive_on_update="false" label="Waived by Manager" sequence="3" value="Waived by Manager"/>
                 <element inactive_on_update="false" label="NA" sequence="4" value="NA"/>
             </choice>
         </element>
         <element label="Database Comments" max_length="4000" name="database_comments" type="journal_input"/>
-        <element label="Database Root Cause" max_length="4000" name="database_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Database^EQ" reference_qual_condition="category_name=Database^EQ" type="glide_list"/>
+        <element label="Database Root Cause" max_length="4000" name="database_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Database^active=true^EQ" reference_qual_condition="category_name=Database^active=true^EQ" type="glide_list"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Determination" max_length="40" name="determination" type="string">
             <choice>
                 <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
                 <element inactive_on_update="false" label="Needs Improvement (external)" sequence="1" value="Needs Improvement (external)"/>
-                <element inactive_on_update="false" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
+                <element inactive="true" inactive_on_update="true" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
                 <element inactive_on_update="false" label="Waived by manager" sequence="3" value="Waived by manager"/>
                 <element inactive_on_update="false" label="NA" sequence="4" value="NA"/>
             </choice>
         </element>
         <element label="Determination Comments" max_length="4000" name="determination_comments" type="journal_input"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Determination Root Cause" max_length="1024" name="determination_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Determination^EQ" reference_qual_condition="category_name=Determination^EQ" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Determination Root Cause" max_length="1024" name="determination_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Determination^active=true^EQ" reference_qual_condition="category_name=Determination^active=true^EQ" type="glide_list"/>
         <element choice="1" label="Documentation" max_length="40" name="documentation" type="string">
             <choice>
                 <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
-                <element inactive_on_update="false" label="Satisfactory" sequence="1" value="Satisfactory"/>
-                <element inactive_on_update="false" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive="true" inactive_on_update="true" label="Satisfactory" sequence="1" value="Satisfactory"/>
+                <element inactive="true" inactive_on_update="true" label="Needs Improvement (internal)" sequence="2" value="Needs Improvement (internal)"/>
                 <element inactive_on_update="false" label="Waived by Manager" sequence="3" value="Waived by Manager"/>
                 <element inactive_on_update="false" label="NA" sequence="4" value="NA"/>
             </choice>
         </element>
         <element label="Documentation Comments" max_length="4000" name="documentation_comments" type="journal_input"/>
-        <element label="Documentation Root Cause" max_length="4000" name="documentation_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Documentation^EQ" reference_qual_condition="category_name=Documentation^EQ" type="glide_list"/>
+        <element label="Documentation Root Cause" max_length="4000" name="documentation_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Documentation^active=true^EQ" reference_qual_condition="category_name=Documentation^active=true^EQ" type="glide_list"/>
         <element label="Initial QR Due Date" max_length="40" name="initial_qr_due_date" type="glide_date_time"/>
+        <element choice="1" label="Internal Procedure" max_length="40" name="internal_procedure" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive_on_update="false" label="Waived By Manager" sequence="2" value="Waived By Manager"/>
+                <element inactive_on_update="false" label="N/A" sequence="3" value="N/A"/>
+            </choice>
+        </element>
+        <element label="Internal Procedure Comments" max_length="4000" name="internal_procedure_comments" type="journal_input"/>
+        <element label="Internal Procedure Root Cause" max_length="32" name="internal_procedure_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Internal Procedure^active=true^EQ" reference_qual_condition="category_name=Internal Procedure^active=true^EQ" type="glide_list"/>
+        <element choice="1" label="Manager Notification" max_length="40" name="manager_notification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="0" value="Coaching/Feedback"/>
+            </choice>
+        </element>
+        <element label="Manager Notification Comments" max_length="4000" name="manager_notification_comments" type="journal_input"/>
+        <element label="Manager Notification Root Cause" max_length="32" name="manager_notification_root_cause" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Manager Notification^active=true^EQ" reference_qual_condition="category_name=Manager Notification^active=true^EQ" type="glide_list"/>
         <element label="QR Comments" max_length="4000" name="qr_comments" type="journal_input"/>
         <element label="Review Completed By" max_length="32" name="review_completed_by" read_only="true" reference="sys_user" type="reference"/>
         <element label="Review Completed Date" max_length="40" name="review_completed_date" read_only="true" type="glide_date_time"/>
@@ -62,12 +93,13 @@
         <element choice="1" label="Timely Submission" max_length="40" name="timely_submission" type="string">
             <choice>
                 <element inactive_on_update="false" label="Proficient" sequence="0" value="Proficient"/>
-                <element inactive_on_update="false" label="Needs Improvement (internal)" sequence="1" value="Needs Improvement (internal)"/>
+                <element inactive_on_update="false" label="Coaching/Feedback" sequence="1" value="Coaching/Feedback"/>
+                <element inactive="true" inactive_on_update="true" label="Needs Improvement (internal)" sequence="1" value="Needs Improvement (internal)"/>
                 <element inactive_on_update="false" label="Waived by Manager" sequence="2" value="Waived by Manager"/>
                 <element inactive_on_update="false" label="NA" sequence="3" value="NA"/>
             </choice>
         </element>
         <element label="Timely Submission Comments" max_length="4000" name="timely_submission_comments" type="journal_input"/>
-        <element label="Timely Submission Root Causes" max_length="4000" name="timely_submission_root_causes" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Timely Submission^EQ" reference_qual_condition="category_name=Timely Submission^EQ" type="glide_list"/>
+        <element label="Timely Submission Root Causes" max_length="4000" name="timely_submission_root_causes" reference="x_opt_ecm_quality_review_root_cause" reference_qual="category_name=Timely Submission^active=true^EQ" reference_qual_condition="category_name=Timely Submission^active=true^EQ" type="glide_list"/>
     </element>
 </database>

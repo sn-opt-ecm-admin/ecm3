@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Quality Review Root Cause" max_length="40" name="x_opt_ecm_quality_review_root_cause" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Category Name" max_length="40" name="category_name" type="string">
             <choice>
                 <element inactive_on_update="false" label="Determination" sequence="0" value="Determination"/>
@@ -7,6 +8,9 @@
                 <element inactive_on_update="false" label="Timely Submission" sequence="2" value="Timely Submission"/>
                 <element inactive_on_update="false" label="Correspondence" sequence="3" value="Correspondence"/>
                 <element inactive_on_update="false" label="Database" sequence="4" value="Database"/>
+                <element inactive_on_update="false" label="Case Handling" sequence="5" value="Case Handling"/>
+                <element inactive_on_update="false" label="Internal Procedure" sequence="6" value="Internal Procedure"/>
+                <element inactive_on_update="false" label="Manager Notification" sequence="7" value="Manager Notification"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" display="true" label="Root Cause Choice" max_length="100" name="root_cause_choice" type="string"/>

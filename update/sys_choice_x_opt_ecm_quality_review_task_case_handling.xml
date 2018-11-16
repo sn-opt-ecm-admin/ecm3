@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="case_handling" table="x_opt_ecm_quality_review_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_handling</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Proficient</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:54:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3b05234db356f0078019806b99619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:54:08</sys_updated_on>
+            <value>Proficient</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_handling</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coaching/Feedback</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:55:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88111634db356f0078019806b996190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:55:15</sys_updated_on>
+            <value>Coaching/Feedback</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_handling</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Needs Improvement (external)</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:55:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>842156f0db356f0078019806b996192b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:55:32</sys_updated_on>
+            <value>Needs Improvement (external)</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_handling</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Waived By Manager</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sequence>3</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:55:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80311ef0db356f0078019806b99619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:55:48</sys_updated_on>
+            <value>Waived By Manager</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>case_handling</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>N/A</label>
+            <language>en</language>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sequence>4</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:56:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18419234db356f0078019806b99619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:56:05</sys_updated_on>
+            <value>N/A</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>case_handling</element>
+            <name>x_opt_ecm_quality_review_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-11-13 12:54:08</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7bc01234db356f0078019806b99619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>case_handling</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_opt_ecm_quality_review_task_case_handling</sys_update_name>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-11-13 12:54:08</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
