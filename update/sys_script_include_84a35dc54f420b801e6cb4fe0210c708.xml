@@ -39,9 +39,11 @@ RootCauseDependencyChecker.prototype = Object.extendsObject(global.AbstractAjaxP
 		};
 		
 		var parentValue = this.getParameter("sysparm_value");
+		var fieldnum = this.getParameter("sysparm_fieldname");
 
 		var choiceCount = new GlideRecord('sys_choice');
 		choiceCount.addQuery('name', 'x_opt_ecm_rca');
+		choiceCount.addQuery('element', fieldnum);
 		choiceCount.addQuery('inactive', false);
 		choiceCount.query();
 
@@ -91,14 +93,14 @@ RootCauseDependencyChecker.prototype = Object.extendsObject(global.AbstractAjaxP
         <sys_created_on>2017-10-24 20:59:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>84a35dc54f420b801e6cb4fe0210c708</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>RootCauseDependencyChecker</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_84a35dc54f420b801e6cb4fe0210c708</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-10-26 20:59:38</sys_updated_on>
+        <sys_updated_by>msaikira</sys_updated_by>
+        <sys_updated_on>2018-12-14 11:00:23</sys_updated_on>
     </sys_script_include>
 </record_update>

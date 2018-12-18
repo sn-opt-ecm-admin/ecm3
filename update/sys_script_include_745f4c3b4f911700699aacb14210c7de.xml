@@ -72,6 +72,23 @@ ECMRefQualUtil.prototype = {
 		return 'sys_idIN' + answer; 
 	},	
 	
+	RCAUsersRefQual:function ( ) {
+		var answer  = '';
+		var usr = new GlideRecord('sys_user_has_role');
+		
+		usr.addEncodedQuery('GOTOrole.name=x_opt_ecm.rca_case_user');
+		usr.query();
+		
+		while (usr.next()) {
+			if (answer.length > 0 ) {
+				answer += (',' + usr.user); 
+			} else {
+				answer  = '' + usr. user; 
+			}
+		}
+		return 'sys_idIN' + answer; 
+	},	
+	
 	type: 'ECMRefQualUtil'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -79,7 +96,7 @@ ECMRefQualUtil.prototype = {
         <sys_created_on>2018-04-12 18:32:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>745f4c3b4f911700699aacb14210c7de</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>ECMRefQualUtil</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
@@ -87,6 +104,6 @@ ECMRefQualUtil.prototype = {
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_745f4c3b4f911700699aacb14210c7de</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-05-22 18:31:28</sys_updated_on>
+        <sys_updated_on>2018-12-10 11:34:53</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -10,7 +10,7 @@
 EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
 	getDueDate: function() {
-		
+				
 		var businessUnit = this.getParameter('sysparm_business_unit');
 		var submissionSource = this.getParameter('sysparm_submission_source');
 		var receivedDate = this.getParameter('sysparm_received_date_time');
@@ -77,14 +77,14 @@ EcmSlaDateCalculator.prototype = Object.extendsObject(global.AbstractAjaxProcess
         <sys_created_on>2017-09-05 16:17:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f215f3454f4107001e6cb4fe0210c752</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>EcmSlaDateCalculator</sys_name>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_include_f215f3454f4107001e6cb4fe0210c752</sys_update_name>
-        <sys_updated_by>john.daniel</sys_updated_by>
-        <sys_updated_on>2017-11-30 19:47:41</sys_updated_on>
+        <sys_updated_by>mike.ward</sys_updated_by>
+        <sys_updated_on>2018-12-12 21:58:33</sys_updated_on>
     </sys_script_include>
 </record_update>

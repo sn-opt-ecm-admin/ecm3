@@ -39,6 +39,25 @@
             <value>sample_level2_level3_level4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>Processing</dependent_value>
+            <element>level_4</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>sample_level2_level3_level4</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca</name>
+            <sequence>0</sequence>
+            <sys_created_by>cleach10</sys_created_by>
+            <sys_created_on>2018-12-06 16:00:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>240811dcdbda23006fc0a9a5ca96191f</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-12-06 20:31:23</sys_updated_on>
+            <value>sample_level2_level3_level4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value>sample_level2_level3</dependent_value>
             <element>level_4</element>
             <hint/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>createORACaseFromRCA</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>gs.hasRole('x_opt_ecm.advocate') &amp;&amp; gs.nil(current.ora_case_number) &amp;&amp; !(current.isNewRecord())</condition>
+        <condition>(gs.hasRole('x_opt_ecm.advocate') || gs.hasRole('admin')) &amp;&amp; gs.nil(current.ora_case_number) &amp;&amp; !(current.isNewRecord())</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -26,7 +26,54 @@
         <name>Create ORA Case</name>
         <onclick/>
         <order>100</order>
-        <script/>
+        <script><![CDATA[var newRecord = new GlideRecord("x_opt_ecm_case");
+newRecord.initialize();
+newRecord.setValue("rca_case", current.getValue("sys_id"));
+
+if(!gs.nil(current.rca_advocate))
+	newRecord.setValue("referred_by", current.getValue("rca_advocate"));
+
+if(!gs.nil(current.number))
+	newRecord.setValue("short_description", current.getValue("number"));
+
+if(!gs.nil(current.urgent) && current.urgent)
+	//newRecord.setValue("priority", 1);
+//else
+newRecord.setValue("priority", 3);
+
+if(!gs.nil(current.state_location))
+	newRecord.setValue("doi_state", current.getValue("state_location"));
+
+if(!gs.nil(current.file_number))
+	newRecord.setValue("file_number", current.getValue("file_number"));
+
+if(!gs.nil(current.rca_due_date)) {
+	var gdt = new GlideDateTime();
+	gdt.setDisplayValue(current.rca_due_date.getDisplayValue());
+	var time = new GlideTime();
+	// 6 standard hours from DST - DST offset
+	var centralOffset = (6 - (gdt.getDSTOffset()/3600000)); 
+	// current user timezone offset, less the DST offset.
+	var currentTZOffset = ((gdt.getTZOffset()/3600000) + (gdt.getDSTOffset()/3600000));
+	// set date display by subtracting difference in CST and current TZ offsets. 
+	var displayOffset = (centralOffset-(centralOffset+currentTZOffset));
+	time.setValue(displayOffset+':00:00');
+	gdt.subtract(time);
+	newRecord.due_date = gdt.getDisplayValue();
+}
+
+//if(!gs.nil(current.uhg_received_date))
+//	newRecord.setValue('uhg_received_date', "1544189291166");
+
+if(!gs.nil(current.area_for_response))
+	newRecord.setValue("area_for_rca_response", current.getValue("area_for_response"));
+
+if(!gs.nil(current.opt_business_segment))
+	newRecord.setValue("market_business", current.getValue("opt_business_segment"));
+
+newRecord.setValue("business_unit", "regulatory_affairs");
+
+action.openGlideRecord(newRecord);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -38,7 +85,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9a609ff4dbf56f0078019806b9961933</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name>Create ORA Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -47,7 +94,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_action_9a609ff4dbf56f0078019806b9961933</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-11-13 17:37:48</sys_updated_on>
+        <sys_updated_on>2018-12-13 00:28:40</sys_updated_on>
         <table>x_opt_ecm_rca_case</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

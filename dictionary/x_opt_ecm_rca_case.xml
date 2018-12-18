@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="RCA Case" max_length="40" name="x_opt_ecm_rca_case" type="collection">
-        <element choice="1" label="Area the writes Response" max_length="40" name="area_for_response" type="choice">
-            <choice/>
+        <element choice="1" label="Area that writes Response" max_length="40" name="area_for_response" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="RCA" sequence="0" value="rca"/>
+                <element inactive_on_update="false" label="ORA" sequence="1" value="ora"/>
+            </choice>
         </element>
-        <element label="DOI Due Date" max_length="40" name="doi_due_date" type="glide_date_time"/>
+        <element label="Due Date Override" max_length="40" name="due_date_override" type="boolean"/>
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Multiple" max_length="40" name="multiple" type="boolean"/>
         <element label="Multiple Complaint Details" max_length="1000" name="multiple_details" type="string"/>
         <element label="RCA Case Number" max_length="20" name="number" type="string"/>
         <element choice="1" label="Optum Business Segment" max_length="40" name="opt_business_segment" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Behavioral Solutions" value="Behavioral Solutions"/>
+                <element inactive_on_update="false" label="Complex Medical Conditions" value="Complex Medical Conditions"/>
+                <element inactive_on_update="false" label="HI Health Innovations" value="HI Health Innovations"/>
+                <element inactive_on_update="false" label="International" value="International"/>
+                <element inactive_on_update="false" label="Optum Care" value="Optum Care"/>
+                <element inactive_on_update="false" label="Optum Financial" value="Optum Financial"/>
+                <element inactive_on_update="false" label="OptumInsight" value="OptumInsight"/>
+                <element inactive_on_update="false" label="OptumRx" value="OptumRx"/>
+                <element inactive_on_update="false" label="Payment Integrity" value="Payment Integrity"/>
+                <element inactive_on_update="false" label="Physical Health" value="Physical Health"/>
+                <element inactive_on_update="false" label="UHC" value="UHC"/>
+                <element inactive_on_update="false" label="Wellness Programs" value="Wellness Programs"/>
+            </choice>
         </element>
-        <element label="ORA Advocate Name" max_length="32" name="ora_advocate" reference="sys_user" type="reference"/>
         <element label="ORA Case Number" max_length="32" name="ora_case_number" reference="x_opt_ecm_case" type="reference"/>
-        <element label="ORA Comments" max_length="4000" name="ora_comments" type="journal_input"/>
-        <element label="Date ORA submits to RCA" max_length="40" name="ora_to_rca_submit" type="glide_date_time"/>
-        <element label="Quality Feedback" max_length="4000" name="quality_feedback" type="glide_list"/>
-        <element label="Quality Review Comments" max_length="4000" name="quality_review_comments" type="journal_input"/>
-        <element label="RCA Advocate Name" max_length="32" name="rca_advocate" reference="sys_user" type="reference"/>
-        <element label="RCA Comments" max_length="4000" name="rca_comments" type="journal_input"/>
+        <element label="RCA Advocate Name" max_length="32" name="rca_advocate" reference="sys_user" reference_qual="javascript:var retval; retval=new ECMRefQualUtil().RCAUsersRefQual(); retval;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="RCA Comments" max_length="4000" name="rca_comments" type="string"/>
         <element label="RCA Due Date" max_length="40" name="rca_due_date" type="glide_date_time"/>
         <element label="Related RCA Cases" max_length="32" name="related_rca_cases" reference="x_opt_ecm_rca_related_cases" type="reference"/>
         <element label="State" max_length="32" name="state_location" reference="x_opt_ecm_state_lookup" type="reference"/>
-        <element choice="1" label="Status" max_length="40" name="status" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Open" sequence="0" value="10"/>
-            </choice>
-        </element>
-        <element label="UHG Received Date" max_length="40" name="uhg_received_date" type="glide_date_time"/>
+        <element label="UHG Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>
         <element label="Urgent Issue" max_length="40" name="urgent" type="boolean"/>
         <index name="index">
             <element name="number"/>
         </index>
         <index name="index2">
-            <element name="ora_advocate"/>
-        </index>
-        <index name="index3">
             <element name="rca_advocate"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="ora_case_number"/>
         </index>
-        <index name="index5">
+        <index name="index4">
             <element name="state_location"/>
         </index>
-        <index name="index6">
+        <index name="index5">
             <element name="related_rca_cases"/>
         </index>
     </element>

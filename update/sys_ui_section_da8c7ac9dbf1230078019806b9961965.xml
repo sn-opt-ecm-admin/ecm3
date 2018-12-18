@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Activity" section_id="da8c7ac9dbf1230078019806b9961965" sys_domain="global" table="x_opt_ecm_rca_case" version="3" view="">
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
-            <position>0</position>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-14 10:44:00</sys_created_on>
-            <sys_id>479cbec9dbf1230078019806b9961991</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
-            <sys_ui_section caption="Activity" display_value="Activity" name="x_opt_ecm_rca_case" sys_domain="global" view="Default view">da8c7ac9dbf1230078019806b9961965</sys_ui_section>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-14 10:44:00</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Activity</caption>
             <header>false</header>

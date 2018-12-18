@@ -70,7 +70,7 @@
                 <element dependent_value="Communication" inactive_on_update="false" label="Privacy" sequence="2" value="Privacy"/>
                 <element dependent_value="Behavioral" inactive_on_update="false" label="Clin Ops Support Staff" sequence="3" value="Clin Ops Support Staff"/>
                 <element dependent_value="appeal_processing" inactive_on_update="false" label="Delay" sequence="3" value="appeal_processing_delay"/>
-                <element dependent_value="Claims" inactive_on_update="false" label="Delay" sequence="3" value="Delay"/>
+                <element dependent_value="Claims" inactive_on_update="false" label="Delay" sequence="3" value="claims_delay"/>
                 <element dependent_value="benefit_administration" inactive="true" inactive_on_update="true" label="Disaster Related" sequence="3" value="benefit_administration_disaster_related"/>
                 <element dependent_value="pharmacy" inactive_on_update="false" label="Help Desk" sequence="3" value="pharmacy_help_desk"/>
                 <element dependent_value="pharmacy" inactive="true" inactive_on_update="true" label="Prior Auth" sequence="3" value="pharmacy_prior_auth"/>
@@ -224,6 +224,7 @@
                 <element dependent_value="quality_of_care_facility_staff" inactive="true" inactive_on_update="true" label="Patient safety" sequence="0" value="quality_of_care_facility_staff_patient_safety"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive="true" inactive_on_update="true" label="Patient safety" sequence="0" value="quality_of_care_clinician_clinician_staff_patient_safety"/>
                 <element dependent_value="quality_of_service_service_issues" inactive="true" inactive_on_update="true" label="Phys/Provider gave inappropriate/inaccurate benefit info or how to access health services" sequence="0" value="quality_of_service_service_issues_phys_provider_gave_inappropriate_inaccurate_benefit_info_or_how_to_access_health_services"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Processing" sequence="0" value="Processing"/>
                 <element dependent_value="pharmacy_specialty_pharmacy" inactive="true" inactive_on_update="true" label="State Mandate" sequence="0" value="pharmacy_specialty_pharmacy_state_mandate"/>
                 <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Account Restriction Hold" sequence="1" value="pharmacy_accounting_account_restriction_hold"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Address Incorrect" sequence="1" value="Address Incorrect"/>
@@ -709,7 +710,7 @@
                 <element dependent_value="Plan" inactive_on_update="false" label="OOP" sequence="11" value="OOP"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Other - document in comments section" sequence="11" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Pre-Auth charges" sequence="11" value="pharmacy_accounting_pre_auth_charges"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Processing" sequence="11" value="Processing"/>
+                <element dependent_value="Delay" inactive_on_update="false" label="Processing" sequence="11" value="claims_delay_processing"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider failed to notify of changes in availability" sequence="11" value="network_contracting_credentialing_provider_failed_to_notify_of_changes_in_availability"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Provider perception" sequence="11" value="Provider perception"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Provider referral information incorrect due to incorrect/out of date in system" sequence="11" value="Provider referral information incorrect due to incorrect/out of date in system"/>
@@ -956,6 +957,7 @@
             <choice>
                 <element dependent_value="sample_level2_level3" inactive_on_update="false" label="Four Level Sample, Level 4" sequence="0" value="sample_level2_level3_level4"/>
                 <element dependent_value="Administration" inactive_on_update="false" label="NA" sequence="0" value="NA"/>
+                <element dependent_value="Processing" inactive="true" inactive_on_update="true" label="sample_level2_level3_level4" sequence="0" value="sample_level2_level3_level4"/>
                 <element dependent_value="sample_level2_level3" inactive_on_update="false" label="Four Level Sample, Level 4 Other" sequence="1" value="sample_level2_level3_other"/>
                 <element dependent_value="3 of 4, A1" inactive_on_update="false" label="4 of 4, A1a" sequence="4" value="4 of 4, A1a"/>
             </choice>

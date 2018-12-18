@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sn_customerservice_task" label="RCA Task" max_length="40" name="x_opt_ecm_rca_task" sizeclass="15" type="collection"/>
+</database>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Awaiting Info Entity" max_length="40" name="x_opt_ecm_awaiting_info_entity" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="External" max_length="40" name="external" type="boolean"/>
         <element label="Name" max_length="40" name="name" type="string"/>
     </element>

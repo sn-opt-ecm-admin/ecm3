@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="area_for_response" table="x_opt_ecm_rca_case" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area_for_response</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCA</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_case</name>
+            <sequence>0</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-12-07 10:48:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf1a556cdb5a630078019806b9961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-12-07 10:48:28</sys_updated_on>
+            <value>rca</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area_for_response</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ORA</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_case</name>
+            <sequence>1</sequence>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-12-07 10:48:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>545a156cdb5a630078019806b996190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-12-07 10:48:59</sys_updated_on>
+            <value>ora</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>area_for_response</element>
+            <name>x_opt_ecm_rca_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mike.ward</sys_created_by>
+            <sys_created_on>2018-12-07 10:48:28</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7c3ad12cdb5a630078019806b9961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>area_for_response</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_opt_ecm_rca_case_area_for_response</sys_update_name>
+            <sys_updated_by>mike.ward</sys_updated_by>
+            <sys_updated_on>2018-12-07 10:48:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

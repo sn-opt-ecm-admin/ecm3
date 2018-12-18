@@ -3,152 +3,122 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>c40c4ff0dbf56f0078019806b9961961</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>0c51dba4db92a3006fc0a9a5ca961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>area_for_response</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>rca_advocate</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>4c0c4ff0dbf56f0078019806b9961961</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>8c51dba4db92a3006fc0a9a5ca961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>doi_due_date</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>file_number</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>cc0c4ff0dbf56f0078019806b9961961</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>0051dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>file_number</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>ora_case_number</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>400c4ff0dbf56f0078019806b9961962</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>8051dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>multiple</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>area_for_response</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>c00c4ff0dbf56f0078019806b9961962</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>0451dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>multiple_details</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>rca_due_date</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>440c4ff0dbf56f0078019806b9961962</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>8451dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>opt_business_segment</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>c40c4ff0dbf56f0078019806b9961962</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>0851dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>ora_advocate</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
+            <element>state_location</element>
+            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4451dba4db92a3006fc0a9a5ca961990</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>480c4ff0dbf56f0078019806b9961962</sys_id>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
+            <sys_id>8851dba4db92a3006fc0a9a5ca961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>ora_case_number</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>c80c4ff0dbf56f0078019806b9961962</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>ora_comments</element>
-            <list_id display_value="x_opt_ecm_rca_case" element="NULL" name="x_opt_ecm_rca_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">480c0ff0dbf56f0078019806b996195b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
-            <sys_id>4c0c4ff0dbf56f0078019806b9961962</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -162,11 +132,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>mike.ward</sys_created_by>
-            <sys_created_on>2018-11-13 17:12:45</sys_created_on>
+            <sys_created_on>2018-12-07 19:28:53</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>480c0ff0dbf56f0078019806b996195b</sys_id>
+            <sys_id>4451dba4db92a3006fc0a9a5ca961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_opt_ecm_rca_case</sys_name>
             <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -175,7 +145,7 @@
             <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
             <sys_update_name>sys_ui_list_x_opt_ecm_rca_case_null</sys_update_name>
             <sys_updated_by>mike.ward</sys_updated_by>
-            <sys_updated_on>2018-11-13 17:12:45</sys_updated_on>
+            <sys_updated_on>2018-12-07 19:28:53</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
