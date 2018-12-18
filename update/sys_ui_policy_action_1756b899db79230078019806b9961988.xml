@@ -19,7 +19,7 @@
         <sys_updated_by>mike.ward</sys_updated_by>
         <sys_updated_on>2018-11-14 19:36:03</sys_updated_on>
         <table>x_opt_ecm_rca_related_cases</table>
-        <ui_policy display_value="RCA Number is Read-Only">0a46b499db79230078019806b99619e6</ui_policy>
+        <ui_policy display_value="RCA Related Case Number Read-Only">0a46b499db79230078019806b99619e6</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
