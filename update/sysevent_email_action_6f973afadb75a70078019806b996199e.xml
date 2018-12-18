@@ -50,7 +50,7 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="ECM RCA Users">97b8b63edb75a70078019806b99619f8</recipient_groups>
+        <recipient_groups>97b8b63edb75a70078019806b99619f8</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
