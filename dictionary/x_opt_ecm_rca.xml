@@ -70,7 +70,7 @@
                 <element dependent_value="Communication" inactive_on_update="false" label="Privacy" sequence="2" value="Privacy"/>
                 <element dependent_value="Behavioral" inactive_on_update="false" label="Clin Ops Support Staff" sequence="3" value="Clin Ops Support Staff"/>
                 <element dependent_value="appeal_processing" inactive_on_update="false" label="Delay" sequence="3" value="appeal_processing_delay"/>
-                <element dependent_value="Claims" inactive_on_update="false" label="Delay" sequence="3" value="claims_delay"/>
+                <element dependent_value="claims" inactive_on_update="false" label="Delay" sequence="3" value="claims_delay"/>
                 <element dependent_value="benefit_administration" inactive="true" inactive_on_update="true" label="Disaster Related" sequence="3" value="benefit_administration_disaster_related"/>
                 <element dependent_value="pharmacy" inactive_on_update="false" label="Help Desk" sequence="3" value="pharmacy_help_desk"/>
                 <element dependent_value="pharmacy" inactive="true" inactive_on_update="true" label="Prior Auth" sequence="3" value="pharmacy_prior_auth"/>
@@ -135,14 +135,17 @@
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Agent should have directed member to appeals process" sequence="0" value="Agent should have directed member to appeals process"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Agent should have directed member to appeals process" sequence="0" value="Agent should have directed member to appeals process"/>
                 <element dependent_value="Privacy" inactive_on_update="false" label="Alleged Breach" sequence="0" value="Alleged Breach"/>
-                <element dependent_value="MAC" inactive_on_update="false" label="Appeal Incorrectly Submitted by PSAO" sequence="0" value="Appeal Incorrectly Submitted by PSAO"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Alleged Identity Theft" sequence="0" value="Alleged Identity Theft"/>
+                <element dependent_value="claims_fraud" inactive_on_update="false" label="Alleged Identity Theft" sequence="0" value="Alleged Identity Theft"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="Appeal Denial" sequence="0" value="Appeal Denial"/>
+                <element dependent_value="MAC" inactive_on_update="false" label="Appeal Incorrectly Submitted" sequence="0" value="Appeal Incorrectly Submitted"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Appeal Not Handled as Appeal" sequence="0" value="Appeal Not Handled as Appeal"/>
                 <element dependent_value="Benefit Administration" inactive_on_update="false" label="Application of Correct Benefit Plan" sequence="0" value="Application of Correct Benefit Plan"/>
                 <element dependent_value="pharmacy_accounting" inactive="true" inactive_on_update="true" label="Applied incorrectly" sequence="0" value="pharmacy_accounting_applied_incorrectly"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="ASC Groupers" sequence="0" value="network_negotiated_rate_asc_groupers"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="ASO Run Out" sequence="0" value="ASO Run Out"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Attitude of BH staff" sequence="0" value="Attitude of BH staff"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Authorization" sequence="0" value="Authorization"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Authorization" sequence="0" value="Authorization"/>
                 <element dependent_value="SCA" inactive_on_update="false" label="Authorized based on SCA that was not completed/accepted" sequence="0" value="Authorized based on SCA that was not completed/accepted"/>
                 <element dependent_value="administrative_billing_individual" inactive_on_update="false" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Automatic withdawals" sequence="0" value="Automatic withdawals"/>
@@ -157,10 +160,10 @@
                 <element dependent_value="VCC" inactive_on_update="false" label="Cannot transfer/conference" sequence="0" value="Cannot transfer/conference"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Captiva" sequence="0" value="pharmacy_home_delivery_pharmacy_captiva"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Card Locked" sequence="0" value="Card Locked"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Check Issuance/Re-Issue" sequence="0" value="Check Issuance/Re-Issue"/>
                 <element dependent_value="RMSA" inactive_on_update="false" label="Claim not on File" sequence="0" value="Claim not on File"/>
                 <element dependent_value="HRA" inactive_on_update="false" label="Claim not on File" sequence="0" value="Claim not on File"/>
                 <element dependent_value="Overpayment Recovery" inactive_on_update="false" label="Claim payment dispute" sequence="0" value="Claim payment dispute"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Claim Processing Instructions Failed to Process" sequence="0" value="Claim Processing Instructions Failed to Process"/>
                 <element dependent_value="Website/portals" inactive_on_update="false" label="Clarity of the website information/instructions" sequence="0" value="Clarity of the website information/instructions"/>
                 <element dependent_value="Set up" inactive_on_update="false" label="Co-Pay, Co-Insurance" sequence="0" value="Co-Pay, Co-Insurance"/>
                 <element dependent_value="pharmacy_retail" inactive_on_update="false" label="COB Processing" sequence="0" value="COB Processing"/>
@@ -173,9 +176,9 @@
                 <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Copay/Pharmacy Billing" sequence="0" value="pharmacy_specialty_pharmacy_copay_pharmacy_billing"/>
                 <element dependent_value="pharmacy_help_desk" inactive_on_update="false" label="Customer Service" sequence="0" value="pharmacy_help_desk_customer_service"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Deceased member" sequence="0" value="Deceased member"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Delay in processing" sequence="0" value="pharmacy_manual_claims_delay_in_processing"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Delay in updates" sequence="0" value="eligibility_individual_delay_in_updates"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Delay in updates" sequence="0" value="eligibility_group_employer_delay_in_updates"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Denial" sequence="0" value="Denial"/>
                 <element dependent_value="eligibility_group_employer" inactive="true" inactive_on_update="true" label="Dependent Status" sequence="0" value="eligibility_group_employer_dependent_status"/>
                 <element dependent_value="Medical Director" inactive_on_update="false" label="Did not call/return call at specified time" sequence="0" value="Did not call/return call at specified time"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Disagreement of acceptable professional decorum" sequence="0" value="Disagreement of acceptable professional decorum"/>
@@ -183,7 +186,6 @@
                 <element dependent_value="OON Utilization" inactive_on_update="false" label="ENRP" sequence="0" value="ENRP"/>
                 <element dependent_value="aca_section_1557_notice" inactive_on_update="false" label="Excessive documentation" sequence="0" value="aca_section_1557_notice_excessive_documentation"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Excessive wait time before being seen by physician" sequence="0" value="quality_of_service_access_to_care_issues_excessive_wait_time_before_being_seen_by_physician"/>
-                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Excluded" sequence="0" value="pharmacy_opioid_excluded"/>
                 <element dependent_value="Clin Ops Support Staff" inactive_on_update="false" label="Failure to follow-up with member" sequence="0" value="Failure to follow-up with member"/>
                 <element dependent_value="Appeals" inactive="true" inactive_on_update="true" label="Failure to process appeal determination" sequence="0" value="Failure to process appeal determination"/>
                 <element dependent_value="MAC" inactive="true" inactive_on_update="true" label="Federal Jurisdiction - Medicare" sequence="0" value="Federal Jurisdiction - Medicare"/>
@@ -200,7 +202,6 @@
                 <element dependent_value="Clinical" inactive_on_update="false" label="Medical Necessity" sequence="0" value="Medical Necessity"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="Member education regarding refill dates" sequence="0" value="pharmacy_retail_member_education_regarding_refill_dates"/>
                 <element dependent_value="appeal_processing_misroute" inactive_on_update="false" label="Misroute" sequence="0" value="appeal_processing_misroute_misroute"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="Multiple PA Causing Rejections" sequence="0" value="Multiple PA Causing Rejections"/>
                 <element dependent_value="Timely Filing" inactive_on_update="false" label="Non-Standard Contract" sequence="0" value="Non-Standard Contract"/>
                 <element dependent_value="HSA" inactive_on_update="false" label="Null" sequence="0" value="Null"/>
                 <element dependent_value="HSA" inactive_on_update="false" label="Null" sequence="0" value="Null"/>
@@ -230,6 +231,7 @@
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Address Incorrect" sequence="1" value="Address Incorrect"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="After Hours and Weekend Care" sequence="1" value="After Hours and Weekend Care"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Ancillary Charge" sequence="1" value="Ancillary Charge"/>
+                <element dependent_value="MAC" inactive="true" inactive_on_update="true" label="Appeal Incorrectly Submitted by PSAO" sequence="1" value="Appeal Incorrectly Submitted by PSAO"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Appeal Proof of Timely Filing" sequence="1" value="Appeal Proof of Timely Filing"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Appeal Result Overturned - MAC Price Changed" sequence="1" value="Appeal Result Overturned - MAC Price Changed"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Assignment of benefits" sequence="1" value="Assignment of benefits"/>
@@ -242,8 +244,9 @@
                 <element dependent_value="SCA" inactive_on_update="false" label="BH staff offered SCA but did not consider benefit requirements before negotiating SCA" sequence="1" value="BH staff offered SCA but did not consider benefit requirements before negotiating SCA"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Birthday rule" sequence="1" value="Birthday rule"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Carve outs/Exclusions" sequence="1" value="network_negotiated_rate_carve_outs_exclusions"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Check Issuance" sequence="1" value="Check Issuance"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Check Issuance" sequence="1" value="Check Issuance"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Check Issuance Delay" sequence="1" value="Check Issuance Delay"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Claim Processing Instructions Failed to Process" sequence="1" value="Claim Processing Instructions Failed to Process"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Clinical documentation issues" sequence="1" value="quality_of_care_clinician_clinician_staff_clinical_documentation_issues"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Clinical documentation issues" sequence="1" value="quality_of_care_facility_staff_clinical_documentation_issues"/>
                 <element dependent_value="aca_section_1557_discrimination" inactive_on_update="false" label="Color" sequence="1" value="aca_section_1557_discrimination_color"/>
@@ -256,19 +259,19 @@
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Customer Service" sequence="1" value="pharmacy_home_delivery_pharmacy_customer_service"/>
                 <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Data Entry Error" sequence="1" value="Data Entry Error"/>
                 <element dependent_value="Set up" inactive_on_update="false" label="Deductible" sequence="1" value="Deductible"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Delay in processing" sequence="1" value="pharmacy_manual_claims_delay_in_processing"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Demographics" sequence="1" value="Demographics"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Dialer" sequence="1" value="Dialer"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Disability" sequence="1" value="eligibility_group_employer_disability"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Disagreement of acceptable professional decorum" sequence="1" value="network_network_operations_disagreement_of_acceptable_professional_decorum"/>
                 <element dependent_value="VCC" inactive_on_update="false" label="Disconnects the caller when transferring" sequence="1" value="Disconnects the caller when transferring"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Discount Card Reversals" sequence="1" value="Discount Card Reversals"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Dissatisfied with office procedure" sequence="1" value="quality_of_service_service_issues_dissatisfied_with_office_procedure"/>
                 <element dependent_value="aca_section_1557_translation" inactive_on_update="false" label="Document Translation" sequence="1" value="aca_section_1557_translation_document_translation"/>
                 <element dependent_value="Overpayment Recovery" inactive_on_update="false" label="Double Dip" sequence="1" value="Double Dip"/>
                 <element dependent_value="HRA" inactive_on_update="false" label="Eligible Expenses" sequence="1" value="Eligible Expenses"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Excluded" sequence="1" value="pharmacy_opioid_excluded"/>
                 <element dependent_value="ABA" inactive_on_update="false" label="Failure to explain terminology" sequence="1" value="Failure to explain terminology"/>
                 <element dependent_value="Prac Mgmt/ALERT" inactive_on_update="false" label="Failure to explain terminology" sequence="1" value="Failure to explain terminology"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Inappropriately Set" sequence="1" value="Flag Inappropriately Set"/>
                 <element dependent_value="Payment Integrity" inactive_on_update="false" label="Flag not removed" sequence="1" value="Flag not removed"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Hours of operation" sequence="1" value="quality_of_service_access_to_care_issues_hours_of_operation"/>
                 <element dependent_value="pharmacy_web_portal" inactive="true" inactive_on_update="true" label="HSID" sequence="1" value="pharmacy_web_portal_hsid"/>
@@ -279,8 +282,8 @@
                 <element dependent_value="Clinical" inactive_on_update="false" label="Medical Policy" sequence="1" value="Medical Policy"/>
                 <element dependent_value="Clin Ops Support Staff" inactive_on_update="false" label="Mix-up or failure to schedule timely review" sequence="1" value="Mix-up or failure to schedule timely review"/>
                 <element dependent_value="OON Utilization" inactive_on_update="false" label="MNRP" sequence="1" value="MNRP"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="Multiple PA Causing Rejections" sequence="1" value="Multiple PA Causing Rejections"/>
                 <element dependent_value="pharmacy_order_entry" inactive="true" inactive_on_update="true" label="New CC not added to Order" sequence="1" value="pharmacy_order_entry_new_cc_not_added_to_order"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="No MD Response/Delayed Response" sequence="1" value="No MD Response/Delayed Response"/>
                 <element dependent_value="aca_section_1557_notice" inactive_on_update="false" label="Objection to non-English translations" sequence="1" value="aca_section_1557_notice_objection_to_non_english_translations"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="Order Confirmation/Accurate Order Process" sequence="1" value="pharmacy_retail_order_confirmation_accurate_order_process"/>
                 <element dependent_value="pharmacy_accounting" inactive="true" inactive_on_update="true" label="Other" sequence="1" value="pharmacy_accounting_other"/>
@@ -298,7 +301,6 @@
                 <element dependent_value="RMSA" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
                 <element dependent_value="benefit_administration_health_care_reform" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="benefit_administration_health_care_reform_other"/>
                 <element dependent_value="appeal_processing_misroute" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="appeal_processing_misroute_other"/>
-                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_help_desk" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
                 <element dependent_value="Website/portals" inactive_on_update="false" label="Other - document in comments section" sequence="1" value="Other - document in comments section_other"/>
                 <element dependent_value="administrative_billing_individual" inactive_on_update="false" label="Premium Dispute" sequence="1" value="administrative_billing_individual_premium_dispute"/>
@@ -320,7 +322,7 @@
                 <element dependent_value="Plan" inactive_on_update="false" label="Benefit limit (Not HCR)" sequence="2" value="Benefit limit (Not HCR)"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Benefits quoted wrong due load issue" sequence="2" value="Benefits quoted wrong due load issue"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Call disconnected/hung up" sequence="2" value="Call disconnected/hung up"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Claim Adjustment" sequence="2" value="Claim Adjustment"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Claim Adjustment" sequence="2" value="Claim Adjustment"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Claim not on File" sequence="2" value="Claim not on File"/>
                 <element dependent_value="SCA" inactive_on_update="false" label="Claim not paid per SCA agreement" sequence="2" value="Claim not paid per SCA agreement"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Claims not reprocessed after COB updated" sequence="2" value="Claims not reprocessed after COB updated"/>
@@ -335,6 +337,7 @@
                 <element dependent_value="Billing" inactive_on_update="false" label="Delay of receipt of billing statement" sequence="2" value="Delay of receipt of billing statement"/>
                 <element dependent_value="Set up" inactive_on_update="false" label="Demographic Updates" sequence="2" value="Demographic Updates"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Dependent Status" sequence="2" value="Dependent Status"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Discount Card Reversals" sequence="2" value="Discount Card Reversals"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Do Not Solicit" sequence="2" value="Do Not Solicit"/>
                 <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Duplicate Username/Registration" sequence="2" value="Duplicate Username/Registration"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Effective Date" sequence="2" value="eligibility_group_employer_effective_date"/>
@@ -343,9 +346,8 @@
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Facilities (waiting/exam room) are not adequate, or are too small, and/or privacy not respected" sequence="2" value="quality_of_service_service_issues_facilities_are_not_adequate_or_are_too_small_and_or_privacy_not_respected"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Failure in regards to OptumRx benefits (web, HFF, IVR, etc.)" sequence="2" value="pharmacy_benefit_failure_in_regards_to_optumrx_benefits"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Failure to enforce the provider contract" sequence="2" value="network_network_operations_failure_to_enforce_the_provider_contract"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Placed Incorrect Sanction" sequence="2" value="Flag Placed Incorrect Sanction"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Inappropriately Set" sequence="2" value="Flag Inappropriately Set"/>
                 <element dependent_value="Payment Integrity" inactive_on_update="false" label="Flagged provider" sequence="2" value="Flagged provider"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Foreign Pharmacy" sequence="2" value="Foreign Pharmacy"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Individual" sequence="2" value="Individual"/>
                 <element dependent_value="Prac Mgmt/ALERT" inactive_on_update="false" label="Information request letters sent to the wrong address" sequence="2" value="Information request letters sent to the wrong address"/>
                 <element dependent_value="Medical Director" inactive_on_update="false" label="Issue with third party peer reviewer" sequence="2" value="Issue with third party peer reviewer"/>
@@ -353,6 +355,7 @@
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Lack of understanding of the process" sequence="2" value="Lack of understanding of the process"/>
                 <element dependent_value="HRA" inactive_on_update="false" label="Medical claim adjustment" sequence="2" value="Medical claim adjustment"/>
                 <element dependent_value="Clinical" inactive_on_update="false" label="Medical Policy - Experimental/Unproven" sequence="2" value="Medical Policy - Experimental/Unproven"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="No MD Response/Delayed Response" sequence="2" value="No MD Response/Delayed Response"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="No message on answering system on how to obtain care after the office is closed" sequence="2" value="quality_of_service_access_to_care_issues_no_message_on_answering_system_on_how_to_obtain_care_after_the_office_is_closed"/>
                 <element dependent_value="pharmacy_retail" inactive_on_update="false" label="OON Pharmacy" sequence="2" value="OON Pharmacy"/>
                 <element dependent_value="pharmacy_web_portal" inactive="true" inactive_on_update="true" label="Other" sequence="2" value="pharmacy_web_portal_other"/>
@@ -361,9 +364,8 @@
                 <element dependent_value="aca_section_1557_notice" inactive_on_update="false" label="Other - document in comments section" sequence="2" value="aca_section_1557_notice_other"/>
                 <element dependent_value="Eligibility" inactive_on_update="false" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
                 <element dependent_value="eligibility_continuation_coverage" inactive_on_update="false" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Other - document in comments section" sequence="2" value="Other - document in comments section_other"/>
                 <element dependent_value="Materials" inactive_on_update="false" label="Other - document in comments section_other" sequence="2" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Over Morphine Equivalent Dosage (MED)" sequence="2" value="pharmacy_opioid_over_morphine_equivalent_dosage_med"/>
                 <element dependent_value="pharmacy_help_desk" inactive_on_update="false" label="Override" sequence="2" value="pharmacy_help_desk_override"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive="true" inactive_on_update="true" label="Patient safety – Other (describe in comments)" sequence="2" value="Patient safety – Other (describe in comments)"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive="true" inactive_on_update="true" label="Patient safety – Other (describe in comments)" sequence="2" value="Patient safety – Other (describe in comments)"/>
@@ -388,7 +390,7 @@
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Brand /Generic" sequence="3" value="pharmacy_benefit_brand_generic"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Call transfer error" sequence="3" value="Call transfer error"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Change in manufacturer" sequence="3" value="pharmacy_home_delivery_pharmacy_change_in_manufacturer"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Claim Submission" sequence="3" value="Claim Submission"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Claim Submission" sequence="3" value="Claim Submission"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Clinically unprofessional which negatively impacted clinical relationship with patient" sequence="3" value="quality_of_care_facility_staff_clinically_unprofessional_which_negatively_impacted_clinical_relationship_with_patient"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Co-Pay, Co-Insurance" sequence="3" value="Co-Pay, Co-Insurance"/>
                 <element dependent_value="COB" inactive_on_update="false" label="COB Documentation" sequence="3" value="COB Documentation"/>
@@ -406,16 +408,17 @@
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to address lab results" sequence="3" value="quality_of_care_clinician_clinician_staff_failure_to_address_lab_results"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Federal Jurisdiction – Government Program" sequence="3" value="Federal Jurisdiction – Government Program"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Fee Schedule Issue" sequence="3" value="network_negotiated_rate_fee_schedule_issue"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Placed on Incorrect TIN or Provider" sequence="3" value="Flag Placed on Incorrect TIN or Provider"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Placed Incorrect Sanction" sequence="3" value="Flag Placed Incorrect Sanction"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Foreign Pharmacy" sequence="3" value="Foreign Pharmacy"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Foreign Pharmacy" sequence="3" value="pharmacy_benefit_foreign_pharmacy"/>
                 <element dependent_value="Set up" inactive_on_update="false" label="History Conversion Accuracy" sequence="3" value="History Conversion Accuracy"/>
                 <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Infusion" sequence="3" value="Infusion"/>
+                <element dependent_value="claims_payment_integrity" inactive_on_update="false" label="Initial Clinical Review Incorrect" sequence="3" value="Initial Clinical Review Incorrect"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Initial Clinical Review Incorrect" sequence="3" value="Initial Clinical Review Incorrect"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Key Accounts" sequence="3" value="Key Accounts"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="3" value="network_network_operations_lack_of_timely_response_follow_up"/>
                 <element dependent_value="ABA" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="3" value="Lack of timely response/follow-up"/>
                 <element dependent_value="Prac Mgmt/ALERT" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="3" value="Lack of timely response/follow-up"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Licensure information requested" sequence="3" value="Licensure information requested"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Missing information" sequence="3" value="pharmacy_manual_claims_missing_information"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Non-receipt of billing statement" sequence="3" value="Non-receipt of billing statement"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Not adhering to contractual obligations regarding billing" sequence="3" value="Not adhering to contractual obligations regarding billing"/>
                 <element dependent_value="Overpayment Recovery" inactive_on_update="false" label="Notification out of compliance" sequence="3" value="Notification out of compliance"/>
@@ -427,8 +430,8 @@
                 <element dependent_value="Medical Director" inactive_on_update="false" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
                 <element dependent_value="SCA" inactive_on_update="false" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
                 <element dependent_value="administrative_billing_group_employer" inactive_on_update="false" label="Other - document in comments section" sequence="3" value="administrative_billing_group_employer_other"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Appeals" sequence="3" value="PA Appeals"/>
-                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Prior Auth" sequence="3" value="pharmacy_opioid_prior_auth"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="Other - document in comments section" sequence="3" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Over Morphine Equivalent Dosage (MED)" sequence="3" value="pharmacy_opioid_over_morphine_equivalent_dosage_med"/>
                 <element dependent_value="Clin Ops Support Staff" inactive_on_update="false" label="Privacy breach" sequence="3" value="Privacy breach"/>
                 <element dependent_value="Website/portals" inactive_on_update="false" label="Profile set-up or registration issue" sequence="3" value="Profile set-up or registration issue"/>
                 <element dependent_value="Timely Filing" inactive_on_update="false" label="Proof of Timely Filing" sequence="3" value="Proof of Timely Filing"/>
@@ -439,11 +442,11 @@
                 <element dependent_value="Appeals" inactive="true" inactive_on_update="true" label="Wrong template sent" sequence="3" value="Wrong template sent"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Bilateral Procedures" sequence="4" value="Bilateral Procedures"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Calculation of eligible expenses (MNRP vs R&amp;C)" sequence="4" value="Calculation of eligible expenses (MNRP vs R&amp;C)"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Check Issuance/Re-Issue" sequence="4" value="Check Issuance/Re-Issue"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Clarification sent to wrong number/office/contact (Member or Doctor)" sequence="4" value="pharmacy_home_delivery_pharmacy_clarification_sent_to_wrong_number_office_contact_member_or_doctor"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Clearinghouse/Provider/Member delay" sequence="4" value="Clearinghouse/Provider/Member delay"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Clearinghouse/Provider/Member delay" sequence="4" value="Clearinghouse/Provider/Member delay"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Copay/Member Responsibility/Copay Assistance or Copay Cards" sequence="4" value="pharmacy_benefit_copay_member_responsibility_copay_assistance_or_copay_cards"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Credentialing Process" sequence="4" value="network_contracting_credentialing_credentialing_process"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="CSA error" sequence="4" value="CSA error"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Customer Service Clarity" sequence="4" value="Customer Service Clarity"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Deductible" sequence="4" value="Deductible"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Did not call/return call at specified time" sequence="4" value="Did not call/return call at specified time"/>
@@ -457,16 +460,17 @@
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Failure to address lab results" sequence="4" value="quality_of_care_facility_staff_failure_to_address_lab_results"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to apply/carry out appropriate monitoring precautions" sequence="4" value="quality_of_care_clinician_clinician_staff_failure_to_apply_carry_out_appropriate_monitoring_precautions"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Federal Jurisdiction - Self-Insured/ERISA" sequence="4" value="Federal Jurisdiction - Self-Insured/ERISA"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Removal Missed Provider Verification" sequence="4" value="Flag Removal Missed Provider Verification"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Placed on Incorrect TIN or Provider" sequence="4" value="Flag Placed on Incorrect TIN or Provider"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Formulary Exclusion" sequence="4" value="pharmacy_benefit_formulary_exclusion"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Hard Copy not scanned" sequence="4" value="pharmacy_home_delivery_pharmacy_hard_copy_not_scanned"/>
                 <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Hassle Free Fill (HFF)" sequence="4" value="Hassle Free Fill (HFF)"/>
                 <element dependent_value="ABA" inactive_on_update="false" label="Lack of understanding/agreement of benefits" sequence="4" value="Lack of understanding/agreement of benefits"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Large Group" sequence="4" value="Large Group"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Lessor of language" sequence="4" value="network_negotiated_rate_lessor_of_language"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Licensure information requested" sequence="4" value="Licensure information requested"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Mail" sequence="4" value="Mail"/>
                 <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Medical Billing" sequence="4" value="pharmacy_specialty_pharmacy_medical_billing"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical Records Illegible" sequence="4" value="Medical Records Illegible"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Missing information" sequence="4" value="pharmacy_manual_claims_missing_information"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Network Contractor issue" sequence="4" value="network_network_operations_network_contractor_issue"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Not adhering to contractual obligations regarding obtaining authorization" sequence="4" value="Not adhering to contractual obligations regarding obtaining authorization"/>
                 <element dependent_value="Overpayment Recovery" inactive_on_update="false" label="Offset out of compliance" sequence="4" value="Offset out of compliance"/>
@@ -476,32 +480,31 @@
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
                 <element dependent_value="Prac Mgmt/ALERT" inactive_on_update="false" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Other - document in comments section" sequence="4" value="Other - document in comments section_other"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Approval" sequence="4" value="PA Approval"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Appeals" sequence="4" value="PA Appeals"/>
                 <element dependent_value="HRA" inactive_on_update="false" label="Pay to wrong Payee" sequence="4" value="Pay to wrong Payee"/>
+                <element dependent_value="pharmacy_retail" inactive_on_update="false" label="Pharmacy Audit" sequence="4" value="Pharmacy Audit"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Phone calls not returned in a timely manner" sequence="4" value="quality_of_service_access_to_care_issues_phone_calls_not_returned_in_a_timely_manner"/>
-                <element dependent_value="pharmacy_retail" inactive_on_update="false" label="Prescription Not Received" sequence="4" value="pharmacy_retail_prescription_not_received"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Prior Auth" sequence="4" value="pharmacy_opioid_prior_auth"/>
                 <element dependent_value="Medical Director" inactive_on_update="false" label="Privacy breach" sequence="4" value="Privacy breach"/>
                 <element dependent_value="SCA" inactive_on_update="false" label="SCA requested but adequate provider access/availability within geo access area" sequence="4" value="SCA requested but adequate provider access/availability within geo access area"/>
-                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Suspicious Activity" sequence="4" value="pharmacy_opioid_suspicious_activity"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="TAT - Shipping" sequence="4" value="pharmacy_retail_tat_shipping"/>
                 <element dependent_value="Website/portals" inactive_on_update="false" label="Technical issues" sequence="4" value="Technical issues"/>
                 <element dependent_value="pharmacy_order_entry" inactive_on_update="false" label="Verify correct shipping address" sequence="4" value="pharmacy_order_entry_verify_correct_shipping_address"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Bundling Codes" sequence="5" value="Bundling Codes"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="C-Tag" sequence="5" value="C-Tag"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Check issuance" sequence="5" value="Check issuance"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Clinical Education RPH" sequence="5" value="pharmacy_home_delivery_pharmacy_clinical_education_rph"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Coupon / Copay Assistance" sequence="5" value="Coupon / Copay Assistance"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="CSA error" sequence="5" value="CSA error"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Customer Service Courtesy/Empathy" sequence="5" value="Customer Service Courtesy/Empathy"/>
                 <element dependent_value="Benefit Administration" inactive_on_update="false" label="Eligibility Demographics" sequence="5" value="Eligibility Demographics"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Eligibility updates delayed processing" sequence="5" value="Eligibility updates delayed processing"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Eligibility updates delayed processing" sequence="5" value="Eligibility updates delayed processing"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Eligible Expenses" sequence="5" value="Eligible Expenses"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Employer Group size verification" sequence="5" value="Employer Group size verification"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="External Review" sequence="5" value="External Review"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Failure to apply/carry out appropriate monitoring precautions" sequence="5" value="quality_of_care_facility_staff_failure_to_apply_carry_out_appropriate_monitoring_precautions"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Failure to explain terminology" sequence="5" value="Failure to explain terminology"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to follow standards of clinical care – OP" sequence="5" value="quality_of_care_clinician_clinician_staff_failure_to_follow_standards_of_clinical_care_op"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Removal-Missed" sequence="5" value="Flag Removal-Missed"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Removal Missed Provider Verification" sequence="5" value="Flag Removal Missed Provider Verification"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="General dissatisfaction with process" sequence="5" value="General dissatisfaction with process"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Has No Record of Appeal Received" sequence="5" value="Has No Record of Appeal Received"/>
                 <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="HSID Health Safe ID (log in issues)" sequence="5" value="HSID Health Safe ID (log in issues)"/>
@@ -511,18 +514,19 @@
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Mail Service Saver" sequence="5" value="pharmacy_benefit_mail_service_saver"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Marketing Material" sequence="5" value="Marketing Material"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Marketing Materials" sequence="5" value="Marketing Materials"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical records misrouted/delayed" sequence="5" value="Medical records misrouted/delayed"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical Records Illegible" sequence="5" value="Medical Records Illegible"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Member Follow-up RPH" sequence="5" value="pharmacy_home_delivery_pharmacy_member_follow_up_rph"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Methodology" sequence="5" value="network_negotiated_rate_methodology"/>
                 <element dependent_value="aca_section_1557_discrimination" inactive_on_update="false" label="National Origin" sequence="5" value="aca_section_1557_discrimination_national_origin"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Not adhering to contractual obligations regarding balance billing" sequence="5" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_balance_billing"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Not adhering to expectation regarding service - attitude/professionalism" sequence="5" value="Not adhering to expectation regarding service - attitude/professionalism"/>
-                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Opt Out and fill locally" sequence="5" value="Opt Out and fill locally"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
                 <element dependent_value="Overpayment Recovery" inactive_on_update="false" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Override Request" sequence="5" value="Override Request"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Denial" sequence="5" value="PA Denial"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Other - document in comments section" sequence="5" value="Other - document in comments section_other"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Approval" sequence="5" value="PA Approval"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Payment not posted" sequence="5" value="Payment not posted"/>
+                <element dependent_value="pharmacy_retail" inactive_on_update="false" label="Pharmacy submission error" sequence="5" value="Pharmacy submission error"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Phone calls placed on hold for an excessive amount of time" sequence="5" value="quality_of_service_access_to_care_issues_phone_calls_placed_on_hold_for_an_excessive_amount_of_time"/>
                 <element dependent_value="Prac Mgmt/ALERT" inactive_on_update="false" label="Privacy breach" sequence="5" value="Privacy breach"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Retroactive Termination" sequence="5" value="eligibility_group_employer_retroactive_termination"/>
@@ -530,27 +534,28 @@
                 <element dependent_value="Set up" inactive_on_update="false" label="State Mandates" sequence="5" value="State Mandates"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Supporting Documentation" sequence="5" value="Supporting Documentation"/>
                 <element dependent_value="HRA" inactive_on_update="false" label="Supporting Documentation" sequence="5" value="Supporting Documentation"/>
+                <element dependent_value="pharmacy_opioid" inactive_on_update="false" label="Suspicious Activity" sequence="5" value="pharmacy_opioid_suspicious_activity"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="TAT - Met" sequence="5" value="pharmacy_retail_tat_met"/>
                 <element dependent_value="Website/portals" inactive_on_update="false" label="Technical support issue" sequence="5" value="Technical support issue"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="C-Tag" sequence="6" value="C-Tag"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Care Plan Oversight" sequence="6" value="Care Plan Oversight"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Claim submitted for services not rendered" sequence="6" value="Claim submitted for services not rendered"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="COB Processing" sequence="6" value="COB Processing"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Customer Service knowledge" sequence="6" value="Customer Service knowledge"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Denial of Refund/Adjustment" sequence="6" value="pharmacy_accounting_denial_of_refund_adjustment"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Doughnut Hole" sequence="6" value="pharmacy_benefit_doughnut_hole"/>
                 <element dependent_value="COB" inactive_on_update="false" label="ESRD" sequence="6" value="ESRD"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Exclusions" sequence="6" value="Exclusions"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Failure to complete history and physical" sequence="6" value="quality_of_care_facility_staff_failure_to_complete_history_and_physical"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to gather medical history" sequence="6" value="quality_of_care_clinician_clinician_staff_failure_to_gather_medical_history"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Failure to respond" sequence="6" value="Failure to respond"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Foreign Claim" sequence="6" value="Foreign Claim"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Flag Removal-Missed" sequence="6" value="Flag Removal-Missed"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Has No Record of Claim On File" sequence="6" value="Has No Record of Claim On File"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="High Dollar Claim Research" sequence="6" value="High Dollar Claim Research"/>
-                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Inaccurate / Missing Benefit Info" sequence="6" value="pharmacy_web_portal_inaccurate_missing_benefit_info"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="High Dollar Claim Research" sequence="6" value="High Dollar Claim Research"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Improvement suggestions" sequence="6" value="Improvement suggestions"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Incorrect/inappropriate instructions given" sequence="6" value="Incorrect/inappropriate instructions given"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="6" value="Lack of timely response/follow-up"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Mandatory Mail" sequence="6" value="pharmacy_benefit_mandatory_mail"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical records not received" sequence="6" value="Medical records not received"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical records misrouted/delayed" sequence="6" value="Medical records misrouted/delayed"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Missed Appointment" sequence="6" value="Missed Appointment"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="National Accounts" sequence="6" value="National Accounts"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Non-member" sequence="6" value="Non-member"/>
@@ -559,16 +564,17 @@
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Not adhering to expectation regarding timely follow-up with members" sequence="6" value="Not adhering to expectation regarding timely follow-up with members"/>
                 <element dependent_value="Benefit Administration" inactive_on_update="false" label="OON" sequence="6" value="OON"/>
                 <element dependent_value="ABA" inactive_on_update="false" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
                 <element dependent_value="aca_section_1557_discrimination" inactive_on_update="false" label="Other - document in comments section" sequence="6" value="Other - document in comments section"/>
                 <element dependent_value="Set up" inactive_on_update="false" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Other - document in comments section" sequence="6" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="PA Denial" sequence="6" value="pharmacy_specialty_pharmacy_pa_denial"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Initiation" sequence="6" value="PA Initiation"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Override Request" sequence="6" value="Override Request"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Denial" sequence="6" value="PA Denial"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Payment not posted timely" sequence="6" value="Payment not posted timely"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Phone line is busy after several attempts to call" sequence="6" value="quality_of_service_access_to_care_issues_phone_line_is_busy_after_several_attempts_to_call"/>
+                <element dependent_value="pharmacy_retail" inactive_on_update="false" label="Prescription Not Received" sequence="6" value="pharmacy_retail_prescription_not_received"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Prescription Processed Incorrectly (Prior to Pharmacist Verification)" sequence="6" value="pharmacy_home_delivery_pharmacy_prescription_processed_incorrectly_prior_to_pharmacist_verification"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="Profile/Cancel" sequence="6" value="pharmacy_retail_profile_cancel"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Rejected Claim" sequence="6" value="Rejected Claim"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Retroactive Termination" sequence="6" value="Retroactive Termination"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Set up" sequence="6" value="eligibility_group_employer_set_up"/>
                 <element dependent_value="FSA" inactive_on_update="false" label="Timely Filing" sequence="6" value="Timely Filing"/>
@@ -577,41 +583,41 @@
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="CCI Editing" sequence="7" value="CCI Editing"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Claim submitted for wrong date of service in error" sequence="7" value="Claim submitted for wrong date of service in error"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Courier" sequence="7" value="pharmacy_home_delivery_pharmacy_courier"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Denial of Refund/Adjustment" sequence="7" value="pharmacy_accounting_denial_of_refund_adjustment"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Did not act on received information" sequence="7" value="Did not act on received information"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Exception" sequence="7" value="pharmacy_benefit_exception"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Experimental/Unproven" sequence="7" value="Experimental/Unproven"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Failure to complete labs" sequence="7" value="quality_of_care_facility_staff_failure_to_complete_labs"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to identify/address medical issues" sequence="7" value="quality_of_care_clinician_clinician_staff_failure_to_identify_address_medical_issues"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Foreign Claim" sequence="7" value="Foreign Claim"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Improper/incorrect credentials/license for review" sequence="7" value="Improper/incorrect credentials/license for review"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Inaccurate Documentation" sequence="7" value="Inaccurate Documentation"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Inaccurate / Missing Benefit Info" sequence="7" value="pharmacy_web_portal_inaccurate_missing_benefit_info"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Incorrect COB info in system" sequence="7" value="Incorrect COB info in system"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Incorrect Refund/Adjustment" sequence="7" value="pharmacy_accounting_incorrect_refund_adjustment"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Insufficient billing, eligibility information" sequence="7" value="Insufficient billing, eligibility information"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Insufficient billing, eligibility information" sequence="7" value="Insufficient billing, eligibility information"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="7" value="Lack of timely response/follow-up"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Level of Care Guidelines" sequence="7" value="Level of Care Guidelines"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Mail Service Saver Plus" sequence="7" value="pharmacy_benefit_mail_service_saver_plus"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Medical records not received" sequence="7" value="Medical records not received"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Not adhering to contractual obligations regarding obtaining authorization" sequence="7" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_obtaining_authorization"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Office/exam rooms are dirty and untidy" sequence="7" value="quality_of_service_service_issues_office_exam_rooms_are_dirty and_untidy"/>
-                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Order Process Tracker" sequence="7" value="pharmacy_web_portal_order_process_tracker"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Orthonet" sequence="7" value="Orthonet"/>
                 <element dependent_value="Benefit Administration" inactive_on_update="false" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
                 <element dependent_value="MAC" inactive_on_update="false" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Other - document in comments section" sequence="7" value="Other - document in comments section_other"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Outliers" sequence="7" value="network_negotiated_rate_outliers"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Pending" sequence="7" value="PA Pending"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="PA Denial" sequence="7" value="pharmacy_specialty_pharmacy_pa_denial"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Initiation" sequence="7" value="PA Initiation"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Phone calls" sequence="7" value="Phone calls"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Premium Dispute" sequence="7" value="Premium Dispute"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Privacy breach" sequence="7" value="Privacy breach"/>
                 <element dependent_value="pharmacy_retail" inactive="true" inactive_on_update="true" label="Proactive TST/Alignment" sequence="7" value="pharmacy_retail_proactive_tst_alignment"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Quantity shortage/ incorrect medication" sequence="7" value="pharmacy_home_delivery_pharmacy_quantity_shortage_incorrect_medication"/>
                 <element dependent_value="aca_section_1557_discrimination" inactive_on_update="false" label="Race" sequence="7" value="aca_section_1557_discrimination_race"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Retail Pharmacy Submission Errors" sequence="7" value="Retail Pharmacy Submission Errors"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Rejected Claim" sequence="7" value="Rejected Claim"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Route appointment availability for preventive care services" sequence="7" value="quality_of_service_access_to_care_issues_route_appointment_availability_for_preventive_care_services"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Set up" sequence="7" value="eligibility_individual_set_up"/>
                 <element dependent_value="ABA" inactive_on_update="false" label="Staff qualification" sequence="7" value="Staff qualification"/>
                 <element dependent_value="eligibility_group_employer" inactive_on_update="false" label="Termination Date" sequence="7" value="eligibility_group_employer_termination_date"/>
-                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Watchdog" sequence="7" value="Watchdog"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Claim submitted under the wrong member name/ID" sequence="8" value="Claim submitted under the wrong member name/ID"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Contrast and Radiopharmaceutical Materials" sequence="8" value="Contrast and Radiopharmaceutical Materials"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Damaged Package" sequence="8" value="pharmacy_home_delivery_pharmacy_damaged_package"/>
@@ -619,32 +625,34 @@
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Failure to explain terminology" sequence="8" value="Failure to explain terminology"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Failure to follow standards of clinical care" sequence="8" value="quality_of_care_facility_staff_failure_to_follow_standards_of_clinical_care"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to request lab work" sequence="8" value="quality_of_care_clinician_clinician_staff_failure_to_request_lab_work"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Inaccurate Documentation" sequence="8" value="Inaccurate Documentation"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Incorrect Appeal Rights Given" sequence="8" value="Incorrect Appeal Rights Given"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Incorrect SOP or PI followed" sequence="8" value="Incorrect SOP or PI followed"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Incorrect Refund/Adjustment" sequence="8" value="pharmacy_accounting_incorrect_refund_adjustment"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Medical Necessity" sequence="8" value="Medical Necessity"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Medicare estimation" sequence="8" value="Medicare estimation"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Misroute" sequence="8" value="Misroute"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Misroute" sequence="8" value="Misroute"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="MSMS" sequence="8" value="pharmacy_benefit_msms"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Not adhering to contractual obligations regarding upfront payment" sequence="8" value="network_network_operations_not_adhering_to_contractual_obligations_regarding_upfront_payment"/>
+                <element dependent_value="claims_payment_integrity" inactive_on_update="false" label="Optum review request done in error" sequence="8" value="Optum review request done in error"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Optum review request done in error" sequence="8" value="Optum review request done in error"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Order Process Tracker" sequence="8" value="pharmacy_web_portal_order_process_tracker"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Other" sequence="8" value="pharmacy_home_delivery_pharmacy_other"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Other - document in comments section" sequence="8" value="Other - document in comments section_other"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Other Contractual Issue" sequence="8" value="network_contracting_credentialing_other_contractual_Issue"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Status Inquiries" sequence="8" value="PA Status Inquiries"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Pending" sequence="8" value="PA Pending"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Provider failed to notify Optum of changes in availability" sequence="8" value="Provider failed to notify Optum of changes in availability"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Rate Review" sequence="8" value="Rate Review"/>
                 <element dependent_value="Benefit Administration" inactive_on_update="false" label="Referral" sequence="8" value="Referral"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Reversal Request" sequence="8" value="Reversal Request"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Retail Pharmacy Submission Errors" sequence="8" value="Retail Pharmacy Submission Errors"/>
                 <element dependent_value="quality_of_service_access_to_care_issues" inactive_on_update="false" label="Routine appointment availability for symptomatic illness" sequence="8" value="quality_of_service_access_to_care_issues_routine_appointment_availability_for_symptomatic_illness"/>
                 <element dependent_value="aca_section_1557_discrimination" hint="Sex discrimination includes, but is not limited to, discrimination based on an individual's sex, including pregnancy, related medical conditions, termination of pregnancy, gender identity and sex stereotypes." inactive_on_update="false" label="Sex" sequence="8" value="aca_section_1557_discrimination_sex"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Shared Savings" sequence="8" value="network_negotiated_rate_shared_savings"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Student Status" sequence="8" value="Student Status"/>
                 <element dependent_value="Billing" inactive_on_update="false" label="Termination Non-Payment" sequence="8" value="Termination Non-Payment"/>
                 <element dependent_value="Outreach" inactive_on_update="false" label="Verses (OptumRx)" sequence="8" value="Verses (OptumRx)"/>
+                <element dependent_value="pharmacy_specialty_pharmacy" inactive_on_update="false" label="Watchdog" sequence="8" value="Watchdog"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Claim was submitted incorrectly/incompletely" sequence="9" value="Claim was submitted incorrectly/incompletely"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Co-Surgeon" sequence="9" value="Co-Surgeon"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Delay in order creation" sequence="9" value="pharmacy_home_delivery_pharmacy_delay_in_order_creation"/>
@@ -653,26 +661,26 @@
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Failure to use standardized assessment tool" sequence="9" value="quality_of_care_clinician_clinician_staff_failure_to_use_standardized_assessment_tool"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="HealthCare Reform (HCR)" sequence="9" value="HealthCare Reform (HCR)"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Incorrect Determination" sequence="9" value="Incorrect Determination"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records Illegible" sequence="9" value="Medical Records Illegible"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Incorrect SOP or PI followed" sequence="9" value="Incorrect SOP or PI followed"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Multiple requests for COB info" sequence="9" value="Multiple requests for COB info"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Network Adequacy" sequence="9" value="Network Adequacy"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Not adhering to expectation regarding service - attitude/professionalism" sequence="9" value="network_network_operations_not_adhering_to_expectation_regarding_service_attitude_professionalism"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Notification" sequence="9" value="Notification"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Notification" sequence="9" value="Notification"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Orthonet" sequence="9" value="Orthonet"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="OTC" sequence="9" value="pharmacy_benefit_otc"/>
-                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Outages" sequence="9" value="pharmacy_web_portal_outages"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Other - document in comments section" sequence="9" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Other - document in comments section" sequence="9" value="Other - document in comments section_other"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="PA Status Inquiries" sequence="9" value="PA Status Inquiries"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Par Status" sequence="9" value="network_contracting_credentialing_par_status"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Payment applied incorrectly" sequence="9" value="Payment applied incorrectly"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Peer to Peer process" sequence="9" value="Peer to Peer process"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Physician/provider did not spend enough time with the customer" sequence="9" value="quality_of_service_service_issues_physician_provider_did_not_spend_enough_time_with_the_customer"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Privacy breach" sequence="9" value="Privacy breach"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="Proactive Prior Authorization" sequence="9" value="Proactive Prior Authorization"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Provider failed to notify Optum of demographic changes" sequence="9" value="Provider failed to notify Optum of demographic changes"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Regulations/Policies" sequence="9" value="pharmacy_home_delivery_pharmacy_regulations_policies"/>
-                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Services not supported" sequence="9" value="Services not supported"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Reversal Request" sequence="9" value="Reversal Request"/>
                 <element dependent_value="Sales" inactive_on_update="false" label="Small Group" sequence="9" value="Small Group"/>
                 <element dependent_value="network_negotiated_rate" inactive_on_update="false" label="Source schedule (AWP, CMS Etc) Load" sequence="9" value="network_negotiated_rate_source_schedule_load"/>
                 <element dependent_value="eligibility_individual" inactive_on_update="false" label="Termination Date" sequence="9" value="eligibility_individual_termination_date"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Unsatifactory reimbursement rate (contacted rate)" sequence="9" value="pharmacy_manual_claims_unsatifactory_reimbursement_rate_contacted_rate"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Clean claim" sequence="10" value="Clean claim"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Discontinued Procedure" sequence="10" value="Discontinued Procedure"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Duplicate Account Creation" sequence="10" value="pharmacy_home_delivery_pharmacy_duplicate_account_creation"/>
@@ -682,21 +690,22 @@
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Incorrect/inappropriate instructions given" sequence="10" value="Incorrect/inappropriate instructions given"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="10" value="Lack of timely response/follow-up"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Mail Service Member Select (MSMS)" sequence="10" value="Mail Service Member Select (MSMS)"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records Request Excessive" sequence="10" value="Medical Records Request Excessive"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records Illegible" sequence="10" value="Medical Records Illegible"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Not adhering to expectation regarding timely follow-up with members" sequence="10" value="network_network_operations_not_adhering_to_expectation_regarding_timely_follow_up_with_members"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="OON Benefits" sequence="10" value="OON Benefits"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Order of Benefits (Primary vs. Secondary)" sequence="10" value="Order of Benefits (Primary vs. Secondary)"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Other - document in comments section" sequence="10" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Password Reset" sequence="10" value="Password Reset"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Payment Status" sequence="10" value="pharmacy_accounting_payment_status"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Other - document in comments section" sequence="10" value="Other - document in comments section_other"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Other - document in comments section" sequence="10" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Outages" sequence="10" value="pharmacy_web_portal_outages"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Payment applied incorrectly" sequence="10" value="Payment applied incorrectly"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="PCP Designation" sequence="10" value="network_contracting_credentialing_pcp_designation"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Physician/provider inappropriately/inaccurately informed customer of benefit information or how to a" sequence="10" value="Physician/provider inappropriately/inaccurately informed customer of benefit information or how to access health care services"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Poor or unclear rationale" sequence="10" value="Poor or unclear rationale"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Prior Authorization" sequence="10" value="pharmacy_benefit_prior_authorization"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="Proactive Prior Authorization" sequence="10" value="Proactive Prior Authorization"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Provider failed to respond to request for credentialing update" sequence="10" value="Provider failed to respond to request for credentialing update"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Provider referral information incorrect due to agent error" sequence="10" value="Provider referral information incorrect due to agent error"/>
-                <element dependent_value="Prior Auth" inactive_on_update="false" label="Step Therapy" sequence="10" value="Step Therapy"/>
-                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Usual &amp; Customary Charge" sequence="10" value="Usual &amp; Customary Charge"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Unsatifactory reimbursement rate (contacted rate)" sequence="10" value="pharmacy_manual_claims_unsatifactory_reimbursement_rate_contacted_rate"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Deductible/OOP max applied" sequence="11" value="Deductible/OOP max applied"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="DME, Orthotics and Prosthetics" sequence="11" value="DME, Orthotics and Prosthetics"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Faxed Images (Prescription Images)" sequence="11" value="pharmacy_home_delivery_pharmacy_faxed_images_prescription_images"/>
@@ -705,19 +714,23 @@
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Incorrect medication" sequence="11" value="Incorrect medication"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="11" value="Lack of timely response/follow-up"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Mail Service Saver/Plus" sequence="11" value="Mail Service Saver/Plus"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records-Misrouted" sequence="11" value="Medical Records-Misrouted"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records Request Excessive" sequence="11" value="Medical Records Request Excessive"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Member not allowed to give input" sequence="11" value="Member not allowed to give input"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="OOP" sequence="11" value="OOP"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Other - document in comments section" sequence="11" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Pre-Auth charges" sequence="11" value="pharmacy_accounting_pre_auth_charges"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Processing" sequence="11" value="claims_delay_processing"/>
+                <element dependent_value="pharmacy_web_portal" inactive_on_update="false" label="Password Reset" sequence="11" value="Password Reset"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Payment Status" sequence="11" value="pharmacy_accounting_payment_status"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Processing" sequence="11" value="claims_delay_processing"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider failed to notify of changes in availability" sequence="11" value="network_contracting_credentialing_provider_failed_to_notify_of_changes_in_availability"/>
                 <element dependent_value="Clinician/Clinician Staff" inactive_on_update="false" label="Provider perception" sequence="11" value="Provider perception"/>
                 <element dependent_value="UM/Care Advocacy" inactive_on_update="false" label="Provider referral information incorrect due to incorrect/out of date in system" sequence="11" value="Provider referral information incorrect due to incorrect/out of date in system"/>
                 <element dependent_value="COB" inactive_on_update="false" label="Right of Recovery" sequence="11" value="Right of Recovery"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Services not supported" sequence="11" value="Services not supported"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Staff did not call at the scheduled time" sequence="11" value="Staff did not call at the scheduled time"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="State Regulations" sequence="11" value="pharmacy_benefit_state_regulations"/>
+                <element dependent_value="Prior Auth" inactive_on_update="false" label="Step Therapy" sequence="11" value="Step Therapy"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Untimely delivery of DME, home health services" sequence="11" value="quality_of_service_service_issues_untimely_delivery_of_dme_home_health_services"/>
+                <element dependent_value="pharmacy_manual_claims" inactive_on_update="false" label="Usual &amp; Customary Charge" sequence="11" value="Usual &amp; Customary Charge"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Denied or Processed/Reprocessed Incorrectly" sequence="12" value="pharmacy_home_delivery_pharmacy_denied_or_processed_reprocessed_incorrectly"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Failure to act on requested &amp; provided information" sequence="12" value="Failure to act on requested &amp; provided information"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Global Days" sequence="12" value="Global Days"/>
@@ -726,14 +739,17 @@
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Invalid Clarification/Missed Required Clarification" sequence="12" value="pharmacy_home_delivery_pharmacy_invalid_clarification_missed_required_clarification"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Language barrier" sequence="12" value="Language barrier"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Mandatory Mail Order" sequence="12" value="Mandatory Mail Order"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records-Missing" sequence="12" value="Medical Records-Missing"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records-Misrouted" sequence="12" value="Medical Records-Misrouted"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Misroute" sequence="12" value="Misroute"/>
+                <element dependent_value="pharmacy_accounting" inactive_on_update="false" label="Pre-Auth charges" sequence="12" value="pharmacy_accounting_pre_auth_charges"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Privacy breach" sequence="12" value="network_network_operations_privacy_breach"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Process concerns" sequence="12" value="Process concerns"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider failed to notify of demographic changes" sequence="12" value="network_contracting_credentialing_provider_failed_to_notify_of_demographic_changes"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Repricing" sequence="12" value="Repricing"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Repricing" sequence="12" value="Repricing"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Step Therapy" sequence="12" value="pharmacy_benefit_step_therapy"/>
                 <element dependent_value="quality_of_service_service_issues" inactive_on_update="false" label="Untimely, poor communication or language barrier" sequence="12" value="quality_of_service_service_issues_untimely_poor_communication_or_language_barrier"/>
+                <element dependent_value="claims_payment_integrity" inactive_on_update="false" label="Wrong determination on previous review" sequence="12" value="Wrong determination on previous review"/>
+                <element dependent_value="Payment Integrity" inactive_on_update="false" label="Wrong determination on previous review" sequence="12" value="Wrong determination on previous review"/>
                 <element dependent_value="ABD" inactive_on_update="false" label="Wrong/incorrect template and/or attachment" sequence="12" value="Wrong/incorrect template and/or attachment"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive="true" inactive_on_update="true" label="Defective Medication" sequence="13" value="pharmacy_home_delivery_pharmacy_defective_medication"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Foreign Claim" sequence="13" value="Foreign Claim"/>
@@ -743,20 +759,20 @@
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Long hold times" sequence="13" value="Long hold times"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Lost/Stolen Package" sequence="13" value="pharmacy_home_delivery_pharmacy_lost_stolen_package"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Medical Necessity" sequence="13" value="pharmacy_benefit_medical_necessity"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Misrouted to RAVE" sequence="13" value="Misrouted to RAVE"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Medical Records-Missing" sequence="13" value="Medical Records-Missing"/>
                 <element dependent_value="pharmacy_benefit" inactive="true" inactive_on_update="true" label="Other" sequence="13" value="pharmacy_benefit_other"/>
                 <element dependent_value="Plan" inactive_on_update="false" label="Other - document in comments section" sequence="13" value="Other - document in comments section_other"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Other - document in comments section" sequence="13" value="Other - document in comments section_other"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Protocol Changes" sequence="13" value="network_network_operations_protocol_changes"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider failed to respond to request for credentialing update" sequence="13" value="network_contracting_credentialing_provider_failed_to_respond to_request_for_credentialing_update"/>
-                <element dependent_value="Delay" inactive_on_update="false" label="Third Party Payor" sequence="13" value="Third Party Payor"/>
+                <element dependent_value="claims_delay" inactive_on_update="false" label="Third Party Payor" sequence="13" value="Third Party Payor"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="High Dollar Claim" sequence="14" value="High Dollar Claim"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Inadequate treatment" sequence="14" value="quality_of_care_facility_staff_inadequate_treatment"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Injection and Infustion" sequence="14" value="Injection and Infustion"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: Staff/clinician clinical communications" sequence="14" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_staff_clinician_clinical_communications"/>
                 <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="MD Error" sequence="14" value="pharmacy_home_delivery_pharmacy_md_error"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Misquote/Inaccurate Information Given" sequence="14" value="Misquote/Inaccurate Information Given"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Other - document in comments section" sequence="14" value="Other - document in comments section_other"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Misrouted to RAVE" sequence="14" value="Misrouted to RAVE"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Other - document in comments section" sequence="14" value="Other - document in comments section_other"/>
                 <element dependent_value="Appeals" inactive_on_update="false" label="Privacy breach" sequence="14" value="Privacy breach"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Provider Demographics" sequence="14" value="network_network_operations_provider_demographics"/>
@@ -765,127 +781,133 @@
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Inpatient Consultation" sequence="15" value="Inpatient Consultation"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Keying errors" sequence="15" value="Keying errors"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: The criteria for tx at various BH/SA LOC" sequence="15" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_the_criteria_for_tx_at_various_bh_sa_loc"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Member's order shipped without member's consent" sequence="15" value="pharmacy_home_delivery_pharmacy_member's_order_shipped_without_member's_consent"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Medication recall" sequence="15" value="Medication recall"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="No supervisor available" sequence="15" value="No supervisor available"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Other - document in comments section" sequence="15" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Over the Counter (OTC)" sequence="15" value="Over the Counter (OTC)"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Policy Change/Implementation" sequence="15" value="Policy Change/Implementation"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Provider perception" sequence="15" value="network_network_operations_provider_perception"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider Termination" sequence="15" value="network_contracting_credentialing_provider_termination"/>
-                <element dependent_value="Appeals" inactive_on_update="false" label="Reviewed for wrong level of care" sequence="15" value="Reviewed for wrong level of care"/>
+                <element dependent_value="behavioral_appeals" inactive_on_update="false" label="Provider/Member disagrees with decision" sequence="15" value="Provider/Member disagrees with decision"/>
+                <element dependent_value="Appeals" inactive_on_update="false" label="Provider/Member disagrees with decision" sequence="15" value="Provider/Member disagrees with decision"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Ineffective discharge procedure" sequence="16" value="quality_of_care_facility_staff_ineffective_discharge_procedure"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Lab Rebundling" sequence="16" value="Lab Rebundling"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: The expectations of BH/SA treatment" sequence="16" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_education_understanding_regarding_the_expectations_of_bh_sa_treatment"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Lack of timely response/follow-up" sequence="16" value="Lack of timely response/follow-up"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Missed Image/Attached incorrect Image" sequence="16" value="pharmacy_home_delivery_pharmacy_missed_image_attached_incorrect_image"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Member's order shipped without member's consent" sequence="16" value="pharmacy_home_delivery_pharmacy_member's_order_shipped_without_member's_consent"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="No supervisor callback" sequence="16" value="No supervisor callback"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Override" sequence="16" value="pharmacy_benefit_override"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Process Gap" sequence="16" value="Process Gap"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Policy Change/Implementation" sequence="16" value="Policy Change/Implementation"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Provider Termination Date" sequence="16" value="network_contracting_credentialing_provider_termination_date"/>
+                <element dependent_value="Appeals" inactive_on_update="false" label="Reviewed for wrong level of care" sequence="16" value="Reviewed for wrong level of care"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Shared Savings" sequence="16" value="network_network_operations_shared_savings"/>
-                <element dependent_value="Appeals" inactive_on_update="false" label="Unclear/incomplete rationale" sequence="16" value="Unclear/incomplete rationale"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of Complainant Educ/Understanding re: reason(s) certain medications can/cannot be Rx’d" sequence="17" value="quality_of_care_facility_staff_lack_of_complainant_educ_understanding_regarding_reason_certain_medications_can_cannot_be_rxd"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of Complainant Educ/Understanding re: reason(s) certain medications can/cannot be Rx’d" sequence="17" value="quality_of_care_clinician_clinician_staff_lack_of_complainant_educ_understanding_regarding_reason_certain_medications_can_cannot_be_rx"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Manual processing error" sequence="17" value="Manual processing error"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Max Freq per day" sequence="17" value="Max Freq per day"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Missing medications" sequence="17" value="pharmacy_home_delivery_pharmacy_missing_medications"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Missed Image/Attached incorrect Image" sequence="17" value="pharmacy_home_delivery_pharmacy_missed_image_attached_incorrect_image"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Other - document in comments section" sequence="17" value="Other - document in comments section_other"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Part B vs. Part D" sequence="17" value="Part B vs. Part D"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Provider Advocate Education" sequence="17" value="Provider Advocate Education"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Process Gap" sequence="17" value="Process Gap"/>
                 <element dependent_value="network_network_operations" inactive_on_update="false" label="Site of Service" sequence="17" value="network_network_operations_site_of_service"/>
                 <element dependent_value="network_contracting_credentialing" inactive_on_update="false" label="Timely Notice of contract changes" sequence="17" value="network_contracting_credentialing_timely_notice_of_contract_changes"/>
-                <element dependent_value="Appeals" inactive_on_update="false" label="Wrong template/attachments sent" sequence="17" value="Wrong template/attachments sent"/>
+                <element dependent_value="Appeals" inactive_on_update="false" label="Unclear/incomplete rationale" sequence="17" value="Unclear/incomplete rationale"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: AMA discharge protocols " sequence="18" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_ama_discharge_protocols"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of medical oversight &amp; supervision (co-morbid medical issues)" sequence="18" value="quality_of_care_clinician_clinician_staff_lack_of_medical_oversight_supervision_co_morbid_medical_issues"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Mbr/provider did not receive copy of written material" sequence="18" value="Mbr/provider did not receive copy of written material"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Microsurgery" sequence="18" value="Microsurgery"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="No MD Response/Delayed Response" sequence="18" value="pharmacy_home_delivery_pharmacy_no_md_response_delayed_response"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Missing medications" sequence="18" value="pharmacy_home_delivery_pharmacy_missing_medications"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="PDL List" sequence="18" value="pharmacy_benefit_pdl_list"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Provider Billed Incorrectly" sequence="18" value="Provider Billed Incorrectly"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Provider Advocate Education" sequence="18" value="Provider Advocate Education"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Provider referral information incorrect" sequence="18" value="Provider referral information incorrect"/>
+                <element dependent_value="Appeals" inactive_on_update="false" label="Wrong template/attachments sent" sequence="18" value="Wrong template/attachments sent"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: The expectations of BH/SA treatment" sequence="19" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_expectations_of_bh_sa_treatment"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Lack of treatment plan" sequence="19" value="quality_of_care_clinician_clinician_staff_lack_of_treatment_plan"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Missed Charges" sequence="19" value="Missed Charges"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Moderate Sedation" sequence="19" value="Moderate Sedation"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Order Holds" sequence="19" value="Order Holds"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="No MD Response/Delayed Response" sequence="19" value="pharmacy_home_delivery_pharmacy_no_md_response_delayed_response"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Plan Exclusion" sequence="19" value="pharmacy_benefit_plan_exclusion"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Provider Billed Incorrectly" sequence="19" value="Provider Billed Incorrectly"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Records Request" sequence="19" value="Records Request"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy Exclusion" sequence="19" value="Reimbursement/Drug Policy Exclusion"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: Staff/clinician clinical communications" sequence="20" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_staff_clinician_clinical_communications"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Limited/Lack of communication with patient/family" sequence="20" value="quality_of_care_clinician_clinician_staff_limited_lack_of_communication_with_patient_family"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Modifier Reference" sequence="20" value="Modifier Reference"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Network gap" sequence="20" value="Network gap"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Other - document in comments section" sequence="20" value="Other - document in comments section_other"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Order Holds" sequence="20" value="Order Holds"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Prescription Monitoring Program" sequence="20" value="pharmacy_benefit_prescription_monitoring_program"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Records Request - COC/SPD" sequence="20" value="Records Request - COC/SPD"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy not applied correctly" sequence="20" value="Reimbursement/Drug Policy not applied correctly"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy Exclusion" sequence="20" value="Reimbursement/Drug Policy Exclusion"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of Complainant Education/Understanding re: The criteria for Tx at various BH/SA LOC" sequence="21" value="quality_of_care_facility_staff_lack_of_complainant_education_understanding_regarding_the_criteria_for_tx_at_various_bh_sa LOC"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Limited/restricted family contact with patient" sequence="21" value="quality_of_care_clinician_clinician_staff_limited_restricted_family_contact_with_patient"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Multiple Procedure" sequence="21" value="Multiple Procedure"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Network provider refused to bill Medicare" sequence="21" value="Network provider refused to bill Medicare"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Out-of-Stock" sequence="21" value="pharmacy_home_delivery_pharmacy_out_of_stock"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Other - document in comments section" sequence="21" value="Other - document in comments section_other"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Records Request - EOB/PRA" sequence="21" value="Records Request - EOB/PRA"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Refill Too Soon" sequence="21" value="pharmacy_benefit_refill_too_soon"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy Unclear or Contradictory" sequence="21" value="Reimbursement/Drug Policy Unclear or Contradictory"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy not applied correctly" sequence="21" value="Reimbursement/Drug Policy not applied correctly"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of medical oversight &amp; supervision (co-morbid medical issues)" sequence="22" value="quality_of_care_facility_staff_lack_of_medical_oversight_supervision"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Medication issues - Failure to obtain consent for medication administration" sequence="22" value="quality_of_care_clinician_clinician_staff_medication_issues_failure_to_obtain_consent_for_medication_administration"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="New Patient Visit" sequence="22" value="New Patient Visit"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Non-Network provider refused to bill Medicare" sequence="22" value="Non-Network provider refused to bill Medicare"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Price Check" sequence="22" value="Price Check"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Out-of-Stock" sequence="22" value="pharmacy_home_delivery_pharmacy_out_of_stock"/>
                 <element dependent_value="Customer Service" inactive_on_update="false" label="Records Request - ID card" sequence="22" value="Records Request - ID card"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Request for Information" sequence="22" value="Request for Information"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Reimbursement/Drug Policy Unclear or Contradictory" sequence="22" value="Reimbursement/Drug Policy Unclear or Contradictory"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Secondary Insurance/COB" sequence="22" value="pharmacy_benefit_secondary_insurance_cob"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Lack of treatment plan" sequence="23" value="quality_of_care_facility_staff_lack_of_treatment_plan"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Medication issues - Inappropriate medication prescribed" sequence="23" value="quality_of_care_clinician_clinician_staff_medication_issues_inappropriate_medication_prescribed"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Observation Care E and M Codes" sequence="23" value="Observation Care E and M Codes"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Other - document in comments section" sequence="23" value="Other - document in comments section_other"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Proactive Script Renewal" sequence="23" value="Proactive Script Renewal"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Requires Provider Education" sequence="23" value="Requires Provider Education"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Price Check" sequence="23" value="Price Check"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Request for Information" sequence="23" value="Request for Information"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Specialty" sequence="23" value="pharmacy_benefit_specialty"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Limited/Lack of communication with patient/family" sequence="24" value="quality_of_care_facility_staff_limited_lack_of_communication_with_patient_family"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Medication issues - Medications not adequately secured" sequence="24" value="quality_of_care_clinician_clinician_staff_medication_issues_medications_not_adequately_secured"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Obstetrical" sequence="24" value="Obstetrical"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Place of Service" sequence="24" value="Place of Service"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Quantity shortage" sequence="24" value="Quantity shortage"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Services not rendered/received" sequence="24" value="Services not rendered/received"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Proactive Script Renewal" sequence="24" value="Proactive Script Renewal"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Requires Provider Education" sequence="24" value="Requires Provider Education"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="State Regulations/Mandates" sequence="24" value="State Regulations/Mandates"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Limited/restricted family contact with patient" sequence="25" value="quality_of_care_facility_staff_limited_restricted_family_contact_with_patient"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Medication issues - Prescribed wrong medication dosage" sequence="25" value="quality_of_care_clinician_clinician_staff_medication_issues_prescribed_wrong_medication_dosage"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Once in a Lifetime" sequence="25" value="Once in a Lifetime"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="PNI Issue - Lack of  timely follow-up" sequence="25" value="PNI Issue - Lack of  timely follow-up"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Resend/CTag /Process Schedule" sequence="25" value="pharmacy_home_delivery_pharmacy_resend_ctag_process_schedule"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="SIU Investigation" sequence="25" value="SIU Investigation"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Quantity shortage" sequence="25" value="Quantity shortage"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Services not rendered/received" sequence="25" value="Services not rendered/received"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Supply Limits" sequence="25" value="pharmacy_benefit_supply_limits"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Administered wrong medication" sequence="26" value="quality_of_care_facility_staff_medication_issues_administered_wrong_medication"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Member’s perception of what transpired was directly impacted by member’s clinical condition" sequence="26" value="quality_of_care_clinician_clinician_staff_member’s_perception_of_what_transpired_was_directly_impacted_by_member’s_clinical_condition"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="One or More Sessions" sequence="26" value="One or More Sessions"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="PNI Issue - Provider is incorrectly flagged or flag was not removed" sequence="26" value="PNI Issue - Provider is incorrectly flagged or flag was not removed"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Shipping / Tracking Info" sequence="26" value="pharmacy_home_delivery_pharmacy_shipping_tracking_info"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Resend/CTag /Process Schedule" sequence="26" value="pharmacy_home_delivery_pharmacy_resend_ctag_process_schedule"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="SIU Investigation" sequence="26" value="SIU Investigation"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Suspicious Activity" sequence="26" value="pharmacy_benefit_suspicious_activity"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Timely Filing Policy" sequence="26" value="Timely Filing Policy"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Failure to administer medications as ordered" sequence="27" value="quality_of_care_facility_staff_medication_issues_failure_to_administer_medications_as_ordered"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="No/Limited coordination of clinical care" sequence="27" value="quality_of_care_clinician_clinician_staff_no_limited_coordination_of_clinical_care"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Other - document in comments section" sequence="27" value="Other - document in comments section_other"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="PNI Issue - Records not reviewed/received" sequence="27" value="PNI Issue - Records not reviewed/received"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Shipping / Tracking Info" sequence="27" value="pharmacy_home_delivery_pharmacy_shipping_tracking_info"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Therapeutic Equivalent" sequence="27" value="pharmacy_benefit_therapeutic_equivalent"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Transfers" sequence="27" value="pharmacy_home_delivery_pharmacy_transfers"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Upcoding" sequence="27" value="Upcoding"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Timely Filing Policy" sequence="27" value="Timely Filing Policy"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Failure to obtain consent for medication administration" sequence="28" value="quality_of_care_facility_staff_medication_issues_failure_to_obtain_consent_for_medication_administration"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="No/limited family education" sequence="28" value="quality_of_care_clinician_clinician_staff_no_limited_family_education"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Preventive Medicine &amp; Screening" sequence="28" value="Preventive Medicine &amp; Screening"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Processed under the wrong member" sequence="28" value="Processed under the wrong member"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Tier Change" sequence="28" value="pharmacy_benefit_tier_change"/>
-                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Verify correct shipping address" sequence="28" value="pharmacy_home_delivery_pharmacy_verify_correct_shipping_address"/>
-                <element dependent_value="Fraud" inactive_on_update="false" label="Wrong member name/ID" sequence="28" value="Wrong member name/ID"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Transfers" sequence="28" value="pharmacy_home_delivery_pharmacy_transfers"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Upcoding" sequence="28" value="Upcoding"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Failure to provide medical (non-psychotropic) medications" sequence="29" value="quality_of_care_facility_staff_medication_issues_failure_to_provide_medical_non_psychotropic_medications"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Not involving patient’s support system (e.g. family members) in clinical treatment" sequence="29" value="quality_of_care_clinician_clinician_staff_not_involving_patient’s_support_system__in_clinical_treatment"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Pro/Tech" sequence="29" value="Pro/Tech"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Prompt Payment of interest or penalty" sequence="29" value="Prompt Payment of interest or penalty"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Tier Placement" sequence="29" value="pharmacy_benefit_tier_placement"/>
+                <element dependent_value="pharmacy_home_delivery_pharmacy" inactive_on_update="false" label="Verify correct shipping address" sequence="29" value="pharmacy_home_delivery_pharmacy_verify_correct_shipping_address"/>
+                <element dependent_value="claims_fraud" inactive_on_update="false" label="Wrong determination on previous review" sequence="29" value="Wrong determination on previous review"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Wrong determination on previous review" sequence="29" value="Wrong determination on previous review"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Inappropriate medication administration" sequence="30" value="quality_of_care_facility_staff_medication issues_inappropriate_medication_administration"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Patient inappropriate for discharge" sequence="30" value="quality_of_care_clinician_clinician_staff_patient_inappropriate_for_discharge"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Procedure to Modifier" sequence="30" value="Procedure to Modifier"/>
                 <element dependent_value="Processing" inactive_on_update="false" label="Provider billing for unbundled services" sequence="30" value="Provider billing for unbundled services"/>
                 <element dependent_value="pharmacy_benefit" inactive_on_update="false" label="Vacation Override" sequence="30" value="pharmacy_benefit_vacation_override"/>
+                <element dependent_value="Fraud" inactive_on_update="false" label="Wrong member name/ID" sequence="30" value="Wrong member name/ID"/>
                 <element dependent_value="quality_of_care_facility_staff" inactive_on_update="false" label="Medication issues - Medications not adequately secured" sequence="31" value="quality_of_care_facility_staff_medication issues_medications_not_adequately_secured"/>
                 <element dependent_value="quality_of_care_clinician_clinician_staff" inactive_on_update="false" label="Patient safety – Allegation of physical or sexual abuse by another patient" sequence="31" value="quality_of_care_clinician_clinician_staff_patient_safety_allegation_of_physical_or_sexual_abuse_by_another_patient"/>
                 <element dependent_value="Reimbursement Policy" inactive_on_update="false" label="Prolonged Services" sequence="31" value="Prolonged Services"/>

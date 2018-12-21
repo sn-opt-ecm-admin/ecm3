@@ -68,8 +68,8 @@ if(!gs.nil(current.rca_due_date)) {
 if(!gs.nil(current.area_for_response))
 	newRecord.setValue("area_for_rca_response", current.getValue("area_for_response"));
 
-if(!gs.nil(current.opt_business_segment))
-	newRecord.setValue("market_business", current.getValue("opt_business_segment"));
+//if(!gs.nil(current.opt_business_segment))
+//	newRecord.setValue("market_business", current.getValue("opt_business_segment"));
 
 newRecord.setValue("business_unit", "regulatory_affairs");
 
@@ -85,7 +85,7 @@ action.openGlideRecord(newRecord);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9a609ff4dbf56f0078019806b9961933</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Create ORA Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -94,7 +94,7 @@ action.openGlideRecord(newRecord);]]></script>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_action_9a609ff4dbf56f0078019806b9961933</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-12-13 00:28:40</sys_updated_on>
+        <sys_updated_on>2018-12-18 17:55:55</sys_updated_on>
         <table>x_opt_ecm_rca_case</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

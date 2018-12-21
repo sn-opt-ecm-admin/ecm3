@@ -19,7 +19,7 @@
         <sys_updated_by>mike.ward</sys_updated_by>
         <sys_updated_on>2018-11-14 16:23:46</sys_updated_on>
         <table>x_opt_ecm_rca_case</table>
-        <ui_policy display_value="RCA Related Case Fields Read-Only">bf2ac419dbf5230078019806b99619e4</ui_policy>
+        <ui_policy display_value="RCA Case Fields Read-Only">bf2ac419dbf5230078019806b99619e4</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

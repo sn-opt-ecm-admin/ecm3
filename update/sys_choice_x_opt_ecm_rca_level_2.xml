@@ -913,7 +913,7 @@
             <value>benefit_administration_disaster_related</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value>Claims</dependent_value>
+            <dependent_value>claims</dependent_value>
             <element>level_2</element>
             <hint/>
             <inactive>false</inactive>
@@ -926,9 +926,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>35e74dcf4fa5d3041e6cb4fe0210c79d</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>cleach10</sys_updated_by>
-            <sys_updated_on>2018-12-06 16:12:26</sys_updated_on>
+            <sys_updated_on>2018-12-19 21:06:25</sys_updated_on>
             <value>claims_delay</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

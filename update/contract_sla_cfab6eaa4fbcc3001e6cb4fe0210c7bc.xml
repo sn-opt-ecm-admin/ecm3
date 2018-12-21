@@ -24,7 +24,7 @@
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
         <set_start_to>oca_ocr_received_date_time</set_start_to>
-        <start_condition table="x_opt_ecm_case">submission_sourceINcorporate_contact,executive^submitted_on_behalf_of=c653720e4f604300699aacb14210c734^ORsubmitted_on_behalf_of=4d63720e4f604300699aacb14210c7b6^ORsubmitted_on_behalf_of=4b63720e4f604300699aacb14210c736^ORsubmitted_on_behalf_of=e873b20e4f604300699aacb14210c75c^ORsubmitted_on_behalf_of=ce73720e4f604300699aacb14210c776^ORsubmitted_on_behalf_of=24837a0e4f604300699aacb14210c78b^priority!=1^doi_complaint!=yes^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="IN" or="false" value="corporate_contact,executive"/>
+        <start_condition table="x_opt_ecm_case">submission_sourceINcorporate_contact,executive^submitted_on_behalf_of=c653720e4f604300699aacb14210c734^ORsubmitted_on_behalf_of=4d63720e4f604300699aacb14210c7b6^ORsubmitted_on_behalf_of=4b63720e4f604300699aacb14210c736^ORsubmitted_on_behalf_of=e873b20e4f604300699aacb14210c75c^ORsubmitted_on_behalf_of=ce73720e4f604300699aacb14210c776^ORsubmitted_on_behalf_of=24837a0e4f604300699aacb14210c78b^priority!=1^doi_complaint!=yes^rca_caseISEMPTY^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="IN" or="false" value="corporate_contact,executive"/>
             <item display_table="x_opt_ecm_submitted_obo" display_value="Agent" endquery="false" field="submitted_on_behalf_of" goto="false" newquery="false" operator="=" or="false" value="c653720e4f604300699aacb14210c734"/>
             <item display_table="x_opt_ecm_submitted_obo" display_value="Applicant" endquery="false" field="submitted_on_behalf_of" goto="false" newquery="false" operator="=" or="true" value="4d63720e4f604300699aacb14210c7b6"/>
             <item display_table="x_opt_ecm_submitted_obo" display_value="Group" endquery="false" field="submitted_on_behalf_of" goto="false" newquery="false" operator="=" or="true" value="4b63720e4f604300699aacb14210c736"/>
@@ -33,6 +33,7 @@
             <item display_table="x_opt_ecm_submitted_obo" display_value="Other" endquery="false" field="submitted_on_behalf_of" goto="false" newquery="false" operator="=" or="true" value="24837a0e4f604300699aacb14210c78b"/>
             <item endquery="false" field="priority" goto="false" newquery="false" operator="!=" or="false" value="1"/>
             <item endquery="false" field="doi_complaint" goto="false" newquery="false" operator="!=" or="false" value="yes"/>
+            <item endquery="false" field="rca_case" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </start_condition>
         <stop_condition table="x_opt_ecm_case">stateIN6,19,20,3,7^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6,19,20,3,7"/>
@@ -45,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cfab6eaa4fbcc3001e6cb4fe0210c7bc</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Corporate Contact / Executive (10 days)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -54,7 +55,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>contract_sla_cfab6eaa4fbcc3001e6cb4fe0210c7bc</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-10-12 11:28:51</sys_updated_on>
+        <sys_updated_on>2018-12-21 12:55:35</sys_updated_on>
         <target/>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>

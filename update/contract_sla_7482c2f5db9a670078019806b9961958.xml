@@ -4,8 +4,8 @@
         <cancel_condition/>
         <collection>x_opt_ecm_case</collection>
         <condition_class/>
-        <duration>1970-01-04 00:00:00</duration>
-        <duration_type display_value="Breach on Due Date">5d3bf3e5eb5322002a7a666cd206fe8e</duration_type>
+        <duration>1970-01-03 20:00:00</duration>
+        <duration_type/>
         <enable_logging>false</enable_logging>
         <name>ECM Case from RCA - ORA Response</name>
         <pause_condition table="x_opt_ecm_case">state=22^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="22"/>
@@ -20,7 +20,7 @@
         <schedule display_value="8-4 US/Central">a88e8be0db92a3006fc0a9a5ca9619af</schedule>
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
-        <set_start_to>work_start</set_start_to>
+        <set_start_to>rca_start_date</set_start_to>
         <start_condition table="x_opt_ecm_case">area_for_rca_response=ora^rca_caseISNOTEMPTY^EQ<item endquery="false" field="area_for_rca_response" goto="false" newquery="false" operator="=" or="false" value="ora"/>
             <item endquery="false" field="rca_case" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7482c2f5db9a670078019806b9961958</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>ECM Case from RCA - ORA Response</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>contract_sla_7482c2f5db9a670078019806b9961958</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-12-11 12:38:46</sys_updated_on>
+        <sys_updated_on>2018-12-21 18:46:34</sys_updated_on>
         <target/>
         <timezone/>
         <timezone_source>sla.timezone</timezone_source>

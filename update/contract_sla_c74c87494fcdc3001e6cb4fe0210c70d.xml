@@ -24,9 +24,10 @@
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
         <set_start_to>oca_ocr_received_date_time</set_start_to>
-        <start_condition table="x_opt_ecm_case">submission_sourceINattorney,bbb,ethics_and_integrity,other^priority!=1^business_unit=consumer_affairs^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="IN" or="false" value="attorney,bbb,ethics_and_integrity,other"/>
+        <start_condition table="x_opt_ecm_case">submission_sourceINattorney,bbb,ethics_and_integrity,other^priority!=1^business_unit=consumer_affairs^rca_caseISEMPTY^EQ<item endquery="false" field="submission_source" goto="false" newquery="false" operator="IN" or="false" value="attorney,bbb,ethics_and_integrity,other"/>
             <item endquery="false" field="priority" goto="false" newquery="false" operator="!=" or="false" value="1"/>
             <item endquery="false" field="business_unit" goto="false" newquery="false" operator="=" or="false" value="consumer_affairs"/>
+            <item endquery="false" field="rca_case" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </start_condition>
         <stop_condition table="x_opt_ecm_case">stateIN6,19,20,3,7^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6,19,20,3,7"/>
@@ -39,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c74c87494fcdc3001e6cb4fe0210c70d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Consumer Affairs Manual (10 days)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -48,7 +49,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>contract_sla_c74c87494fcdc3001e6cb4fe0210c70d</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-10-12 11:35:40</sys_updated_on>
+        <sys_updated_on>2018-12-21 12:53:33</sys_updated_on>
         <target/>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>

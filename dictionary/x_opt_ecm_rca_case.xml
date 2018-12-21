@@ -13,18 +13,15 @@
         <element label="RCA Case Number" max_length="20" name="number" type="string"/>
         <element choice="1" label="Optum Business Segment" max_length="40" name="opt_business_segment" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Behavioral Solutions" value="Behavioral Solutions"/>
-                <element inactive_on_update="false" label="Complex Medical Conditions" value="Complex Medical Conditions"/>
-                <element inactive_on_update="false" label="HI Health Innovations" value="HI Health Innovations"/>
-                <element inactive_on_update="false" label="International" value="International"/>
-                <element inactive_on_update="false" label="Optum Care" value="Optum Care"/>
-                <element inactive_on_update="false" label="Optum Financial" value="Optum Financial"/>
-                <element inactive_on_update="false" label="OptumInsight" value="OptumInsight"/>
-                <element inactive_on_update="false" label="OptumRx" value="OptumRx"/>
-                <element inactive_on_update="false" label="Payment Integrity" value="Payment Integrity"/>
-                <element inactive_on_update="false" label="Physical Health" value="Physical Health"/>
-                <element inactive_on_update="false" label="UHC" value="UHC"/>
-                <element inactive_on_update="false" label="Wellness Programs" value="Wellness Programs"/>
+                <element inactive_on_update="false" label="Optum Behavioral" sequence="1" value="Optum Behavioral"/>
+                <element inactive_on_update="false" label="Optum COB" sequence="2" value="Optum COB"/>
+                <element inactive_on_update="false" label="Optum FWAE" sequence="3" value="Optum FWAE"/>
+                <element inactive_on_update="false" label="Optum Physical Health" sequence="4" value="Optum Physical Health"/>
+                <element inactive_on_update="false" label="Optum Recovery Resolution" sequence="5" value="Optum Recovery Resolution"/>
+                <element inactive_on_update="false" label="OptumRx" sequence="6" value="OptumRx"/>
+                <element inactive_on_update="false" label="Optum Specialty Rx (Briova)" sequence="7" value="Optum Specialty Rx (Briova)"/>
+                <element inactive_on_update="false" label="Optum Subrogation" sequence="8" value="Optum Subrogation"/>
+                <element inactive_on_update="false" label="Orthonet" sequence="9" value="Orthonet"/>
             </choice>
         </element>
         <element label="ORA Case Number" max_length="32" name="ora_case_number" reference="x_opt_ecm_case" type="reference"/>

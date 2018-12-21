@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="696" text_index="true" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="708" text_index="true" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -281,6 +281,7 @@
         <element label="Quality Review Comments" max_length="4000" name="quality_review_comments" read_only="true" type="journal_input"/>
         <element label="Quality Review Response Due Date" max_length="40" name="quality_review_response_due_date" type="glide_date_time"/>
         <element label="RCA Case" max_length="32" name="rca_case" reference="x_opt_ecm_rca_case" type="reference"/>
+        <element label="RCA Start Date" max_length="40" name="rca_start_date" type="glide_date_time"/>
         <element label="Referred by" max_length="32" name="referred_by" reference="sys_user" type="reference"/>
         <element label="Referred By Department" max_length="32" name="referred_by_department" reference="x_opt_ecm_department" reference_qual="referrer=true^EQ" reference_qual_condition="referrer=true^EQ" type="reference"/>
         <element label="Requested Due Date Comments" max_length="300" name="requested_due_date_comments" type="string"/>
@@ -324,6 +325,7 @@
                 <element inactive_on_update="false" label="Written" sequence="1" value="Written"/>
                 <element inactive_on_update="false" label="Email" sequence="2" value="Email"/>
                 <element inactive_on_update="false" label="Research Only" sequence="3" value="Research Only"/>
+                <element inactive_on_update="false" label="Misrouted" sequence="4" value="Misrouted"/>
             </choice>
         </element>
         <element label="Final Date of Service" max_length="40" name="resolution_service_end_date" type="glide_date"/>
