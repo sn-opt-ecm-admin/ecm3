@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="quality_feedback" table="x_opt_ecm_rca_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missing Info</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:27:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc849aa6dbe6ef006fc0a9a5ca96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:27:25</sys_updated_on>
+            <value>missing Info</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incorrect Info</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:27:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ec416a6dbe6ef006fc0a9a5ca96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:27:59</sys_updated_on>
+            <value>incorrect Info</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Feedback Only</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:28:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1ce4de66dbe6ef006fc0a9a5ca961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:28:24</sys_updated_on>
+            <value>feedback Only</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Changes Needed</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>3</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:28:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22f41aa6dbe6ef006fc0a9a5ca96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:28:50</sys_updated_on>
+            <value>no Changes Needed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Void /Non-jurisdictional</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>4</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:29:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0251aa6dbe6ef006fc0a9a5ca9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:29:32</sys_updated_on>
+            <value>void /Non-jurisdictional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCA Misrouted</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>5</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:30:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3351e66dbe6ef006fc0a9a5ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:30:00</sys_updated_on>
+            <value>RCA Misrouted</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quality_feedback</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Clarification Needed</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <sequence>6</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:31:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32751aa6dbe6ef006fc0a9a5ca9619c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:31:02</sys_updated_on>
+            <value>clarification Needed</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>quality_feedback</element>
+            <name>x_opt_ecm_rca_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:27:25</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>35a4de66dbe6ef006fc0a9a5ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>quality_feedback</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_choice_x_opt_ecm_rca_task_quality_feedback</sys_update_name>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:27:25</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

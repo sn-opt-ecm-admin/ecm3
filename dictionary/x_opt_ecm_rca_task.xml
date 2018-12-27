@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="sn_customerservice_task" label="RCA Task" max_length="40" name="x_opt_ecm_rca_task" sizeclass="17" type="collection"/>
+    <element audit="true" extends="sn_customerservice_task" label="RCA Task" max_length="40" name="x_opt_ecm_rca_task" sizeclass="19" type="collection">
+        <element choice="1" label="Quality Feedback" max_length="40" name="quality_feedback" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Missing Info" sequence="0" value="missing Info"/>
+                <element inactive_on_update="false" label="Incorrect Info" sequence="1" value="incorrect Info"/>
+                <element inactive_on_update="false" label="Feedback Only" sequence="2" value="feedback Only"/>
+                <element inactive_on_update="false" label="No Changes Needed" sequence="3" value="no Changes Needed"/>
+                <element inactive_on_update="false" label="Void /Non-jurisdictional" sequence="4" value="void /Non-jurisdictional"/>
+                <element inactive_on_update="false" label="RCA Misrouted" sequence="5" value="RCA Misrouted"/>
+                <element inactive_on_update="false" label="Clarification Needed" sequence="6" value="clarification Needed"/>
+            </choice>
+        </element>
+    </element>
 </database>

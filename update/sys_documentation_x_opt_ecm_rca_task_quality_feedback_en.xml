@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="quality_feedback" label="Quality Feedback" language="en" table="x_opt_ecm_rca_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>quality_feedback</element>
+            <help/>
+            <hint/>
+            <label>Quality Feedback</label>
+            <language>en</language>
+            <name>x_opt_ecm_rca_task</name>
+            <plural>Quality Feedbacks</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2018-12-26 06:25:04</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d71492a6dbe6ef006fc0a9a5ca961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Quality Feedback</sys_name>
+            <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+            <sys_update_name>sys_documentation_x_opt_ecm_rca_task_quality_feedback_en</sys_update_name>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2018-12-26 06:25:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
