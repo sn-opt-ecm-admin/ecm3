@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="723" text_index="true" type="collection">
+    <element attributes="live_feed=true,email_client=true" audit="true" extends="sn_customerservice_case" label="ECM Case" max_length="40" name="x_opt_ecm_case" sizeclass="727" text_index="true" type="collection">
         <element label="Ack Call Completed Date" max_length="40" name="ack_call_completed_date" type="glide_date"/>
         <element choice="1" label="Ack Call Required" max_length="40" name="ack_call_required" type="choice">
             <choice>
@@ -113,6 +113,59 @@
             </choice>
         </element>
         <element label="DOI State" max_length="32" name="doi_state" reference="x_opt_ecm_state_lookup" type="reference"/>
+        <element label="Est. Submit Date to RCA" max_length="40" name="est_submit_date_to_rca" type="glide_date"/>
+        <element choice="1" label="Est. Submit Time to RCA" max_length="40" name="est_submit_time_to_rca" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="12:00 AM" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="12:30 AM" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="01:00 AM" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="01:30 AM" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="02:00 AM" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="02:30 AM" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="03:00 AM" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="03:30 AM" sequence="7" value="8"/>
+                <element inactive_on_update="false" label="04:00 AM" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="04:30 AM" sequence="9" value="10"/>
+                <element inactive_on_update="false" label="05:00 AM" sequence="10" value="11"/>
+                <element inactive_on_update="false" label="05:30 AM" sequence="11" value="12"/>
+                <element inactive_on_update="false" label="06:00 AM" sequence="12" value="13"/>
+                <element inactive_on_update="false" label="06:30 AM" sequence="13" value="14"/>
+                <element inactive_on_update="false" label="07:00 AM" sequence="14" value="15"/>
+                <element inactive_on_update="false" label="07:30 AM" sequence="15" value="16"/>
+                <element inactive_on_update="false" label="08:00 AM" sequence="16" value="17"/>
+                <element inactive_on_update="false" label="08:30 AM" sequence="17" value="18"/>
+                <element inactive_on_update="false" label="09:00 AM" sequence="18" value="19"/>
+                <element inactive_on_update="false" label="09:30 AM" sequence="19" value="20"/>
+                <element inactive_on_update="false" label="10:00 AM" sequence="20" value="21"/>
+                <element inactive_on_update="false" label="10:30 AM" sequence="21" value="22"/>
+                <element inactive_on_update="false" label="11:00 AM" sequence="22" value="23"/>
+                <element inactive_on_update="false" label="11:30 AM" sequence="23" value="24"/>
+                <element inactive_on_update="false" label="12:00 PM" sequence="24" value="25"/>
+                <element inactive_on_update="false" label="12:30 PM" sequence="25" value="26"/>
+                <element inactive_on_update="false" label="01:00 PM" sequence="26" value="27"/>
+                <element inactive_on_update="false" label="01:30 PM" sequence="27" value="28"/>
+                <element inactive_on_update="false" label="02:00 PM" sequence="28" value="29"/>
+                <element inactive_on_update="false" label="02:30 PM" sequence="29" value="30"/>
+                <element inactive_on_update="false" label="03:00 PM" sequence="30" value="31"/>
+                <element inactive_on_update="false" label="03:30 PM" sequence="31" value="32"/>
+                <element inactive_on_update="false" label="04:00 PM" sequence="32" value="33"/>
+                <element inactive_on_update="false" label="04:30 PM" sequence="33" value="34"/>
+                <element inactive_on_update="false" label="05:00 PM" sequence="34" value="35"/>
+                <element inactive_on_update="false" label="05:30 PM" sequence="35" value="36"/>
+                <element inactive_on_update="false" label="06:00 PM" sequence="36" value="37"/>
+                <element inactive_on_update="false" label="06:30 PM" sequence="37" value="38"/>
+                <element inactive_on_update="false" label="07:00 PM" sequence="38" value="39"/>
+                <element inactive_on_update="false" label="07:30 PM" sequence="39" value="40"/>
+                <element inactive_on_update="false" label="08:00 PM" sequence="40" value="41"/>
+                <element inactive_on_update="false" label="08:30 PM" sequence="41" value="42"/>
+                <element inactive_on_update="false" label="09:00 PM" sequence="42" value="43"/>
+                <element inactive_on_update="false" label="09:30 PM" sequence="43" value="44"/>
+                <element inactive_on_update="false" label="10:00 PM" sequence="44" value="45"/>
+                <element inactive_on_update="false" label="10:30 PM" sequence="45" value="46"/>
+                <element inactive_on_update="false" label="11:00 PM" sequence="46" value="47"/>
+                <element inactive_on_update="false" label="11:30 PM" sequence="47" value="48"/>
+            </choice>
+        </element>
         <element label="Executive" max_length="32" name="executive" reference="sys_user" reference_qual="u_job_grade=ELT^EQ" reference_qual_condition="u_job_grade=ELT^EQ" type="reference"/>
         <element choice="1" label="Executive Department" max_length="32" name="executive_department" reference="x_opt_ecm_department" type="reference">
             <choice/>
@@ -264,6 +317,12 @@
         </element>
         <element label="Patient SSN" max_length="9" name="patient_ssn" type="string"/>
         <element label="Patient State" max_length="40" name="patient_state" type="string"/>
+        <element choice="1" label="PCA Reason Description" max_length="25" name="pca_reason_description" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Preventable" sequence="0" value="preventable"/>
+                <element inactive_on_update="false" label="Non-Preventable" sequence="1" value="non-Preventable"/>
+            </choice>
+        </element>
         <element choice="1" label="Platform" max_length="40" name="platform" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Cosmos" sequence="0" value="Cosmos"/>

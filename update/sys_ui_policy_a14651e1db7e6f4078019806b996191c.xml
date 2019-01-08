@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_opt_ecm_case">complaint_type=8644724e4f604300699aacb14210c796^ORcomplaint_type=36b6bc0f4fad9b00699aacb14210c747^stateIN6^EQ<item display_table="x_opt_ecm_complaint_type" display_value="PCA" endquery="false" field="complaint_type" goto="false" newquery="false" operator="=" or="false" value="8644724e4f604300699aacb14210c796"/>
+            <item display_table="x_opt_ecm_complaint_type" display_value="Reopen" endquery="false" field="complaint_type" goto="false" newquery="false" operator="=" or="true" value="36b6bc0f4fad9b00699aacb14210c747"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="6"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>10</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>PCA field mandatory when Complaint type is PCA or ReOpen and state is resolved</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>msaikira</sys_created_by>
+        <sys_created_on>2019-01-04 09:36:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a14651e1db7e6f4078019806b996191c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PCA field mandatory when Complaint type is PCA or ReOpen and state is resolved</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
+        <sys_update_name>sys_ui_policy_a14651e1db7e6f4078019806b996191c</sys_update_name>
+        <sys_updated_by>msaikira</sys_updated_by>
+        <sys_updated_on>2019-01-04 09:45:55</sys_updated_on>
+        <table>x_opt_ecm_case</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

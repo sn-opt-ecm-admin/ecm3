@@ -49,8 +49,8 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields/>
-        <recipient_groups>97b8b63edb75a70078019806b99619f8</recipient_groups>
+        <recipient_fields>rca_case.rca_advocate</recipient_fields>
+        <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
@@ -65,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f973afadb75a70078019806b996199e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>ECM-RCA Pending Review Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -74,7 +74,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sysevent_email_action_6f973afadb75a70078019806b996199e</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-12-13 21:27:37</sys_updated_on>
+        <sys_updated_on>2019-01-04 19:34:01</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
