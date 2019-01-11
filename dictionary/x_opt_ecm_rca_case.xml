@@ -12,7 +12,7 @@
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Multiple" max_length="40" name="multiple" type="boolean"/>
         <element label="Multiple Complaint Details" max_length="1000" name="multiple_details" type="string"/>
-        <element label="RCA Case Number" max_length="20" name="number" type="string"/>
+        <element label="RCA Case Number" max_length="24" name="number" type="string"/>
         <element choice="1" label="Optum Business Segment" max_length="40" name="opt_business_segment" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Optum Behavioral" sequence="1" value="Optum Behavioral"/>
