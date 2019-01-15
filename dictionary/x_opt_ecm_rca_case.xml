@@ -34,7 +34,7 @@
         <element label="Related RCA Cases" max_length="32" name="related_rca_cases" reference="x_opt_ecm_rca_related_cases" type="reference"/>
         <element label="State" max_length="32" name="state_location" reference="x_opt_ecm_state_lookup" type="reference"/>
         <element label="UHG Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>
-        <element label="Urgent Issue" max_length="40" name="urgent" type="boolean"/>
+        <element hint="Urgent is defined as Regulator indicated Urgent response due. RA Advocate checks Urgent if the complaint lists the Urgent Due Date in the request." label="Urgent Issue" max_length="40" name="urgent" type="boolean"/>
         <index name="index">
             <element name="number"/>
         </index>
