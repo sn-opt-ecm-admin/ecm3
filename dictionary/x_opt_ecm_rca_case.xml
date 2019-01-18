@@ -7,7 +7,7 @@
             </choice>
         </element>
         <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" reference_qual="javascript:var gr = new GlideRecord('sys_user_grmember');gr.addQuery('group',&quot;44cf06064f2007001e6cb4fe0210c77f&quot;);gr.query();var users='';while(gr.next()){users+=gr.user.sys_id + &quot;,&quot;;}&quot;sys_idIN&quot; + users;" type="reference" use_reference_qualifier="advanced"/>
-        <element label="DOI Due Date" max_length="40" name="doi_due_date" type="glide_date"/>
+        <element label="DOI Due Date" mandatory="true" max_length="40" name="doi_due_date" type="glide_date"/>
         <element label="Due Date Override" max_length="40" name="due_date_override" type="boolean"/>
         <element label="File Number" max_length="40" name="file_number" type="string"/>
         <element label="Multiple" max_length="40" name="multiple" type="boolean"/>
@@ -30,7 +30,7 @@
         <element label="RCA Advocate Name" max_length="32" name="rca_advocate" reference="sys_user" reference_qual="javascript:var retval; retval=new ECMRefQualUtil().RCAUsersRefQual(); retval;" type="reference" use_reference_qualifier="advanced"/>
         <element label="RCA Comments" max_length="4000" name="rca_comments" type="string"/>
         <element label="RCA Due Date" max_length="40" name="rca_due_date" type="glide_date_time"/>
-        <element label="RCA Submission Date" max_length="40" name="rca_submission_date" read_only="true" type="glide_date_time"/>
+        <element label="RCA Submission Date/Time" max_length="40" name="rca_submission_date" read_only="true" type="glide_date_time"/>
         <element label="Related RCA Cases" max_length="32" name="related_rca_cases" reference="x_opt_ecm_rca_related_cases" type="reference"/>
         <element label="State" max_length="32" name="state_location" reference="x_opt_ecm_state_lookup" type="reference"/>
         <element label="UHG Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>

@@ -17,9 +17,9 @@
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
 	
-	// clear the DOI state if we're not a complaint
-	if (!g_form.getValue("rca_case"))
-		g_form.setValue('doi_state', '');
+	// clear the DOI state if we're not a complaint 
+// 	if (!g_form.getValue("rca_case"))
+// 		g_form.setValue('doi_state', ''); // Moved script to Clear State On Change Client script as per US1529462
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 	var complaint = g_form.getDisplayBox('complaint_type').value;
@@ -45,7 +45,7 @@ function setAllFieldsOptional() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>45ed41aa4fac4300699aacb14210c7f7</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Policy for Regulatory DOI Complaints</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -53,8 +53,8 @@ function setAllFieldsOptional() {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_ui_policy_45ed41aa4fac4300699aacb14210c7f7</sys_update_name>
-        <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-12-07 12:01:27</sys_updated_on>
+        <sys_updated_by>msaikira</sys_updated_by>
+        <sys_updated_on>2019-01-18 12:18:07</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <ui_type>0</ui_type>
         <view/>

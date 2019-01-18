@@ -8,19 +8,17 @@
         <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
-        <advanced>true</advanced>
+        <advanced>false</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_opt_ecm_case</collection>
+        <collection>x_opt_ecm_rca_case</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_opt_ecm_case">rca_caseISNOTEMPTY^EQ<item endquery="false" field="rca_case" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Synch RCA Case for New ORA Case</name>
+        <name>Copy  RCA Submission Date</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,34 +28,29 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-	var grRCA = new GlideRecord('x_opt_ecm_rca_case');
-	if (grRCA.get(current.rca_case)) {
-		grRCA.setValue("ora_case_number", current.sys_id);
-		//grRCA.setValue("rca_submission_date",grRCA.sys_created_on );
-		grRCA.update();
-	}
-	
+
+	// Add your code here
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
-        <sys_created_by>mike.ward</sys_created_by>
-        <sys_created_on>2018-12-07 11:10:44</sys_created_on>
+        <sys_created_by>msaikira</sys_created_by>
+        <sys_created_on>2019-01-18 11:49:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>37ae9560db9a630078019806b996193e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Synch RCA Case for New ORA Case</sys_name>
+        <sys_id>6fa9f14adbc36f006fc0a9a5ca961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy  RCA Submission Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
-        <sys_update_name>sys_script_37ae9560db9a630078019806b996193e</sys_update_name>
+        <sys_update_name>sys_script_6fa9f14adbc36f006fc0a9a5ca961973</sys_update_name>
         <sys_updated_by>msaikira</sys_updated_by>
-        <sys_updated_on>2019-01-18 11:51:30</sys_updated_on>
-        <template/>
+        <sys_updated_on>2019-01-18 11:49:53</sys_updated_on>
+        <template>rca_submission_dateSAMEASsys_created_on^EQ</template>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=37ae9560db9a630078019806b996193e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6fa9f14adbc36f006fc0a9a5ca961973"/>
 </record_update>

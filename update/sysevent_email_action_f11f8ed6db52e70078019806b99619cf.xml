@@ -45,9 +45,10 @@
 <div>&nbsp;</div>
 <div><strong>Task Reason:</strong>&nbsp;${task_reason}</div>
 <div>&nbsp;</div>
-<div><strong>Need by Date:&nbsp;</strong>${due_date}</div>
-<div>&nbsp;</div>
-<p><strong>Click here to view Task:&nbsp;${URI_REF}</strong></p>]]></message_html>
+<div><strong>Need by Date:&nbsp;</strong>${due_date}&nbsp;</div>
+<p><strong>Click here to view Task:&nbsp;${URI_REF}</strong></p>
+<p><strong>Click here to view Related ECM Case: ${parent.URI_REF}</strong></p>
+<p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>ECM-RCA Task Assigned To</name>
@@ -70,7 +71,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f11f8ed6db52e70078019806b99619cf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>ECM-RCA Task Assigned To</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -79,7 +80,7 @@
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sysevent_email_action_f11f8ed6db52e70078019806b99619cf</sys_update_name>
         <sys_updated_by>mike.ward</sys_updated_by>
-        <sys_updated_on>2018-12-13 21:24:17</sys_updated_on>
+        <sys_updated_on>2019-01-18 18:13:52</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
