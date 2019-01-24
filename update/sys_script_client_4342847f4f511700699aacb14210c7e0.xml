@@ -16,7 +16,7 @@ There are multiple client scripts (task, csm, ecm) for this lable so the order i
 	
 	//adding code to as to develop US US1510021 Due Date field adaptation
 	
-	if(g_form.getValue('rca_case')!=''){
+	if(g_form.getValue('rca_case')!=''|| g_form.getValue('business_unit')=='regulatory_affairs'){
 		g_form.setLabelOf('due_date', 'RCA Due Date');
 	}
 	
@@ -39,7 +39,7 @@ There are multiple client scripts (task, csm, ecm) for this lable so the order i
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4342847f4f511700699aacb14210c7e0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Modify Comments Label ECM</sys_name>
         <sys_overrides/>
         <sys_package display_value="Escalated Complaint Management" source="x_opt_ecm">d1cfc3484f680b001e6cb4fe0210c7b7</sys_package>
@@ -48,7 +48,7 @@ There are multiple client scripts (task, csm, ecm) for this lable so the order i
         <sys_scope display_value="Escalated Complaint Management">d1cfc3484f680b001e6cb4fe0210c7b7</sys_scope>
         <sys_update_name>sys_script_client_4342847f4f511700699aacb14210c7e0</sys_update_name>
         <sys_updated_by>msaikira</sys_updated_by>
-        <sys_updated_on>2019-01-18 12:04:40</sys_updated_on>
+        <sys_updated_on>2019-01-22 07:32:08</sys_updated_on>
         <table>x_opt_ecm_case</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

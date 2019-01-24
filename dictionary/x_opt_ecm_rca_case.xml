@@ -36,21 +36,18 @@
         <element label="UHG Received Date" max_length="40" name="uhg_received_date" type="glide_date"/>
         <element hint="Urgent is defined as Regulator indicated Urgent response due. RA Advocate checks Urgent if the complaint lists the Urgent Due Date in the request." label="Urgent Issue" max_length="40" name="urgent" type="boolean"/>
         <index name="index">
-            <element name="number"/>
-        </index>
-        <index name="index2">
             <element name="rca_advocate"/>
         </index>
-        <index name="index3">
+        <index name="index2">
             <element name="ora_case_number"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="state_location"/>
         </index>
-        <index name="index5">
+        <index name="index4">
             <element name="assigned_to"/>
         </index>
-        <index name="index6">
+        <index name="index5">
             <element name="related_rca_cases"/>
         </index>
     </element>

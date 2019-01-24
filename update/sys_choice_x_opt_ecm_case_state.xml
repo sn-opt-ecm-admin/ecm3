@@ -155,6 +155,44 @@
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCA -Revisions Requested</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>5</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2019-01-22 07:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fad8ad93db07234078019806b9961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2019-01-22 07:42:53</sys_updated_on>
+            <value>23</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCA - Approved</label>
+            <language>en</language>
+            <name>x_opt_ecm_case</name>
+            <sequence>5</sequence>
+            <sys_created_by>msaikira</sys_created_by>
+            <sys_created_on>2019-01-22 07:47:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65d9a993db07234078019806b9961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>msaikira</sys_updated_by>
+            <sys_updated_on>2019-01-22 07:47:11</sys_updated_on>
+            <value>24</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
             <hint>Customer Service case requires more info from customer</hint>
             <inactive>false</inactive>
             <label>Quality Review</label>

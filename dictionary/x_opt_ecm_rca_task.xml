@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="sn_customerservice_task" label="RCA Task" max_length="40" name="x_opt_ecm_rca_task" sizeclass="19" type="collection">
+    <element audit="true" extends="sn_customerservice_task" label="RCA Task" max_length="40" name="x_opt_ecm_rca_task" sizeclass="21" type="collection">
         <element choice="1" label="Quality Feedback" max_length="40" name="quality_feedback" type="string">
             <choice>
                 <element inactive_on_update="false" label="Missing Info" sequence="0" value="missing Info"/>
